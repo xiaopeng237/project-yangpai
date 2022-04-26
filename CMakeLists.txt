@@ -15,39 +15,39 @@ set(CMAKE_FIND_ROOT_PATH  ${TOOLCHAIN_DIR}
         ${TOOLCHAIN_DIR}/lib )
 
 #mysql
-include_directories(${CMAKE_CURRENT_SOURCE_DIR}/depend/mysql/include/mysql)
-link_directories(${CMAKE_CURRENT_SOURCE_DIR}/depend/mysql/lib/mysql)
+include_directories(${CMAKE_CURRENT_LIST_DIR}/depend/mysql/include/mysql)
+link_directories(${CMAKE_CURRENT_LIST_DIR}/depend/mysql/lib/mysql)
 #dlt
-include_directories(${CMAKE_CURRENT_SOURCE_DIR}/depend/dlt/include)
-link_directories(${CMAKE_CURRENT_SOURCE_DIR}/depend/dlt/lib)
+include_directories(${CMAKE_CURRENT_LIST_DIR}/depend/dlt/include)
+link_directories(${CMAKE_CURRENT_LIST_DIR}/depend/dlt/lib)
 #dbus
-include_directories(${CMAKE_CURRENT_SOURCE_DIR}/depend/dbus/include/dbus-1.0/)
-include_directories(${CMAKE_CURRENT_SOURCE_DIR}/depend/dbus/lib/dbus-1.0/include)
-link_directories(${CMAKE_CURRENT_SOURCE_DIR}/depend/dbus/lib)
+include_directories(${CMAKE_CURRENT_LIST_DIR}/depend/dbus/include/dbus-1.0/)
+include_directories(${CMAKE_CURRENT_LIST_DIR}/depend/dbus/lib/dbus-1.0/include)
+link_directories(${CMAKE_CURRENT_LIST_DIR}/depend/dbus/lib)
 
 #project
-include_directories(${CMAKE_CURRENT_SOURCE_DIR}/depend/include)
-link_directories(${CMAKE_CURRENT_SOURCE_DIR}/depend/lib)
+include_directories(${CMAKE_CURRENT_LIST_DIR}/depend/include)
+link_directories(${CMAKE_CURRENT_LIST_DIR}/depend/lib)
 
-include_directories(${CMAKE_CURRENT_SOURCE_DIR}/cmake-build-debug/project_frame)
-include_directories(${CMAKE_CURRENT_SOURCE_DIR}/project_frame)
-link_directories(${CMAKE_CURRENT_SOURCE_DIR}/cmake-build-debug/project_frame)
+include_directories(${CMAKE_CURRENT_LIST_DIR}/cmake-build-debug/project_frame)
+include_directories(${CMAKE_CURRENT_LIST_DIR}/project_frame)
+link_directories(${CMAKE_CURRENT_LIST_DIR}/cmake-build-debug/project_frame)
 
-include_directories(${CMAKE_CURRENT_SOURCE_DIR}/cmake-build-debug/project_mysql)
-include_directories(${CMAKE_CURRENT_SOURCE_DIR}/project_mysql)
-link_directories(${CMAKE_CURRENT_SOURCE_DIR}/cmake-build-debug/project_mysql)
+include_directories(${CMAKE_CURRENT_LIST_DIR}/cmake-build-debug/project_mysql)
+include_directories(${CMAKE_CURRENT_LIST_DIR}/project_mysql)
+link_directories(${CMAKE_CURRENT_LIST_DIR}/cmake-build-debug/project_mysql)
 
-include_directories(${CMAKE_CURRENT_SOURCE_DIR}/cmake-build-debug/project_i2cbus)
-include_directories(${CMAKE_CURRENT_SOURCE_DIR}/project_i2cbus)
-link_directories(${CMAKE_CURRENT_SOURCE_DIR}/cmake-build-debug/project_i2cbus)
+include_directories(${CMAKE_CURRENT_LIST_DIR}/cmake-build-debug/project_i2cbus)
+include_directories(${CMAKE_CURRENT_LIST_DIR}/project_i2cbus)
+link_directories(${CMAKE_CURRENT_LIST_DIR}/cmake-build-debug/project_i2cbus)
 
-include_directories(${CMAKE_CURRENT_SOURCE_DIR}/cmake-build-debug/project_adjust)
-include_directories(${CMAKE_CURRENT_SOURCE_DIR}/project_adjust)
-link_directories(${CMAKE_CURRENT_SOURCE_DIR}/cmake-build-debug/project_adjust)
+include_directories(${CMAKE_CURRENT_LIST_DIR}/cmake-build-debug/project_adjust)
+include_directories(${CMAKE_CURRENT_LIST_DIR}/project_adjust)
+link_directories(${CMAKE_CURRENT_LIST_DIR}/cmake-build-debug/project_adjust)
 
-include_directories(${CMAKE_CURRENT_SOURCE_DIR}/cmake-build-debug/project_pioneers)
-include_directories(${CMAKE_CURRENT_SOURCE_DIR}/project_pioneers)
-link_directories(${CMAKE_CURRENT_SOURCE_DIR}/cmake-build-debug/project_pioneers)
+include_directories(${CMAKE_CURRENT_LIST_DIR}/cmake-build-debug/project_pioneers)
+include_directories(${CMAKE_CURRENT_LIST_DIR}/project_pioneers)
+link_directories(${CMAKE_CURRENT_LIST_DIR}/cmake-build-debug/project_pioneers)
 
 add_subdirectory(project_frame)
 add_subdirectory(project_mysql)
