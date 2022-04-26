@@ -57,10 +57,10 @@ RM = /usr/local/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/admin/repo/project-yangpai
+CMAKE_SOURCE_DIR = /var/lib/jenkins/workspace/project-yangpai
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/admin/repo/project-yangpai
+CMAKE_BINARY_DIR = /var/lib/jenkins/workspace/project-yangpai
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -132,14 +132,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/admin/repo/project-yangpai && $(CMAKE_COMMAND) -E cmake_progress_start /home/admin/repo/project-yangpai/CMakeFiles /home/admin/repo/project-yangpai/project_vbbr_tools//CMakeFiles/progress.marks
-	cd /home/admin/repo/project-yangpai && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 project_vbbr_tools/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/admin/repo/project-yangpai/CMakeFiles 0
+	cd /var/lib/jenkins/workspace/project-yangpai && $(CMAKE_COMMAND) -E cmake_progress_start /var/lib/jenkins/workspace/project-yangpai/CMakeFiles /var/lib/jenkins/workspace/project-yangpai/project_vbbr_tools//CMakeFiles/progress.marks
+	cd /var/lib/jenkins/workspace/project-yangpai && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 project_vbbr_tools/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /var/lib/jenkins/workspace/project-yangpai/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/admin/repo/project-yangpai && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 project_vbbr_tools/clean
+	cd /var/lib/jenkins/workspace/project-yangpai && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 project_vbbr_tools/clean
 .PHONY : clean
 
 # The main clean target
@@ -148,22 +148,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/admin/repo/project-yangpai && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 project_vbbr_tools/preinstall
+	cd /var/lib/jenkins/workspace/project-yangpai && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 project_vbbr_tools/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/admin/repo/project-yangpai && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 project_vbbr_tools/preinstall
+	cd /var/lib/jenkins/workspace/project-yangpai && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 project_vbbr_tools/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/admin/repo/project-yangpai && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /var/lib/jenkins/workspace/project-yangpai && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 project_vbbr_tools/CMakeFiles/i2c_2631vbb.dir/rule:
-	cd /home/admin/repo/project-yangpai && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 project_vbbr_tools/CMakeFiles/i2c_2631vbb.dir/rule
+	cd /var/lib/jenkins/workspace/project-yangpai && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 project_vbbr_tools/CMakeFiles/i2c_2631vbb.dir/rule
 .PHONY : project_vbbr_tools/CMakeFiles/i2c_2631vbb.dir/rule
 
 # Convenience name for target.
@@ -172,7 +172,7 @@ i2c_2631vbb: project_vbbr_tools/CMakeFiles/i2c_2631vbb.dir/rule
 
 # fast build rule for target.
 i2c_2631vbb/fast:
-	cd /home/admin/repo/project-yangpai && $(MAKE) $(MAKESILENT) -f project_vbbr_tools/CMakeFiles/i2c_2631vbb.dir/build.make project_vbbr_tools/CMakeFiles/i2c_2631vbb.dir/build
+	cd /var/lib/jenkins/workspace/project-yangpai && $(MAKE) $(MAKESILENT) -f project_vbbr_tools/CMakeFiles/i2c_2631vbb.dir/build.make project_vbbr_tools/CMakeFiles/i2c_2631vbb.dir/build
 .PHONY : i2c_2631vbb/fast
 
 i2c_2631vbb.o: i2c_2631vbb.c.o
@@ -180,7 +180,7 @@ i2c_2631vbb.o: i2c_2631vbb.c.o
 
 # target to build an object file
 i2c_2631vbb.c.o:
-	cd /home/admin/repo/project-yangpai && $(MAKE) $(MAKESILENT) -f project_vbbr_tools/CMakeFiles/i2c_2631vbb.dir/build.make project_vbbr_tools/CMakeFiles/i2c_2631vbb.dir/i2c_2631vbb.c.o
+	cd /var/lib/jenkins/workspace/project-yangpai && $(MAKE) $(MAKESILENT) -f project_vbbr_tools/CMakeFiles/i2c_2631vbb.dir/build.make project_vbbr_tools/CMakeFiles/i2c_2631vbb.dir/i2c_2631vbb.c.o
 .PHONY : i2c_2631vbb.c.o
 
 i2c_2631vbb.i: i2c_2631vbb.c.i
@@ -188,7 +188,7 @@ i2c_2631vbb.i: i2c_2631vbb.c.i
 
 # target to preprocess a source file
 i2c_2631vbb.c.i:
-	cd /home/admin/repo/project-yangpai && $(MAKE) $(MAKESILENT) -f project_vbbr_tools/CMakeFiles/i2c_2631vbb.dir/build.make project_vbbr_tools/CMakeFiles/i2c_2631vbb.dir/i2c_2631vbb.c.i
+	cd /var/lib/jenkins/workspace/project-yangpai && $(MAKE) $(MAKESILENT) -f project_vbbr_tools/CMakeFiles/i2c_2631vbb.dir/build.make project_vbbr_tools/CMakeFiles/i2c_2631vbb.dir/i2c_2631vbb.c.i
 .PHONY : i2c_2631vbb.c.i
 
 i2c_2631vbb.s: i2c_2631vbb.c.s
@@ -196,7 +196,7 @@ i2c_2631vbb.s: i2c_2631vbb.c.s
 
 # target to generate assembly for a file
 i2c_2631vbb.c.s:
-	cd /home/admin/repo/project-yangpai && $(MAKE) $(MAKESILENT) -f project_vbbr_tools/CMakeFiles/i2c_2631vbb.dir/build.make project_vbbr_tools/CMakeFiles/i2c_2631vbb.dir/i2c_2631vbb.c.s
+	cd /var/lib/jenkins/workspace/project-yangpai && $(MAKE) $(MAKESILENT) -f project_vbbr_tools/CMakeFiles/i2c_2631vbb.dir/build.make project_vbbr_tools/CMakeFiles/i2c_2631vbb.dir/i2c_2631vbb.c.s
 .PHONY : i2c_2631vbb.c.s
 
 # Help Target
@@ -226,6 +226,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/admin/repo/project-yangpai && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /var/lib/jenkins/workspace/project-yangpai && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

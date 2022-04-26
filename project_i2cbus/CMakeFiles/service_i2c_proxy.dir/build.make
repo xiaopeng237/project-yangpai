@@ -53,10 +53,10 @@ RM = /usr/local/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/admin/repo/project-yangpai
+CMAKE_SOURCE_DIR = /var/lib/jenkins/workspace/project-yangpai
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/admin/repo/project-yangpai
+CMAKE_BINARY_DIR = /var/lib/jenkins/workspace/project-yangpai
 
 # Include any dependencies generated for this target.
 include project_i2cbus/CMakeFiles/service_i2c_proxy.dir/depend.make
@@ -72,16 +72,16 @@ include project_i2cbus/CMakeFiles/service_i2c_proxy.dir/flags.make
 project_i2cbus/CMakeFiles/service_i2c_proxy.dir/yangpi_i2c_proxy.c.o: project_i2cbus/CMakeFiles/service_i2c_proxy.dir/flags.make
 project_i2cbus/CMakeFiles/service_i2c_proxy.dir/yangpi_i2c_proxy.c.o: project_i2cbus/yangpi_i2c_proxy.c
 project_i2cbus/CMakeFiles/service_i2c_proxy.dir/yangpi_i2c_proxy.c.o: project_i2cbus/CMakeFiles/service_i2c_proxy.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/admin/repo/project-yangpai/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object project_i2cbus/CMakeFiles/service_i2c_proxy.dir/yangpi_i2c_proxy.c.o"
-	cd /home/admin/repo/project-yangpai/project_i2cbus && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT project_i2cbus/CMakeFiles/service_i2c_proxy.dir/yangpi_i2c_proxy.c.o -MF CMakeFiles/service_i2c_proxy.dir/yangpi_i2c_proxy.c.o.d -o CMakeFiles/service_i2c_proxy.dir/yangpi_i2c_proxy.c.o -c /home/admin/repo/project-yangpai/project_i2cbus/yangpi_i2c_proxy.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/var/lib/jenkins/workspace/project-yangpai/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object project_i2cbus/CMakeFiles/service_i2c_proxy.dir/yangpi_i2c_proxy.c.o"
+	cd /var/lib/jenkins/workspace/project-yangpai/project_i2cbus && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT project_i2cbus/CMakeFiles/service_i2c_proxy.dir/yangpi_i2c_proxy.c.o -MF CMakeFiles/service_i2c_proxy.dir/yangpi_i2c_proxy.c.o.d -o CMakeFiles/service_i2c_proxy.dir/yangpi_i2c_proxy.c.o -c /var/lib/jenkins/workspace/project-yangpai/project_i2cbus/yangpi_i2c_proxy.c
 
 project_i2cbus/CMakeFiles/service_i2c_proxy.dir/yangpi_i2c_proxy.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/service_i2c_proxy.dir/yangpi_i2c_proxy.c.i"
-	cd /home/admin/repo/project-yangpai/project_i2cbus && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/admin/repo/project-yangpai/project_i2cbus/yangpi_i2c_proxy.c > CMakeFiles/service_i2c_proxy.dir/yangpi_i2c_proxy.c.i
+	cd /var/lib/jenkins/workspace/project-yangpai/project_i2cbus && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /var/lib/jenkins/workspace/project-yangpai/project_i2cbus/yangpi_i2c_proxy.c > CMakeFiles/service_i2c_proxy.dir/yangpi_i2c_proxy.c.i
 
 project_i2cbus/CMakeFiles/service_i2c_proxy.dir/yangpi_i2c_proxy.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/service_i2c_proxy.dir/yangpi_i2c_proxy.c.s"
-	cd /home/admin/repo/project-yangpai/project_i2cbus && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/admin/repo/project-yangpai/project_i2cbus/yangpi_i2c_proxy.c -o CMakeFiles/service_i2c_proxy.dir/yangpi_i2c_proxy.c.s
+	cd /var/lib/jenkins/workspace/project-yangpai/project_i2cbus && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /var/lib/jenkins/workspace/project-yangpai/project_i2cbus/yangpi_i2c_proxy.c -o CMakeFiles/service_i2c_proxy.dir/yangpi_i2c_proxy.c.s
 
 # Object files for target service_i2c_proxy
 service_i2c_proxy_OBJECTS = \
@@ -93,18 +93,18 @@ service_i2c_proxy_EXTERNAL_OBJECTS =
 project_i2cbus/libservice_i2c_proxy.so: project_i2cbus/CMakeFiles/service_i2c_proxy.dir/yangpi_i2c_proxy.c.o
 project_i2cbus/libservice_i2c_proxy.so: project_i2cbus/CMakeFiles/service_i2c_proxy.dir/build.make
 project_i2cbus/libservice_i2c_proxy.so: project_i2cbus/CMakeFiles/service_i2c_proxy.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/admin/repo/project-yangpai/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C shared library libservice_i2c_proxy.so"
-	cd /home/admin/repo/project-yangpai/project_i2cbus && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/service_i2c_proxy.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/var/lib/jenkins/workspace/project-yangpai/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C shared library libservice_i2c_proxy.so"
+	cd /var/lib/jenkins/workspace/project-yangpai/project_i2cbus && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/service_i2c_proxy.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 project_i2cbus/CMakeFiles/service_i2c_proxy.dir/build: project_i2cbus/libservice_i2c_proxy.so
 .PHONY : project_i2cbus/CMakeFiles/service_i2c_proxy.dir/build
 
 project_i2cbus/CMakeFiles/service_i2c_proxy.dir/clean:
-	cd /home/admin/repo/project-yangpai/project_i2cbus && $(CMAKE_COMMAND) -P CMakeFiles/service_i2c_proxy.dir/cmake_clean.cmake
+	cd /var/lib/jenkins/workspace/project-yangpai/project_i2cbus && $(CMAKE_COMMAND) -P CMakeFiles/service_i2c_proxy.dir/cmake_clean.cmake
 .PHONY : project_i2cbus/CMakeFiles/service_i2c_proxy.dir/clean
 
 project_i2cbus/CMakeFiles/service_i2c_proxy.dir/depend:
-	cd /home/admin/repo/project-yangpai && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/admin/repo/project-yangpai /home/admin/repo/project-yangpai/project_i2cbus /home/admin/repo/project-yangpai /home/admin/repo/project-yangpai/project_i2cbus /home/admin/repo/project-yangpai/project_i2cbus/CMakeFiles/service_i2c_proxy.dir/DependInfo.cmake --color=$(COLOR)
+	cd /var/lib/jenkins/workspace/project-yangpai && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /var/lib/jenkins/workspace/project-yangpai /var/lib/jenkins/workspace/project-yangpai/project_i2cbus /var/lib/jenkins/workspace/project-yangpai /var/lib/jenkins/workspace/project-yangpai/project_i2cbus /var/lib/jenkins/workspace/project-yangpai/project_i2cbus/CMakeFiles/service_i2c_proxy.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : project_i2cbus/CMakeFiles/service_i2c_proxy.dir/depend
 

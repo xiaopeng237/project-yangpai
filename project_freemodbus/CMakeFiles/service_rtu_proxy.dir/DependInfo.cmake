@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/admin/repo/project-yangpai/project_freemodbus/yangpi_rtu_proxy.c" "project_freemodbus/CMakeFiles/service_rtu_proxy.dir/yangpi_rtu_proxy.c.o" "gcc" "project_freemodbus/CMakeFiles/service_rtu_proxy.dir/yangpi_rtu_proxy.c.o.d"
+  "/var/lib/jenkins/workspace/project-yangpai/project_freemodbus/yangpi_rtu_proxy.c" "project_freemodbus/CMakeFiles/service_rtu_proxy.dir/yangpi_rtu_proxy.c.o" "gcc" "project_freemodbus/CMakeFiles/service_rtu_proxy.dir/yangpi_rtu_proxy.c.o.d"
   )
 
 # Targets to which this target links.

@@ -57,10 +57,10 @@ RM = /usr/local/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/admin/repo/project-yangpai
+CMAKE_SOURCE_DIR = /var/lib/jenkins/workspace/project-yangpai
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/admin/repo/project-yangpai
+CMAKE_BINARY_DIR = /var/lib/jenkins/workspace/project-yangpai
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -132,14 +132,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/admin/repo/project-yangpai && $(CMAKE_COMMAND) -E cmake_progress_start /home/admin/repo/project-yangpai/CMakeFiles /home/admin/repo/project-yangpai/project_ota//CMakeFiles/progress.marks
-	cd /home/admin/repo/project-yangpai && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 project_ota/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/admin/repo/project-yangpai/CMakeFiles 0
+	cd /var/lib/jenkins/workspace/project-yangpai && $(CMAKE_COMMAND) -E cmake_progress_start /var/lib/jenkins/workspace/project-yangpai/CMakeFiles /var/lib/jenkins/workspace/project-yangpai/project_ota//CMakeFiles/progress.marks
+	cd /var/lib/jenkins/workspace/project-yangpai && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 project_ota/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /var/lib/jenkins/workspace/project-yangpai/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/admin/repo/project-yangpai && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 project_ota/clean
+	cd /var/lib/jenkins/workspace/project-yangpai && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 project_ota/clean
 .PHONY : clean
 
 # The main clean target
@@ -148,22 +148,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/admin/repo/project-yangpai && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 project_ota/preinstall
+	cd /var/lib/jenkins/workspace/project-yangpai && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 project_ota/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/admin/repo/project-yangpai && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 project_ota/preinstall
+	cd /var/lib/jenkins/workspace/project-yangpai && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 project_ota/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/admin/repo/project-yangpai && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /var/lib/jenkins/workspace/project-yangpai && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 project_ota/CMakeFiles/service_ota_proxy.dir/rule:
-	cd /home/admin/repo/project-yangpai && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 project_ota/CMakeFiles/service_ota_proxy.dir/rule
+	cd /var/lib/jenkins/workspace/project-yangpai && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 project_ota/CMakeFiles/service_ota_proxy.dir/rule
 .PHONY : project_ota/CMakeFiles/service_ota_proxy.dir/rule
 
 # Convenience name for target.
@@ -172,12 +172,12 @@ service_ota_proxy: project_ota/CMakeFiles/service_ota_proxy.dir/rule
 
 # fast build rule for target.
 service_ota_proxy/fast:
-	cd /home/admin/repo/project-yangpai && $(MAKE) $(MAKESILENT) -f project_ota/CMakeFiles/service_ota_proxy.dir/build.make project_ota/CMakeFiles/service_ota_proxy.dir/build
+	cd /var/lib/jenkins/workspace/project-yangpai && $(MAKE) $(MAKESILENT) -f project_ota/CMakeFiles/service_ota_proxy.dir/build.make project_ota/CMakeFiles/service_ota_proxy.dir/build
 .PHONY : service_ota_proxy/fast
 
 # Convenience name for target.
 project_ota/CMakeFiles/yangpi_service_ota.dir/rule:
-	cd /home/admin/repo/project-yangpai && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 project_ota/CMakeFiles/yangpi_service_ota.dir/rule
+	cd /var/lib/jenkins/workspace/project-yangpai && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 project_ota/CMakeFiles/yangpi_service_ota.dir/rule
 .PHONY : project_ota/CMakeFiles/yangpi_service_ota.dir/rule
 
 # Convenience name for target.
@@ -186,7 +186,7 @@ yangpi_service_ota: project_ota/CMakeFiles/yangpi_service_ota.dir/rule
 
 # fast build rule for target.
 yangpi_service_ota/fast:
-	cd /home/admin/repo/project-yangpai && $(MAKE) $(MAKESILENT) -f project_ota/CMakeFiles/yangpi_service_ota.dir/build.make project_ota/CMakeFiles/yangpi_service_ota.dir/build
+	cd /var/lib/jenkins/workspace/project-yangpai && $(MAKE) $(MAKESILENT) -f project_ota/CMakeFiles/yangpi_service_ota.dir/build.make project_ota/CMakeFiles/yangpi_service_ota.dir/build
 .PHONY : yangpi_service_ota/fast
 
 ota_data_base.o: ota_data_base.c.o
@@ -194,7 +194,7 @@ ota_data_base.o: ota_data_base.c.o
 
 # target to build an object file
 ota_data_base.c.o:
-	cd /home/admin/repo/project-yangpai && $(MAKE) $(MAKESILENT) -f project_ota/CMakeFiles/yangpi_service_ota.dir/build.make project_ota/CMakeFiles/yangpi_service_ota.dir/ota_data_base.c.o
+	cd /var/lib/jenkins/workspace/project-yangpai && $(MAKE) $(MAKESILENT) -f project_ota/CMakeFiles/yangpi_service_ota.dir/build.make project_ota/CMakeFiles/yangpi_service_ota.dir/ota_data_base.c.o
 .PHONY : ota_data_base.c.o
 
 ota_data_base.i: ota_data_base.c.i
@@ -202,7 +202,7 @@ ota_data_base.i: ota_data_base.c.i
 
 # target to preprocess a source file
 ota_data_base.c.i:
-	cd /home/admin/repo/project-yangpai && $(MAKE) $(MAKESILENT) -f project_ota/CMakeFiles/yangpi_service_ota.dir/build.make project_ota/CMakeFiles/yangpi_service_ota.dir/ota_data_base.c.i
+	cd /var/lib/jenkins/workspace/project-yangpai && $(MAKE) $(MAKESILENT) -f project_ota/CMakeFiles/yangpi_service_ota.dir/build.make project_ota/CMakeFiles/yangpi_service_ota.dir/ota_data_base.c.i
 .PHONY : ota_data_base.c.i
 
 ota_data_base.s: ota_data_base.c.s
@@ -210,7 +210,7 @@ ota_data_base.s: ota_data_base.c.s
 
 # target to generate assembly for a file
 ota_data_base.c.s:
-	cd /home/admin/repo/project-yangpai && $(MAKE) $(MAKESILENT) -f project_ota/CMakeFiles/yangpi_service_ota.dir/build.make project_ota/CMakeFiles/yangpi_service_ota.dir/ota_data_base.c.s
+	cd /var/lib/jenkins/workspace/project-yangpai && $(MAKE) $(MAKESILENT) -f project_ota/CMakeFiles/yangpi_service_ota.dir/build.make project_ota/CMakeFiles/yangpi_service_ota.dir/ota_data_base.c.s
 .PHONY : ota_data_base.c.s
 
 ota_service.o: ota_service.c.o
@@ -218,7 +218,7 @@ ota_service.o: ota_service.c.o
 
 # target to build an object file
 ota_service.c.o:
-	cd /home/admin/repo/project-yangpai && $(MAKE) $(MAKESILENT) -f project_ota/CMakeFiles/yangpi_service_ota.dir/build.make project_ota/CMakeFiles/yangpi_service_ota.dir/ota_service.c.o
+	cd /var/lib/jenkins/workspace/project-yangpai && $(MAKE) $(MAKESILENT) -f project_ota/CMakeFiles/yangpi_service_ota.dir/build.make project_ota/CMakeFiles/yangpi_service_ota.dir/ota_service.c.o
 .PHONY : ota_service.c.o
 
 ota_service.i: ota_service.c.i
@@ -226,7 +226,7 @@ ota_service.i: ota_service.c.i
 
 # target to preprocess a source file
 ota_service.c.i:
-	cd /home/admin/repo/project-yangpai && $(MAKE) $(MAKESILENT) -f project_ota/CMakeFiles/yangpi_service_ota.dir/build.make project_ota/CMakeFiles/yangpi_service_ota.dir/ota_service.c.i
+	cd /var/lib/jenkins/workspace/project-yangpai && $(MAKE) $(MAKESILENT) -f project_ota/CMakeFiles/yangpi_service_ota.dir/build.make project_ota/CMakeFiles/yangpi_service_ota.dir/ota_service.c.i
 .PHONY : ota_service.c.i
 
 ota_service.s: ota_service.c.s
@@ -234,7 +234,7 @@ ota_service.s: ota_service.c.s
 
 # target to generate assembly for a file
 ota_service.c.s:
-	cd /home/admin/repo/project-yangpai && $(MAKE) $(MAKESILENT) -f project_ota/CMakeFiles/yangpi_service_ota.dir/build.make project_ota/CMakeFiles/yangpi_service_ota.dir/ota_service.c.s
+	cd /var/lib/jenkins/workspace/project-yangpai && $(MAKE) $(MAKESILENT) -f project_ota/CMakeFiles/yangpi_service_ota.dir/build.make project_ota/CMakeFiles/yangpi_service_ota.dir/ota_service.c.s
 .PHONY : ota_service.c.s
 
 yangpi_ota_main.o: yangpi_ota_main.c.o
@@ -242,7 +242,7 @@ yangpi_ota_main.o: yangpi_ota_main.c.o
 
 # target to build an object file
 yangpi_ota_main.c.o:
-	cd /home/admin/repo/project-yangpai && $(MAKE) $(MAKESILENT) -f project_ota/CMakeFiles/yangpi_service_ota.dir/build.make project_ota/CMakeFiles/yangpi_service_ota.dir/yangpi_ota_main.c.o
+	cd /var/lib/jenkins/workspace/project-yangpai && $(MAKE) $(MAKESILENT) -f project_ota/CMakeFiles/yangpi_service_ota.dir/build.make project_ota/CMakeFiles/yangpi_service_ota.dir/yangpi_ota_main.c.o
 .PHONY : yangpi_ota_main.c.o
 
 yangpi_ota_main.i: yangpi_ota_main.c.i
@@ -250,7 +250,7 @@ yangpi_ota_main.i: yangpi_ota_main.c.i
 
 # target to preprocess a source file
 yangpi_ota_main.c.i:
-	cd /home/admin/repo/project-yangpai && $(MAKE) $(MAKESILENT) -f project_ota/CMakeFiles/yangpi_service_ota.dir/build.make project_ota/CMakeFiles/yangpi_service_ota.dir/yangpi_ota_main.c.i
+	cd /var/lib/jenkins/workspace/project-yangpai && $(MAKE) $(MAKESILENT) -f project_ota/CMakeFiles/yangpi_service_ota.dir/build.make project_ota/CMakeFiles/yangpi_service_ota.dir/yangpi_ota_main.c.i
 .PHONY : yangpi_ota_main.c.i
 
 yangpi_ota_main.s: yangpi_ota_main.c.s
@@ -258,7 +258,7 @@ yangpi_ota_main.s: yangpi_ota_main.c.s
 
 # target to generate assembly for a file
 yangpi_ota_main.c.s:
-	cd /home/admin/repo/project-yangpai && $(MAKE) $(MAKESILENT) -f project_ota/CMakeFiles/yangpi_service_ota.dir/build.make project_ota/CMakeFiles/yangpi_service_ota.dir/yangpi_ota_main.c.s
+	cd /var/lib/jenkins/workspace/project-yangpai && $(MAKE) $(MAKESILENT) -f project_ota/CMakeFiles/yangpi_service_ota.dir/build.make project_ota/CMakeFiles/yangpi_service_ota.dir/yangpi_ota_main.c.s
 .PHONY : yangpi_ota_main.c.s
 
 yangpi_ota_proxy.o: yangpi_ota_proxy.c.o
@@ -266,7 +266,7 @@ yangpi_ota_proxy.o: yangpi_ota_proxy.c.o
 
 # target to build an object file
 yangpi_ota_proxy.c.o:
-	cd /home/admin/repo/project-yangpai && $(MAKE) $(MAKESILENT) -f project_ota/CMakeFiles/service_ota_proxy.dir/build.make project_ota/CMakeFiles/service_ota_proxy.dir/yangpi_ota_proxy.c.o
+	cd /var/lib/jenkins/workspace/project-yangpai && $(MAKE) $(MAKESILENT) -f project_ota/CMakeFiles/service_ota_proxy.dir/build.make project_ota/CMakeFiles/service_ota_proxy.dir/yangpi_ota_proxy.c.o
 .PHONY : yangpi_ota_proxy.c.o
 
 yangpi_ota_proxy.i: yangpi_ota_proxy.c.i
@@ -274,7 +274,7 @@ yangpi_ota_proxy.i: yangpi_ota_proxy.c.i
 
 # target to preprocess a source file
 yangpi_ota_proxy.c.i:
-	cd /home/admin/repo/project-yangpai && $(MAKE) $(MAKESILENT) -f project_ota/CMakeFiles/service_ota_proxy.dir/build.make project_ota/CMakeFiles/service_ota_proxy.dir/yangpi_ota_proxy.c.i
+	cd /var/lib/jenkins/workspace/project-yangpai && $(MAKE) $(MAKESILENT) -f project_ota/CMakeFiles/service_ota_proxy.dir/build.make project_ota/CMakeFiles/service_ota_proxy.dir/yangpi_ota_proxy.c.i
 .PHONY : yangpi_ota_proxy.c.i
 
 yangpi_ota_proxy.s: yangpi_ota_proxy.c.s
@@ -282,7 +282,7 @@ yangpi_ota_proxy.s: yangpi_ota_proxy.c.s
 
 # target to generate assembly for a file
 yangpi_ota_proxy.c.s:
-	cd /home/admin/repo/project-yangpai && $(MAKE) $(MAKESILENT) -f project_ota/CMakeFiles/service_ota_proxy.dir/build.make project_ota/CMakeFiles/service_ota_proxy.dir/yangpi_ota_proxy.c.s
+	cd /var/lib/jenkins/workspace/project-yangpai && $(MAKE) $(MAKESILENT) -f project_ota/CMakeFiles/service_ota_proxy.dir/build.make project_ota/CMakeFiles/service_ota_proxy.dir/yangpi_ota_proxy.c.s
 .PHONY : yangpi_ota_proxy.c.s
 
 yangpi_ota_stub.o: yangpi_ota_stub.c.o
@@ -290,7 +290,7 @@ yangpi_ota_stub.o: yangpi_ota_stub.c.o
 
 # target to build an object file
 yangpi_ota_stub.c.o:
-	cd /home/admin/repo/project-yangpai && $(MAKE) $(MAKESILENT) -f project_ota/CMakeFiles/yangpi_service_ota.dir/build.make project_ota/CMakeFiles/yangpi_service_ota.dir/yangpi_ota_stub.c.o
+	cd /var/lib/jenkins/workspace/project-yangpai && $(MAKE) $(MAKESILENT) -f project_ota/CMakeFiles/yangpi_service_ota.dir/build.make project_ota/CMakeFiles/yangpi_service_ota.dir/yangpi_ota_stub.c.o
 .PHONY : yangpi_ota_stub.c.o
 
 yangpi_ota_stub.i: yangpi_ota_stub.c.i
@@ -298,7 +298,7 @@ yangpi_ota_stub.i: yangpi_ota_stub.c.i
 
 # target to preprocess a source file
 yangpi_ota_stub.c.i:
-	cd /home/admin/repo/project-yangpai && $(MAKE) $(MAKESILENT) -f project_ota/CMakeFiles/yangpi_service_ota.dir/build.make project_ota/CMakeFiles/yangpi_service_ota.dir/yangpi_ota_stub.c.i
+	cd /var/lib/jenkins/workspace/project-yangpai && $(MAKE) $(MAKESILENT) -f project_ota/CMakeFiles/yangpi_service_ota.dir/build.make project_ota/CMakeFiles/yangpi_service_ota.dir/yangpi_ota_stub.c.i
 .PHONY : yangpi_ota_stub.c.i
 
 yangpi_ota_stub.s: yangpi_ota_stub.c.s
@@ -306,7 +306,7 @@ yangpi_ota_stub.s: yangpi_ota_stub.c.s
 
 # target to generate assembly for a file
 yangpi_ota_stub.c.s:
-	cd /home/admin/repo/project-yangpai && $(MAKE) $(MAKESILENT) -f project_ota/CMakeFiles/yangpi_service_ota.dir/build.make project_ota/CMakeFiles/yangpi_service_ota.dir/yangpi_ota_stub.c.s
+	cd /var/lib/jenkins/workspace/project-yangpai && $(MAKE) $(MAKESILENT) -f project_ota/CMakeFiles/yangpi_service_ota.dir/build.make project_ota/CMakeFiles/yangpi_service_ota.dir/yangpi_ota_stub.c.s
 .PHONY : yangpi_ota_stub.c.s
 
 # Help Target
@@ -349,6 +349,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/admin/repo/project-yangpai && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /var/lib/jenkins/workspace/project-yangpai && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

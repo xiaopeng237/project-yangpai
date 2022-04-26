@@ -53,10 +53,10 @@ RM = /usr/local/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/admin/repo/project-yangpai
+CMAKE_SOURCE_DIR = /var/lib/jenkins/workspace/project-yangpai
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/admin/repo/project-yangpai
+CMAKE_BINARY_DIR = /var/lib/jenkins/workspace/project-yangpai
 
 # Include any dependencies generated for this target.
 include project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/depend.make
@@ -72,114 +72,114 @@ include project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/flags.make
 project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/yangpi_i2c_main.c.o: project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/flags.make
 project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/yangpi_i2c_main.c.o: project_i2cbus/yangpi_i2c_main.c
 project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/yangpi_i2c_main.c.o: project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/admin/repo/project-yangpai/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/yangpi_i2c_main.c.o"
-	cd /home/admin/repo/project-yangpai/project_i2cbus && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/yangpi_i2c_main.c.o -MF CMakeFiles/yangpi_service_i2cbus.dir/yangpi_i2c_main.c.o.d -o CMakeFiles/yangpi_service_i2cbus.dir/yangpi_i2c_main.c.o -c /home/admin/repo/project-yangpai/project_i2cbus/yangpi_i2c_main.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/var/lib/jenkins/workspace/project-yangpai/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/yangpi_i2c_main.c.o"
+	cd /var/lib/jenkins/workspace/project-yangpai/project_i2cbus && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/yangpi_i2c_main.c.o -MF CMakeFiles/yangpi_service_i2cbus.dir/yangpi_i2c_main.c.o.d -o CMakeFiles/yangpi_service_i2cbus.dir/yangpi_i2c_main.c.o -c /var/lib/jenkins/workspace/project-yangpai/project_i2cbus/yangpi_i2c_main.c
 
 project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/yangpi_i2c_main.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/yangpi_service_i2cbus.dir/yangpi_i2c_main.c.i"
-	cd /home/admin/repo/project-yangpai/project_i2cbus && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/admin/repo/project-yangpai/project_i2cbus/yangpi_i2c_main.c > CMakeFiles/yangpi_service_i2cbus.dir/yangpi_i2c_main.c.i
+	cd /var/lib/jenkins/workspace/project-yangpai/project_i2cbus && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /var/lib/jenkins/workspace/project-yangpai/project_i2cbus/yangpi_i2c_main.c > CMakeFiles/yangpi_service_i2cbus.dir/yangpi_i2c_main.c.i
 
 project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/yangpi_i2c_main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/yangpi_service_i2cbus.dir/yangpi_i2c_main.c.s"
-	cd /home/admin/repo/project-yangpai/project_i2cbus && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/admin/repo/project-yangpai/project_i2cbus/yangpi_i2c_main.c -o CMakeFiles/yangpi_service_i2cbus.dir/yangpi_i2c_main.c.s
+	cd /var/lib/jenkins/workspace/project-yangpai/project_i2cbus && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /var/lib/jenkins/workspace/project-yangpai/project_i2cbus/yangpi_i2c_main.c -o CMakeFiles/yangpi_service_i2cbus.dir/yangpi_i2c_main.c.s
 
 project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/yangpi_i2c_stub.c.o: project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/flags.make
 project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/yangpi_i2c_stub.c.o: project_i2cbus/yangpi_i2c_stub.c
 project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/yangpi_i2c_stub.c.o: project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/admin/repo/project-yangpai/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/yangpi_i2c_stub.c.o"
-	cd /home/admin/repo/project-yangpai/project_i2cbus && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/yangpi_i2c_stub.c.o -MF CMakeFiles/yangpi_service_i2cbus.dir/yangpi_i2c_stub.c.o.d -o CMakeFiles/yangpi_service_i2cbus.dir/yangpi_i2c_stub.c.o -c /home/admin/repo/project-yangpai/project_i2cbus/yangpi_i2c_stub.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/var/lib/jenkins/workspace/project-yangpai/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/yangpi_i2c_stub.c.o"
+	cd /var/lib/jenkins/workspace/project-yangpai/project_i2cbus && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/yangpi_i2c_stub.c.o -MF CMakeFiles/yangpi_service_i2cbus.dir/yangpi_i2c_stub.c.o.d -o CMakeFiles/yangpi_service_i2cbus.dir/yangpi_i2c_stub.c.o -c /var/lib/jenkins/workspace/project-yangpai/project_i2cbus/yangpi_i2c_stub.c
 
 project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/yangpi_i2c_stub.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/yangpi_service_i2cbus.dir/yangpi_i2c_stub.c.i"
-	cd /home/admin/repo/project-yangpai/project_i2cbus && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/admin/repo/project-yangpai/project_i2cbus/yangpi_i2c_stub.c > CMakeFiles/yangpi_service_i2cbus.dir/yangpi_i2c_stub.c.i
+	cd /var/lib/jenkins/workspace/project-yangpai/project_i2cbus && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /var/lib/jenkins/workspace/project-yangpai/project_i2cbus/yangpi_i2c_stub.c > CMakeFiles/yangpi_service_i2cbus.dir/yangpi_i2c_stub.c.i
 
 project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/yangpi_i2c_stub.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/yangpi_service_i2cbus.dir/yangpi_i2c_stub.c.s"
-	cd /home/admin/repo/project-yangpai/project_i2cbus && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/admin/repo/project-yangpai/project_i2cbus/yangpi_i2c_stub.c -o CMakeFiles/yangpi_service_i2cbus.dir/yangpi_i2c_stub.c.s
+	cd /var/lib/jenkins/workspace/project-yangpai/project_i2cbus && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /var/lib/jenkins/workspace/project-yangpai/project_i2cbus/yangpi_i2c_stub.c -o CMakeFiles/yangpi_service_i2cbus.dir/yangpi_i2c_stub.c.s
 
 project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/i2c_bus.c.o: project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/flags.make
 project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/i2c_bus.c.o: project_i2cbus/i2c_bus.c
 project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/i2c_bus.c.o: project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/admin/repo/project-yangpai/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/i2c_bus.c.o"
-	cd /home/admin/repo/project-yangpai/project_i2cbus && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/i2c_bus.c.o -MF CMakeFiles/yangpi_service_i2cbus.dir/i2c_bus.c.o.d -o CMakeFiles/yangpi_service_i2cbus.dir/i2c_bus.c.o -c /home/admin/repo/project-yangpai/project_i2cbus/i2c_bus.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/var/lib/jenkins/workspace/project-yangpai/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/i2c_bus.c.o"
+	cd /var/lib/jenkins/workspace/project-yangpai/project_i2cbus && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/i2c_bus.c.o -MF CMakeFiles/yangpi_service_i2cbus.dir/i2c_bus.c.o.d -o CMakeFiles/yangpi_service_i2cbus.dir/i2c_bus.c.o -c /var/lib/jenkins/workspace/project-yangpai/project_i2cbus/i2c_bus.c
 
 project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/i2c_bus.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/yangpi_service_i2cbus.dir/i2c_bus.c.i"
-	cd /home/admin/repo/project-yangpai/project_i2cbus && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/admin/repo/project-yangpai/project_i2cbus/i2c_bus.c > CMakeFiles/yangpi_service_i2cbus.dir/i2c_bus.c.i
+	cd /var/lib/jenkins/workspace/project-yangpai/project_i2cbus && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /var/lib/jenkins/workspace/project-yangpai/project_i2cbus/i2c_bus.c > CMakeFiles/yangpi_service_i2cbus.dir/i2c_bus.c.i
 
 project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/i2c_bus.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/yangpi_service_i2cbus.dir/i2c_bus.c.s"
-	cd /home/admin/repo/project-yangpai/project_i2cbus && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/admin/repo/project-yangpai/project_i2cbus/i2c_bus.c -o CMakeFiles/yangpi_service_i2cbus.dir/i2c_bus.c.s
+	cd /var/lib/jenkins/workspace/project-yangpai/project_i2cbus && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /var/lib/jenkins/workspace/project-yangpai/project_i2cbus/i2c_bus.c -o CMakeFiles/yangpi_service_i2cbus.dir/i2c_bus.c.s
 
 project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/i2c_oled.c.o: project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/flags.make
 project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/i2c_oled.c.o: project_i2cbus/i2c_oled.c
 project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/i2c_oled.c.o: project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/admin/repo/project-yangpai/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/i2c_oled.c.o"
-	cd /home/admin/repo/project-yangpai/project_i2cbus && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/i2c_oled.c.o -MF CMakeFiles/yangpi_service_i2cbus.dir/i2c_oled.c.o.d -o CMakeFiles/yangpi_service_i2cbus.dir/i2c_oled.c.o -c /home/admin/repo/project-yangpai/project_i2cbus/i2c_oled.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/var/lib/jenkins/workspace/project-yangpai/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/i2c_oled.c.o"
+	cd /var/lib/jenkins/workspace/project-yangpai/project_i2cbus && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/i2c_oled.c.o -MF CMakeFiles/yangpi_service_i2cbus.dir/i2c_oled.c.o.d -o CMakeFiles/yangpi_service_i2cbus.dir/i2c_oled.c.o -c /var/lib/jenkins/workspace/project-yangpai/project_i2cbus/i2c_oled.c
 
 project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/i2c_oled.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/yangpi_service_i2cbus.dir/i2c_oled.c.i"
-	cd /home/admin/repo/project-yangpai/project_i2cbus && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/admin/repo/project-yangpai/project_i2cbus/i2c_oled.c > CMakeFiles/yangpi_service_i2cbus.dir/i2c_oled.c.i
+	cd /var/lib/jenkins/workspace/project-yangpai/project_i2cbus && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /var/lib/jenkins/workspace/project-yangpai/project_i2cbus/i2c_oled.c > CMakeFiles/yangpi_service_i2cbus.dir/i2c_oled.c.i
 
 project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/i2c_oled.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/yangpi_service_i2cbus.dir/i2c_oled.c.s"
-	cd /home/admin/repo/project-yangpai/project_i2cbus && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/admin/repo/project-yangpai/project_i2cbus/i2c_oled.c -o CMakeFiles/yangpi_service_i2cbus.dir/i2c_oled.c.s
+	cd /var/lib/jenkins/workspace/project-yangpai/project_i2cbus && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /var/lib/jenkins/workspace/project-yangpai/project_i2cbus/i2c_oled.c -o CMakeFiles/yangpi_service_i2cbus.dir/i2c_oled.c.s
 
 project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/i2cbus_module_base.c.o: project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/flags.make
 project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/i2cbus_module_base.c.o: project_i2cbus/i2cbus_module_base.c
 project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/i2cbus_module_base.c.o: project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/admin/repo/project-yangpai/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/i2cbus_module_base.c.o"
-	cd /home/admin/repo/project-yangpai/project_i2cbus && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/i2cbus_module_base.c.o -MF CMakeFiles/yangpi_service_i2cbus.dir/i2cbus_module_base.c.o.d -o CMakeFiles/yangpi_service_i2cbus.dir/i2cbus_module_base.c.o -c /home/admin/repo/project-yangpai/project_i2cbus/i2cbus_module_base.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/var/lib/jenkins/workspace/project-yangpai/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/i2cbus_module_base.c.o"
+	cd /var/lib/jenkins/workspace/project-yangpai/project_i2cbus && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/i2cbus_module_base.c.o -MF CMakeFiles/yangpi_service_i2cbus.dir/i2cbus_module_base.c.o.d -o CMakeFiles/yangpi_service_i2cbus.dir/i2cbus_module_base.c.o -c /var/lib/jenkins/workspace/project-yangpai/project_i2cbus/i2cbus_module_base.c
 
 project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/i2cbus_module_base.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/yangpi_service_i2cbus.dir/i2cbus_module_base.c.i"
-	cd /home/admin/repo/project-yangpai/project_i2cbus && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/admin/repo/project-yangpai/project_i2cbus/i2cbus_module_base.c > CMakeFiles/yangpi_service_i2cbus.dir/i2cbus_module_base.c.i
+	cd /var/lib/jenkins/workspace/project-yangpai/project_i2cbus && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /var/lib/jenkins/workspace/project-yangpai/project_i2cbus/i2cbus_module_base.c > CMakeFiles/yangpi_service_i2cbus.dir/i2cbus_module_base.c.i
 
 project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/i2cbus_module_base.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/yangpi_service_i2cbus.dir/i2cbus_module_base.c.s"
-	cd /home/admin/repo/project-yangpai/project_i2cbus && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/admin/repo/project-yangpai/project_i2cbus/i2cbus_module_base.c -o CMakeFiles/yangpi_service_i2cbus.dir/i2cbus_module_base.c.s
+	cd /var/lib/jenkins/workspace/project-yangpai/project_i2cbus && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /var/lib/jenkins/workspace/project-yangpai/project_i2cbus/i2cbus_module_base.c -o CMakeFiles/yangpi_service_i2cbus.dir/i2cbus_module_base.c.s
 
 project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/log_dlt.c.o: project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/flags.make
 project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/log_dlt.c.o: project_i2cbus/log_dlt.c
 project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/log_dlt.c.o: project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/admin/repo/project-yangpai/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/log_dlt.c.o"
-	cd /home/admin/repo/project-yangpai/project_i2cbus && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/log_dlt.c.o -MF CMakeFiles/yangpi_service_i2cbus.dir/log_dlt.c.o.d -o CMakeFiles/yangpi_service_i2cbus.dir/log_dlt.c.o -c /home/admin/repo/project-yangpai/project_i2cbus/log_dlt.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/var/lib/jenkins/workspace/project-yangpai/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/log_dlt.c.o"
+	cd /var/lib/jenkins/workspace/project-yangpai/project_i2cbus && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/log_dlt.c.o -MF CMakeFiles/yangpi_service_i2cbus.dir/log_dlt.c.o.d -o CMakeFiles/yangpi_service_i2cbus.dir/log_dlt.c.o -c /var/lib/jenkins/workspace/project-yangpai/project_i2cbus/log_dlt.c
 
 project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/log_dlt.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/yangpi_service_i2cbus.dir/log_dlt.c.i"
-	cd /home/admin/repo/project-yangpai/project_i2cbus && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/admin/repo/project-yangpai/project_i2cbus/log_dlt.c > CMakeFiles/yangpi_service_i2cbus.dir/log_dlt.c.i
+	cd /var/lib/jenkins/workspace/project-yangpai/project_i2cbus && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /var/lib/jenkins/workspace/project-yangpai/project_i2cbus/log_dlt.c > CMakeFiles/yangpi_service_i2cbus.dir/log_dlt.c.i
 
 project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/log_dlt.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/yangpi_service_i2cbus.dir/log_dlt.c.s"
-	cd /home/admin/repo/project-yangpai/project_i2cbus && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/admin/repo/project-yangpai/project_i2cbus/log_dlt.c -o CMakeFiles/yangpi_service_i2cbus.dir/log_dlt.c.s
+	cd /var/lib/jenkins/workspace/project-yangpai/project_i2cbus && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /var/lib/jenkins/workspace/project-yangpai/project_i2cbus/log_dlt.c -o CMakeFiles/yangpi_service_i2cbus.dir/log_dlt.c.s
 
 project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/i2c_ad1115.c.o: project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/flags.make
 project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/i2c_ad1115.c.o: project_i2cbus/i2c_ad1115.c
 project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/i2c_ad1115.c.o: project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/admin/repo/project-yangpai/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/i2c_ad1115.c.o"
-	cd /home/admin/repo/project-yangpai/project_i2cbus && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/i2c_ad1115.c.o -MF CMakeFiles/yangpi_service_i2cbus.dir/i2c_ad1115.c.o.d -o CMakeFiles/yangpi_service_i2cbus.dir/i2c_ad1115.c.o -c /home/admin/repo/project-yangpai/project_i2cbus/i2c_ad1115.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/var/lib/jenkins/workspace/project-yangpai/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/i2c_ad1115.c.o"
+	cd /var/lib/jenkins/workspace/project-yangpai/project_i2cbus && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/i2c_ad1115.c.o -MF CMakeFiles/yangpi_service_i2cbus.dir/i2c_ad1115.c.o.d -o CMakeFiles/yangpi_service_i2cbus.dir/i2c_ad1115.c.o -c /var/lib/jenkins/workspace/project-yangpai/project_i2cbus/i2c_ad1115.c
 
 project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/i2c_ad1115.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/yangpi_service_i2cbus.dir/i2c_ad1115.c.i"
-	cd /home/admin/repo/project-yangpai/project_i2cbus && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/admin/repo/project-yangpai/project_i2cbus/i2c_ad1115.c > CMakeFiles/yangpi_service_i2cbus.dir/i2c_ad1115.c.i
+	cd /var/lib/jenkins/workspace/project-yangpai/project_i2cbus && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /var/lib/jenkins/workspace/project-yangpai/project_i2cbus/i2c_ad1115.c > CMakeFiles/yangpi_service_i2cbus.dir/i2c_ad1115.c.i
 
 project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/i2c_ad1115.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/yangpi_service_i2cbus.dir/i2c_ad1115.c.s"
-	cd /home/admin/repo/project-yangpai/project_i2cbus && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/admin/repo/project-yangpai/project_i2cbus/i2c_ad1115.c -o CMakeFiles/yangpi_service_i2cbus.dir/i2c_ad1115.c.s
+	cd /var/lib/jenkins/workspace/project-yangpai/project_i2cbus && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /var/lib/jenkins/workspace/project-yangpai/project_i2cbus/i2c_ad1115.c -o CMakeFiles/yangpi_service_i2cbus.dir/i2c_ad1115.c.s
 
 project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/i2c_adjust.c.o: project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/flags.make
 project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/i2c_adjust.c.o: project_i2cbus/i2c_adjust.c
 project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/i2c_adjust.c.o: project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/admin/repo/project-yangpai/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/i2c_adjust.c.o"
-	cd /home/admin/repo/project-yangpai/project_i2cbus && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/i2c_adjust.c.o -MF CMakeFiles/yangpi_service_i2cbus.dir/i2c_adjust.c.o.d -o CMakeFiles/yangpi_service_i2cbus.dir/i2c_adjust.c.o -c /home/admin/repo/project-yangpai/project_i2cbus/i2c_adjust.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/var/lib/jenkins/workspace/project-yangpai/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/i2c_adjust.c.o"
+	cd /var/lib/jenkins/workspace/project-yangpai/project_i2cbus && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/i2c_adjust.c.o -MF CMakeFiles/yangpi_service_i2cbus.dir/i2c_adjust.c.o.d -o CMakeFiles/yangpi_service_i2cbus.dir/i2c_adjust.c.o -c /var/lib/jenkins/workspace/project-yangpai/project_i2cbus/i2c_adjust.c
 
 project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/i2c_adjust.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/yangpi_service_i2cbus.dir/i2c_adjust.c.i"
-	cd /home/admin/repo/project-yangpai/project_i2cbus && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/admin/repo/project-yangpai/project_i2cbus/i2c_adjust.c > CMakeFiles/yangpi_service_i2cbus.dir/i2c_adjust.c.i
+	cd /var/lib/jenkins/workspace/project-yangpai/project_i2cbus && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /var/lib/jenkins/workspace/project-yangpai/project_i2cbus/i2c_adjust.c > CMakeFiles/yangpi_service_i2cbus.dir/i2c_adjust.c.i
 
 project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/i2c_adjust.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/yangpi_service_i2cbus.dir/i2c_adjust.c.s"
-	cd /home/admin/repo/project-yangpai/project_i2cbus && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/admin/repo/project-yangpai/project_i2cbus/i2c_adjust.c -o CMakeFiles/yangpi_service_i2cbus.dir/i2c_adjust.c.s
+	cd /var/lib/jenkins/workspace/project-yangpai/project_i2cbus && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /var/lib/jenkins/workspace/project-yangpai/project_i2cbus/i2c_adjust.c -o CMakeFiles/yangpi_service_i2cbus.dir/i2c_adjust.c.s
 
 # Object files for target yangpi_service_i2cbus
 yangpi_service_i2cbus_OBJECTS = \
@@ -206,18 +206,18 @@ project_i2cbus/yangpi_service_i2cbus: project_i2cbus/CMakeFiles/yangpi_service_i
 project_i2cbus/yangpi_service_i2cbus: project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/build.make
 project_i2cbus/yangpi_service_i2cbus: project_frame/libyangpai_service.so
 project_i2cbus/yangpi_service_i2cbus: project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/admin/repo/project-yangpai/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking C executable yangpi_service_i2cbus"
-	cd /home/admin/repo/project-yangpai/project_i2cbus && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/yangpi_service_i2cbus.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/var/lib/jenkins/workspace/project-yangpai/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking C executable yangpi_service_i2cbus"
+	cd /var/lib/jenkins/workspace/project-yangpai/project_i2cbus && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/yangpi_service_i2cbus.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/build: project_i2cbus/yangpi_service_i2cbus
 .PHONY : project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/build
 
 project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/clean:
-	cd /home/admin/repo/project-yangpai/project_i2cbus && $(CMAKE_COMMAND) -P CMakeFiles/yangpi_service_i2cbus.dir/cmake_clean.cmake
+	cd /var/lib/jenkins/workspace/project-yangpai/project_i2cbus && $(CMAKE_COMMAND) -P CMakeFiles/yangpi_service_i2cbus.dir/cmake_clean.cmake
 .PHONY : project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/clean
 
 project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/depend:
-	cd /home/admin/repo/project-yangpai && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/admin/repo/project-yangpai /home/admin/repo/project-yangpai/project_i2cbus /home/admin/repo/project-yangpai /home/admin/repo/project-yangpai/project_i2cbus /home/admin/repo/project-yangpai/project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/DependInfo.cmake --color=$(COLOR)
+	cd /var/lib/jenkins/workspace/project-yangpai && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /var/lib/jenkins/workspace/project-yangpai /var/lib/jenkins/workspace/project-yangpai/project_i2cbus /var/lib/jenkins/workspace/project-yangpai /var/lib/jenkins/workspace/project-yangpai/project_i2cbus /var/lib/jenkins/workspace/project-yangpai/project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/depend
 

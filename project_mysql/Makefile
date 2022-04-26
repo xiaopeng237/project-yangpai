@@ -57,10 +57,10 @@ RM = /usr/local/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/admin/repo/project-yangpai
+CMAKE_SOURCE_DIR = /var/lib/jenkins/workspace/project-yangpai
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/admin/repo/project-yangpai
+CMAKE_BINARY_DIR = /var/lib/jenkins/workspace/project-yangpai
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -132,14 +132,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/admin/repo/project-yangpai && $(CMAKE_COMMAND) -E cmake_progress_start /home/admin/repo/project-yangpai/CMakeFiles /home/admin/repo/project-yangpai/project_mysql//CMakeFiles/progress.marks
-	cd /home/admin/repo/project-yangpai && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 project_mysql/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/admin/repo/project-yangpai/CMakeFiles 0
+	cd /var/lib/jenkins/workspace/project-yangpai && $(CMAKE_COMMAND) -E cmake_progress_start /var/lib/jenkins/workspace/project-yangpai/CMakeFiles /var/lib/jenkins/workspace/project-yangpai/project_mysql//CMakeFiles/progress.marks
+	cd /var/lib/jenkins/workspace/project-yangpai && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 project_mysql/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /var/lib/jenkins/workspace/project-yangpai/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/admin/repo/project-yangpai && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 project_mysql/clean
+	cd /var/lib/jenkins/workspace/project-yangpai && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 project_mysql/clean
 .PHONY : clean
 
 # The main clean target
@@ -148,22 +148,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/admin/repo/project-yangpai && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 project_mysql/preinstall
+	cd /var/lib/jenkins/workspace/project-yangpai && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 project_mysql/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/admin/repo/project-yangpai && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 project_mysql/preinstall
+	cd /var/lib/jenkins/workspace/project-yangpai && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 project_mysql/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/admin/repo/project-yangpai && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /var/lib/jenkins/workspace/project-yangpai && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 project_mysql/CMakeFiles/service_mysql_proxy.dir/rule:
-	cd /home/admin/repo/project-yangpai && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 project_mysql/CMakeFiles/service_mysql_proxy.dir/rule
+	cd /var/lib/jenkins/workspace/project-yangpai && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 project_mysql/CMakeFiles/service_mysql_proxy.dir/rule
 .PHONY : project_mysql/CMakeFiles/service_mysql_proxy.dir/rule
 
 # Convenience name for target.
@@ -172,12 +172,12 @@ service_mysql_proxy: project_mysql/CMakeFiles/service_mysql_proxy.dir/rule
 
 # fast build rule for target.
 service_mysql_proxy/fast:
-	cd /home/admin/repo/project-yangpai && $(MAKE) $(MAKESILENT) -f project_mysql/CMakeFiles/service_mysql_proxy.dir/build.make project_mysql/CMakeFiles/service_mysql_proxy.dir/build
+	cd /var/lib/jenkins/workspace/project-yangpai && $(MAKE) $(MAKESILENT) -f project_mysql/CMakeFiles/service_mysql_proxy.dir/build.make project_mysql/CMakeFiles/service_mysql_proxy.dir/build
 .PHONY : service_mysql_proxy/fast
 
 # Convenience name for target.
 project_mysql/CMakeFiles/yangpi_service_mysql.dir/rule:
-	cd /home/admin/repo/project-yangpai && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 project_mysql/CMakeFiles/yangpi_service_mysql.dir/rule
+	cd /var/lib/jenkins/workspace/project-yangpai && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 project_mysql/CMakeFiles/yangpi_service_mysql.dir/rule
 .PHONY : project_mysql/CMakeFiles/yangpi_service_mysql.dir/rule
 
 # Convenience name for target.
@@ -186,7 +186,7 @@ yangpi_service_mysql: project_mysql/CMakeFiles/yangpi_service_mysql.dir/rule
 
 # fast build rule for target.
 yangpi_service_mysql/fast:
-	cd /home/admin/repo/project-yangpai && $(MAKE) $(MAKESILENT) -f project_mysql/CMakeFiles/yangpi_service_mysql.dir/build.make project_mysql/CMakeFiles/yangpi_service_mysql.dir/build
+	cd /var/lib/jenkins/workspace/project-yangpai && $(MAKE) $(MAKESILENT) -f project_mysql/CMakeFiles/yangpi_service_mysql.dir/build.make project_mysql/CMakeFiles/yangpi_service_mysql.dir/build
 .PHONY : yangpi_service_mysql/fast
 
 log_dlt.o: log_dlt.c.o
@@ -194,7 +194,7 @@ log_dlt.o: log_dlt.c.o
 
 # target to build an object file
 log_dlt.c.o:
-	cd /home/admin/repo/project-yangpai && $(MAKE) $(MAKESILENT) -f project_mysql/CMakeFiles/yangpi_service_mysql.dir/build.make project_mysql/CMakeFiles/yangpi_service_mysql.dir/log_dlt.c.o
+	cd /var/lib/jenkins/workspace/project-yangpai && $(MAKE) $(MAKESILENT) -f project_mysql/CMakeFiles/yangpi_service_mysql.dir/build.make project_mysql/CMakeFiles/yangpi_service_mysql.dir/log_dlt.c.o
 .PHONY : log_dlt.c.o
 
 log_dlt.i: log_dlt.c.i
@@ -202,7 +202,7 @@ log_dlt.i: log_dlt.c.i
 
 # target to preprocess a source file
 log_dlt.c.i:
-	cd /home/admin/repo/project-yangpai && $(MAKE) $(MAKESILENT) -f project_mysql/CMakeFiles/yangpi_service_mysql.dir/build.make project_mysql/CMakeFiles/yangpi_service_mysql.dir/log_dlt.c.i
+	cd /var/lib/jenkins/workspace/project-yangpai && $(MAKE) $(MAKESILENT) -f project_mysql/CMakeFiles/yangpi_service_mysql.dir/build.make project_mysql/CMakeFiles/yangpi_service_mysql.dir/log_dlt.c.i
 .PHONY : log_dlt.c.i
 
 log_dlt.s: log_dlt.c.s
@@ -210,7 +210,7 @@ log_dlt.s: log_dlt.c.s
 
 # target to generate assembly for a file
 log_dlt.c.s:
-	cd /home/admin/repo/project-yangpai && $(MAKE) $(MAKESILENT) -f project_mysql/CMakeFiles/yangpi_service_mysql.dir/build.make project_mysql/CMakeFiles/yangpi_service_mysql.dir/log_dlt.c.s
+	cd /var/lib/jenkins/workspace/project-yangpai && $(MAKE) $(MAKESILENT) -f project_mysql/CMakeFiles/yangpi_service_mysql.dir/build.make project_mysql/CMakeFiles/yangpi_service_mysql.dir/log_dlt.c.s
 .PHONY : log_dlt.c.s
 
 mysql_service.o: mysql_service.c.o
@@ -218,7 +218,7 @@ mysql_service.o: mysql_service.c.o
 
 # target to build an object file
 mysql_service.c.o:
-	cd /home/admin/repo/project-yangpai && $(MAKE) $(MAKESILENT) -f project_mysql/CMakeFiles/yangpi_service_mysql.dir/build.make project_mysql/CMakeFiles/yangpi_service_mysql.dir/mysql_service.c.o
+	cd /var/lib/jenkins/workspace/project-yangpai && $(MAKE) $(MAKESILENT) -f project_mysql/CMakeFiles/yangpi_service_mysql.dir/build.make project_mysql/CMakeFiles/yangpi_service_mysql.dir/mysql_service.c.o
 .PHONY : mysql_service.c.o
 
 mysql_service.i: mysql_service.c.i
@@ -226,7 +226,7 @@ mysql_service.i: mysql_service.c.i
 
 # target to preprocess a source file
 mysql_service.c.i:
-	cd /home/admin/repo/project-yangpai && $(MAKE) $(MAKESILENT) -f project_mysql/CMakeFiles/yangpi_service_mysql.dir/build.make project_mysql/CMakeFiles/yangpi_service_mysql.dir/mysql_service.c.i
+	cd /var/lib/jenkins/workspace/project-yangpai && $(MAKE) $(MAKESILENT) -f project_mysql/CMakeFiles/yangpi_service_mysql.dir/build.make project_mysql/CMakeFiles/yangpi_service_mysql.dir/mysql_service.c.i
 .PHONY : mysql_service.c.i
 
 mysql_service.s: mysql_service.c.s
@@ -234,7 +234,7 @@ mysql_service.s: mysql_service.c.s
 
 # target to generate assembly for a file
 mysql_service.c.s:
-	cd /home/admin/repo/project-yangpai && $(MAKE) $(MAKESILENT) -f project_mysql/CMakeFiles/yangpi_service_mysql.dir/build.make project_mysql/CMakeFiles/yangpi_service_mysql.dir/mysql_service.c.s
+	cd /var/lib/jenkins/workspace/project-yangpai && $(MAKE) $(MAKESILENT) -f project_mysql/CMakeFiles/yangpi_service_mysql.dir/build.make project_mysql/CMakeFiles/yangpi_service_mysql.dir/mysql_service.c.s
 .PHONY : mysql_service.c.s
 
 read_mysql.o: read_mysql.c.o
@@ -242,7 +242,7 @@ read_mysql.o: read_mysql.c.o
 
 # target to build an object file
 read_mysql.c.o:
-	cd /home/admin/repo/project-yangpai && $(MAKE) $(MAKESILENT) -f project_mysql/CMakeFiles/yangpi_service_mysql.dir/build.make project_mysql/CMakeFiles/yangpi_service_mysql.dir/read_mysql.c.o
+	cd /var/lib/jenkins/workspace/project-yangpai && $(MAKE) $(MAKESILENT) -f project_mysql/CMakeFiles/yangpi_service_mysql.dir/build.make project_mysql/CMakeFiles/yangpi_service_mysql.dir/read_mysql.c.o
 .PHONY : read_mysql.c.o
 
 read_mysql.i: read_mysql.c.i
@@ -250,7 +250,7 @@ read_mysql.i: read_mysql.c.i
 
 # target to preprocess a source file
 read_mysql.c.i:
-	cd /home/admin/repo/project-yangpai && $(MAKE) $(MAKESILENT) -f project_mysql/CMakeFiles/yangpi_service_mysql.dir/build.make project_mysql/CMakeFiles/yangpi_service_mysql.dir/read_mysql.c.i
+	cd /var/lib/jenkins/workspace/project-yangpai && $(MAKE) $(MAKESILENT) -f project_mysql/CMakeFiles/yangpi_service_mysql.dir/build.make project_mysql/CMakeFiles/yangpi_service_mysql.dir/read_mysql.c.i
 .PHONY : read_mysql.c.i
 
 read_mysql.s: read_mysql.c.s
@@ -258,7 +258,7 @@ read_mysql.s: read_mysql.c.s
 
 # target to generate assembly for a file
 read_mysql.c.s:
-	cd /home/admin/repo/project-yangpai && $(MAKE) $(MAKESILENT) -f project_mysql/CMakeFiles/yangpi_service_mysql.dir/build.make project_mysql/CMakeFiles/yangpi_service_mysql.dir/read_mysql.c.s
+	cd /var/lib/jenkins/workspace/project-yangpai && $(MAKE) $(MAKESILENT) -f project_mysql/CMakeFiles/yangpi_service_mysql.dir/build.make project_mysql/CMakeFiles/yangpi_service_mysql.dir/read_mysql.c.s
 .PHONY : read_mysql.c.s
 
 yangpi_mysql_main.o: yangpi_mysql_main.c.o
@@ -266,7 +266,7 @@ yangpi_mysql_main.o: yangpi_mysql_main.c.o
 
 # target to build an object file
 yangpi_mysql_main.c.o:
-	cd /home/admin/repo/project-yangpai && $(MAKE) $(MAKESILENT) -f project_mysql/CMakeFiles/yangpi_service_mysql.dir/build.make project_mysql/CMakeFiles/yangpi_service_mysql.dir/yangpi_mysql_main.c.o
+	cd /var/lib/jenkins/workspace/project-yangpai && $(MAKE) $(MAKESILENT) -f project_mysql/CMakeFiles/yangpi_service_mysql.dir/build.make project_mysql/CMakeFiles/yangpi_service_mysql.dir/yangpi_mysql_main.c.o
 .PHONY : yangpi_mysql_main.c.o
 
 yangpi_mysql_main.i: yangpi_mysql_main.c.i
@@ -274,7 +274,7 @@ yangpi_mysql_main.i: yangpi_mysql_main.c.i
 
 # target to preprocess a source file
 yangpi_mysql_main.c.i:
-	cd /home/admin/repo/project-yangpai && $(MAKE) $(MAKESILENT) -f project_mysql/CMakeFiles/yangpi_service_mysql.dir/build.make project_mysql/CMakeFiles/yangpi_service_mysql.dir/yangpi_mysql_main.c.i
+	cd /var/lib/jenkins/workspace/project-yangpai && $(MAKE) $(MAKESILENT) -f project_mysql/CMakeFiles/yangpi_service_mysql.dir/build.make project_mysql/CMakeFiles/yangpi_service_mysql.dir/yangpi_mysql_main.c.i
 .PHONY : yangpi_mysql_main.c.i
 
 yangpi_mysql_main.s: yangpi_mysql_main.c.s
@@ -282,7 +282,7 @@ yangpi_mysql_main.s: yangpi_mysql_main.c.s
 
 # target to generate assembly for a file
 yangpi_mysql_main.c.s:
-	cd /home/admin/repo/project-yangpai && $(MAKE) $(MAKESILENT) -f project_mysql/CMakeFiles/yangpi_service_mysql.dir/build.make project_mysql/CMakeFiles/yangpi_service_mysql.dir/yangpi_mysql_main.c.s
+	cd /var/lib/jenkins/workspace/project-yangpai && $(MAKE) $(MAKESILENT) -f project_mysql/CMakeFiles/yangpi_service_mysql.dir/build.make project_mysql/CMakeFiles/yangpi_service_mysql.dir/yangpi_mysql_main.c.s
 .PHONY : yangpi_mysql_main.c.s
 
 yangpi_mysql_proxy.o: yangpi_mysql_proxy.c.o
@@ -290,7 +290,7 @@ yangpi_mysql_proxy.o: yangpi_mysql_proxy.c.o
 
 # target to build an object file
 yangpi_mysql_proxy.c.o:
-	cd /home/admin/repo/project-yangpai && $(MAKE) $(MAKESILENT) -f project_mysql/CMakeFiles/service_mysql_proxy.dir/build.make project_mysql/CMakeFiles/service_mysql_proxy.dir/yangpi_mysql_proxy.c.o
+	cd /var/lib/jenkins/workspace/project-yangpai && $(MAKE) $(MAKESILENT) -f project_mysql/CMakeFiles/service_mysql_proxy.dir/build.make project_mysql/CMakeFiles/service_mysql_proxy.dir/yangpi_mysql_proxy.c.o
 .PHONY : yangpi_mysql_proxy.c.o
 
 yangpi_mysql_proxy.i: yangpi_mysql_proxy.c.i
@@ -298,7 +298,7 @@ yangpi_mysql_proxy.i: yangpi_mysql_proxy.c.i
 
 # target to preprocess a source file
 yangpi_mysql_proxy.c.i:
-	cd /home/admin/repo/project-yangpai && $(MAKE) $(MAKESILENT) -f project_mysql/CMakeFiles/service_mysql_proxy.dir/build.make project_mysql/CMakeFiles/service_mysql_proxy.dir/yangpi_mysql_proxy.c.i
+	cd /var/lib/jenkins/workspace/project-yangpai && $(MAKE) $(MAKESILENT) -f project_mysql/CMakeFiles/service_mysql_proxy.dir/build.make project_mysql/CMakeFiles/service_mysql_proxy.dir/yangpi_mysql_proxy.c.i
 .PHONY : yangpi_mysql_proxy.c.i
 
 yangpi_mysql_proxy.s: yangpi_mysql_proxy.c.s
@@ -306,7 +306,7 @@ yangpi_mysql_proxy.s: yangpi_mysql_proxy.c.s
 
 # target to generate assembly for a file
 yangpi_mysql_proxy.c.s:
-	cd /home/admin/repo/project-yangpai && $(MAKE) $(MAKESILENT) -f project_mysql/CMakeFiles/service_mysql_proxy.dir/build.make project_mysql/CMakeFiles/service_mysql_proxy.dir/yangpi_mysql_proxy.c.s
+	cd /var/lib/jenkins/workspace/project-yangpai && $(MAKE) $(MAKESILENT) -f project_mysql/CMakeFiles/service_mysql_proxy.dir/build.make project_mysql/CMakeFiles/service_mysql_proxy.dir/yangpi_mysql_proxy.c.s
 .PHONY : yangpi_mysql_proxy.c.s
 
 yangpi_mysql_stub.o: yangpi_mysql_stub.c.o
@@ -314,7 +314,7 @@ yangpi_mysql_stub.o: yangpi_mysql_stub.c.o
 
 # target to build an object file
 yangpi_mysql_stub.c.o:
-	cd /home/admin/repo/project-yangpai && $(MAKE) $(MAKESILENT) -f project_mysql/CMakeFiles/yangpi_service_mysql.dir/build.make project_mysql/CMakeFiles/yangpi_service_mysql.dir/yangpi_mysql_stub.c.o
+	cd /var/lib/jenkins/workspace/project-yangpai && $(MAKE) $(MAKESILENT) -f project_mysql/CMakeFiles/yangpi_service_mysql.dir/build.make project_mysql/CMakeFiles/yangpi_service_mysql.dir/yangpi_mysql_stub.c.o
 .PHONY : yangpi_mysql_stub.c.o
 
 yangpi_mysql_stub.i: yangpi_mysql_stub.c.i
@@ -322,7 +322,7 @@ yangpi_mysql_stub.i: yangpi_mysql_stub.c.i
 
 # target to preprocess a source file
 yangpi_mysql_stub.c.i:
-	cd /home/admin/repo/project-yangpai && $(MAKE) $(MAKESILENT) -f project_mysql/CMakeFiles/yangpi_service_mysql.dir/build.make project_mysql/CMakeFiles/yangpi_service_mysql.dir/yangpi_mysql_stub.c.i
+	cd /var/lib/jenkins/workspace/project-yangpai && $(MAKE) $(MAKESILENT) -f project_mysql/CMakeFiles/yangpi_service_mysql.dir/build.make project_mysql/CMakeFiles/yangpi_service_mysql.dir/yangpi_mysql_stub.c.i
 .PHONY : yangpi_mysql_stub.c.i
 
 yangpi_mysql_stub.s: yangpi_mysql_stub.c.s
@@ -330,7 +330,7 @@ yangpi_mysql_stub.s: yangpi_mysql_stub.c.s
 
 # target to generate assembly for a file
 yangpi_mysql_stub.c.s:
-	cd /home/admin/repo/project-yangpai && $(MAKE) $(MAKESILENT) -f project_mysql/CMakeFiles/yangpi_service_mysql.dir/build.make project_mysql/CMakeFiles/yangpi_service_mysql.dir/yangpi_mysql_stub.c.s
+	cd /var/lib/jenkins/workspace/project-yangpai && $(MAKE) $(MAKESILENT) -f project_mysql/CMakeFiles/yangpi_service_mysql.dir/build.make project_mysql/CMakeFiles/yangpi_service_mysql.dir/yangpi_mysql_stub.c.s
 .PHONY : yangpi_mysql_stub.c.s
 
 # Help Target
@@ -376,6 +376,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/admin/repo/project-yangpai && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /var/lib/jenkins/workspace/project-yangpai && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

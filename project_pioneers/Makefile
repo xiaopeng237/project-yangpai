@@ -57,10 +57,10 @@ RM = /usr/local/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/admin/repo/project-yangpai
+CMAKE_SOURCE_DIR = /var/lib/jenkins/workspace/project-yangpai
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/admin/repo/project-yangpai
+CMAKE_BINARY_DIR = /var/lib/jenkins/workspace/project-yangpai
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -132,14 +132,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/admin/repo/project-yangpai && $(CMAKE_COMMAND) -E cmake_progress_start /home/admin/repo/project-yangpai/CMakeFiles /home/admin/repo/project-yangpai/project_pioneers//CMakeFiles/progress.marks
-	cd /home/admin/repo/project-yangpai && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 project_pioneers/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/admin/repo/project-yangpai/CMakeFiles 0
+	cd /var/lib/jenkins/workspace/project-yangpai && $(CMAKE_COMMAND) -E cmake_progress_start /var/lib/jenkins/workspace/project-yangpai/CMakeFiles /var/lib/jenkins/workspace/project-yangpai/project_pioneers//CMakeFiles/progress.marks
+	cd /var/lib/jenkins/workspace/project-yangpai && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 project_pioneers/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /var/lib/jenkins/workspace/project-yangpai/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/admin/repo/project-yangpai && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 project_pioneers/clean
+	cd /var/lib/jenkins/workspace/project-yangpai && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 project_pioneers/clean
 .PHONY : clean
 
 # The main clean target
@@ -148,22 +148,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/admin/repo/project-yangpai && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 project_pioneers/preinstall
+	cd /var/lib/jenkins/workspace/project-yangpai && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 project_pioneers/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/admin/repo/project-yangpai && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 project_pioneers/preinstall
+	cd /var/lib/jenkins/workspace/project-yangpai && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 project_pioneers/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/admin/repo/project-yangpai && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /var/lib/jenkins/workspace/project-yangpai && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 project_pioneers/CMakeFiles/service_pioneers_proxy.dir/rule:
-	cd /home/admin/repo/project-yangpai && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 project_pioneers/CMakeFiles/service_pioneers_proxy.dir/rule
+	cd /var/lib/jenkins/workspace/project-yangpai && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 project_pioneers/CMakeFiles/service_pioneers_proxy.dir/rule
 .PHONY : project_pioneers/CMakeFiles/service_pioneers_proxy.dir/rule
 
 # Convenience name for target.
@@ -172,12 +172,12 @@ service_pioneers_proxy: project_pioneers/CMakeFiles/service_pioneers_proxy.dir/r
 
 # fast build rule for target.
 service_pioneers_proxy/fast:
-	cd /home/admin/repo/project-yangpai && $(MAKE) $(MAKESILENT) -f project_pioneers/CMakeFiles/service_pioneers_proxy.dir/build.make project_pioneers/CMakeFiles/service_pioneers_proxy.dir/build
+	cd /var/lib/jenkins/workspace/project-yangpai && $(MAKE) $(MAKESILENT) -f project_pioneers/CMakeFiles/service_pioneers_proxy.dir/build.make project_pioneers/CMakeFiles/service_pioneers_proxy.dir/build
 .PHONY : service_pioneers_proxy/fast
 
 # Convenience name for target.
 project_pioneers/CMakeFiles/yangpi_service_pioneers.dir/rule:
-	cd /home/admin/repo/project-yangpai && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 project_pioneers/CMakeFiles/yangpi_service_pioneers.dir/rule
+	cd /var/lib/jenkins/workspace/project-yangpai && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 project_pioneers/CMakeFiles/yangpi_service_pioneers.dir/rule
 .PHONY : project_pioneers/CMakeFiles/yangpi_service_pioneers.dir/rule
 
 # Convenience name for target.
@@ -186,7 +186,7 @@ yangpi_service_pioneers: project_pioneers/CMakeFiles/yangpi_service_pioneers.dir
 
 # fast build rule for target.
 yangpi_service_pioneers/fast:
-	cd /home/admin/repo/project-yangpai && $(MAKE) $(MAKESILENT) -f project_pioneers/CMakeFiles/yangpi_service_pioneers.dir/build.make project_pioneers/CMakeFiles/yangpi_service_pioneers.dir/build
+	cd /var/lib/jenkins/workspace/project-yangpai && $(MAKE) $(MAKESILENT) -f project_pioneers/CMakeFiles/yangpi_service_pioneers.dir/build.make project_pioneers/CMakeFiles/yangpi_service_pioneers.dir/build
 .PHONY : yangpi_service_pioneers/fast
 
 calculate_flow.o: calculate_flow.c.o
@@ -194,7 +194,7 @@ calculate_flow.o: calculate_flow.c.o
 
 # target to build an object file
 calculate_flow.c.o:
-	cd /home/admin/repo/project-yangpai && $(MAKE) $(MAKESILENT) -f project_pioneers/CMakeFiles/yangpi_service_pioneers.dir/build.make project_pioneers/CMakeFiles/yangpi_service_pioneers.dir/calculate_flow.c.o
+	cd /var/lib/jenkins/workspace/project-yangpai && $(MAKE) $(MAKESILENT) -f project_pioneers/CMakeFiles/yangpi_service_pioneers.dir/build.make project_pioneers/CMakeFiles/yangpi_service_pioneers.dir/calculate_flow.c.o
 .PHONY : calculate_flow.c.o
 
 calculate_flow.i: calculate_flow.c.i
@@ -202,7 +202,7 @@ calculate_flow.i: calculate_flow.c.i
 
 # target to preprocess a source file
 calculate_flow.c.i:
-	cd /home/admin/repo/project-yangpai && $(MAKE) $(MAKESILENT) -f project_pioneers/CMakeFiles/yangpi_service_pioneers.dir/build.make project_pioneers/CMakeFiles/yangpi_service_pioneers.dir/calculate_flow.c.i
+	cd /var/lib/jenkins/workspace/project-yangpai && $(MAKE) $(MAKESILENT) -f project_pioneers/CMakeFiles/yangpi_service_pioneers.dir/build.make project_pioneers/CMakeFiles/yangpi_service_pioneers.dir/calculate_flow.c.i
 .PHONY : calculate_flow.c.i
 
 calculate_flow.s: calculate_flow.c.s
@@ -210,7 +210,7 @@ calculate_flow.s: calculate_flow.c.s
 
 # target to generate assembly for a file
 calculate_flow.c.s:
-	cd /home/admin/repo/project-yangpai && $(MAKE) $(MAKESILENT) -f project_pioneers/CMakeFiles/yangpi_service_pioneers.dir/build.make project_pioneers/CMakeFiles/yangpi_service_pioneers.dir/calculate_flow.c.s
+	cd /var/lib/jenkins/workspace/project-yangpai && $(MAKE) $(MAKESILENT) -f project_pioneers/CMakeFiles/yangpi_service_pioneers.dir/build.make project_pioneers/CMakeFiles/yangpi_service_pioneers.dir/calculate_flow.c.s
 .PHONY : calculate_flow.c.s
 
 log_dlt.o: log_dlt.c.o
@@ -218,7 +218,7 @@ log_dlt.o: log_dlt.c.o
 
 # target to build an object file
 log_dlt.c.o:
-	cd /home/admin/repo/project-yangpai && $(MAKE) $(MAKESILENT) -f project_pioneers/CMakeFiles/yangpi_service_pioneers.dir/build.make project_pioneers/CMakeFiles/yangpi_service_pioneers.dir/log_dlt.c.o
+	cd /var/lib/jenkins/workspace/project-yangpai && $(MAKE) $(MAKESILENT) -f project_pioneers/CMakeFiles/yangpi_service_pioneers.dir/build.make project_pioneers/CMakeFiles/yangpi_service_pioneers.dir/log_dlt.c.o
 .PHONY : log_dlt.c.o
 
 log_dlt.i: log_dlt.c.i
@@ -226,7 +226,7 @@ log_dlt.i: log_dlt.c.i
 
 # target to preprocess a source file
 log_dlt.c.i:
-	cd /home/admin/repo/project-yangpai && $(MAKE) $(MAKESILENT) -f project_pioneers/CMakeFiles/yangpi_service_pioneers.dir/build.make project_pioneers/CMakeFiles/yangpi_service_pioneers.dir/log_dlt.c.i
+	cd /var/lib/jenkins/workspace/project-yangpai && $(MAKE) $(MAKESILENT) -f project_pioneers/CMakeFiles/yangpi_service_pioneers.dir/build.make project_pioneers/CMakeFiles/yangpi_service_pioneers.dir/log_dlt.c.i
 .PHONY : log_dlt.c.i
 
 log_dlt.s: log_dlt.c.s
@@ -234,7 +234,7 @@ log_dlt.s: log_dlt.c.s
 
 # target to generate assembly for a file
 log_dlt.c.s:
-	cd /home/admin/repo/project-yangpai && $(MAKE) $(MAKESILENT) -f project_pioneers/CMakeFiles/yangpi_service_pioneers.dir/build.make project_pioneers/CMakeFiles/yangpi_service_pioneers.dir/log_dlt.c.s
+	cd /var/lib/jenkins/workspace/project-yangpai && $(MAKE) $(MAKESILENT) -f project_pioneers/CMakeFiles/yangpi_service_pioneers.dir/build.make project_pioneers/CMakeFiles/yangpi_service_pioneers.dir/log_dlt.c.s
 .PHONY : log_dlt.c.s
 
 pioneers.o: pioneers.c.o
@@ -242,7 +242,7 @@ pioneers.o: pioneers.c.o
 
 # target to build an object file
 pioneers.c.o:
-	cd /home/admin/repo/project-yangpai && $(MAKE) $(MAKESILENT) -f project_pioneers/CMakeFiles/yangpi_service_pioneers.dir/build.make project_pioneers/CMakeFiles/yangpi_service_pioneers.dir/pioneers.c.o
+	cd /var/lib/jenkins/workspace/project-yangpai && $(MAKE) $(MAKESILENT) -f project_pioneers/CMakeFiles/yangpi_service_pioneers.dir/build.make project_pioneers/CMakeFiles/yangpi_service_pioneers.dir/pioneers.c.o
 .PHONY : pioneers.c.o
 
 pioneers.i: pioneers.c.i
@@ -250,7 +250,7 @@ pioneers.i: pioneers.c.i
 
 # target to preprocess a source file
 pioneers.c.i:
-	cd /home/admin/repo/project-yangpai && $(MAKE) $(MAKESILENT) -f project_pioneers/CMakeFiles/yangpi_service_pioneers.dir/build.make project_pioneers/CMakeFiles/yangpi_service_pioneers.dir/pioneers.c.i
+	cd /var/lib/jenkins/workspace/project-yangpai && $(MAKE) $(MAKESILENT) -f project_pioneers/CMakeFiles/yangpi_service_pioneers.dir/build.make project_pioneers/CMakeFiles/yangpi_service_pioneers.dir/pioneers.c.i
 .PHONY : pioneers.c.i
 
 pioneers.s: pioneers.c.s
@@ -258,7 +258,7 @@ pioneers.s: pioneers.c.s
 
 # target to generate assembly for a file
 pioneers.c.s:
-	cd /home/admin/repo/project-yangpai && $(MAKE) $(MAKESILENT) -f project_pioneers/CMakeFiles/yangpi_service_pioneers.dir/build.make project_pioneers/CMakeFiles/yangpi_service_pioneers.dir/pioneers.c.s
+	cd /var/lib/jenkins/workspace/project-yangpai && $(MAKE) $(MAKESILENT) -f project_pioneers/CMakeFiles/yangpi_service_pioneers.dir/build.make project_pioneers/CMakeFiles/yangpi_service_pioneers.dir/pioneers.c.s
 .PHONY : pioneers.c.s
 
 pioneers_service.o: pioneers_service.c.o
@@ -266,7 +266,7 @@ pioneers_service.o: pioneers_service.c.o
 
 # target to build an object file
 pioneers_service.c.o:
-	cd /home/admin/repo/project-yangpai && $(MAKE) $(MAKESILENT) -f project_pioneers/CMakeFiles/yangpi_service_pioneers.dir/build.make project_pioneers/CMakeFiles/yangpi_service_pioneers.dir/pioneers_service.c.o
+	cd /var/lib/jenkins/workspace/project-yangpai && $(MAKE) $(MAKESILENT) -f project_pioneers/CMakeFiles/yangpi_service_pioneers.dir/build.make project_pioneers/CMakeFiles/yangpi_service_pioneers.dir/pioneers_service.c.o
 .PHONY : pioneers_service.c.o
 
 pioneers_service.i: pioneers_service.c.i
@@ -274,7 +274,7 @@ pioneers_service.i: pioneers_service.c.i
 
 # target to preprocess a source file
 pioneers_service.c.i:
-	cd /home/admin/repo/project-yangpai && $(MAKE) $(MAKESILENT) -f project_pioneers/CMakeFiles/yangpi_service_pioneers.dir/build.make project_pioneers/CMakeFiles/yangpi_service_pioneers.dir/pioneers_service.c.i
+	cd /var/lib/jenkins/workspace/project-yangpai && $(MAKE) $(MAKESILENT) -f project_pioneers/CMakeFiles/yangpi_service_pioneers.dir/build.make project_pioneers/CMakeFiles/yangpi_service_pioneers.dir/pioneers_service.c.i
 .PHONY : pioneers_service.c.i
 
 pioneers_service.s: pioneers_service.c.s
@@ -282,7 +282,7 @@ pioneers_service.s: pioneers_service.c.s
 
 # target to generate assembly for a file
 pioneers_service.c.s:
-	cd /home/admin/repo/project-yangpai && $(MAKE) $(MAKESILENT) -f project_pioneers/CMakeFiles/yangpi_service_pioneers.dir/build.make project_pioneers/CMakeFiles/yangpi_service_pioneers.dir/pioneers_service.c.s
+	cd /var/lib/jenkins/workspace/project-yangpai && $(MAKE) $(MAKESILENT) -f project_pioneers/CMakeFiles/yangpi_service_pioneers.dir/build.make project_pioneers/CMakeFiles/yangpi_service_pioneers.dir/pioneers_service.c.s
 .PHONY : pioneers_service.c.s
 
 pioneers_spi.o: pioneers_spi.c.o
@@ -290,7 +290,7 @@ pioneers_spi.o: pioneers_spi.c.o
 
 # target to build an object file
 pioneers_spi.c.o:
-	cd /home/admin/repo/project-yangpai && $(MAKE) $(MAKESILENT) -f project_pioneers/CMakeFiles/yangpi_service_pioneers.dir/build.make project_pioneers/CMakeFiles/yangpi_service_pioneers.dir/pioneers_spi.c.o
+	cd /var/lib/jenkins/workspace/project-yangpai && $(MAKE) $(MAKESILENT) -f project_pioneers/CMakeFiles/yangpi_service_pioneers.dir/build.make project_pioneers/CMakeFiles/yangpi_service_pioneers.dir/pioneers_spi.c.o
 .PHONY : pioneers_spi.c.o
 
 pioneers_spi.i: pioneers_spi.c.i
@@ -298,7 +298,7 @@ pioneers_spi.i: pioneers_spi.c.i
 
 # target to preprocess a source file
 pioneers_spi.c.i:
-	cd /home/admin/repo/project-yangpai && $(MAKE) $(MAKESILENT) -f project_pioneers/CMakeFiles/yangpi_service_pioneers.dir/build.make project_pioneers/CMakeFiles/yangpi_service_pioneers.dir/pioneers_spi.c.i
+	cd /var/lib/jenkins/workspace/project-yangpai && $(MAKE) $(MAKESILENT) -f project_pioneers/CMakeFiles/yangpi_service_pioneers.dir/build.make project_pioneers/CMakeFiles/yangpi_service_pioneers.dir/pioneers_spi.c.i
 .PHONY : pioneers_spi.c.i
 
 pioneers_spi.s: pioneers_spi.c.s
@@ -306,7 +306,7 @@ pioneers_spi.s: pioneers_spi.c.s
 
 # target to generate assembly for a file
 pioneers_spi.c.s:
-	cd /home/admin/repo/project-yangpai && $(MAKE) $(MAKESILENT) -f project_pioneers/CMakeFiles/yangpi_service_pioneers.dir/build.make project_pioneers/CMakeFiles/yangpi_service_pioneers.dir/pioneers_spi.c.s
+	cd /var/lib/jenkins/workspace/project-yangpai && $(MAKE) $(MAKESILENT) -f project_pioneers/CMakeFiles/yangpi_service_pioneers.dir/build.make project_pioneers/CMakeFiles/yangpi_service_pioneers.dir/pioneers_spi.c.s
 .PHONY : pioneers_spi.c.s
 
 yangpi_pioneers_main.o: yangpi_pioneers_main.c.o
@@ -314,7 +314,7 @@ yangpi_pioneers_main.o: yangpi_pioneers_main.c.o
 
 # target to build an object file
 yangpi_pioneers_main.c.o:
-	cd /home/admin/repo/project-yangpai && $(MAKE) $(MAKESILENT) -f project_pioneers/CMakeFiles/yangpi_service_pioneers.dir/build.make project_pioneers/CMakeFiles/yangpi_service_pioneers.dir/yangpi_pioneers_main.c.o
+	cd /var/lib/jenkins/workspace/project-yangpai && $(MAKE) $(MAKESILENT) -f project_pioneers/CMakeFiles/yangpi_service_pioneers.dir/build.make project_pioneers/CMakeFiles/yangpi_service_pioneers.dir/yangpi_pioneers_main.c.o
 .PHONY : yangpi_pioneers_main.c.o
 
 yangpi_pioneers_main.i: yangpi_pioneers_main.c.i
@@ -322,7 +322,7 @@ yangpi_pioneers_main.i: yangpi_pioneers_main.c.i
 
 # target to preprocess a source file
 yangpi_pioneers_main.c.i:
-	cd /home/admin/repo/project-yangpai && $(MAKE) $(MAKESILENT) -f project_pioneers/CMakeFiles/yangpi_service_pioneers.dir/build.make project_pioneers/CMakeFiles/yangpi_service_pioneers.dir/yangpi_pioneers_main.c.i
+	cd /var/lib/jenkins/workspace/project-yangpai && $(MAKE) $(MAKESILENT) -f project_pioneers/CMakeFiles/yangpi_service_pioneers.dir/build.make project_pioneers/CMakeFiles/yangpi_service_pioneers.dir/yangpi_pioneers_main.c.i
 .PHONY : yangpi_pioneers_main.c.i
 
 yangpi_pioneers_main.s: yangpi_pioneers_main.c.s
@@ -330,7 +330,7 @@ yangpi_pioneers_main.s: yangpi_pioneers_main.c.s
 
 # target to generate assembly for a file
 yangpi_pioneers_main.c.s:
-	cd /home/admin/repo/project-yangpai && $(MAKE) $(MAKESILENT) -f project_pioneers/CMakeFiles/yangpi_service_pioneers.dir/build.make project_pioneers/CMakeFiles/yangpi_service_pioneers.dir/yangpi_pioneers_main.c.s
+	cd /var/lib/jenkins/workspace/project-yangpai && $(MAKE) $(MAKESILENT) -f project_pioneers/CMakeFiles/yangpi_service_pioneers.dir/build.make project_pioneers/CMakeFiles/yangpi_service_pioneers.dir/yangpi_pioneers_main.c.s
 .PHONY : yangpi_pioneers_main.c.s
 
 yangpi_pioneers_proxy.o: yangpi_pioneers_proxy.c.o
@@ -338,7 +338,7 @@ yangpi_pioneers_proxy.o: yangpi_pioneers_proxy.c.o
 
 # target to build an object file
 yangpi_pioneers_proxy.c.o:
-	cd /home/admin/repo/project-yangpai && $(MAKE) $(MAKESILENT) -f project_pioneers/CMakeFiles/service_pioneers_proxy.dir/build.make project_pioneers/CMakeFiles/service_pioneers_proxy.dir/yangpi_pioneers_proxy.c.o
+	cd /var/lib/jenkins/workspace/project-yangpai && $(MAKE) $(MAKESILENT) -f project_pioneers/CMakeFiles/service_pioneers_proxy.dir/build.make project_pioneers/CMakeFiles/service_pioneers_proxy.dir/yangpi_pioneers_proxy.c.o
 .PHONY : yangpi_pioneers_proxy.c.o
 
 yangpi_pioneers_proxy.i: yangpi_pioneers_proxy.c.i
@@ -346,7 +346,7 @@ yangpi_pioneers_proxy.i: yangpi_pioneers_proxy.c.i
 
 # target to preprocess a source file
 yangpi_pioneers_proxy.c.i:
-	cd /home/admin/repo/project-yangpai && $(MAKE) $(MAKESILENT) -f project_pioneers/CMakeFiles/service_pioneers_proxy.dir/build.make project_pioneers/CMakeFiles/service_pioneers_proxy.dir/yangpi_pioneers_proxy.c.i
+	cd /var/lib/jenkins/workspace/project-yangpai && $(MAKE) $(MAKESILENT) -f project_pioneers/CMakeFiles/service_pioneers_proxy.dir/build.make project_pioneers/CMakeFiles/service_pioneers_proxy.dir/yangpi_pioneers_proxy.c.i
 .PHONY : yangpi_pioneers_proxy.c.i
 
 yangpi_pioneers_proxy.s: yangpi_pioneers_proxy.c.s
@@ -354,7 +354,7 @@ yangpi_pioneers_proxy.s: yangpi_pioneers_proxy.c.s
 
 # target to generate assembly for a file
 yangpi_pioneers_proxy.c.s:
-	cd /home/admin/repo/project-yangpai && $(MAKE) $(MAKESILENT) -f project_pioneers/CMakeFiles/service_pioneers_proxy.dir/build.make project_pioneers/CMakeFiles/service_pioneers_proxy.dir/yangpi_pioneers_proxy.c.s
+	cd /var/lib/jenkins/workspace/project-yangpai && $(MAKE) $(MAKESILENT) -f project_pioneers/CMakeFiles/service_pioneers_proxy.dir/build.make project_pioneers/CMakeFiles/service_pioneers_proxy.dir/yangpi_pioneers_proxy.c.s
 .PHONY : yangpi_pioneers_proxy.c.s
 
 yangpi_pioneers_stub.o: yangpi_pioneers_stub.c.o
@@ -362,7 +362,7 @@ yangpi_pioneers_stub.o: yangpi_pioneers_stub.c.o
 
 # target to build an object file
 yangpi_pioneers_stub.c.o:
-	cd /home/admin/repo/project-yangpai && $(MAKE) $(MAKESILENT) -f project_pioneers/CMakeFiles/yangpi_service_pioneers.dir/build.make project_pioneers/CMakeFiles/yangpi_service_pioneers.dir/yangpi_pioneers_stub.c.o
+	cd /var/lib/jenkins/workspace/project-yangpai && $(MAKE) $(MAKESILENT) -f project_pioneers/CMakeFiles/yangpi_service_pioneers.dir/build.make project_pioneers/CMakeFiles/yangpi_service_pioneers.dir/yangpi_pioneers_stub.c.o
 .PHONY : yangpi_pioneers_stub.c.o
 
 yangpi_pioneers_stub.i: yangpi_pioneers_stub.c.i
@@ -370,7 +370,7 @@ yangpi_pioneers_stub.i: yangpi_pioneers_stub.c.i
 
 # target to preprocess a source file
 yangpi_pioneers_stub.c.i:
-	cd /home/admin/repo/project-yangpai && $(MAKE) $(MAKESILENT) -f project_pioneers/CMakeFiles/yangpi_service_pioneers.dir/build.make project_pioneers/CMakeFiles/yangpi_service_pioneers.dir/yangpi_pioneers_stub.c.i
+	cd /var/lib/jenkins/workspace/project-yangpai && $(MAKE) $(MAKESILENT) -f project_pioneers/CMakeFiles/yangpi_service_pioneers.dir/build.make project_pioneers/CMakeFiles/yangpi_service_pioneers.dir/yangpi_pioneers_stub.c.i
 .PHONY : yangpi_pioneers_stub.c.i
 
 yangpi_pioneers_stub.s: yangpi_pioneers_stub.c.s
@@ -378,7 +378,7 @@ yangpi_pioneers_stub.s: yangpi_pioneers_stub.c.s
 
 # target to generate assembly for a file
 yangpi_pioneers_stub.c.s:
-	cd /home/admin/repo/project-yangpai && $(MAKE) $(MAKESILENT) -f project_pioneers/CMakeFiles/yangpi_service_pioneers.dir/build.make project_pioneers/CMakeFiles/yangpi_service_pioneers.dir/yangpi_pioneers_stub.c.s
+	cd /var/lib/jenkins/workspace/project-yangpai && $(MAKE) $(MAKESILENT) -f project_pioneers/CMakeFiles/yangpi_service_pioneers.dir/build.make project_pioneers/CMakeFiles/yangpi_service_pioneers.dir/yangpi_pioneers_stub.c.s
 .PHONY : yangpi_pioneers_stub.c.s
 
 # Help Target
@@ -430,6 +430,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/admin/repo/project-yangpai && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /var/lib/jenkins/workspace/project-yangpai && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

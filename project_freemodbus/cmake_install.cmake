@@ -1,4 +1,4 @@
-# Install script for directory: /home/admin/repo/project-yangpai/project_freemodbus
+# Install script for directory: /var/lib/jenkins/workspace/project-yangpai/project_freemodbus
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -43,25 +43,25 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  if(EXISTS "$ENV{DESTDIR}/home/admin/repo/project-yangpai/project_freemodbus/../depend/lib/libservice_rtu_proxy.so" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}/home/admin/repo/project-yangpai/project_freemodbus/../depend/lib/libservice_rtu_proxy.so")
+  if(EXISTS "$ENV{DESTDIR}/var/lib/jenkins/workspace/project-yangpai/project_freemodbus/../depend/lib/libservice_rtu_proxy.so" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}/var/lib/jenkins/workspace/project-yangpai/project_freemodbus/../depend/lib/libservice_rtu_proxy.so")
     file(RPATH_CHECK
-         FILE "$ENV{DESTDIR}/home/admin/repo/project-yangpai/project_freemodbus/../depend/lib/libservice_rtu_proxy.so"
+         FILE "$ENV{DESTDIR}/var/lib/jenkins/workspace/project-yangpai/project_freemodbus/../depend/lib/libservice_rtu_proxy.so"
          RPATH "")
   endif()
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/admin/repo/project-yangpai/project_freemodbus/../depend/lib/libservice_rtu_proxy.so")
+   "/var/lib/jenkins/workspace/project-yangpai/project_freemodbus/../depend/lib/libservice_rtu_proxy.so")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/home/admin/repo/project-yangpai/project_freemodbus/../depend/lib" TYPE SHARED_LIBRARY FILES "/home/admin/repo/project-yangpai/project_freemodbus/libservice_rtu_proxy.so")
-  if(EXISTS "$ENV{DESTDIR}/home/admin/repo/project-yangpai/project_freemodbus/../depend/lib/libservice_rtu_proxy.so" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}/home/admin/repo/project-yangpai/project_freemodbus/../depend/lib/libservice_rtu_proxy.so")
+  file(INSTALL DESTINATION "/var/lib/jenkins/workspace/project-yangpai/project_freemodbus/../depend/lib" TYPE SHARED_LIBRARY FILES "/var/lib/jenkins/workspace/project-yangpai/project_freemodbus/libservice_rtu_proxy.so")
+  if(EXISTS "$ENV{DESTDIR}/var/lib/jenkins/workspace/project-yangpai/project_freemodbus/../depend/lib/libservice_rtu_proxy.so" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}/var/lib/jenkins/workspace/project-yangpai/project_freemodbus/../depend/lib/libservice_rtu_proxy.so")
     if(CMAKE_INSTALL_DO_STRIP)
-      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}/home/admin/repo/project-yangpai/project_freemodbus/../depend/lib/libservice_rtu_proxy.so")
+      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}/var/lib/jenkins/workspace/project-yangpai/project_freemodbus/../depend/lib/libservice_rtu_proxy.so")
     endif()
   endif()
 endif()
@@ -70,54 +70,54 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  if(EXISTS "$ENV{DESTDIR}/home/admin/repo/project-yangpai/project_freemodbus/../depend/bin/yangpi_service_rtu" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}/home/admin/repo/project-yangpai/project_freemodbus/../depend/bin/yangpi_service_rtu")
+  if(EXISTS "$ENV{DESTDIR}/var/lib/jenkins/workspace/project-yangpai/project_freemodbus/../depend/bin/yangpi_service_rtu" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}/var/lib/jenkins/workspace/project-yangpai/project_freemodbus/../depend/bin/yangpi_service_rtu")
     file(RPATH_CHECK
-         FILE "$ENV{DESTDIR}/home/admin/repo/project-yangpai/project_freemodbus/../depend/bin/yangpi_service_rtu"
+         FILE "$ENV{DESTDIR}/var/lib/jenkins/workspace/project-yangpai/project_freemodbus/../depend/bin/yangpi_service_rtu"
          RPATH "")
   endif()
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/admin/repo/project-yangpai/project_freemodbus/../depend/bin/yangpi_service_rtu")
+   "/var/lib/jenkins/workspace/project-yangpai/project_freemodbus/../depend/bin/yangpi_service_rtu")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/home/admin/repo/project-yangpai/project_freemodbus/../depend/bin" TYPE EXECUTABLE FILES "/home/admin/repo/project-yangpai/project_freemodbus/yangpi_service_rtu")
-  if(EXISTS "$ENV{DESTDIR}/home/admin/repo/project-yangpai/project_freemodbus/../depend/bin/yangpi_service_rtu" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}/home/admin/repo/project-yangpai/project_freemodbus/../depend/bin/yangpi_service_rtu")
+  file(INSTALL DESTINATION "/var/lib/jenkins/workspace/project-yangpai/project_freemodbus/../depend/bin" TYPE EXECUTABLE FILES "/var/lib/jenkins/workspace/project-yangpai/project_freemodbus/yangpi_service_rtu")
+  if(EXISTS "$ENV{DESTDIR}/var/lib/jenkins/workspace/project-yangpai/project_freemodbus/../depend/bin/yangpi_service_rtu" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}/var/lib/jenkins/workspace/project-yangpai/project_freemodbus/../depend/bin/yangpi_service_rtu")
     file(RPATH_CHANGE
-         FILE "$ENV{DESTDIR}/home/admin/repo/project-yangpai/project_freemodbus/../depend/bin/yangpi_service_rtu"
-         OLD_RPATH "/home/admin/repo/project-yangpai/depend/mysql/lib/mysql:/home/admin/repo/project-yangpai/depend/dlt/lib:/home/admin/repo/project-yangpai/depend/dbus/lib:/home/admin/repo/project-yangpai/project_frame:/home/admin/repo/project-yangpai/project_mysql:/home/admin/repo/project-yangpai/depend/lib:/home/admin/repo/project-yangpai/cmake-build-debug/project_frame:/home/admin/repo/project-yangpai/cmake-build-debug/project_mysql:/home/admin/repo/project-yangpai/cmake-build-debug/project_i2cbus:/home/admin/repo/project-yangpai/cmake-build-debug/project_adjust:/home/admin/repo/project-yangpai/cmake-build-debug/project_pioneers:"
+         FILE "$ENV{DESTDIR}/var/lib/jenkins/workspace/project-yangpai/project_freemodbus/../depend/bin/yangpi_service_rtu"
+         OLD_RPATH "/var/lib/jenkins/workspace/project-yangpai/depend/mysql/lib/mysql:/var/lib/jenkins/workspace/project-yangpai/depend/dlt/lib:/var/lib/jenkins/workspace/project-yangpai/depend/dbus/lib:/var/lib/jenkins/workspace/project-yangpai/project_frame:/var/lib/jenkins/workspace/project-yangpai/project_mysql:/var/lib/jenkins/workspace/project-yangpai/depend/lib:/var/lib/jenkins/workspace/project-yangpai/cmake-build-debug/project_frame:/var/lib/jenkins/workspace/project-yangpai/cmake-build-debug/project_mysql:/var/lib/jenkins/workspace/project-yangpai/cmake-build-debug/project_i2cbus:/var/lib/jenkins/workspace/project-yangpai/cmake-build-debug/project_adjust:/var/lib/jenkins/workspace/project-yangpai/cmake-build-debug/project_pioneers:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
-      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}/home/admin/repo/project-yangpai/project_freemodbus/../depend/bin/yangpi_service_rtu")
+      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}/var/lib/jenkins/workspace/project-yangpai/project_freemodbus/../depend/bin/yangpi_service_rtu")
     endif()
   endif()
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/admin/repo/project-yangpai/project_freemodbus/../depend/include/rtu_data_base.h")
+   "/var/lib/jenkins/workspace/project-yangpai/project_freemodbus/../depend/include/rtu_data_base.h")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/home/admin/repo/project-yangpai/project_freemodbus/../depend/include" TYPE FILE FILES "/home/admin/repo/project-yangpai/project_freemodbus/rtu_data_base.h")
+  file(INSTALL DESTINATION "/var/lib/jenkins/workspace/project-yangpai/project_freemodbus/../depend/include" TYPE FILE FILES "/var/lib/jenkins/workspace/project-yangpai/project_freemodbus/rtu_data_base.h")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/admin/repo/project-yangpai/project_freemodbus/../depend/include/yangpi_rtu_proxy.h")
+   "/var/lib/jenkins/workspace/project-yangpai/project_freemodbus/../depend/include/yangpi_rtu_proxy.h")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/home/admin/repo/project-yangpai/project_freemodbus/../depend/include" TYPE FILE FILES "/home/admin/repo/project-yangpai/project_freemodbus/yangpi_rtu_proxy.h")
+  file(INSTALL DESTINATION "/var/lib/jenkins/workspace/project-yangpai/project_freemodbus/../depend/include" TYPE FILE FILES "/var/lib/jenkins/workspace/project-yangpai/project_freemodbus/yangpi_rtu_proxy.h")
 endif()
 

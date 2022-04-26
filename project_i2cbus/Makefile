@@ -57,10 +57,10 @@ RM = /usr/local/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/admin/repo/project-yangpai
+CMAKE_SOURCE_DIR = /var/lib/jenkins/workspace/project-yangpai
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/admin/repo/project-yangpai
+CMAKE_BINARY_DIR = /var/lib/jenkins/workspace/project-yangpai
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -132,14 +132,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/admin/repo/project-yangpai && $(CMAKE_COMMAND) -E cmake_progress_start /home/admin/repo/project-yangpai/CMakeFiles /home/admin/repo/project-yangpai/project_i2cbus//CMakeFiles/progress.marks
-	cd /home/admin/repo/project-yangpai && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 project_i2cbus/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/admin/repo/project-yangpai/CMakeFiles 0
+	cd /var/lib/jenkins/workspace/project-yangpai && $(CMAKE_COMMAND) -E cmake_progress_start /var/lib/jenkins/workspace/project-yangpai/CMakeFiles /var/lib/jenkins/workspace/project-yangpai/project_i2cbus//CMakeFiles/progress.marks
+	cd /var/lib/jenkins/workspace/project-yangpai && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 project_i2cbus/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /var/lib/jenkins/workspace/project-yangpai/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/admin/repo/project-yangpai && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 project_i2cbus/clean
+	cd /var/lib/jenkins/workspace/project-yangpai && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 project_i2cbus/clean
 .PHONY : clean
 
 # The main clean target
@@ -148,22 +148,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/admin/repo/project-yangpai && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 project_i2cbus/preinstall
+	cd /var/lib/jenkins/workspace/project-yangpai && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 project_i2cbus/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/admin/repo/project-yangpai && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 project_i2cbus/preinstall
+	cd /var/lib/jenkins/workspace/project-yangpai && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 project_i2cbus/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/admin/repo/project-yangpai && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /var/lib/jenkins/workspace/project-yangpai && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 project_i2cbus/CMakeFiles/service_i2c_proxy.dir/rule:
-	cd /home/admin/repo/project-yangpai && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 project_i2cbus/CMakeFiles/service_i2c_proxy.dir/rule
+	cd /var/lib/jenkins/workspace/project-yangpai && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 project_i2cbus/CMakeFiles/service_i2c_proxy.dir/rule
 .PHONY : project_i2cbus/CMakeFiles/service_i2c_proxy.dir/rule
 
 # Convenience name for target.
@@ -172,12 +172,12 @@ service_i2c_proxy: project_i2cbus/CMakeFiles/service_i2c_proxy.dir/rule
 
 # fast build rule for target.
 service_i2c_proxy/fast:
-	cd /home/admin/repo/project-yangpai && $(MAKE) $(MAKESILENT) -f project_i2cbus/CMakeFiles/service_i2c_proxy.dir/build.make project_i2cbus/CMakeFiles/service_i2c_proxy.dir/build
+	cd /var/lib/jenkins/workspace/project-yangpai && $(MAKE) $(MAKESILENT) -f project_i2cbus/CMakeFiles/service_i2c_proxy.dir/build.make project_i2cbus/CMakeFiles/service_i2c_proxy.dir/build
 .PHONY : service_i2c_proxy/fast
 
 # Convenience name for target.
 project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/rule:
-	cd /home/admin/repo/project-yangpai && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/rule
+	cd /var/lib/jenkins/workspace/project-yangpai && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/rule
 .PHONY : project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/rule
 
 # Convenience name for target.
@@ -186,7 +186,7 @@ yangpi_service_i2cbus: project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/rule
 
 # fast build rule for target.
 yangpi_service_i2cbus/fast:
-	cd /home/admin/repo/project-yangpai && $(MAKE) $(MAKESILENT) -f project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/build.make project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/build
+	cd /var/lib/jenkins/workspace/project-yangpai && $(MAKE) $(MAKESILENT) -f project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/build.make project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/build
 .PHONY : yangpi_service_i2cbus/fast
 
 i2c_ad1115.o: i2c_ad1115.c.o
@@ -194,7 +194,7 @@ i2c_ad1115.o: i2c_ad1115.c.o
 
 # target to build an object file
 i2c_ad1115.c.o:
-	cd /home/admin/repo/project-yangpai && $(MAKE) $(MAKESILENT) -f project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/build.make project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/i2c_ad1115.c.o
+	cd /var/lib/jenkins/workspace/project-yangpai && $(MAKE) $(MAKESILENT) -f project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/build.make project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/i2c_ad1115.c.o
 .PHONY : i2c_ad1115.c.o
 
 i2c_ad1115.i: i2c_ad1115.c.i
@@ -202,7 +202,7 @@ i2c_ad1115.i: i2c_ad1115.c.i
 
 # target to preprocess a source file
 i2c_ad1115.c.i:
-	cd /home/admin/repo/project-yangpai && $(MAKE) $(MAKESILENT) -f project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/build.make project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/i2c_ad1115.c.i
+	cd /var/lib/jenkins/workspace/project-yangpai && $(MAKE) $(MAKESILENT) -f project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/build.make project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/i2c_ad1115.c.i
 .PHONY : i2c_ad1115.c.i
 
 i2c_ad1115.s: i2c_ad1115.c.s
@@ -210,7 +210,7 @@ i2c_ad1115.s: i2c_ad1115.c.s
 
 # target to generate assembly for a file
 i2c_ad1115.c.s:
-	cd /home/admin/repo/project-yangpai && $(MAKE) $(MAKESILENT) -f project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/build.make project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/i2c_ad1115.c.s
+	cd /var/lib/jenkins/workspace/project-yangpai && $(MAKE) $(MAKESILENT) -f project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/build.make project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/i2c_ad1115.c.s
 .PHONY : i2c_ad1115.c.s
 
 i2c_adjust.o: i2c_adjust.c.o
@@ -218,7 +218,7 @@ i2c_adjust.o: i2c_adjust.c.o
 
 # target to build an object file
 i2c_adjust.c.o:
-	cd /home/admin/repo/project-yangpai && $(MAKE) $(MAKESILENT) -f project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/build.make project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/i2c_adjust.c.o
+	cd /var/lib/jenkins/workspace/project-yangpai && $(MAKE) $(MAKESILENT) -f project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/build.make project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/i2c_adjust.c.o
 .PHONY : i2c_adjust.c.o
 
 i2c_adjust.i: i2c_adjust.c.i
@@ -226,7 +226,7 @@ i2c_adjust.i: i2c_adjust.c.i
 
 # target to preprocess a source file
 i2c_adjust.c.i:
-	cd /home/admin/repo/project-yangpai && $(MAKE) $(MAKESILENT) -f project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/build.make project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/i2c_adjust.c.i
+	cd /var/lib/jenkins/workspace/project-yangpai && $(MAKE) $(MAKESILENT) -f project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/build.make project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/i2c_adjust.c.i
 .PHONY : i2c_adjust.c.i
 
 i2c_adjust.s: i2c_adjust.c.s
@@ -234,7 +234,7 @@ i2c_adjust.s: i2c_adjust.c.s
 
 # target to generate assembly for a file
 i2c_adjust.c.s:
-	cd /home/admin/repo/project-yangpai && $(MAKE) $(MAKESILENT) -f project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/build.make project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/i2c_adjust.c.s
+	cd /var/lib/jenkins/workspace/project-yangpai && $(MAKE) $(MAKESILENT) -f project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/build.make project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/i2c_adjust.c.s
 .PHONY : i2c_adjust.c.s
 
 i2c_bus.o: i2c_bus.c.o
@@ -242,7 +242,7 @@ i2c_bus.o: i2c_bus.c.o
 
 # target to build an object file
 i2c_bus.c.o:
-	cd /home/admin/repo/project-yangpai && $(MAKE) $(MAKESILENT) -f project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/build.make project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/i2c_bus.c.o
+	cd /var/lib/jenkins/workspace/project-yangpai && $(MAKE) $(MAKESILENT) -f project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/build.make project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/i2c_bus.c.o
 .PHONY : i2c_bus.c.o
 
 i2c_bus.i: i2c_bus.c.i
@@ -250,7 +250,7 @@ i2c_bus.i: i2c_bus.c.i
 
 # target to preprocess a source file
 i2c_bus.c.i:
-	cd /home/admin/repo/project-yangpai && $(MAKE) $(MAKESILENT) -f project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/build.make project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/i2c_bus.c.i
+	cd /var/lib/jenkins/workspace/project-yangpai && $(MAKE) $(MAKESILENT) -f project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/build.make project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/i2c_bus.c.i
 .PHONY : i2c_bus.c.i
 
 i2c_bus.s: i2c_bus.c.s
@@ -258,7 +258,7 @@ i2c_bus.s: i2c_bus.c.s
 
 # target to generate assembly for a file
 i2c_bus.c.s:
-	cd /home/admin/repo/project-yangpai && $(MAKE) $(MAKESILENT) -f project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/build.make project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/i2c_bus.c.s
+	cd /var/lib/jenkins/workspace/project-yangpai && $(MAKE) $(MAKESILENT) -f project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/build.make project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/i2c_bus.c.s
 .PHONY : i2c_bus.c.s
 
 i2c_oled.o: i2c_oled.c.o
@@ -266,7 +266,7 @@ i2c_oled.o: i2c_oled.c.o
 
 # target to build an object file
 i2c_oled.c.o:
-	cd /home/admin/repo/project-yangpai && $(MAKE) $(MAKESILENT) -f project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/build.make project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/i2c_oled.c.o
+	cd /var/lib/jenkins/workspace/project-yangpai && $(MAKE) $(MAKESILENT) -f project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/build.make project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/i2c_oled.c.o
 .PHONY : i2c_oled.c.o
 
 i2c_oled.i: i2c_oled.c.i
@@ -274,7 +274,7 @@ i2c_oled.i: i2c_oled.c.i
 
 # target to preprocess a source file
 i2c_oled.c.i:
-	cd /home/admin/repo/project-yangpai && $(MAKE) $(MAKESILENT) -f project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/build.make project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/i2c_oled.c.i
+	cd /var/lib/jenkins/workspace/project-yangpai && $(MAKE) $(MAKESILENT) -f project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/build.make project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/i2c_oled.c.i
 .PHONY : i2c_oled.c.i
 
 i2c_oled.s: i2c_oled.c.s
@@ -282,7 +282,7 @@ i2c_oled.s: i2c_oled.c.s
 
 # target to generate assembly for a file
 i2c_oled.c.s:
-	cd /home/admin/repo/project-yangpai && $(MAKE) $(MAKESILENT) -f project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/build.make project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/i2c_oled.c.s
+	cd /var/lib/jenkins/workspace/project-yangpai && $(MAKE) $(MAKESILENT) -f project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/build.make project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/i2c_oled.c.s
 .PHONY : i2c_oled.c.s
 
 i2cbus_module_base.o: i2cbus_module_base.c.o
@@ -290,7 +290,7 @@ i2cbus_module_base.o: i2cbus_module_base.c.o
 
 # target to build an object file
 i2cbus_module_base.c.o:
-	cd /home/admin/repo/project-yangpai && $(MAKE) $(MAKESILENT) -f project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/build.make project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/i2cbus_module_base.c.o
+	cd /var/lib/jenkins/workspace/project-yangpai && $(MAKE) $(MAKESILENT) -f project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/build.make project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/i2cbus_module_base.c.o
 .PHONY : i2cbus_module_base.c.o
 
 i2cbus_module_base.i: i2cbus_module_base.c.i
@@ -298,7 +298,7 @@ i2cbus_module_base.i: i2cbus_module_base.c.i
 
 # target to preprocess a source file
 i2cbus_module_base.c.i:
-	cd /home/admin/repo/project-yangpai && $(MAKE) $(MAKESILENT) -f project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/build.make project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/i2cbus_module_base.c.i
+	cd /var/lib/jenkins/workspace/project-yangpai && $(MAKE) $(MAKESILENT) -f project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/build.make project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/i2cbus_module_base.c.i
 .PHONY : i2cbus_module_base.c.i
 
 i2cbus_module_base.s: i2cbus_module_base.c.s
@@ -306,7 +306,7 @@ i2cbus_module_base.s: i2cbus_module_base.c.s
 
 # target to generate assembly for a file
 i2cbus_module_base.c.s:
-	cd /home/admin/repo/project-yangpai && $(MAKE) $(MAKESILENT) -f project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/build.make project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/i2cbus_module_base.c.s
+	cd /var/lib/jenkins/workspace/project-yangpai && $(MAKE) $(MAKESILENT) -f project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/build.make project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/i2cbus_module_base.c.s
 .PHONY : i2cbus_module_base.c.s
 
 log_dlt.o: log_dlt.c.o
@@ -314,7 +314,7 @@ log_dlt.o: log_dlt.c.o
 
 # target to build an object file
 log_dlt.c.o:
-	cd /home/admin/repo/project-yangpai && $(MAKE) $(MAKESILENT) -f project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/build.make project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/log_dlt.c.o
+	cd /var/lib/jenkins/workspace/project-yangpai && $(MAKE) $(MAKESILENT) -f project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/build.make project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/log_dlt.c.o
 .PHONY : log_dlt.c.o
 
 log_dlt.i: log_dlt.c.i
@@ -322,7 +322,7 @@ log_dlt.i: log_dlt.c.i
 
 # target to preprocess a source file
 log_dlt.c.i:
-	cd /home/admin/repo/project-yangpai && $(MAKE) $(MAKESILENT) -f project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/build.make project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/log_dlt.c.i
+	cd /var/lib/jenkins/workspace/project-yangpai && $(MAKE) $(MAKESILENT) -f project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/build.make project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/log_dlt.c.i
 .PHONY : log_dlt.c.i
 
 log_dlt.s: log_dlt.c.s
@@ -330,7 +330,7 @@ log_dlt.s: log_dlt.c.s
 
 # target to generate assembly for a file
 log_dlt.c.s:
-	cd /home/admin/repo/project-yangpai && $(MAKE) $(MAKESILENT) -f project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/build.make project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/log_dlt.c.s
+	cd /var/lib/jenkins/workspace/project-yangpai && $(MAKE) $(MAKESILENT) -f project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/build.make project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/log_dlt.c.s
 .PHONY : log_dlt.c.s
 
 yangpi_i2c_main.o: yangpi_i2c_main.c.o
@@ -338,7 +338,7 @@ yangpi_i2c_main.o: yangpi_i2c_main.c.o
 
 # target to build an object file
 yangpi_i2c_main.c.o:
-	cd /home/admin/repo/project-yangpai && $(MAKE) $(MAKESILENT) -f project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/build.make project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/yangpi_i2c_main.c.o
+	cd /var/lib/jenkins/workspace/project-yangpai && $(MAKE) $(MAKESILENT) -f project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/build.make project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/yangpi_i2c_main.c.o
 .PHONY : yangpi_i2c_main.c.o
 
 yangpi_i2c_main.i: yangpi_i2c_main.c.i
@@ -346,7 +346,7 @@ yangpi_i2c_main.i: yangpi_i2c_main.c.i
 
 # target to preprocess a source file
 yangpi_i2c_main.c.i:
-	cd /home/admin/repo/project-yangpai && $(MAKE) $(MAKESILENT) -f project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/build.make project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/yangpi_i2c_main.c.i
+	cd /var/lib/jenkins/workspace/project-yangpai && $(MAKE) $(MAKESILENT) -f project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/build.make project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/yangpi_i2c_main.c.i
 .PHONY : yangpi_i2c_main.c.i
 
 yangpi_i2c_main.s: yangpi_i2c_main.c.s
@@ -354,7 +354,7 @@ yangpi_i2c_main.s: yangpi_i2c_main.c.s
 
 # target to generate assembly for a file
 yangpi_i2c_main.c.s:
-	cd /home/admin/repo/project-yangpai && $(MAKE) $(MAKESILENT) -f project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/build.make project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/yangpi_i2c_main.c.s
+	cd /var/lib/jenkins/workspace/project-yangpai && $(MAKE) $(MAKESILENT) -f project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/build.make project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/yangpi_i2c_main.c.s
 .PHONY : yangpi_i2c_main.c.s
 
 yangpi_i2c_proxy.o: yangpi_i2c_proxy.c.o
@@ -362,7 +362,7 @@ yangpi_i2c_proxy.o: yangpi_i2c_proxy.c.o
 
 # target to build an object file
 yangpi_i2c_proxy.c.o:
-	cd /home/admin/repo/project-yangpai && $(MAKE) $(MAKESILENT) -f project_i2cbus/CMakeFiles/service_i2c_proxy.dir/build.make project_i2cbus/CMakeFiles/service_i2c_proxy.dir/yangpi_i2c_proxy.c.o
+	cd /var/lib/jenkins/workspace/project-yangpai && $(MAKE) $(MAKESILENT) -f project_i2cbus/CMakeFiles/service_i2c_proxy.dir/build.make project_i2cbus/CMakeFiles/service_i2c_proxy.dir/yangpi_i2c_proxy.c.o
 .PHONY : yangpi_i2c_proxy.c.o
 
 yangpi_i2c_proxy.i: yangpi_i2c_proxy.c.i
@@ -370,7 +370,7 @@ yangpi_i2c_proxy.i: yangpi_i2c_proxy.c.i
 
 # target to preprocess a source file
 yangpi_i2c_proxy.c.i:
-	cd /home/admin/repo/project-yangpai && $(MAKE) $(MAKESILENT) -f project_i2cbus/CMakeFiles/service_i2c_proxy.dir/build.make project_i2cbus/CMakeFiles/service_i2c_proxy.dir/yangpi_i2c_proxy.c.i
+	cd /var/lib/jenkins/workspace/project-yangpai && $(MAKE) $(MAKESILENT) -f project_i2cbus/CMakeFiles/service_i2c_proxy.dir/build.make project_i2cbus/CMakeFiles/service_i2c_proxy.dir/yangpi_i2c_proxy.c.i
 .PHONY : yangpi_i2c_proxy.c.i
 
 yangpi_i2c_proxy.s: yangpi_i2c_proxy.c.s
@@ -378,7 +378,7 @@ yangpi_i2c_proxy.s: yangpi_i2c_proxy.c.s
 
 # target to generate assembly for a file
 yangpi_i2c_proxy.c.s:
-	cd /home/admin/repo/project-yangpai && $(MAKE) $(MAKESILENT) -f project_i2cbus/CMakeFiles/service_i2c_proxy.dir/build.make project_i2cbus/CMakeFiles/service_i2c_proxy.dir/yangpi_i2c_proxy.c.s
+	cd /var/lib/jenkins/workspace/project-yangpai && $(MAKE) $(MAKESILENT) -f project_i2cbus/CMakeFiles/service_i2c_proxy.dir/build.make project_i2cbus/CMakeFiles/service_i2c_proxy.dir/yangpi_i2c_proxy.c.s
 .PHONY : yangpi_i2c_proxy.c.s
 
 yangpi_i2c_stub.o: yangpi_i2c_stub.c.o
@@ -386,7 +386,7 @@ yangpi_i2c_stub.o: yangpi_i2c_stub.c.o
 
 # target to build an object file
 yangpi_i2c_stub.c.o:
-	cd /home/admin/repo/project-yangpai && $(MAKE) $(MAKESILENT) -f project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/build.make project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/yangpi_i2c_stub.c.o
+	cd /var/lib/jenkins/workspace/project-yangpai && $(MAKE) $(MAKESILENT) -f project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/build.make project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/yangpi_i2c_stub.c.o
 .PHONY : yangpi_i2c_stub.c.o
 
 yangpi_i2c_stub.i: yangpi_i2c_stub.c.i
@@ -394,7 +394,7 @@ yangpi_i2c_stub.i: yangpi_i2c_stub.c.i
 
 # target to preprocess a source file
 yangpi_i2c_stub.c.i:
-	cd /home/admin/repo/project-yangpai && $(MAKE) $(MAKESILENT) -f project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/build.make project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/yangpi_i2c_stub.c.i
+	cd /var/lib/jenkins/workspace/project-yangpai && $(MAKE) $(MAKESILENT) -f project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/build.make project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/yangpi_i2c_stub.c.i
 .PHONY : yangpi_i2c_stub.c.i
 
 yangpi_i2c_stub.s: yangpi_i2c_stub.c.s
@@ -402,7 +402,7 @@ yangpi_i2c_stub.s: yangpi_i2c_stub.c.s
 
 # target to generate assembly for a file
 yangpi_i2c_stub.c.s:
-	cd /home/admin/repo/project-yangpai && $(MAKE) $(MAKESILENT) -f project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/build.make project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/yangpi_i2c_stub.c.s
+	cd /var/lib/jenkins/workspace/project-yangpai && $(MAKE) $(MAKESILENT) -f project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/build.make project_i2cbus/CMakeFiles/yangpi_service_i2cbus.dir/yangpi_i2c_stub.c.s
 .PHONY : yangpi_i2c_stub.c.s
 
 # Help Target
@@ -457,6 +457,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/admin/repo/project-yangpai && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /var/lib/jenkins/workspace/project-yangpai && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

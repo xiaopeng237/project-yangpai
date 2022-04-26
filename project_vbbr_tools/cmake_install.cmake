@@ -1,4 +1,4 @@
-# Install script for directory: /home/admin/repo/project-yangpai/project_vbbr_tools
+# Install script for directory: /var/lib/jenkins/workspace/project-yangpai/project_vbbr_tools
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

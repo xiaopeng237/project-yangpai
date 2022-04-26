@@ -53,10 +53,10 @@ RM = /usr/local/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/admin/repo/project-yangpai
+CMAKE_SOURCE_DIR = /var/lib/jenkins/workspace/project-yangpai
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/admin/repo/project-yangpai
+CMAKE_BINARY_DIR = /var/lib/jenkins/workspace/project-yangpai
 
 # Include any dependencies generated for this target.
 include project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/depend.make
@@ -72,268 +72,268 @@ include project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/flags.make
 project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/freemodbus_rtu.c.o: project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/flags.make
 project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/freemodbus_rtu.c.o: project_freemodbus/freemodbus_rtu.c
 project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/freemodbus_rtu.c.o: project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/admin/repo/project-yangpai/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/freemodbus_rtu.c.o"
-	cd /home/admin/repo/project-yangpai/project_freemodbus && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/freemodbus_rtu.c.o -MF CMakeFiles/yangpi_service_rtu.dir/freemodbus_rtu.c.o.d -o CMakeFiles/yangpi_service_rtu.dir/freemodbus_rtu.c.o -c /home/admin/repo/project-yangpai/project_freemodbus/freemodbus_rtu.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/var/lib/jenkins/workspace/project-yangpai/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/freemodbus_rtu.c.o"
+	cd /var/lib/jenkins/workspace/project-yangpai/project_freemodbus && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/freemodbus_rtu.c.o -MF CMakeFiles/yangpi_service_rtu.dir/freemodbus_rtu.c.o.d -o CMakeFiles/yangpi_service_rtu.dir/freemodbus_rtu.c.o -c /var/lib/jenkins/workspace/project-yangpai/project_freemodbus/freemodbus_rtu.c
 
 project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/freemodbus_rtu.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/yangpi_service_rtu.dir/freemodbus_rtu.c.i"
-	cd /home/admin/repo/project-yangpai/project_freemodbus && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/admin/repo/project-yangpai/project_freemodbus/freemodbus_rtu.c > CMakeFiles/yangpi_service_rtu.dir/freemodbus_rtu.c.i
+	cd /var/lib/jenkins/workspace/project-yangpai/project_freemodbus && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /var/lib/jenkins/workspace/project-yangpai/project_freemodbus/freemodbus_rtu.c > CMakeFiles/yangpi_service_rtu.dir/freemodbus_rtu.c.i
 
 project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/freemodbus_rtu.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/yangpi_service_rtu.dir/freemodbus_rtu.c.s"
-	cd /home/admin/repo/project-yangpai/project_freemodbus && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/admin/repo/project-yangpai/project_freemodbus/freemodbus_rtu.c -o CMakeFiles/yangpi_service_rtu.dir/freemodbus_rtu.c.s
+	cd /var/lib/jenkins/workspace/project-yangpai/project_freemodbus && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /var/lib/jenkins/workspace/project-yangpai/project_freemodbus/freemodbus_rtu.c -o CMakeFiles/yangpi_service_rtu.dir/freemodbus_rtu.c.s
 
 project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/mbascii.c.o: project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/flags.make
 project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/mbascii.c.o: project_freemodbus/mbascii.c
 project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/mbascii.c.o: project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/admin/repo/project-yangpai/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/mbascii.c.o"
-	cd /home/admin/repo/project-yangpai/project_freemodbus && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/mbascii.c.o -MF CMakeFiles/yangpi_service_rtu.dir/mbascii.c.o.d -o CMakeFiles/yangpi_service_rtu.dir/mbascii.c.o -c /home/admin/repo/project-yangpai/project_freemodbus/mbascii.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/var/lib/jenkins/workspace/project-yangpai/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/mbascii.c.o"
+	cd /var/lib/jenkins/workspace/project-yangpai/project_freemodbus && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/mbascii.c.o -MF CMakeFiles/yangpi_service_rtu.dir/mbascii.c.o.d -o CMakeFiles/yangpi_service_rtu.dir/mbascii.c.o -c /var/lib/jenkins/workspace/project-yangpai/project_freemodbus/mbascii.c
 
 project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/mbascii.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/yangpi_service_rtu.dir/mbascii.c.i"
-	cd /home/admin/repo/project-yangpai/project_freemodbus && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/admin/repo/project-yangpai/project_freemodbus/mbascii.c > CMakeFiles/yangpi_service_rtu.dir/mbascii.c.i
+	cd /var/lib/jenkins/workspace/project-yangpai/project_freemodbus && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /var/lib/jenkins/workspace/project-yangpai/project_freemodbus/mbascii.c > CMakeFiles/yangpi_service_rtu.dir/mbascii.c.i
 
 project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/mbascii.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/yangpi_service_rtu.dir/mbascii.c.s"
-	cd /home/admin/repo/project-yangpai/project_freemodbus && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/admin/repo/project-yangpai/project_freemodbus/mbascii.c -o CMakeFiles/yangpi_service_rtu.dir/mbascii.c.s
+	cd /var/lib/jenkins/workspace/project-yangpai/project_freemodbus && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /var/lib/jenkins/workspace/project-yangpai/project_freemodbus/mbascii.c -o CMakeFiles/yangpi_service_rtu.dir/mbascii.c.s
 
 project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/mb.c.o: project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/flags.make
 project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/mb.c.o: project_freemodbus/mb.c
 project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/mb.c.o: project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/admin/repo/project-yangpai/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/mb.c.o"
-	cd /home/admin/repo/project-yangpai/project_freemodbus && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/mb.c.o -MF CMakeFiles/yangpi_service_rtu.dir/mb.c.o.d -o CMakeFiles/yangpi_service_rtu.dir/mb.c.o -c /home/admin/repo/project-yangpai/project_freemodbus/mb.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/var/lib/jenkins/workspace/project-yangpai/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/mb.c.o"
+	cd /var/lib/jenkins/workspace/project-yangpai/project_freemodbus && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/mb.c.o -MF CMakeFiles/yangpi_service_rtu.dir/mb.c.o.d -o CMakeFiles/yangpi_service_rtu.dir/mb.c.o -c /var/lib/jenkins/workspace/project-yangpai/project_freemodbus/mb.c
 
 project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/mb.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/yangpi_service_rtu.dir/mb.c.i"
-	cd /home/admin/repo/project-yangpai/project_freemodbus && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/admin/repo/project-yangpai/project_freemodbus/mb.c > CMakeFiles/yangpi_service_rtu.dir/mb.c.i
+	cd /var/lib/jenkins/workspace/project-yangpai/project_freemodbus && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /var/lib/jenkins/workspace/project-yangpai/project_freemodbus/mb.c > CMakeFiles/yangpi_service_rtu.dir/mb.c.i
 
 project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/mb.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/yangpi_service_rtu.dir/mb.c.s"
-	cd /home/admin/repo/project-yangpai/project_freemodbus && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/admin/repo/project-yangpai/project_freemodbus/mb.c -o CMakeFiles/yangpi_service_rtu.dir/mb.c.s
+	cd /var/lib/jenkins/workspace/project-yangpai/project_freemodbus && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /var/lib/jenkins/workspace/project-yangpai/project_freemodbus/mb.c -o CMakeFiles/yangpi_service_rtu.dir/mb.c.s
 
 project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/mbcrc.c.o: project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/flags.make
 project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/mbcrc.c.o: project_freemodbus/mbcrc.c
 project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/mbcrc.c.o: project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/admin/repo/project-yangpai/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/mbcrc.c.o"
-	cd /home/admin/repo/project-yangpai/project_freemodbus && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/mbcrc.c.o -MF CMakeFiles/yangpi_service_rtu.dir/mbcrc.c.o.d -o CMakeFiles/yangpi_service_rtu.dir/mbcrc.c.o -c /home/admin/repo/project-yangpai/project_freemodbus/mbcrc.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/var/lib/jenkins/workspace/project-yangpai/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/mbcrc.c.o"
+	cd /var/lib/jenkins/workspace/project-yangpai/project_freemodbus && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/mbcrc.c.o -MF CMakeFiles/yangpi_service_rtu.dir/mbcrc.c.o.d -o CMakeFiles/yangpi_service_rtu.dir/mbcrc.c.o -c /var/lib/jenkins/workspace/project-yangpai/project_freemodbus/mbcrc.c
 
 project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/mbcrc.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/yangpi_service_rtu.dir/mbcrc.c.i"
-	cd /home/admin/repo/project-yangpai/project_freemodbus && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/admin/repo/project-yangpai/project_freemodbus/mbcrc.c > CMakeFiles/yangpi_service_rtu.dir/mbcrc.c.i
+	cd /var/lib/jenkins/workspace/project-yangpai/project_freemodbus && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /var/lib/jenkins/workspace/project-yangpai/project_freemodbus/mbcrc.c > CMakeFiles/yangpi_service_rtu.dir/mbcrc.c.i
 
 project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/mbcrc.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/yangpi_service_rtu.dir/mbcrc.c.s"
-	cd /home/admin/repo/project-yangpai/project_freemodbus && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/admin/repo/project-yangpai/project_freemodbus/mbcrc.c -o CMakeFiles/yangpi_service_rtu.dir/mbcrc.c.s
+	cd /var/lib/jenkins/workspace/project-yangpai/project_freemodbus && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /var/lib/jenkins/workspace/project-yangpai/project_freemodbus/mbcrc.c -o CMakeFiles/yangpi_service_rtu.dir/mbcrc.c.s
 
 project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/mbfunccoils.c.o: project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/flags.make
 project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/mbfunccoils.c.o: project_freemodbus/mbfunccoils.c
 project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/mbfunccoils.c.o: project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/admin/repo/project-yangpai/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/mbfunccoils.c.o"
-	cd /home/admin/repo/project-yangpai/project_freemodbus && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/mbfunccoils.c.o -MF CMakeFiles/yangpi_service_rtu.dir/mbfunccoils.c.o.d -o CMakeFiles/yangpi_service_rtu.dir/mbfunccoils.c.o -c /home/admin/repo/project-yangpai/project_freemodbus/mbfunccoils.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/var/lib/jenkins/workspace/project-yangpai/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/mbfunccoils.c.o"
+	cd /var/lib/jenkins/workspace/project-yangpai/project_freemodbus && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/mbfunccoils.c.o -MF CMakeFiles/yangpi_service_rtu.dir/mbfunccoils.c.o.d -o CMakeFiles/yangpi_service_rtu.dir/mbfunccoils.c.o -c /var/lib/jenkins/workspace/project-yangpai/project_freemodbus/mbfunccoils.c
 
 project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/mbfunccoils.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/yangpi_service_rtu.dir/mbfunccoils.c.i"
-	cd /home/admin/repo/project-yangpai/project_freemodbus && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/admin/repo/project-yangpai/project_freemodbus/mbfunccoils.c > CMakeFiles/yangpi_service_rtu.dir/mbfunccoils.c.i
+	cd /var/lib/jenkins/workspace/project-yangpai/project_freemodbus && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /var/lib/jenkins/workspace/project-yangpai/project_freemodbus/mbfunccoils.c > CMakeFiles/yangpi_service_rtu.dir/mbfunccoils.c.i
 
 project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/mbfunccoils.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/yangpi_service_rtu.dir/mbfunccoils.c.s"
-	cd /home/admin/repo/project-yangpai/project_freemodbus && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/admin/repo/project-yangpai/project_freemodbus/mbfunccoils.c -o CMakeFiles/yangpi_service_rtu.dir/mbfunccoils.c.s
+	cd /var/lib/jenkins/workspace/project-yangpai/project_freemodbus && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /var/lib/jenkins/workspace/project-yangpai/project_freemodbus/mbfunccoils.c -o CMakeFiles/yangpi_service_rtu.dir/mbfunccoils.c.s
 
 project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/mbfuncdiag.c.o: project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/flags.make
 project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/mbfuncdiag.c.o: project_freemodbus/mbfuncdiag.c
 project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/mbfuncdiag.c.o: project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/admin/repo/project-yangpai/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/mbfuncdiag.c.o"
-	cd /home/admin/repo/project-yangpai/project_freemodbus && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/mbfuncdiag.c.o -MF CMakeFiles/yangpi_service_rtu.dir/mbfuncdiag.c.o.d -o CMakeFiles/yangpi_service_rtu.dir/mbfuncdiag.c.o -c /home/admin/repo/project-yangpai/project_freemodbus/mbfuncdiag.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/var/lib/jenkins/workspace/project-yangpai/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/mbfuncdiag.c.o"
+	cd /var/lib/jenkins/workspace/project-yangpai/project_freemodbus && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/mbfuncdiag.c.o -MF CMakeFiles/yangpi_service_rtu.dir/mbfuncdiag.c.o.d -o CMakeFiles/yangpi_service_rtu.dir/mbfuncdiag.c.o -c /var/lib/jenkins/workspace/project-yangpai/project_freemodbus/mbfuncdiag.c
 
 project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/mbfuncdiag.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/yangpi_service_rtu.dir/mbfuncdiag.c.i"
-	cd /home/admin/repo/project-yangpai/project_freemodbus && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/admin/repo/project-yangpai/project_freemodbus/mbfuncdiag.c > CMakeFiles/yangpi_service_rtu.dir/mbfuncdiag.c.i
+	cd /var/lib/jenkins/workspace/project-yangpai/project_freemodbus && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /var/lib/jenkins/workspace/project-yangpai/project_freemodbus/mbfuncdiag.c > CMakeFiles/yangpi_service_rtu.dir/mbfuncdiag.c.i
 
 project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/mbfuncdiag.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/yangpi_service_rtu.dir/mbfuncdiag.c.s"
-	cd /home/admin/repo/project-yangpai/project_freemodbus && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/admin/repo/project-yangpai/project_freemodbus/mbfuncdiag.c -o CMakeFiles/yangpi_service_rtu.dir/mbfuncdiag.c.s
+	cd /var/lib/jenkins/workspace/project-yangpai/project_freemodbus && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /var/lib/jenkins/workspace/project-yangpai/project_freemodbus/mbfuncdiag.c -o CMakeFiles/yangpi_service_rtu.dir/mbfuncdiag.c.s
 
 project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/mbfuncdisc.c.o: project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/flags.make
 project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/mbfuncdisc.c.o: project_freemodbus/mbfuncdisc.c
 project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/mbfuncdisc.c.o: project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/admin/repo/project-yangpai/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/mbfuncdisc.c.o"
-	cd /home/admin/repo/project-yangpai/project_freemodbus && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/mbfuncdisc.c.o -MF CMakeFiles/yangpi_service_rtu.dir/mbfuncdisc.c.o.d -o CMakeFiles/yangpi_service_rtu.dir/mbfuncdisc.c.o -c /home/admin/repo/project-yangpai/project_freemodbus/mbfuncdisc.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/var/lib/jenkins/workspace/project-yangpai/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/mbfuncdisc.c.o"
+	cd /var/lib/jenkins/workspace/project-yangpai/project_freemodbus && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/mbfuncdisc.c.o -MF CMakeFiles/yangpi_service_rtu.dir/mbfuncdisc.c.o.d -o CMakeFiles/yangpi_service_rtu.dir/mbfuncdisc.c.o -c /var/lib/jenkins/workspace/project-yangpai/project_freemodbus/mbfuncdisc.c
 
 project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/mbfuncdisc.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/yangpi_service_rtu.dir/mbfuncdisc.c.i"
-	cd /home/admin/repo/project-yangpai/project_freemodbus && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/admin/repo/project-yangpai/project_freemodbus/mbfuncdisc.c > CMakeFiles/yangpi_service_rtu.dir/mbfuncdisc.c.i
+	cd /var/lib/jenkins/workspace/project-yangpai/project_freemodbus && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /var/lib/jenkins/workspace/project-yangpai/project_freemodbus/mbfuncdisc.c > CMakeFiles/yangpi_service_rtu.dir/mbfuncdisc.c.i
 
 project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/mbfuncdisc.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/yangpi_service_rtu.dir/mbfuncdisc.c.s"
-	cd /home/admin/repo/project-yangpai/project_freemodbus && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/admin/repo/project-yangpai/project_freemodbus/mbfuncdisc.c -o CMakeFiles/yangpi_service_rtu.dir/mbfuncdisc.c.s
+	cd /var/lib/jenkins/workspace/project-yangpai/project_freemodbus && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /var/lib/jenkins/workspace/project-yangpai/project_freemodbus/mbfuncdisc.c -o CMakeFiles/yangpi_service_rtu.dir/mbfuncdisc.c.s
 
 project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/mbfuncholding.c.o: project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/flags.make
 project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/mbfuncholding.c.o: project_freemodbus/mbfuncholding.c
 project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/mbfuncholding.c.o: project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/admin/repo/project-yangpai/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/mbfuncholding.c.o"
-	cd /home/admin/repo/project-yangpai/project_freemodbus && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/mbfuncholding.c.o -MF CMakeFiles/yangpi_service_rtu.dir/mbfuncholding.c.o.d -o CMakeFiles/yangpi_service_rtu.dir/mbfuncholding.c.o -c /home/admin/repo/project-yangpai/project_freemodbus/mbfuncholding.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/var/lib/jenkins/workspace/project-yangpai/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/mbfuncholding.c.o"
+	cd /var/lib/jenkins/workspace/project-yangpai/project_freemodbus && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/mbfuncholding.c.o -MF CMakeFiles/yangpi_service_rtu.dir/mbfuncholding.c.o.d -o CMakeFiles/yangpi_service_rtu.dir/mbfuncholding.c.o -c /var/lib/jenkins/workspace/project-yangpai/project_freemodbus/mbfuncholding.c
 
 project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/mbfuncholding.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/yangpi_service_rtu.dir/mbfuncholding.c.i"
-	cd /home/admin/repo/project-yangpai/project_freemodbus && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/admin/repo/project-yangpai/project_freemodbus/mbfuncholding.c > CMakeFiles/yangpi_service_rtu.dir/mbfuncholding.c.i
+	cd /var/lib/jenkins/workspace/project-yangpai/project_freemodbus && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /var/lib/jenkins/workspace/project-yangpai/project_freemodbus/mbfuncholding.c > CMakeFiles/yangpi_service_rtu.dir/mbfuncholding.c.i
 
 project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/mbfuncholding.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/yangpi_service_rtu.dir/mbfuncholding.c.s"
-	cd /home/admin/repo/project-yangpai/project_freemodbus && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/admin/repo/project-yangpai/project_freemodbus/mbfuncholding.c -o CMakeFiles/yangpi_service_rtu.dir/mbfuncholding.c.s
+	cd /var/lib/jenkins/workspace/project-yangpai/project_freemodbus && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /var/lib/jenkins/workspace/project-yangpai/project_freemodbus/mbfuncholding.c -o CMakeFiles/yangpi_service_rtu.dir/mbfuncholding.c.s
 
 project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/mbfuncinput.c.o: project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/flags.make
 project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/mbfuncinput.c.o: project_freemodbus/mbfuncinput.c
 project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/mbfuncinput.c.o: project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/admin/repo/project-yangpai/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/mbfuncinput.c.o"
-	cd /home/admin/repo/project-yangpai/project_freemodbus && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/mbfuncinput.c.o -MF CMakeFiles/yangpi_service_rtu.dir/mbfuncinput.c.o.d -o CMakeFiles/yangpi_service_rtu.dir/mbfuncinput.c.o -c /home/admin/repo/project-yangpai/project_freemodbus/mbfuncinput.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/var/lib/jenkins/workspace/project-yangpai/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/mbfuncinput.c.o"
+	cd /var/lib/jenkins/workspace/project-yangpai/project_freemodbus && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/mbfuncinput.c.o -MF CMakeFiles/yangpi_service_rtu.dir/mbfuncinput.c.o.d -o CMakeFiles/yangpi_service_rtu.dir/mbfuncinput.c.o -c /var/lib/jenkins/workspace/project-yangpai/project_freemodbus/mbfuncinput.c
 
 project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/mbfuncinput.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/yangpi_service_rtu.dir/mbfuncinput.c.i"
-	cd /home/admin/repo/project-yangpai/project_freemodbus && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/admin/repo/project-yangpai/project_freemodbus/mbfuncinput.c > CMakeFiles/yangpi_service_rtu.dir/mbfuncinput.c.i
+	cd /var/lib/jenkins/workspace/project-yangpai/project_freemodbus && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /var/lib/jenkins/workspace/project-yangpai/project_freemodbus/mbfuncinput.c > CMakeFiles/yangpi_service_rtu.dir/mbfuncinput.c.i
 
 project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/mbfuncinput.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/yangpi_service_rtu.dir/mbfuncinput.c.s"
-	cd /home/admin/repo/project-yangpai/project_freemodbus && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/admin/repo/project-yangpai/project_freemodbus/mbfuncinput.c -o CMakeFiles/yangpi_service_rtu.dir/mbfuncinput.c.s
+	cd /var/lib/jenkins/workspace/project-yangpai/project_freemodbus && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /var/lib/jenkins/workspace/project-yangpai/project_freemodbus/mbfuncinput.c -o CMakeFiles/yangpi_service_rtu.dir/mbfuncinput.c.s
 
 project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/mbfuncother.c.o: project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/flags.make
 project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/mbfuncother.c.o: project_freemodbus/mbfuncother.c
 project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/mbfuncother.c.o: project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/admin/repo/project-yangpai/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/mbfuncother.c.o"
-	cd /home/admin/repo/project-yangpai/project_freemodbus && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/mbfuncother.c.o -MF CMakeFiles/yangpi_service_rtu.dir/mbfuncother.c.o.d -o CMakeFiles/yangpi_service_rtu.dir/mbfuncother.c.o -c /home/admin/repo/project-yangpai/project_freemodbus/mbfuncother.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/var/lib/jenkins/workspace/project-yangpai/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/mbfuncother.c.o"
+	cd /var/lib/jenkins/workspace/project-yangpai/project_freemodbus && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/mbfuncother.c.o -MF CMakeFiles/yangpi_service_rtu.dir/mbfuncother.c.o.d -o CMakeFiles/yangpi_service_rtu.dir/mbfuncother.c.o -c /var/lib/jenkins/workspace/project-yangpai/project_freemodbus/mbfuncother.c
 
 project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/mbfuncother.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/yangpi_service_rtu.dir/mbfuncother.c.i"
-	cd /home/admin/repo/project-yangpai/project_freemodbus && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/admin/repo/project-yangpai/project_freemodbus/mbfuncother.c > CMakeFiles/yangpi_service_rtu.dir/mbfuncother.c.i
+	cd /var/lib/jenkins/workspace/project-yangpai/project_freemodbus && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /var/lib/jenkins/workspace/project-yangpai/project_freemodbus/mbfuncother.c > CMakeFiles/yangpi_service_rtu.dir/mbfuncother.c.i
 
 project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/mbfuncother.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/yangpi_service_rtu.dir/mbfuncother.c.s"
-	cd /home/admin/repo/project-yangpai/project_freemodbus && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/admin/repo/project-yangpai/project_freemodbus/mbfuncother.c -o CMakeFiles/yangpi_service_rtu.dir/mbfuncother.c.s
+	cd /var/lib/jenkins/workspace/project-yangpai/project_freemodbus && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /var/lib/jenkins/workspace/project-yangpai/project_freemodbus/mbfuncother.c -o CMakeFiles/yangpi_service_rtu.dir/mbfuncother.c.s
 
 project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/mbrtu.c.o: project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/flags.make
 project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/mbrtu.c.o: project_freemodbus/mbrtu.c
 project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/mbrtu.c.o: project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/admin/repo/project-yangpai/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/mbrtu.c.o"
-	cd /home/admin/repo/project-yangpai/project_freemodbus && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/mbrtu.c.o -MF CMakeFiles/yangpi_service_rtu.dir/mbrtu.c.o.d -o CMakeFiles/yangpi_service_rtu.dir/mbrtu.c.o -c /home/admin/repo/project-yangpai/project_freemodbus/mbrtu.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/var/lib/jenkins/workspace/project-yangpai/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/mbrtu.c.o"
+	cd /var/lib/jenkins/workspace/project-yangpai/project_freemodbus && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/mbrtu.c.o -MF CMakeFiles/yangpi_service_rtu.dir/mbrtu.c.o.d -o CMakeFiles/yangpi_service_rtu.dir/mbrtu.c.o -c /var/lib/jenkins/workspace/project-yangpai/project_freemodbus/mbrtu.c
 
 project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/mbrtu.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/yangpi_service_rtu.dir/mbrtu.c.i"
-	cd /home/admin/repo/project-yangpai/project_freemodbus && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/admin/repo/project-yangpai/project_freemodbus/mbrtu.c > CMakeFiles/yangpi_service_rtu.dir/mbrtu.c.i
+	cd /var/lib/jenkins/workspace/project-yangpai/project_freemodbus && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /var/lib/jenkins/workspace/project-yangpai/project_freemodbus/mbrtu.c > CMakeFiles/yangpi_service_rtu.dir/mbrtu.c.i
 
 project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/mbrtu.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/yangpi_service_rtu.dir/mbrtu.c.s"
-	cd /home/admin/repo/project-yangpai/project_freemodbus && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/admin/repo/project-yangpai/project_freemodbus/mbrtu.c -o CMakeFiles/yangpi_service_rtu.dir/mbrtu.c.s
+	cd /var/lib/jenkins/workspace/project-yangpai/project_freemodbus && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /var/lib/jenkins/workspace/project-yangpai/project_freemodbus/mbrtu.c -o CMakeFiles/yangpi_service_rtu.dir/mbrtu.c.s
 
 project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/mbutils.c.o: project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/flags.make
 project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/mbutils.c.o: project_freemodbus/mbutils.c
 project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/mbutils.c.o: project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/admin/repo/project-yangpai/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/mbutils.c.o"
-	cd /home/admin/repo/project-yangpai/project_freemodbus && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/mbutils.c.o -MF CMakeFiles/yangpi_service_rtu.dir/mbutils.c.o.d -o CMakeFiles/yangpi_service_rtu.dir/mbutils.c.o -c /home/admin/repo/project-yangpai/project_freemodbus/mbutils.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/var/lib/jenkins/workspace/project-yangpai/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/mbutils.c.o"
+	cd /var/lib/jenkins/workspace/project-yangpai/project_freemodbus && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/mbutils.c.o -MF CMakeFiles/yangpi_service_rtu.dir/mbutils.c.o.d -o CMakeFiles/yangpi_service_rtu.dir/mbutils.c.o -c /var/lib/jenkins/workspace/project-yangpai/project_freemodbus/mbutils.c
 
 project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/mbutils.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/yangpi_service_rtu.dir/mbutils.c.i"
-	cd /home/admin/repo/project-yangpai/project_freemodbus && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/admin/repo/project-yangpai/project_freemodbus/mbutils.c > CMakeFiles/yangpi_service_rtu.dir/mbutils.c.i
+	cd /var/lib/jenkins/workspace/project-yangpai/project_freemodbus && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /var/lib/jenkins/workspace/project-yangpai/project_freemodbus/mbutils.c > CMakeFiles/yangpi_service_rtu.dir/mbutils.c.i
 
 project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/mbutils.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/yangpi_service_rtu.dir/mbutils.c.s"
-	cd /home/admin/repo/project-yangpai/project_freemodbus && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/admin/repo/project-yangpai/project_freemodbus/mbutils.c -o CMakeFiles/yangpi_service_rtu.dir/mbutils.c.s
+	cd /var/lib/jenkins/workspace/project-yangpai/project_freemodbus && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /var/lib/jenkins/workspace/project-yangpai/project_freemodbus/mbutils.c -o CMakeFiles/yangpi_service_rtu.dir/mbutils.c.s
 
 project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/portevent.c.o: project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/flags.make
 project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/portevent.c.o: project_freemodbus/portevent.c
 project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/portevent.c.o: project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/admin/repo/project-yangpai/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/portevent.c.o"
-	cd /home/admin/repo/project-yangpai/project_freemodbus && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/portevent.c.o -MF CMakeFiles/yangpi_service_rtu.dir/portevent.c.o.d -o CMakeFiles/yangpi_service_rtu.dir/portevent.c.o -c /home/admin/repo/project-yangpai/project_freemodbus/portevent.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/var/lib/jenkins/workspace/project-yangpai/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/portevent.c.o"
+	cd /var/lib/jenkins/workspace/project-yangpai/project_freemodbus && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/portevent.c.o -MF CMakeFiles/yangpi_service_rtu.dir/portevent.c.o.d -o CMakeFiles/yangpi_service_rtu.dir/portevent.c.o -c /var/lib/jenkins/workspace/project-yangpai/project_freemodbus/portevent.c
 
 project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/portevent.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/yangpi_service_rtu.dir/portevent.c.i"
-	cd /home/admin/repo/project-yangpai/project_freemodbus && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/admin/repo/project-yangpai/project_freemodbus/portevent.c > CMakeFiles/yangpi_service_rtu.dir/portevent.c.i
+	cd /var/lib/jenkins/workspace/project-yangpai/project_freemodbus && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /var/lib/jenkins/workspace/project-yangpai/project_freemodbus/portevent.c > CMakeFiles/yangpi_service_rtu.dir/portevent.c.i
 
 project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/portevent.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/yangpi_service_rtu.dir/portevent.c.s"
-	cd /home/admin/repo/project-yangpai/project_freemodbus && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/admin/repo/project-yangpai/project_freemodbus/portevent.c -o CMakeFiles/yangpi_service_rtu.dir/portevent.c.s
+	cd /var/lib/jenkins/workspace/project-yangpai/project_freemodbus && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /var/lib/jenkins/workspace/project-yangpai/project_freemodbus/portevent.c -o CMakeFiles/yangpi_service_rtu.dir/portevent.c.s
 
 project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/portother.c.o: project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/flags.make
 project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/portother.c.o: project_freemodbus/portother.c
 project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/portother.c.o: project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/admin/repo/project-yangpai/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/portother.c.o"
-	cd /home/admin/repo/project-yangpai/project_freemodbus && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/portother.c.o -MF CMakeFiles/yangpi_service_rtu.dir/portother.c.o.d -o CMakeFiles/yangpi_service_rtu.dir/portother.c.o -c /home/admin/repo/project-yangpai/project_freemodbus/portother.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/var/lib/jenkins/workspace/project-yangpai/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/portother.c.o"
+	cd /var/lib/jenkins/workspace/project-yangpai/project_freemodbus && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/portother.c.o -MF CMakeFiles/yangpi_service_rtu.dir/portother.c.o.d -o CMakeFiles/yangpi_service_rtu.dir/portother.c.o -c /var/lib/jenkins/workspace/project-yangpai/project_freemodbus/portother.c
 
 project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/portother.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/yangpi_service_rtu.dir/portother.c.i"
-	cd /home/admin/repo/project-yangpai/project_freemodbus && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/admin/repo/project-yangpai/project_freemodbus/portother.c > CMakeFiles/yangpi_service_rtu.dir/portother.c.i
+	cd /var/lib/jenkins/workspace/project-yangpai/project_freemodbus && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /var/lib/jenkins/workspace/project-yangpai/project_freemodbus/portother.c > CMakeFiles/yangpi_service_rtu.dir/portother.c.i
 
 project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/portother.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/yangpi_service_rtu.dir/portother.c.s"
-	cd /home/admin/repo/project-yangpai/project_freemodbus && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/admin/repo/project-yangpai/project_freemodbus/portother.c -o CMakeFiles/yangpi_service_rtu.dir/portother.c.s
+	cd /var/lib/jenkins/workspace/project-yangpai/project_freemodbus && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /var/lib/jenkins/workspace/project-yangpai/project_freemodbus/portother.c -o CMakeFiles/yangpi_service_rtu.dir/portother.c.s
 
 project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/portserial.c.o: project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/flags.make
 project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/portserial.c.o: project_freemodbus/portserial.c
 project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/portserial.c.o: project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/admin/repo/project-yangpai/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/portserial.c.o"
-	cd /home/admin/repo/project-yangpai/project_freemodbus && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/portserial.c.o -MF CMakeFiles/yangpi_service_rtu.dir/portserial.c.o.d -o CMakeFiles/yangpi_service_rtu.dir/portserial.c.o -c /home/admin/repo/project-yangpai/project_freemodbus/portserial.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/var/lib/jenkins/workspace/project-yangpai/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/portserial.c.o"
+	cd /var/lib/jenkins/workspace/project-yangpai/project_freemodbus && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/portserial.c.o -MF CMakeFiles/yangpi_service_rtu.dir/portserial.c.o.d -o CMakeFiles/yangpi_service_rtu.dir/portserial.c.o -c /var/lib/jenkins/workspace/project-yangpai/project_freemodbus/portserial.c
 
 project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/portserial.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/yangpi_service_rtu.dir/portserial.c.i"
-	cd /home/admin/repo/project-yangpai/project_freemodbus && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/admin/repo/project-yangpai/project_freemodbus/portserial.c > CMakeFiles/yangpi_service_rtu.dir/portserial.c.i
+	cd /var/lib/jenkins/workspace/project-yangpai/project_freemodbus && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /var/lib/jenkins/workspace/project-yangpai/project_freemodbus/portserial.c > CMakeFiles/yangpi_service_rtu.dir/portserial.c.i
 
 project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/portserial.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/yangpi_service_rtu.dir/portserial.c.s"
-	cd /home/admin/repo/project-yangpai/project_freemodbus && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/admin/repo/project-yangpai/project_freemodbus/portserial.c -o CMakeFiles/yangpi_service_rtu.dir/portserial.c.s
+	cd /var/lib/jenkins/workspace/project-yangpai/project_freemodbus && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /var/lib/jenkins/workspace/project-yangpai/project_freemodbus/portserial.c -o CMakeFiles/yangpi_service_rtu.dir/portserial.c.s
 
 project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/porttimer.c.o: project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/flags.make
 project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/porttimer.c.o: project_freemodbus/porttimer.c
 project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/porttimer.c.o: project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/admin/repo/project-yangpai/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/porttimer.c.o"
-	cd /home/admin/repo/project-yangpai/project_freemodbus && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/porttimer.c.o -MF CMakeFiles/yangpi_service_rtu.dir/porttimer.c.o.d -o CMakeFiles/yangpi_service_rtu.dir/porttimer.c.o -c /home/admin/repo/project-yangpai/project_freemodbus/porttimer.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/var/lib/jenkins/workspace/project-yangpai/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/porttimer.c.o"
+	cd /var/lib/jenkins/workspace/project-yangpai/project_freemodbus && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/porttimer.c.o -MF CMakeFiles/yangpi_service_rtu.dir/porttimer.c.o.d -o CMakeFiles/yangpi_service_rtu.dir/porttimer.c.o -c /var/lib/jenkins/workspace/project-yangpai/project_freemodbus/porttimer.c
 
 project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/porttimer.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/yangpi_service_rtu.dir/porttimer.c.i"
-	cd /home/admin/repo/project-yangpai/project_freemodbus && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/admin/repo/project-yangpai/project_freemodbus/porttimer.c > CMakeFiles/yangpi_service_rtu.dir/porttimer.c.i
+	cd /var/lib/jenkins/workspace/project-yangpai/project_freemodbus && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /var/lib/jenkins/workspace/project-yangpai/project_freemodbus/porttimer.c > CMakeFiles/yangpi_service_rtu.dir/porttimer.c.i
 
 project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/porttimer.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/yangpi_service_rtu.dir/porttimer.c.s"
-	cd /home/admin/repo/project-yangpai/project_freemodbus && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/admin/repo/project-yangpai/project_freemodbus/porttimer.c -o CMakeFiles/yangpi_service_rtu.dir/porttimer.c.s
+	cd /var/lib/jenkins/workspace/project-yangpai/project_freemodbus && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /var/lib/jenkins/workspace/project-yangpai/project_freemodbus/porttimer.c -o CMakeFiles/yangpi_service_rtu.dir/porttimer.c.s
 
 project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/rtu_service.c.o: project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/flags.make
 project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/rtu_service.c.o: project_freemodbus/rtu_service.c
 project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/rtu_service.c.o: project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/admin/repo/project-yangpai/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/rtu_service.c.o"
-	cd /home/admin/repo/project-yangpai/project_freemodbus && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/rtu_service.c.o -MF CMakeFiles/yangpi_service_rtu.dir/rtu_service.c.o.d -o CMakeFiles/yangpi_service_rtu.dir/rtu_service.c.o -c /home/admin/repo/project-yangpai/project_freemodbus/rtu_service.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/var/lib/jenkins/workspace/project-yangpai/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/rtu_service.c.o"
+	cd /var/lib/jenkins/workspace/project-yangpai/project_freemodbus && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/rtu_service.c.o -MF CMakeFiles/yangpi_service_rtu.dir/rtu_service.c.o.d -o CMakeFiles/yangpi_service_rtu.dir/rtu_service.c.o -c /var/lib/jenkins/workspace/project-yangpai/project_freemodbus/rtu_service.c
 
 project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/rtu_service.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/yangpi_service_rtu.dir/rtu_service.c.i"
-	cd /home/admin/repo/project-yangpai/project_freemodbus && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/admin/repo/project-yangpai/project_freemodbus/rtu_service.c > CMakeFiles/yangpi_service_rtu.dir/rtu_service.c.i
+	cd /var/lib/jenkins/workspace/project-yangpai/project_freemodbus && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /var/lib/jenkins/workspace/project-yangpai/project_freemodbus/rtu_service.c > CMakeFiles/yangpi_service_rtu.dir/rtu_service.c.i
 
 project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/rtu_service.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/yangpi_service_rtu.dir/rtu_service.c.s"
-	cd /home/admin/repo/project-yangpai/project_freemodbus && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/admin/repo/project-yangpai/project_freemodbus/rtu_service.c -o CMakeFiles/yangpi_service_rtu.dir/rtu_service.c.s
+	cd /var/lib/jenkins/workspace/project-yangpai/project_freemodbus && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /var/lib/jenkins/workspace/project-yangpai/project_freemodbus/rtu_service.c -o CMakeFiles/yangpi_service_rtu.dir/rtu_service.c.s
 
 project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/yangpi_rtu_main.c.o: project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/flags.make
 project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/yangpi_rtu_main.c.o: project_freemodbus/yangpi_rtu_main.c
 project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/yangpi_rtu_main.c.o: project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/admin/repo/project-yangpai/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/yangpi_rtu_main.c.o"
-	cd /home/admin/repo/project-yangpai/project_freemodbus && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/yangpi_rtu_main.c.o -MF CMakeFiles/yangpi_service_rtu.dir/yangpi_rtu_main.c.o.d -o CMakeFiles/yangpi_service_rtu.dir/yangpi_rtu_main.c.o -c /home/admin/repo/project-yangpai/project_freemodbus/yangpi_rtu_main.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/var/lib/jenkins/workspace/project-yangpai/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/yangpi_rtu_main.c.o"
+	cd /var/lib/jenkins/workspace/project-yangpai/project_freemodbus && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/yangpi_rtu_main.c.o -MF CMakeFiles/yangpi_service_rtu.dir/yangpi_rtu_main.c.o.d -o CMakeFiles/yangpi_service_rtu.dir/yangpi_rtu_main.c.o -c /var/lib/jenkins/workspace/project-yangpai/project_freemodbus/yangpi_rtu_main.c
 
 project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/yangpi_rtu_main.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/yangpi_service_rtu.dir/yangpi_rtu_main.c.i"
-	cd /home/admin/repo/project-yangpai/project_freemodbus && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/admin/repo/project-yangpai/project_freemodbus/yangpi_rtu_main.c > CMakeFiles/yangpi_service_rtu.dir/yangpi_rtu_main.c.i
+	cd /var/lib/jenkins/workspace/project-yangpai/project_freemodbus && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /var/lib/jenkins/workspace/project-yangpai/project_freemodbus/yangpi_rtu_main.c > CMakeFiles/yangpi_service_rtu.dir/yangpi_rtu_main.c.i
 
 project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/yangpi_rtu_main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/yangpi_service_rtu.dir/yangpi_rtu_main.c.s"
-	cd /home/admin/repo/project-yangpai/project_freemodbus && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/admin/repo/project-yangpai/project_freemodbus/yangpi_rtu_main.c -o CMakeFiles/yangpi_service_rtu.dir/yangpi_rtu_main.c.s
+	cd /var/lib/jenkins/workspace/project-yangpai/project_freemodbus && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /var/lib/jenkins/workspace/project-yangpai/project_freemodbus/yangpi_rtu_main.c -o CMakeFiles/yangpi_service_rtu.dir/yangpi_rtu_main.c.s
 
 project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/yangpi_rtu_stub.c.o: project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/flags.make
 project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/yangpi_rtu_stub.c.o: project_freemodbus/yangpi_rtu_stub.c
 project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/yangpi_rtu_stub.c.o: project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/admin/repo/project-yangpai/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/yangpi_rtu_stub.c.o"
-	cd /home/admin/repo/project-yangpai/project_freemodbus && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/yangpi_rtu_stub.c.o -MF CMakeFiles/yangpi_service_rtu.dir/yangpi_rtu_stub.c.o.d -o CMakeFiles/yangpi_service_rtu.dir/yangpi_rtu_stub.c.o -c /home/admin/repo/project-yangpai/project_freemodbus/yangpi_rtu_stub.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/var/lib/jenkins/workspace/project-yangpai/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/yangpi_rtu_stub.c.o"
+	cd /var/lib/jenkins/workspace/project-yangpai/project_freemodbus && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/yangpi_rtu_stub.c.o -MF CMakeFiles/yangpi_service_rtu.dir/yangpi_rtu_stub.c.o.d -o CMakeFiles/yangpi_service_rtu.dir/yangpi_rtu_stub.c.o -c /var/lib/jenkins/workspace/project-yangpai/project_freemodbus/yangpi_rtu_stub.c
 
 project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/yangpi_rtu_stub.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/yangpi_service_rtu.dir/yangpi_rtu_stub.c.i"
-	cd /home/admin/repo/project-yangpai/project_freemodbus && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/admin/repo/project-yangpai/project_freemodbus/yangpi_rtu_stub.c > CMakeFiles/yangpi_service_rtu.dir/yangpi_rtu_stub.c.i
+	cd /var/lib/jenkins/workspace/project-yangpai/project_freemodbus && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /var/lib/jenkins/workspace/project-yangpai/project_freemodbus/yangpi_rtu_stub.c > CMakeFiles/yangpi_service_rtu.dir/yangpi_rtu_stub.c.i
 
 project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/yangpi_rtu_stub.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/yangpi_service_rtu.dir/yangpi_rtu_stub.c.s"
-	cd /home/admin/repo/project-yangpai/project_freemodbus && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/admin/repo/project-yangpai/project_freemodbus/yangpi_rtu_stub.c -o CMakeFiles/yangpi_service_rtu.dir/yangpi_rtu_stub.c.s
+	cd /var/lib/jenkins/workspace/project-yangpai/project_freemodbus && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /var/lib/jenkins/workspace/project-yangpai/project_freemodbus/yangpi_rtu_stub.c -o CMakeFiles/yangpi_service_rtu.dir/yangpi_rtu_stub.c.s
 
 # Object files for target yangpi_service_rtu
 yangpi_service_rtu_OBJECTS = \
@@ -383,18 +383,18 @@ project_freemodbus/yangpi_service_rtu: project_freemodbus/CMakeFiles/yangpi_serv
 project_freemodbus/yangpi_service_rtu: project_frame/libyangpai_service.so
 project_freemodbus/yangpi_service_rtu: project_mysql/libservice_mysql_proxy.so
 project_freemodbus/yangpi_service_rtu: project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/admin/repo/project-yangpai/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Linking C executable yangpi_service_rtu"
-	cd /home/admin/repo/project-yangpai/project_freemodbus && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/yangpi_service_rtu.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/var/lib/jenkins/workspace/project-yangpai/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Linking C executable yangpi_service_rtu"
+	cd /var/lib/jenkins/workspace/project-yangpai/project_freemodbus && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/yangpi_service_rtu.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/build: project_freemodbus/yangpi_service_rtu
 .PHONY : project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/build
 
 project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/clean:
-	cd /home/admin/repo/project-yangpai/project_freemodbus && $(CMAKE_COMMAND) -P CMakeFiles/yangpi_service_rtu.dir/cmake_clean.cmake
+	cd /var/lib/jenkins/workspace/project-yangpai/project_freemodbus && $(CMAKE_COMMAND) -P CMakeFiles/yangpi_service_rtu.dir/cmake_clean.cmake
 .PHONY : project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/clean
 
 project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/depend:
-	cd /home/admin/repo/project-yangpai && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/admin/repo/project-yangpai /home/admin/repo/project-yangpai/project_freemodbus /home/admin/repo/project-yangpai /home/admin/repo/project-yangpai/project_freemodbus /home/admin/repo/project-yangpai/project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/DependInfo.cmake --color=$(COLOR)
+	cd /var/lib/jenkins/workspace/project-yangpai && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /var/lib/jenkins/workspace/project-yangpai /var/lib/jenkins/workspace/project-yangpai/project_freemodbus /var/lib/jenkins/workspace/project-yangpai /var/lib/jenkins/workspace/project-yangpai/project_freemodbus /var/lib/jenkins/workspace/project-yangpai/project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/depend
 

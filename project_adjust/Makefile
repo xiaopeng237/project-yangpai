@@ -57,10 +57,10 @@ RM = /usr/local/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/admin/repo/project-yangpai
+CMAKE_SOURCE_DIR = /var/lib/jenkins/workspace/project-yangpai
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/admin/repo/project-yangpai
+CMAKE_BINARY_DIR = /var/lib/jenkins/workspace/project-yangpai
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -132,14 +132,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/admin/repo/project-yangpai && $(CMAKE_COMMAND) -E cmake_progress_start /home/admin/repo/project-yangpai/CMakeFiles /home/admin/repo/project-yangpai/project_adjust//CMakeFiles/progress.marks
-	cd /home/admin/repo/project-yangpai && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 project_adjust/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/admin/repo/project-yangpai/CMakeFiles 0
+	cd /var/lib/jenkins/workspace/project-yangpai && $(CMAKE_COMMAND) -E cmake_progress_start /var/lib/jenkins/workspace/project-yangpai/CMakeFiles /var/lib/jenkins/workspace/project-yangpai/project_adjust//CMakeFiles/progress.marks
+	cd /var/lib/jenkins/workspace/project-yangpai && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 project_adjust/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /var/lib/jenkins/workspace/project-yangpai/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/admin/repo/project-yangpai && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 project_adjust/clean
+	cd /var/lib/jenkins/workspace/project-yangpai && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 project_adjust/clean
 .PHONY : clean
 
 # The main clean target
@@ -148,22 +148,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/admin/repo/project-yangpai && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 project_adjust/preinstall
+	cd /var/lib/jenkins/workspace/project-yangpai && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 project_adjust/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/admin/repo/project-yangpai && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 project_adjust/preinstall
+	cd /var/lib/jenkins/workspace/project-yangpai && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 project_adjust/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/admin/repo/project-yangpai && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /var/lib/jenkins/workspace/project-yangpai && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 project_adjust/CMakeFiles/service_adjust_proxy.dir/rule:
-	cd /home/admin/repo/project-yangpai && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 project_adjust/CMakeFiles/service_adjust_proxy.dir/rule
+	cd /var/lib/jenkins/workspace/project-yangpai && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 project_adjust/CMakeFiles/service_adjust_proxy.dir/rule
 .PHONY : project_adjust/CMakeFiles/service_adjust_proxy.dir/rule
 
 # Convenience name for target.
@@ -172,12 +172,12 @@ service_adjust_proxy: project_adjust/CMakeFiles/service_adjust_proxy.dir/rule
 
 # fast build rule for target.
 service_adjust_proxy/fast:
-	cd /home/admin/repo/project-yangpai && $(MAKE) $(MAKESILENT) -f project_adjust/CMakeFiles/service_adjust_proxy.dir/build.make project_adjust/CMakeFiles/service_adjust_proxy.dir/build
+	cd /var/lib/jenkins/workspace/project-yangpai && $(MAKE) $(MAKESILENT) -f project_adjust/CMakeFiles/service_adjust_proxy.dir/build.make project_adjust/CMakeFiles/service_adjust_proxy.dir/build
 .PHONY : service_adjust_proxy/fast
 
 # Convenience name for target.
 project_adjust/CMakeFiles/yangpi_service_adjust.dir/rule:
-	cd /home/admin/repo/project-yangpai && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 project_adjust/CMakeFiles/yangpi_service_adjust.dir/rule
+	cd /var/lib/jenkins/workspace/project-yangpai && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 project_adjust/CMakeFiles/yangpi_service_adjust.dir/rule
 .PHONY : project_adjust/CMakeFiles/yangpi_service_adjust.dir/rule
 
 # Convenience name for target.
@@ -186,7 +186,7 @@ yangpi_service_adjust: project_adjust/CMakeFiles/yangpi_service_adjust.dir/rule
 
 # fast build rule for target.
 yangpi_service_adjust/fast:
-	cd /home/admin/repo/project-yangpai && $(MAKE) $(MAKESILENT) -f project_adjust/CMakeFiles/yangpi_service_adjust.dir/build.make project_adjust/CMakeFiles/yangpi_service_adjust.dir/build
+	cd /var/lib/jenkins/workspace/project-yangpai && $(MAKE) $(MAKESILENT) -f project_adjust/CMakeFiles/yangpi_service_adjust.dir/build.make project_adjust/CMakeFiles/yangpi_service_adjust.dir/build
 .PHONY : yangpi_service_adjust/fast
 
 adjust_service.o: adjust_service.c.o
@@ -194,7 +194,7 @@ adjust_service.o: adjust_service.c.o
 
 # target to build an object file
 adjust_service.c.o:
-	cd /home/admin/repo/project-yangpai && $(MAKE) $(MAKESILENT) -f project_adjust/CMakeFiles/yangpi_service_adjust.dir/build.make project_adjust/CMakeFiles/yangpi_service_adjust.dir/adjust_service.c.o
+	cd /var/lib/jenkins/workspace/project-yangpai && $(MAKE) $(MAKESILENT) -f project_adjust/CMakeFiles/yangpi_service_adjust.dir/build.make project_adjust/CMakeFiles/yangpi_service_adjust.dir/adjust_service.c.o
 .PHONY : adjust_service.c.o
 
 adjust_service.i: adjust_service.c.i
@@ -202,7 +202,7 @@ adjust_service.i: adjust_service.c.i
 
 # target to preprocess a source file
 adjust_service.c.i:
-	cd /home/admin/repo/project-yangpai && $(MAKE) $(MAKESILENT) -f project_adjust/CMakeFiles/yangpi_service_adjust.dir/build.make project_adjust/CMakeFiles/yangpi_service_adjust.dir/adjust_service.c.i
+	cd /var/lib/jenkins/workspace/project-yangpai && $(MAKE) $(MAKESILENT) -f project_adjust/CMakeFiles/yangpi_service_adjust.dir/build.make project_adjust/CMakeFiles/yangpi_service_adjust.dir/adjust_service.c.i
 .PHONY : adjust_service.c.i
 
 adjust_service.s: adjust_service.c.s
@@ -210,7 +210,7 @@ adjust_service.s: adjust_service.c.s
 
 # target to generate assembly for a file
 adjust_service.c.s:
-	cd /home/admin/repo/project-yangpai && $(MAKE) $(MAKESILENT) -f project_adjust/CMakeFiles/yangpi_service_adjust.dir/build.make project_adjust/CMakeFiles/yangpi_service_adjust.dir/adjust_service.c.s
+	cd /var/lib/jenkins/workspace/project-yangpai && $(MAKE) $(MAKESILENT) -f project_adjust/CMakeFiles/yangpi_service_adjust.dir/build.make project_adjust/CMakeFiles/yangpi_service_adjust.dir/adjust_service.c.s
 .PHONY : adjust_service.c.s
 
 adjust_service_base.o: adjust_service_base.c.o
@@ -218,7 +218,7 @@ adjust_service_base.o: adjust_service_base.c.o
 
 # target to build an object file
 adjust_service_base.c.o:
-	cd /home/admin/repo/project-yangpai && $(MAKE) $(MAKESILENT) -f project_adjust/CMakeFiles/yangpi_service_adjust.dir/build.make project_adjust/CMakeFiles/yangpi_service_adjust.dir/adjust_service_base.c.o
+	cd /var/lib/jenkins/workspace/project-yangpai && $(MAKE) $(MAKESILENT) -f project_adjust/CMakeFiles/yangpi_service_adjust.dir/build.make project_adjust/CMakeFiles/yangpi_service_adjust.dir/adjust_service_base.c.o
 .PHONY : adjust_service_base.c.o
 
 adjust_service_base.i: adjust_service_base.c.i
@@ -226,7 +226,7 @@ adjust_service_base.i: adjust_service_base.c.i
 
 # target to preprocess a source file
 adjust_service_base.c.i:
-	cd /home/admin/repo/project-yangpai && $(MAKE) $(MAKESILENT) -f project_adjust/CMakeFiles/yangpi_service_adjust.dir/build.make project_adjust/CMakeFiles/yangpi_service_adjust.dir/adjust_service_base.c.i
+	cd /var/lib/jenkins/workspace/project-yangpai && $(MAKE) $(MAKESILENT) -f project_adjust/CMakeFiles/yangpi_service_adjust.dir/build.make project_adjust/CMakeFiles/yangpi_service_adjust.dir/adjust_service_base.c.i
 .PHONY : adjust_service_base.c.i
 
 adjust_service_base.s: adjust_service_base.c.s
@@ -234,7 +234,7 @@ adjust_service_base.s: adjust_service_base.c.s
 
 # target to generate assembly for a file
 adjust_service_base.c.s:
-	cd /home/admin/repo/project-yangpai && $(MAKE) $(MAKESILENT) -f project_adjust/CMakeFiles/yangpi_service_adjust.dir/build.make project_adjust/CMakeFiles/yangpi_service_adjust.dir/adjust_service_base.c.s
+	cd /var/lib/jenkins/workspace/project-yangpai && $(MAKE) $(MAKESILENT) -f project_adjust/CMakeFiles/yangpi_service_adjust.dir/build.make project_adjust/CMakeFiles/yangpi_service_adjust.dir/adjust_service_base.c.s
 .PHONY : adjust_service_base.c.s
 
 log_dlt.o: log_dlt.c.o
@@ -242,7 +242,7 @@ log_dlt.o: log_dlt.c.o
 
 # target to build an object file
 log_dlt.c.o:
-	cd /home/admin/repo/project-yangpai && $(MAKE) $(MAKESILENT) -f project_adjust/CMakeFiles/yangpi_service_adjust.dir/build.make project_adjust/CMakeFiles/yangpi_service_adjust.dir/log_dlt.c.o
+	cd /var/lib/jenkins/workspace/project-yangpai && $(MAKE) $(MAKESILENT) -f project_adjust/CMakeFiles/yangpi_service_adjust.dir/build.make project_adjust/CMakeFiles/yangpi_service_adjust.dir/log_dlt.c.o
 .PHONY : log_dlt.c.o
 
 log_dlt.i: log_dlt.c.i
@@ -250,7 +250,7 @@ log_dlt.i: log_dlt.c.i
 
 # target to preprocess a source file
 log_dlt.c.i:
-	cd /home/admin/repo/project-yangpai && $(MAKE) $(MAKESILENT) -f project_adjust/CMakeFiles/yangpi_service_adjust.dir/build.make project_adjust/CMakeFiles/yangpi_service_adjust.dir/log_dlt.c.i
+	cd /var/lib/jenkins/workspace/project-yangpai && $(MAKE) $(MAKESILENT) -f project_adjust/CMakeFiles/yangpi_service_adjust.dir/build.make project_adjust/CMakeFiles/yangpi_service_adjust.dir/log_dlt.c.i
 .PHONY : log_dlt.c.i
 
 log_dlt.s: log_dlt.c.s
@@ -258,7 +258,7 @@ log_dlt.s: log_dlt.c.s
 
 # target to generate assembly for a file
 log_dlt.c.s:
-	cd /home/admin/repo/project-yangpai && $(MAKE) $(MAKESILENT) -f project_adjust/CMakeFiles/yangpi_service_adjust.dir/build.make project_adjust/CMakeFiles/yangpi_service_adjust.dir/log_dlt.c.s
+	cd /var/lib/jenkins/workspace/project-yangpai && $(MAKE) $(MAKESILENT) -f project_adjust/CMakeFiles/yangpi_service_adjust.dir/build.make project_adjust/CMakeFiles/yangpi_service_adjust.dir/log_dlt.c.s
 .PHONY : log_dlt.c.s
 
 yangpi_adjust_main.o: yangpi_adjust_main.c.o
@@ -266,7 +266,7 @@ yangpi_adjust_main.o: yangpi_adjust_main.c.o
 
 # target to build an object file
 yangpi_adjust_main.c.o:
-	cd /home/admin/repo/project-yangpai && $(MAKE) $(MAKESILENT) -f project_adjust/CMakeFiles/yangpi_service_adjust.dir/build.make project_adjust/CMakeFiles/yangpi_service_adjust.dir/yangpi_adjust_main.c.o
+	cd /var/lib/jenkins/workspace/project-yangpai && $(MAKE) $(MAKESILENT) -f project_adjust/CMakeFiles/yangpi_service_adjust.dir/build.make project_adjust/CMakeFiles/yangpi_service_adjust.dir/yangpi_adjust_main.c.o
 .PHONY : yangpi_adjust_main.c.o
 
 yangpi_adjust_main.i: yangpi_adjust_main.c.i
@@ -274,7 +274,7 @@ yangpi_adjust_main.i: yangpi_adjust_main.c.i
 
 # target to preprocess a source file
 yangpi_adjust_main.c.i:
-	cd /home/admin/repo/project-yangpai && $(MAKE) $(MAKESILENT) -f project_adjust/CMakeFiles/yangpi_service_adjust.dir/build.make project_adjust/CMakeFiles/yangpi_service_adjust.dir/yangpi_adjust_main.c.i
+	cd /var/lib/jenkins/workspace/project-yangpai && $(MAKE) $(MAKESILENT) -f project_adjust/CMakeFiles/yangpi_service_adjust.dir/build.make project_adjust/CMakeFiles/yangpi_service_adjust.dir/yangpi_adjust_main.c.i
 .PHONY : yangpi_adjust_main.c.i
 
 yangpi_adjust_main.s: yangpi_adjust_main.c.s
@@ -282,7 +282,7 @@ yangpi_adjust_main.s: yangpi_adjust_main.c.s
 
 # target to generate assembly for a file
 yangpi_adjust_main.c.s:
-	cd /home/admin/repo/project-yangpai && $(MAKE) $(MAKESILENT) -f project_adjust/CMakeFiles/yangpi_service_adjust.dir/build.make project_adjust/CMakeFiles/yangpi_service_adjust.dir/yangpi_adjust_main.c.s
+	cd /var/lib/jenkins/workspace/project-yangpai && $(MAKE) $(MAKESILENT) -f project_adjust/CMakeFiles/yangpi_service_adjust.dir/build.make project_adjust/CMakeFiles/yangpi_service_adjust.dir/yangpi_adjust_main.c.s
 .PHONY : yangpi_adjust_main.c.s
 
 yangpi_adjust_proxy.o: yangpi_adjust_proxy.c.o
@@ -290,7 +290,7 @@ yangpi_adjust_proxy.o: yangpi_adjust_proxy.c.o
 
 # target to build an object file
 yangpi_adjust_proxy.c.o:
-	cd /home/admin/repo/project-yangpai && $(MAKE) $(MAKESILENT) -f project_adjust/CMakeFiles/service_adjust_proxy.dir/build.make project_adjust/CMakeFiles/service_adjust_proxy.dir/yangpi_adjust_proxy.c.o
+	cd /var/lib/jenkins/workspace/project-yangpai && $(MAKE) $(MAKESILENT) -f project_adjust/CMakeFiles/service_adjust_proxy.dir/build.make project_adjust/CMakeFiles/service_adjust_proxy.dir/yangpi_adjust_proxy.c.o
 .PHONY : yangpi_adjust_proxy.c.o
 
 yangpi_adjust_proxy.i: yangpi_adjust_proxy.c.i
@@ -298,7 +298,7 @@ yangpi_adjust_proxy.i: yangpi_adjust_proxy.c.i
 
 # target to preprocess a source file
 yangpi_adjust_proxy.c.i:
-	cd /home/admin/repo/project-yangpai && $(MAKE) $(MAKESILENT) -f project_adjust/CMakeFiles/service_adjust_proxy.dir/build.make project_adjust/CMakeFiles/service_adjust_proxy.dir/yangpi_adjust_proxy.c.i
+	cd /var/lib/jenkins/workspace/project-yangpai && $(MAKE) $(MAKESILENT) -f project_adjust/CMakeFiles/service_adjust_proxy.dir/build.make project_adjust/CMakeFiles/service_adjust_proxy.dir/yangpi_adjust_proxy.c.i
 .PHONY : yangpi_adjust_proxy.c.i
 
 yangpi_adjust_proxy.s: yangpi_adjust_proxy.c.s
@@ -306,7 +306,7 @@ yangpi_adjust_proxy.s: yangpi_adjust_proxy.c.s
 
 # target to generate assembly for a file
 yangpi_adjust_proxy.c.s:
-	cd /home/admin/repo/project-yangpai && $(MAKE) $(MAKESILENT) -f project_adjust/CMakeFiles/service_adjust_proxy.dir/build.make project_adjust/CMakeFiles/service_adjust_proxy.dir/yangpi_adjust_proxy.c.s
+	cd /var/lib/jenkins/workspace/project-yangpai && $(MAKE) $(MAKESILENT) -f project_adjust/CMakeFiles/service_adjust_proxy.dir/build.make project_adjust/CMakeFiles/service_adjust_proxy.dir/yangpi_adjust_proxy.c.s
 .PHONY : yangpi_adjust_proxy.c.s
 
 yangpi_adjust_stub.o: yangpi_adjust_stub.c.o
@@ -314,7 +314,7 @@ yangpi_adjust_stub.o: yangpi_adjust_stub.c.o
 
 # target to build an object file
 yangpi_adjust_stub.c.o:
-	cd /home/admin/repo/project-yangpai && $(MAKE) $(MAKESILENT) -f project_adjust/CMakeFiles/yangpi_service_adjust.dir/build.make project_adjust/CMakeFiles/yangpi_service_adjust.dir/yangpi_adjust_stub.c.o
+	cd /var/lib/jenkins/workspace/project-yangpai && $(MAKE) $(MAKESILENT) -f project_adjust/CMakeFiles/yangpi_service_adjust.dir/build.make project_adjust/CMakeFiles/yangpi_service_adjust.dir/yangpi_adjust_stub.c.o
 .PHONY : yangpi_adjust_stub.c.o
 
 yangpi_adjust_stub.i: yangpi_adjust_stub.c.i
@@ -322,7 +322,7 @@ yangpi_adjust_stub.i: yangpi_adjust_stub.c.i
 
 # target to preprocess a source file
 yangpi_adjust_stub.c.i:
-	cd /home/admin/repo/project-yangpai && $(MAKE) $(MAKESILENT) -f project_adjust/CMakeFiles/yangpi_service_adjust.dir/build.make project_adjust/CMakeFiles/yangpi_service_adjust.dir/yangpi_adjust_stub.c.i
+	cd /var/lib/jenkins/workspace/project-yangpai && $(MAKE) $(MAKESILENT) -f project_adjust/CMakeFiles/yangpi_service_adjust.dir/build.make project_adjust/CMakeFiles/yangpi_service_adjust.dir/yangpi_adjust_stub.c.i
 .PHONY : yangpi_adjust_stub.c.i
 
 yangpi_adjust_stub.s: yangpi_adjust_stub.c.s
@@ -330,7 +330,7 @@ yangpi_adjust_stub.s: yangpi_adjust_stub.c.s
 
 # target to generate assembly for a file
 yangpi_adjust_stub.c.s:
-	cd /home/admin/repo/project-yangpai && $(MAKE) $(MAKESILENT) -f project_adjust/CMakeFiles/yangpi_service_adjust.dir/build.make project_adjust/CMakeFiles/yangpi_service_adjust.dir/yangpi_adjust_stub.c.s
+	cd /var/lib/jenkins/workspace/project-yangpai && $(MAKE) $(MAKESILENT) -f project_adjust/CMakeFiles/yangpi_service_adjust.dir/build.make project_adjust/CMakeFiles/yangpi_service_adjust.dir/yangpi_adjust_stub.c.s
 .PHONY : yangpi_adjust_stub.c.s
 
 # Help Target
@@ -376,6 +376,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/admin/repo/project-yangpai && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /var/lib/jenkins/workspace/project-yangpai && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

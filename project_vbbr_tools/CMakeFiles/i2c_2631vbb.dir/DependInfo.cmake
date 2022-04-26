@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/admin/repo/project-yangpai/project_vbbr_tools/i2c_2631vbb.c" "project_vbbr_tools/CMakeFiles/i2c_2631vbb.dir/i2c_2631vbb.c.o" "gcc" "project_vbbr_tools/CMakeFiles/i2c_2631vbb.dir/i2c_2631vbb.c.o.d"
+  "/var/lib/jenkins/workspace/project-yangpai/project_vbbr_tools/i2c_2631vbb.c" "project_vbbr_tools/CMakeFiles/i2c_2631vbb.dir/i2c_2631vbb.c.o" "gcc" "project_vbbr_tools/CMakeFiles/i2c_2631vbb.dir/i2c_2631vbb.c.o.d"
   )
 
 # Targets to which this target links.

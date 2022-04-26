@@ -53,10 +53,10 @@ RM = /usr/local/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/admin/repo/project-yangpai
+CMAKE_SOURCE_DIR = /var/lib/jenkins/workspace/project-yangpai
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/admin/repo/project-yangpai
+CMAKE_BINARY_DIR = /var/lib/jenkins/workspace/project-yangpai
 
 # Include any dependencies generated for this target.
 include project_hv_tools/CMakeFiles/i2c_2631hv.dir/depend.make
@@ -72,16 +72,16 @@ include project_hv_tools/CMakeFiles/i2c_2631hv.dir/flags.make
 project_hv_tools/CMakeFiles/i2c_2631hv.dir/i2c_2631hv.c.o: project_hv_tools/CMakeFiles/i2c_2631hv.dir/flags.make
 project_hv_tools/CMakeFiles/i2c_2631hv.dir/i2c_2631hv.c.o: project_hv_tools/i2c_2631hv.c
 project_hv_tools/CMakeFiles/i2c_2631hv.dir/i2c_2631hv.c.o: project_hv_tools/CMakeFiles/i2c_2631hv.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/admin/repo/project-yangpai/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object project_hv_tools/CMakeFiles/i2c_2631hv.dir/i2c_2631hv.c.o"
-	cd /home/admin/repo/project-yangpai/project_hv_tools && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT project_hv_tools/CMakeFiles/i2c_2631hv.dir/i2c_2631hv.c.o -MF CMakeFiles/i2c_2631hv.dir/i2c_2631hv.c.o.d -o CMakeFiles/i2c_2631hv.dir/i2c_2631hv.c.o -c /home/admin/repo/project-yangpai/project_hv_tools/i2c_2631hv.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/var/lib/jenkins/workspace/project-yangpai/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object project_hv_tools/CMakeFiles/i2c_2631hv.dir/i2c_2631hv.c.o"
+	cd /var/lib/jenkins/workspace/project-yangpai/project_hv_tools && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT project_hv_tools/CMakeFiles/i2c_2631hv.dir/i2c_2631hv.c.o -MF CMakeFiles/i2c_2631hv.dir/i2c_2631hv.c.o.d -o CMakeFiles/i2c_2631hv.dir/i2c_2631hv.c.o -c /var/lib/jenkins/workspace/project-yangpai/project_hv_tools/i2c_2631hv.c
 
 project_hv_tools/CMakeFiles/i2c_2631hv.dir/i2c_2631hv.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/i2c_2631hv.dir/i2c_2631hv.c.i"
-	cd /home/admin/repo/project-yangpai/project_hv_tools && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/admin/repo/project-yangpai/project_hv_tools/i2c_2631hv.c > CMakeFiles/i2c_2631hv.dir/i2c_2631hv.c.i
+	cd /var/lib/jenkins/workspace/project-yangpai/project_hv_tools && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /var/lib/jenkins/workspace/project-yangpai/project_hv_tools/i2c_2631hv.c > CMakeFiles/i2c_2631hv.dir/i2c_2631hv.c.i
 
 project_hv_tools/CMakeFiles/i2c_2631hv.dir/i2c_2631hv.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/i2c_2631hv.dir/i2c_2631hv.c.s"
-	cd /home/admin/repo/project-yangpai/project_hv_tools && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/admin/repo/project-yangpai/project_hv_tools/i2c_2631hv.c -o CMakeFiles/i2c_2631hv.dir/i2c_2631hv.c.s
+	cd /var/lib/jenkins/workspace/project-yangpai/project_hv_tools && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /var/lib/jenkins/workspace/project-yangpai/project_hv_tools/i2c_2631hv.c -o CMakeFiles/i2c_2631hv.dir/i2c_2631hv.c.s
 
 # Object files for target i2c_2631hv
 i2c_2631hv_OBJECTS = \
@@ -93,18 +93,18 @@ i2c_2631hv_EXTERNAL_OBJECTS =
 project_hv_tools/i2c_2631hv: project_hv_tools/CMakeFiles/i2c_2631hv.dir/i2c_2631hv.c.o
 project_hv_tools/i2c_2631hv: project_hv_tools/CMakeFiles/i2c_2631hv.dir/build.make
 project_hv_tools/i2c_2631hv: project_hv_tools/CMakeFiles/i2c_2631hv.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/admin/repo/project-yangpai/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable i2c_2631hv"
-	cd /home/admin/repo/project-yangpai/project_hv_tools && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/i2c_2631hv.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/var/lib/jenkins/workspace/project-yangpai/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable i2c_2631hv"
+	cd /var/lib/jenkins/workspace/project-yangpai/project_hv_tools && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/i2c_2631hv.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 project_hv_tools/CMakeFiles/i2c_2631hv.dir/build: project_hv_tools/i2c_2631hv
 .PHONY : project_hv_tools/CMakeFiles/i2c_2631hv.dir/build
 
 project_hv_tools/CMakeFiles/i2c_2631hv.dir/clean:
-	cd /home/admin/repo/project-yangpai/project_hv_tools && $(CMAKE_COMMAND) -P CMakeFiles/i2c_2631hv.dir/cmake_clean.cmake
+	cd /var/lib/jenkins/workspace/project-yangpai/project_hv_tools && $(CMAKE_COMMAND) -P CMakeFiles/i2c_2631hv.dir/cmake_clean.cmake
 .PHONY : project_hv_tools/CMakeFiles/i2c_2631hv.dir/clean
 
 project_hv_tools/CMakeFiles/i2c_2631hv.dir/depend:
-	cd /home/admin/repo/project-yangpai && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/admin/repo/project-yangpai /home/admin/repo/project-yangpai/project_hv_tools /home/admin/repo/project-yangpai /home/admin/repo/project-yangpai/project_hv_tools /home/admin/repo/project-yangpai/project_hv_tools/CMakeFiles/i2c_2631hv.dir/DependInfo.cmake --color=$(COLOR)
+	cd /var/lib/jenkins/workspace/project-yangpai && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /var/lib/jenkins/workspace/project-yangpai /var/lib/jenkins/workspace/project-yangpai/project_hv_tools /var/lib/jenkins/workspace/project-yangpai /var/lib/jenkins/workspace/project-yangpai/project_hv_tools /var/lib/jenkins/workspace/project-yangpai/project_hv_tools/CMakeFiles/i2c_2631hv.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : project_hv_tools/CMakeFiles/i2c_2631hv.dir/depend
 

@@ -1,4 +1,4 @@
-# Install script for directory: /home/admin/repo/project-yangpai
+# Install script for directory: /var/lib/jenkins/workspace/project-yangpai
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -44,15 +44,15 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/admin/repo/project-yangpai/project_frame/cmake_install.cmake")
-  include("/home/admin/repo/project-yangpai/project_mysql/cmake_install.cmake")
-  include("/home/admin/repo/project-yangpai/project_i2cbus/cmake_install.cmake")
-  include("/home/admin/repo/project-yangpai/project_adjust/cmake_install.cmake")
-  include("/home/admin/repo/project-yangpai/project_pioneers/cmake_install.cmake")
-  include("/home/admin/repo/project-yangpai/project_freemodbus/cmake_install.cmake")
-  include("/home/admin/repo/project-yangpai/project_ota/cmake_install.cmake")
-  include("/home/admin/repo/project-yangpai/project_hv_tools/cmake_install.cmake")
-  include("/home/admin/repo/project-yangpai/project_vbbr_tools/cmake_install.cmake")
+  include("/var/lib/jenkins/workspace/project-yangpai/project_frame/cmake_install.cmake")
+  include("/var/lib/jenkins/workspace/project-yangpai/project_mysql/cmake_install.cmake")
+  include("/var/lib/jenkins/workspace/project-yangpai/project_i2cbus/cmake_install.cmake")
+  include("/var/lib/jenkins/workspace/project-yangpai/project_adjust/cmake_install.cmake")
+  include("/var/lib/jenkins/workspace/project-yangpai/project_pioneers/cmake_install.cmake")
+  include("/var/lib/jenkins/workspace/project-yangpai/project_freemodbus/cmake_install.cmake")
+  include("/var/lib/jenkins/workspace/project-yangpai/project_ota/cmake_install.cmake")
+  include("/var/lib/jenkins/workspace/project-yangpai/project_hv_tools/cmake_install.cmake")
+  include("/var/lib/jenkins/workspace/project-yangpai/project_vbbr_tools/cmake_install.cmake")
 
 endif()
 
@@ -64,5 +64,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/admin/repo/project-yangpai/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/var/lib/jenkins/workspace/project-yangpai/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

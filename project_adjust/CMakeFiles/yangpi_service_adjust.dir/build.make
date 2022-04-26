@@ -53,10 +53,10 @@ RM = /usr/local/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/admin/repo/project-yangpai
+CMAKE_SOURCE_DIR = /var/lib/jenkins/workspace/project-yangpai
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/admin/repo/project-yangpai
+CMAKE_BINARY_DIR = /var/lib/jenkins/workspace/project-yangpai
 
 # Include any dependencies generated for this target.
 include project_adjust/CMakeFiles/yangpi_service_adjust.dir/depend.make
@@ -72,72 +72,72 @@ include project_adjust/CMakeFiles/yangpi_service_adjust.dir/flags.make
 project_adjust/CMakeFiles/yangpi_service_adjust.dir/yangpi_adjust_main.c.o: project_adjust/CMakeFiles/yangpi_service_adjust.dir/flags.make
 project_adjust/CMakeFiles/yangpi_service_adjust.dir/yangpi_adjust_main.c.o: project_adjust/yangpi_adjust_main.c
 project_adjust/CMakeFiles/yangpi_service_adjust.dir/yangpi_adjust_main.c.o: project_adjust/CMakeFiles/yangpi_service_adjust.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/admin/repo/project-yangpai/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object project_adjust/CMakeFiles/yangpi_service_adjust.dir/yangpi_adjust_main.c.o"
-	cd /home/admin/repo/project-yangpai/project_adjust && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT project_adjust/CMakeFiles/yangpi_service_adjust.dir/yangpi_adjust_main.c.o -MF CMakeFiles/yangpi_service_adjust.dir/yangpi_adjust_main.c.o.d -o CMakeFiles/yangpi_service_adjust.dir/yangpi_adjust_main.c.o -c /home/admin/repo/project-yangpai/project_adjust/yangpi_adjust_main.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/var/lib/jenkins/workspace/project-yangpai/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object project_adjust/CMakeFiles/yangpi_service_adjust.dir/yangpi_adjust_main.c.o"
+	cd /var/lib/jenkins/workspace/project-yangpai/project_adjust && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT project_adjust/CMakeFiles/yangpi_service_adjust.dir/yangpi_adjust_main.c.o -MF CMakeFiles/yangpi_service_adjust.dir/yangpi_adjust_main.c.o.d -o CMakeFiles/yangpi_service_adjust.dir/yangpi_adjust_main.c.o -c /var/lib/jenkins/workspace/project-yangpai/project_adjust/yangpi_adjust_main.c
 
 project_adjust/CMakeFiles/yangpi_service_adjust.dir/yangpi_adjust_main.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/yangpi_service_adjust.dir/yangpi_adjust_main.c.i"
-	cd /home/admin/repo/project-yangpai/project_adjust && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/admin/repo/project-yangpai/project_adjust/yangpi_adjust_main.c > CMakeFiles/yangpi_service_adjust.dir/yangpi_adjust_main.c.i
+	cd /var/lib/jenkins/workspace/project-yangpai/project_adjust && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /var/lib/jenkins/workspace/project-yangpai/project_adjust/yangpi_adjust_main.c > CMakeFiles/yangpi_service_adjust.dir/yangpi_adjust_main.c.i
 
 project_adjust/CMakeFiles/yangpi_service_adjust.dir/yangpi_adjust_main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/yangpi_service_adjust.dir/yangpi_adjust_main.c.s"
-	cd /home/admin/repo/project-yangpai/project_adjust && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/admin/repo/project-yangpai/project_adjust/yangpi_adjust_main.c -o CMakeFiles/yangpi_service_adjust.dir/yangpi_adjust_main.c.s
+	cd /var/lib/jenkins/workspace/project-yangpai/project_adjust && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /var/lib/jenkins/workspace/project-yangpai/project_adjust/yangpi_adjust_main.c -o CMakeFiles/yangpi_service_adjust.dir/yangpi_adjust_main.c.s
 
 project_adjust/CMakeFiles/yangpi_service_adjust.dir/yangpi_adjust_stub.c.o: project_adjust/CMakeFiles/yangpi_service_adjust.dir/flags.make
 project_adjust/CMakeFiles/yangpi_service_adjust.dir/yangpi_adjust_stub.c.o: project_adjust/yangpi_adjust_stub.c
 project_adjust/CMakeFiles/yangpi_service_adjust.dir/yangpi_adjust_stub.c.o: project_adjust/CMakeFiles/yangpi_service_adjust.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/admin/repo/project-yangpai/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object project_adjust/CMakeFiles/yangpi_service_adjust.dir/yangpi_adjust_stub.c.o"
-	cd /home/admin/repo/project-yangpai/project_adjust && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT project_adjust/CMakeFiles/yangpi_service_adjust.dir/yangpi_adjust_stub.c.o -MF CMakeFiles/yangpi_service_adjust.dir/yangpi_adjust_stub.c.o.d -o CMakeFiles/yangpi_service_adjust.dir/yangpi_adjust_stub.c.o -c /home/admin/repo/project-yangpai/project_adjust/yangpi_adjust_stub.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/var/lib/jenkins/workspace/project-yangpai/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object project_adjust/CMakeFiles/yangpi_service_adjust.dir/yangpi_adjust_stub.c.o"
+	cd /var/lib/jenkins/workspace/project-yangpai/project_adjust && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT project_adjust/CMakeFiles/yangpi_service_adjust.dir/yangpi_adjust_stub.c.o -MF CMakeFiles/yangpi_service_adjust.dir/yangpi_adjust_stub.c.o.d -o CMakeFiles/yangpi_service_adjust.dir/yangpi_adjust_stub.c.o -c /var/lib/jenkins/workspace/project-yangpai/project_adjust/yangpi_adjust_stub.c
 
 project_adjust/CMakeFiles/yangpi_service_adjust.dir/yangpi_adjust_stub.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/yangpi_service_adjust.dir/yangpi_adjust_stub.c.i"
-	cd /home/admin/repo/project-yangpai/project_adjust && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/admin/repo/project-yangpai/project_adjust/yangpi_adjust_stub.c > CMakeFiles/yangpi_service_adjust.dir/yangpi_adjust_stub.c.i
+	cd /var/lib/jenkins/workspace/project-yangpai/project_adjust && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /var/lib/jenkins/workspace/project-yangpai/project_adjust/yangpi_adjust_stub.c > CMakeFiles/yangpi_service_adjust.dir/yangpi_adjust_stub.c.i
 
 project_adjust/CMakeFiles/yangpi_service_adjust.dir/yangpi_adjust_stub.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/yangpi_service_adjust.dir/yangpi_adjust_stub.c.s"
-	cd /home/admin/repo/project-yangpai/project_adjust && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/admin/repo/project-yangpai/project_adjust/yangpi_adjust_stub.c -o CMakeFiles/yangpi_service_adjust.dir/yangpi_adjust_stub.c.s
+	cd /var/lib/jenkins/workspace/project-yangpai/project_adjust && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /var/lib/jenkins/workspace/project-yangpai/project_adjust/yangpi_adjust_stub.c -o CMakeFiles/yangpi_service_adjust.dir/yangpi_adjust_stub.c.s
 
 project_adjust/CMakeFiles/yangpi_service_adjust.dir/log_dlt.c.o: project_adjust/CMakeFiles/yangpi_service_adjust.dir/flags.make
 project_adjust/CMakeFiles/yangpi_service_adjust.dir/log_dlt.c.o: project_adjust/log_dlt.c
 project_adjust/CMakeFiles/yangpi_service_adjust.dir/log_dlt.c.o: project_adjust/CMakeFiles/yangpi_service_adjust.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/admin/repo/project-yangpai/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object project_adjust/CMakeFiles/yangpi_service_adjust.dir/log_dlt.c.o"
-	cd /home/admin/repo/project-yangpai/project_adjust && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT project_adjust/CMakeFiles/yangpi_service_adjust.dir/log_dlt.c.o -MF CMakeFiles/yangpi_service_adjust.dir/log_dlt.c.o.d -o CMakeFiles/yangpi_service_adjust.dir/log_dlt.c.o -c /home/admin/repo/project-yangpai/project_adjust/log_dlt.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/var/lib/jenkins/workspace/project-yangpai/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object project_adjust/CMakeFiles/yangpi_service_adjust.dir/log_dlt.c.o"
+	cd /var/lib/jenkins/workspace/project-yangpai/project_adjust && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT project_adjust/CMakeFiles/yangpi_service_adjust.dir/log_dlt.c.o -MF CMakeFiles/yangpi_service_adjust.dir/log_dlt.c.o.d -o CMakeFiles/yangpi_service_adjust.dir/log_dlt.c.o -c /var/lib/jenkins/workspace/project-yangpai/project_adjust/log_dlt.c
 
 project_adjust/CMakeFiles/yangpi_service_adjust.dir/log_dlt.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/yangpi_service_adjust.dir/log_dlt.c.i"
-	cd /home/admin/repo/project-yangpai/project_adjust && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/admin/repo/project-yangpai/project_adjust/log_dlt.c > CMakeFiles/yangpi_service_adjust.dir/log_dlt.c.i
+	cd /var/lib/jenkins/workspace/project-yangpai/project_adjust && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /var/lib/jenkins/workspace/project-yangpai/project_adjust/log_dlt.c > CMakeFiles/yangpi_service_adjust.dir/log_dlt.c.i
 
 project_adjust/CMakeFiles/yangpi_service_adjust.dir/log_dlt.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/yangpi_service_adjust.dir/log_dlt.c.s"
-	cd /home/admin/repo/project-yangpai/project_adjust && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/admin/repo/project-yangpai/project_adjust/log_dlt.c -o CMakeFiles/yangpi_service_adjust.dir/log_dlt.c.s
+	cd /var/lib/jenkins/workspace/project-yangpai/project_adjust && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /var/lib/jenkins/workspace/project-yangpai/project_adjust/log_dlt.c -o CMakeFiles/yangpi_service_adjust.dir/log_dlt.c.s
 
 project_adjust/CMakeFiles/yangpi_service_adjust.dir/adjust_service.c.o: project_adjust/CMakeFiles/yangpi_service_adjust.dir/flags.make
 project_adjust/CMakeFiles/yangpi_service_adjust.dir/adjust_service.c.o: project_adjust/adjust_service.c
 project_adjust/CMakeFiles/yangpi_service_adjust.dir/adjust_service.c.o: project_adjust/CMakeFiles/yangpi_service_adjust.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/admin/repo/project-yangpai/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object project_adjust/CMakeFiles/yangpi_service_adjust.dir/adjust_service.c.o"
-	cd /home/admin/repo/project-yangpai/project_adjust && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT project_adjust/CMakeFiles/yangpi_service_adjust.dir/adjust_service.c.o -MF CMakeFiles/yangpi_service_adjust.dir/adjust_service.c.o.d -o CMakeFiles/yangpi_service_adjust.dir/adjust_service.c.o -c /home/admin/repo/project-yangpai/project_adjust/adjust_service.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/var/lib/jenkins/workspace/project-yangpai/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object project_adjust/CMakeFiles/yangpi_service_adjust.dir/adjust_service.c.o"
+	cd /var/lib/jenkins/workspace/project-yangpai/project_adjust && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT project_adjust/CMakeFiles/yangpi_service_adjust.dir/adjust_service.c.o -MF CMakeFiles/yangpi_service_adjust.dir/adjust_service.c.o.d -o CMakeFiles/yangpi_service_adjust.dir/adjust_service.c.o -c /var/lib/jenkins/workspace/project-yangpai/project_adjust/adjust_service.c
 
 project_adjust/CMakeFiles/yangpi_service_adjust.dir/adjust_service.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/yangpi_service_adjust.dir/adjust_service.c.i"
-	cd /home/admin/repo/project-yangpai/project_adjust && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/admin/repo/project-yangpai/project_adjust/adjust_service.c > CMakeFiles/yangpi_service_adjust.dir/adjust_service.c.i
+	cd /var/lib/jenkins/workspace/project-yangpai/project_adjust && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /var/lib/jenkins/workspace/project-yangpai/project_adjust/adjust_service.c > CMakeFiles/yangpi_service_adjust.dir/adjust_service.c.i
 
 project_adjust/CMakeFiles/yangpi_service_adjust.dir/adjust_service.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/yangpi_service_adjust.dir/adjust_service.c.s"
-	cd /home/admin/repo/project-yangpai/project_adjust && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/admin/repo/project-yangpai/project_adjust/adjust_service.c -o CMakeFiles/yangpi_service_adjust.dir/adjust_service.c.s
+	cd /var/lib/jenkins/workspace/project-yangpai/project_adjust && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /var/lib/jenkins/workspace/project-yangpai/project_adjust/adjust_service.c -o CMakeFiles/yangpi_service_adjust.dir/adjust_service.c.s
 
 project_adjust/CMakeFiles/yangpi_service_adjust.dir/adjust_service_base.c.o: project_adjust/CMakeFiles/yangpi_service_adjust.dir/flags.make
 project_adjust/CMakeFiles/yangpi_service_adjust.dir/adjust_service_base.c.o: project_adjust/adjust_service_base.c
 project_adjust/CMakeFiles/yangpi_service_adjust.dir/adjust_service_base.c.o: project_adjust/CMakeFiles/yangpi_service_adjust.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/admin/repo/project-yangpai/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object project_adjust/CMakeFiles/yangpi_service_adjust.dir/adjust_service_base.c.o"
-	cd /home/admin/repo/project-yangpai/project_adjust && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT project_adjust/CMakeFiles/yangpi_service_adjust.dir/adjust_service_base.c.o -MF CMakeFiles/yangpi_service_adjust.dir/adjust_service_base.c.o.d -o CMakeFiles/yangpi_service_adjust.dir/adjust_service_base.c.o -c /home/admin/repo/project-yangpai/project_adjust/adjust_service_base.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/var/lib/jenkins/workspace/project-yangpai/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object project_adjust/CMakeFiles/yangpi_service_adjust.dir/adjust_service_base.c.o"
+	cd /var/lib/jenkins/workspace/project-yangpai/project_adjust && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT project_adjust/CMakeFiles/yangpi_service_adjust.dir/adjust_service_base.c.o -MF CMakeFiles/yangpi_service_adjust.dir/adjust_service_base.c.o.d -o CMakeFiles/yangpi_service_adjust.dir/adjust_service_base.c.o -c /var/lib/jenkins/workspace/project-yangpai/project_adjust/adjust_service_base.c
 
 project_adjust/CMakeFiles/yangpi_service_adjust.dir/adjust_service_base.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/yangpi_service_adjust.dir/adjust_service_base.c.i"
-	cd /home/admin/repo/project-yangpai/project_adjust && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/admin/repo/project-yangpai/project_adjust/adjust_service_base.c > CMakeFiles/yangpi_service_adjust.dir/adjust_service_base.c.i
+	cd /var/lib/jenkins/workspace/project-yangpai/project_adjust && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /var/lib/jenkins/workspace/project-yangpai/project_adjust/adjust_service_base.c > CMakeFiles/yangpi_service_adjust.dir/adjust_service_base.c.i
 
 project_adjust/CMakeFiles/yangpi_service_adjust.dir/adjust_service_base.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/yangpi_service_adjust.dir/adjust_service_base.c.s"
-	cd /home/admin/repo/project-yangpai/project_adjust && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/admin/repo/project-yangpai/project_adjust/adjust_service_base.c -o CMakeFiles/yangpi_service_adjust.dir/adjust_service_base.c.s
+	cd /var/lib/jenkins/workspace/project-yangpai/project_adjust && /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain//bin/arm-fsl-linux-gnueabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /var/lib/jenkins/workspace/project-yangpai/project_adjust/adjust_service_base.c -o CMakeFiles/yangpi_service_adjust.dir/adjust_service_base.c.s
 
 # Object files for target yangpi_service_adjust
 yangpi_service_adjust_OBJECTS = \
@@ -159,18 +159,18 @@ project_adjust/yangpi_service_adjust: project_adjust/CMakeFiles/yangpi_service_a
 project_adjust/yangpi_service_adjust: project_frame/libyangpai_service.so
 project_adjust/yangpi_service_adjust: project_i2cbus/libservice_i2c_proxy.so
 project_adjust/yangpi_service_adjust: project_adjust/CMakeFiles/yangpi_service_adjust.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/admin/repo/project-yangpai/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking C executable yangpi_service_adjust"
-	cd /home/admin/repo/project-yangpai/project_adjust && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/yangpi_service_adjust.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/var/lib/jenkins/workspace/project-yangpai/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking C executable yangpi_service_adjust"
+	cd /var/lib/jenkins/workspace/project-yangpai/project_adjust && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/yangpi_service_adjust.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 project_adjust/CMakeFiles/yangpi_service_adjust.dir/build: project_adjust/yangpi_service_adjust
 .PHONY : project_adjust/CMakeFiles/yangpi_service_adjust.dir/build
 
 project_adjust/CMakeFiles/yangpi_service_adjust.dir/clean:
-	cd /home/admin/repo/project-yangpai/project_adjust && $(CMAKE_COMMAND) -P CMakeFiles/yangpi_service_adjust.dir/cmake_clean.cmake
+	cd /var/lib/jenkins/workspace/project-yangpai/project_adjust && $(CMAKE_COMMAND) -P CMakeFiles/yangpi_service_adjust.dir/cmake_clean.cmake
 .PHONY : project_adjust/CMakeFiles/yangpi_service_adjust.dir/clean
 
 project_adjust/CMakeFiles/yangpi_service_adjust.dir/depend:
-	cd /home/admin/repo/project-yangpai && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/admin/repo/project-yangpai /home/admin/repo/project-yangpai/project_adjust /home/admin/repo/project-yangpai /home/admin/repo/project-yangpai/project_adjust /home/admin/repo/project-yangpai/project_adjust/CMakeFiles/yangpi_service_adjust.dir/DependInfo.cmake --color=$(COLOR)
+	cd /var/lib/jenkins/workspace/project-yangpai && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /var/lib/jenkins/workspace/project-yangpai /var/lib/jenkins/workspace/project-yangpai/project_adjust /var/lib/jenkins/workspace/project-yangpai /var/lib/jenkins/workspace/project-yangpai/project_adjust /var/lib/jenkins/workspace/project-yangpai/project_adjust/CMakeFiles/yangpi_service_adjust.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : project_adjust/CMakeFiles/yangpi_service_adjust.dir/depend
 

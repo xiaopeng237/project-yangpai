@@ -1,4 +1,4 @@
-# Install script for directory: /home/admin/repo/project-yangpai/project_frame
+# Install script for directory: /var/lib/jenkins/workspace/project-yangpai/project_frame
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -43,29 +43,29 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  if(EXISTS "$ENV{DESTDIR}/home/admin/repo/project-yangpai/project_frame/../depend/lib/libyangpai_service.so" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}/home/admin/repo/project-yangpai/project_frame/../depend/lib/libyangpai_service.so")
+  if(EXISTS "$ENV{DESTDIR}/var/lib/jenkins/workspace/project-yangpai/project_frame/../depend/lib/libyangpai_service.so" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}/var/lib/jenkins/workspace/project-yangpai/project_frame/../depend/lib/libyangpai_service.so")
     file(RPATH_CHECK
-         FILE "$ENV{DESTDIR}/home/admin/repo/project-yangpai/project_frame/../depend/lib/libyangpai_service.so"
+         FILE "$ENV{DESTDIR}/var/lib/jenkins/workspace/project-yangpai/project_frame/../depend/lib/libyangpai_service.so"
          RPATH "")
   endif()
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/admin/repo/project-yangpai/project_frame/../depend/lib/libyangpai_service.so")
+   "/var/lib/jenkins/workspace/project-yangpai/project_frame/../depend/lib/libyangpai_service.so")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/home/admin/repo/project-yangpai/project_frame/../depend/lib" TYPE SHARED_LIBRARY FILES "/home/admin/repo/project-yangpai/project_frame/libyangpai_service.so")
-  if(EXISTS "$ENV{DESTDIR}/home/admin/repo/project-yangpai/project_frame/../depend/lib/libyangpai_service.so" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}/home/admin/repo/project-yangpai/project_frame/../depend/lib/libyangpai_service.so")
+  file(INSTALL DESTINATION "/var/lib/jenkins/workspace/project-yangpai/project_frame/../depend/lib" TYPE SHARED_LIBRARY FILES "/var/lib/jenkins/workspace/project-yangpai/project_frame/libyangpai_service.so")
+  if(EXISTS "$ENV{DESTDIR}/var/lib/jenkins/workspace/project-yangpai/project_frame/../depend/lib/libyangpai_service.so" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}/var/lib/jenkins/workspace/project-yangpai/project_frame/../depend/lib/libyangpai_service.so")
     file(RPATH_CHANGE
-         FILE "$ENV{DESTDIR}/home/admin/repo/project-yangpai/project_frame/../depend/lib/libyangpai_service.so"
-         OLD_RPATH "/home/admin/repo/project-yangpai/depend/mysql/lib/mysql:/home/admin/repo/project-yangpai/depend/dlt/lib:/home/admin/repo/project-yangpai/depend/dbus/lib:/home/admin/repo/project-yangpai/depend/lib:/home/admin/repo/project-yangpai/cmake-build-debug/project_frame:/home/admin/repo/project-yangpai/cmake-build-debug/project_mysql:/home/admin/repo/project-yangpai/cmake-build-debug/project_i2cbus:/home/admin/repo/project-yangpai/cmake-build-debug/project_adjust:/home/admin/repo/project-yangpai/cmake-build-debug/project_pioneers:"
+         FILE "$ENV{DESTDIR}/var/lib/jenkins/workspace/project-yangpai/project_frame/../depend/lib/libyangpai_service.so"
+         OLD_RPATH "/var/lib/jenkins/workspace/project-yangpai/depend/mysql/lib/mysql:/var/lib/jenkins/workspace/project-yangpai/depend/dlt/lib:/var/lib/jenkins/workspace/project-yangpai/depend/dbus/lib:/var/lib/jenkins/workspace/project-yangpai/depend/lib:/var/lib/jenkins/workspace/project-yangpai/cmake-build-debug/project_frame:/var/lib/jenkins/workspace/project-yangpai/cmake-build-debug/project_mysql:/var/lib/jenkins/workspace/project-yangpai/cmake-build-debug/project_i2cbus:/var/lib/jenkins/workspace/project-yangpai/cmake-build-debug/project_adjust:/var/lib/jenkins/workspace/project-yangpai/cmake-build-debug/project_pioneers:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
-      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}/home/admin/repo/project-yangpai/project_frame/../depend/lib/libyangpai_service.so")
+      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}/var/lib/jenkins/workspace/project-yangpai/project_frame/../depend/lib/libyangpai_service.so")
     endif()
   endif()
 endif()
@@ -75,13 +75,13 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/admin/repo/project-yangpai/project_frame/../depend/include/yangpai_service.h")
+   "/var/lib/jenkins/workspace/project-yangpai/project_frame/../depend/include/yangpai_service.h")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/home/admin/repo/project-yangpai/project_frame/../depend/include" TYPE FILE FILES "/home/admin/repo/project-yangpai/project_frame/yangpai_service.h")
+  file(INSTALL DESTINATION "/var/lib/jenkins/workspace/project-yangpai/project_frame/../depend/include" TYPE FILE FILES "/var/lib/jenkins/workspace/project-yangpai/project_frame/yangpai_service.h")
 endif()
 
