@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<root>  
+    <interface> 
+		<name>"yangpi.mysql"</name>
+		<!--<wait></wait>
+		<main></main>-->
+		
+		<signal>  
+			<name>"incept_all"</name>
+			<arg>
+				<name>"T_Arm_Mysql"</name>
+				<type>"const char *"</type>
+				
+				<name>"T_Fpga_Set"</name>
+				<type>"const char *"</type>
+				
+				<name>"T_Flow_para"</name>
+				<type>"const char *"</type>
+				
+			</arg>
+	    </signal>
+
+		
+		<method>
+			<name>"writelog"</name>
+			<arg>
+				<name>"T_Write_Mysql_Log"</name>
+				<type>"const char *"</type>
+
+			</arg>
+		</method>
+		
+		<method>
+			<name>"writeflow"</name>
+			<arg>
+				<name>"T_Write_Flow_Result"</name>
+				<type>"const char *"</type>
+			</arg>
+		</method>
+
+		<method>
+			<name>"writeES"</name>
+			<arg>
+				<name>"T_Write_ES"</name>
+				<type>"const char *"</type>
+			</arg>
+		</method>
+
+		<method>
+			<name>"request_all"</name>
+		</method>
+    </interface>  
+</root> 
+

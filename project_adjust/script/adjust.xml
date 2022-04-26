@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<root>  
+    <interface> 
+		<name>"yangpi.adjust"</name>
+		<wait>"yangpi.i2c"</wait>
+		<!--<main></main>-->
+
+		<signal>
+			<name>"adjust_result"</name>
+			<arg>
+				<name>"T_AdjustOut"</name>
+				<type>"const char *"</type>
+
+			</arg>
+		</signal>
+
+		<method>
+			<name>"adjust_start"</name>
+			<arg>
+				<name>"T_AdjustIn"</name>
+				<type>"const char *"</type>
+
+			</arg>
+		</method>
+		
+
+    </interface>  
+</root> 
+

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<root>  
+    <interface> 
+		<name>"yangpi.rtu"</name>
+        <wait>"yangpi.mysql"</wait>
+
+        <method>
+            <name>"rtu_setdata"</name>
+            <arg>
+                <name>"T_RtuData"</name>
+                <type>"const char *"</type>
+            </arg>
+        </method>
+
+     </interface>
+</root>
+

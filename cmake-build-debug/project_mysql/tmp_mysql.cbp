@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="tmp_mysql"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\project_frame\;CMake Files\project_mysql\;CMake Files\project_i2cbus\;CMake Files\project_adjust\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/share/workspace/buildroot_project/cmake-build-debug/project_mysql"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command=" -f &quot;/home/share/workspace/buildroot_project/cmake-build-debug/project_mysql/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command=" -f &quot;/home/share/workspace/buildroot_project/cmake-build-debug/project_mysql/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command=" -f &quot;/home/share/workspace/buildroot_project/cmake-build-debug/project_mysql/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command=" -f &quot;/home/share/workspace/buildroot_project/cmake-build-debug/project_mysql/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="yangpi_service_mysql">
+				<Option output="/home/share/workspace/buildroot_project/cmake-build-debug/project_mysql/yangpi_service_mysql" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/share/workspace/buildroot_project/cmake-build-debug/project_mysql"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/share/workspace/buildroot_project/depend/mysql/include/mysql"/>
+					<Add directory="/home/share/workspace/buildroot_project/depend/dlt/include"/>
+					<Add directory="/home/share/workspace/buildroot_project/depend/dbus/include/dbus-1.0"/>
+					<Add directory="/home/share/workspace/buildroot_project/depend/dbus/lib/dbus-1.0/include"/>
+					<Add directory="/home/share/workspace/buildroot_project/depend/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command=" -f &quot;/home/share/workspace/buildroot_project/cmake-build-debug/project_mysql/Makefile&quot;  VERBOSE=1 yangpi_service_mysql"/>
+					<CompileFile command=" -f &quot;/home/share/workspace/buildroot_project/cmake-build-debug/project_mysql/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command=" -f &quot;/home/share/workspace/buildroot_project/cmake-build-debug/project_mysql/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command=" -f &quot;/home/share/workspace/buildroot_project/cmake-build-debug/project_mysql/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="yangpi_service_mysql/fast">
+				<Option output="/home/share/workspace/buildroot_project/cmake-build-debug/project_mysql/yangpi_service_mysql" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/share/workspace/buildroot_project/cmake-build-debug/project_mysql"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/share/workspace/buildroot_project/depend/mysql/include/mysql"/>
+					<Add directory="/home/share/workspace/buildroot_project/depend/dlt/include"/>
+					<Add directory="/home/share/workspace/buildroot_project/depend/dbus/include/dbus-1.0"/>
+					<Add directory="/home/share/workspace/buildroot_project/depend/dbus/lib/dbus-1.0/include"/>
+					<Add directory="/home/share/workspace/buildroot_project/depend/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command=" -f &quot;/home/share/workspace/buildroot_project/cmake-build-debug/project_mysql/Makefile&quot;  VERBOSE=1 yangpi_service_mysql/fast"/>
+					<CompileFile command=" -f &quot;/home/share/workspace/buildroot_project/cmake-build-debug/project_mysql/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command=" -f &quot;/home/share/workspace/buildroot_project/cmake-build-debug/project_mysql/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command=" -f &quot;/home/share/workspace/buildroot_project/cmake-build-debug/project_mysql/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="service_mysql_proxy">
+				<Option output="/home/share/workspace/buildroot_project/cmake-build-debug/project_mysql/libservice_mysql_proxy.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/share/workspace/buildroot_project/cmake-build-debug/project_mysql"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/share/workspace/buildroot_project/depend/mysql/include/mysql"/>
+					<Add directory="/home/share/workspace/buildroot_project/depend/dlt/include"/>
+					<Add directory="/home/share/workspace/buildroot_project/depend/dbus/include/dbus-1.0"/>
+					<Add directory="/home/share/workspace/buildroot_project/depend/dbus/lib/dbus-1.0/include"/>
+					<Add directory="/home/share/workspace/buildroot_project/depend/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command=" -f &quot;/home/share/workspace/buildroot_project/cmake-build-debug/project_mysql/Makefile&quot;  VERBOSE=1 service_mysql_proxy"/>
+					<CompileFile command=" -f &quot;/home/share/workspace/buildroot_project/cmake-build-debug/project_mysql/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command=" -f &quot;/home/share/workspace/buildroot_project/cmake-build-debug/project_mysql/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command=" -f &quot;/home/share/workspace/buildroot_project/cmake-build-debug/project_mysql/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="service_mysql_proxy/fast">
+				<Option output="/home/share/workspace/buildroot_project/cmake-build-debug/project_mysql/libservice_mysql_proxy.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/share/workspace/buildroot_project/cmake-build-debug/project_mysql"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/share/workspace/buildroot_project/depend/mysql/include/mysql"/>
+					<Add directory="/home/share/workspace/buildroot_project/depend/dlt/include"/>
+					<Add directory="/home/share/workspace/buildroot_project/depend/dbus/include/dbus-1.0"/>
+					<Add directory="/home/share/workspace/buildroot_project/depend/dbus/lib/dbus-1.0/include"/>
+					<Add directory="/home/share/workspace/buildroot_project/depend/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command=" -f &quot;/home/share/workspace/buildroot_project/cmake-build-debug/project_mysql/Makefile&quot;  VERBOSE=1 service_mysql_proxy/fast"/>
+					<CompileFile command=" -f &quot;/home/share/workspace/buildroot_project/cmake-build-debug/project_mysql/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command=" -f &quot;/home/share/workspace/buildroot_project/cmake-build-debug/project_mysql/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command=" -f &quot;/home/share/workspace/buildroot_project/cmake-build-debug/project_mysql/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/share/workspace/buildroot_project/project_mysql/log_dlt.c">
+			<Option target="yangpi_service_mysql"/>
+		</Unit>
+		<Unit filename="/home/share/workspace/buildroot_project/project_mysql/log_dlt.h">
+			<Option target="yangpi_service_mysql"/>
+		</Unit>
+		<Unit filename="/home/share/workspace/buildroot_project/project_mysql/mysql_service.c">
+			<Option target="yangpi_service_mysql"/>
+		</Unit>
+		<Unit filename="/home/share/workspace/buildroot_project/project_mysql/mysql_service.h">
+			<Option target="yangpi_service_mysql"/>
+		</Unit>
+		<Unit filename="/home/share/workspace/buildroot_project/project_mysql/read_mysql.c">
+			<Option target="yangpi_service_mysql"/>
+		</Unit>
+		<Unit filename="/home/share/workspace/buildroot_project/project_mysql/read_mysql.h">
+			<Option target="yangpi_service_mysql"/>
+		</Unit>
+		<Unit filename="/home/share/workspace/buildroot_project/project_mysql/yangpi_mysql_main.c">
+			<Option target="yangpi_service_mysql"/>
+		</Unit>
+		<Unit filename="/home/share/workspace/buildroot_project/project_mysql/yangpi_mysql_proxy.c">
+			<Option target="service_mysql_proxy"/>
+		</Unit>
+		<Unit filename="/home/share/workspace/buildroot_project/project_mysql/yangpi_mysql_proxy.h">
+			<Option target="service_mysql_proxy"/>
+		</Unit>
+		<Unit filename="/home/share/workspace/buildroot_project/project_mysql/yangpi_mysql_stub.c">
+			<Option target="yangpi_service_mysql"/>
+		</Unit>
+		<Unit filename="/home/share/workspace/buildroot_project/project_mysql/yangpi_mysql_stub.h">
+			<Option target="yangpi_service_mysql"/>
+		</Unit>
+		<Unit filename="/home/share/workspace/buildroot_project/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/share/workspace/buildroot_project/project_frame/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\project_frame\"/>
+		</Unit>
+		<Unit filename="/home/share/workspace/buildroot_project/project_mysql/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\project_mysql\"/>
+		</Unit>
+		<Unit filename="/home/share/workspace/buildroot_project/project_i2cbus/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\project_i2cbus\"/>
+		</Unit>
+		<Unit filename="/home/share/workspace/buildroot_project/project_adjust/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\project_adjust\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

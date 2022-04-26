@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<root>  
+    <interface> 
+		<name>"yangpi.pioneers"</name>
+		<wait>"yangpi.mysql"</wait>
+		<wait>"yangpi.i2c"</wait>
+		<wait>"yangpi.adjust"</wait>
+
+    </interface>  
+</root> 
+

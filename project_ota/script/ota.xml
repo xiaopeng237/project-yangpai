@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<root>  
+    <interface> 
+		<name>"yangpi.ota"</name>
+		<wait>"yangpi.mysql"</wait>
+
+
+		<signal>
+			<name>"ota_download"</name>
+			<arg>
+				<name>"T_OtaDownloadInfo"</name>
+				<type>"const char *"</type>
+			</arg>
+		</signal>	
+
+		<signal>
+			<name>"ota_request_day"</name>
+			<arg>
+				<name>"T_OtaBeginDay"</name>
+				<type>"const char *"</type>
+			</arg>
+		</signal>	
+
+		<signal>
+			<name>"ota_request_appoint"</name>
+			<arg>
+				<name>"T_OtaBeginDay"</name>
+				<type>"const char *"</type>
+				<name>"T_OtaEndDay"</name>
+				<type>"const char *"</type>
+			</arg>
+		</signal>	
+
+		<method>  
+			<name>"ota_send"</name>
+			<arg>
+				<name>"T_OtaSendLog"</name>
+				<type>"const char *"</type>
+			</arg>
+	   	</method>
+
+    </interface>  
+</root> 
+

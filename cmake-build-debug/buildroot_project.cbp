@@ -1,0 +1,1447 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="buildroot_project"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\project_frame\;CMake Files\project_mysql\;CMake Files\project_i2cbus\;CMake Files\project_adjust\;CMake Files\project_pioneers\;CMake Files\project_freemodbus\;CMake Files\project_ota\;CMake Files\project_hv_tools\;CMake Files\project_vbbr_tools\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/share/workspace/buildroot_project/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/share/workspace/buildroot_project/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/share/workspace/buildroot_project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/share/workspace/buildroot_project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/share/workspace/buildroot_project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install/strip">
+				<Option working_dir="/home/share/workspace/buildroot_project/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/share/workspace/buildroot_project/cmake-build-debug/Makefile&quot;  VERBOSE=1 install/strip"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/share/workspace/buildroot_project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/share/workspace/buildroot_project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/share/workspace/buildroot_project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install">
+				<Option working_dir="/home/share/workspace/buildroot_project/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/share/workspace/buildroot_project/cmake-build-debug/Makefile&quot;  VERBOSE=1 install"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/share/workspace/buildroot_project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/share/workspace/buildroot_project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/share/workspace/buildroot_project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install/local">
+				<Option working_dir="/home/share/workspace/buildroot_project/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/share/workspace/buildroot_project/cmake-build-debug/Makefile&quot;  VERBOSE=1 install/local"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/share/workspace/buildroot_project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/share/workspace/buildroot_project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/share/workspace/buildroot_project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="list_install_components">
+				<Option working_dir="/home/share/workspace/buildroot_project/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/share/workspace/buildroot_project/cmake-build-debug/Makefile&quot;  VERBOSE=1 list_install_components"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/share/workspace/buildroot_project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/share/workspace/buildroot_project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/share/workspace/buildroot_project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/share/workspace/buildroot_project/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/share/workspace/buildroot_project/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/share/workspace/buildroot_project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/share/workspace/buildroot_project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/share/workspace/buildroot_project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/share/workspace/buildroot_project/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/share/workspace/buildroot_project/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/share/workspace/buildroot_project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/share/workspace/buildroot_project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/share/workspace/buildroot_project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="yangpai_service">
+				<Option output="/home/share/workspace/buildroot_project/cmake-build-debug/project_frame/libyangpai_service.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/share/workspace/buildroot_project/cmake-build-debug/project_frame"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/share/workspace/buildroot_project/depend/mysql/include/mysql"/>
+					<Add directory="/home/share/workspace/buildroot_project/depend/dlt/include"/>
+					<Add directory="/home/share/workspace/buildroot_project/depend/dbus/include/dbus-1.0"/>
+					<Add directory="/home/share/workspace/buildroot_project/depend/dbus/lib/dbus-1.0/include"/>
+					<Add directory="/home/share/workspace/buildroot_project/depend/include"/>
+					<Add directory="/home/share/workspace/buildroot_project/cmake-build-debug/project_frame"/>
+					<Add directory="/home/share/workspace/buildroot_project/project_frame"/>
+					<Add directory="/home/share/workspace/buildroot_project/cmake-build-debug/project_mysql"/>
+					<Add directory="/home/share/workspace/buildroot_project/project_mysql"/>
+					<Add directory="/home/share/workspace/buildroot_project/cmake-build-debug/project_i2cbus"/>
+					<Add directory="/home/share/workspace/buildroot_project/project_i2cbus"/>
+					<Add directory="/home/share/workspace/buildroot_project/cmake-build-debug/project_adjust"/>
+					<Add directory="/home/share/workspace/buildroot_project/project_adjust"/>
+					<Add directory="/home/share/workspace/buildroot_project/cmake-build-debug/project_pioneers"/>
+					<Add directory="/home/share/workspace/buildroot_project/project_pioneers"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/share/workspace/buildroot_project/cmake-build-debug/project_frame/Makefile&quot;  VERBOSE=1 yangpai_service"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/share/workspace/buildroot_project/cmake-build-debug/project_frame/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/share/workspace/buildroot_project/cmake-build-debug/project_frame/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/share/workspace/buildroot_project/cmake-build-debug/project_frame/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="yangpai_service/fast">
+				<Option output="/home/share/workspace/buildroot_project/cmake-build-debug/project_frame/libyangpai_service.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/share/workspace/buildroot_project/cmake-build-debug/project_frame"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/share/workspace/buildroot_project/depend/mysql/include/mysql"/>
+					<Add directory="/home/share/workspace/buildroot_project/depend/dlt/include"/>
+					<Add directory="/home/share/workspace/buildroot_project/depend/dbus/include/dbus-1.0"/>
+					<Add directory="/home/share/workspace/buildroot_project/depend/dbus/lib/dbus-1.0/include"/>
+					<Add directory="/home/share/workspace/buildroot_project/depend/include"/>
+					<Add directory="/home/share/workspace/buildroot_project/cmake-build-debug/project_frame"/>
+					<Add directory="/home/share/workspace/buildroot_project/project_frame"/>
+					<Add directory="/home/share/workspace/buildroot_project/cmake-build-debug/project_mysql"/>
+					<Add directory="/home/share/workspace/buildroot_project/project_mysql"/>
+					<Add directory="/home/share/workspace/buildroot_project/cmake-build-debug/project_i2cbus"/>
+					<Add directory="/home/share/workspace/buildroot_project/project_i2cbus"/>
+					<Add directory="/home/share/workspace/buildroot_project/cmake-build-debug/project_adjust"/>
+					<Add directory="/home/share/workspace/buildroot_project/project_adjust"/>
+					<Add directory="/home/share/workspace/buildroot_project/cmake-build-debug/project_pioneers"/>
+					<Add directory="/home/share/workspace/buildroot_project/project_pioneers"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/share/workspace/buildroot_project/cmake-build-debug/project_frame/Makefile&quot;  VERBOSE=1 yangpai_service/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/share/workspace/buildroot_project/cmake-build-debug/project_frame/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/share/workspace/buildroot_project/cmake-build-debug/project_frame/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/share/workspace/buildroot_project/cmake-build-debug/project_frame/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="yangpi_service_mysql">
+				<Option output="/home/share/workspace/buildroot_project/cmake-build-debug/project_mysql/yangpi_service_mysql" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/share/workspace/buildroot_project/cmake-build-debug/project_mysql"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/share/workspace/buildroot_project/depend/mysql/include/mysql"/>
+					<Add directory="/home/share/workspace/buildroot_project/depend/dlt/include"/>
+					<Add directory="/home/share/workspace/buildroot_project/depend/dbus/include/dbus-1.0"/>
+					<Add directory="/home/share/workspace/buildroot_project/depend/dbus/lib/dbus-1.0/include"/>
+					<Add directory="/home/share/workspace/buildroot_project/depend/include"/>
+					<Add directory="/home/share/workspace/buildroot_project/cmake-build-debug/project_frame"/>
+					<Add directory="/home/share/workspace/buildroot_project/project_frame"/>
+					<Add directory="/home/share/workspace/buildroot_project/cmake-build-debug/project_mysql"/>
+					<Add directory="/home/share/workspace/buildroot_project/project_mysql"/>
+					<Add directory="/home/share/workspace/buildroot_project/cmake-build-debug/project_i2cbus"/>
+					<Add directory="/home/share/workspace/buildroot_project/project_i2cbus"/>
+					<Add directory="/home/share/workspace/buildroot_project/cmake-build-debug/project_adjust"/>
+					<Add directory="/home/share/workspace/buildroot_project/project_adjust"/>
+					<Add directory="/home/share/workspace/buildroot_project/cmake-build-debug/project_pioneers"/>
+					<Add directory="/home/share/workspace/buildroot_project/project_pioneers"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/share/workspace/buildroot_project/cmake-build-debug/project_mysql/Makefile&quot;  VERBOSE=1 yangpi_service_mysql"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/share/workspace/buildroot_project/cmake-build-debug/project_mysql/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/share/workspace/buildroot_project/cmake-build-debug/project_mysql/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/share/workspace/buildroot_project/cmake-build-debug/project_mysql/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="yangpi_service_mysql/fast">
+				<Option output="/home/share/workspace/buildroot_project/cmake-build-debug/project_mysql/yangpi_service_mysql" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/share/workspace/buildroot_project/cmake-build-debug/project_mysql"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/share/workspace/buildroot_project/depend/mysql/include/mysql"/>
+					<Add directory="/home/share/workspace/buildroot_project/depend/dlt/include"/>
+					<Add directory="/home/share/workspace/buildroot_project/depend/dbus/include/dbus-1.0"/>
+					<Add directory="/home/share/workspace/buildroot_project/depend/dbus/lib/dbus-1.0/include"/>
+					<Add directory="/home/share/workspace/buildroot_project/depend/include"/>
+					<Add directory="/home/share/workspace/buildroot_project/cmake-build-debug/project_frame"/>
+					<Add directory="/home/share/workspace/buildroot_project/project_frame"/>
+					<Add directory="/home/share/workspace/buildroot_project/cmake-build-debug/project_mysql"/>
+					<Add directory="/home/share/workspace/buildroot_project/project_mysql"/>
+					<Add directory="/home/share/workspace/buildroot_project/cmake-build-debug/project_i2cbus"/>
+					<Add directory="/home/share/workspace/buildroot_project/project_i2cbus"/>
+					<Add directory="/home/share/workspace/buildroot_project/cmake-build-debug/project_adjust"/>
+					<Add directory="/home/share/workspace/buildroot_project/project_adjust"/>
+					<Add directory="/home/share/workspace/buildroot_project/cmake-build-debug/project_pioneers"/>
+					<Add directory="/home/share/workspace/buildroot_project/project_pioneers"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/share/workspace/buildroot_project/cmake-build-debug/project_mysql/Makefile&quot;  VERBOSE=1 yangpi_service_mysql/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/share/workspace/buildroot_project/cmake-build-debug/project_mysql/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/share/workspace/buildroot_project/cmake-build-debug/project_mysql/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/share/workspace/buildroot_project/cmake-build-debug/project_mysql/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="service_mysql_proxy">
+				<Option output="/home/share/workspace/buildroot_project/cmake-build-debug/project_mysql/libservice_mysql_proxy.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/share/workspace/buildroot_project/cmake-build-debug/project_mysql"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/share/workspace/buildroot_project/depend/mysql/include/mysql"/>
+					<Add directory="/home/share/workspace/buildroot_project/depend/dlt/include"/>
+					<Add directory="/home/share/workspace/buildroot_project/depend/dbus/include/dbus-1.0"/>
+					<Add directory="/home/share/workspace/buildroot_project/depend/dbus/lib/dbus-1.0/include"/>
+					<Add directory="/home/share/workspace/buildroot_project/depend/include"/>
+					<Add directory="/home/share/workspace/buildroot_project/cmake-build-debug/project_frame"/>
+					<Add directory="/home/share/workspace/buildroot_project/project_frame"/>
+					<Add directory="/home/share/workspace/buildroot_project/cmake-build-debug/project_mysql"/>
+					<Add directory="/home/share/workspace/buildroot_project/project_mysql"/>
+					<Add directory="/home/share/workspace/buildroot_project/cmake-build-debug/project_i2cbus"/>
+					<Add directory="/home/share/workspace/buildroot_project/project_i2cbus"/>
+					<Add directory="/home/share/workspace/buildroot_project/cmake-build-debug/project_adjust"/>
+					<Add directory="/home/share/workspace/buildroot_project/project_adjust"/>
+					<Add directory="/home/share/workspace/buildroot_project/cmake-build-debug/project_pioneers"/>
+					<Add directory="/home/share/workspace/buildroot_project/project_pioneers"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/share/workspace/buildroot_project/cmake-build-debug/project_mysql/Makefile&quot;  VERBOSE=1 service_mysql_proxy"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/share/workspace/buildroot_project/cmake-build-debug/project_mysql/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/share/workspace/buildroot_project/cmake-build-debug/project_mysql/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/share/workspace/buildroot_project/cmake-build-debug/project_mysql/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="service_mysql_proxy/fast">
+				<Option output="/home/share/workspace/buildroot_project/cmake-build-debug/project_mysql/libservice_mysql_proxy.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/share/workspace/buildroot_project/cmake-build-debug/project_mysql"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/share/workspace/buildroot_project/depend/mysql/include/mysql"/>
+					<Add directory="/home/share/workspace/buildroot_project/depend/dlt/include"/>
+					<Add directory="/home/share/workspace/buildroot_project/depend/dbus/include/dbus-1.0"/>
+					<Add directory="/home/share/workspace/buildroot_project/depend/dbus/lib/dbus-1.0/include"/>
+					<Add directory="/home/share/workspace/buildroot_project/depend/include"/>
+					<Add directory="/home/share/workspace/buildroot_project/cmake-build-debug/project_frame"/>
+					<Add directory="/home/share/workspace/buildroot_project/project_frame"/>
+					<Add directory="/home/share/workspace/buildroot_project/cmake-build-debug/project_mysql"/>
+					<Add directory="/home/share/workspace/buildroot_project/project_mysql"/>
+					<Add directory="/home/share/workspace/buildroot_project/cmake-build-debug/project_i2cbus"/>
+					<Add directory="/home/share/workspace/buildroot_project/project_i2cbus"/>
+					<Add directory="/home/share/workspace/buildroot_project/cmake-build-debug/project_adjust"/>
+					<Add directory="/home/share/workspace/buildroot_project/project_adjust"/>
+					<Add directory="/home/share/workspace/buildroot_project/cmake-build-debug/project_pioneers"/>
+					<Add directory="/home/share/workspace/buildroot_project/project_pioneers"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/share/workspace/buildroot_project/cmake-build-debug/project_mysql/Makefile&quot;  VERBOSE=1 service_mysql_proxy/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/share/workspace/buildroot_project/cmake-build-debug/project_mysql/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/share/workspace/buildroot_project/cmake-build-debug/project_mysql/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/share/workspace/buildroot_project/cmake-build-debug/project_mysql/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="yangpi_service_i2cbus">
+				<Option output="/home/share/workspace/buildroot_project/cmake-build-debug/project_i2cbus/yangpi_service_i2cbus" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/share/workspace/buildroot_project/cmake-build-debug/project_i2cbus"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/share/workspace/buildroot_project/depend/mysql/include/mysql"/>
+					<Add directory="/home/share/workspace/buildroot_project/depend/dlt/include"/>
+					<Add directory="/home/share/workspace/buildroot_project/depend/dbus/include/dbus-1.0"/>
+					<Add directory="/home/share/workspace/buildroot_project/depend/dbus/lib/dbus-1.0/include"/>
+					<Add directory="/home/share/workspace/buildroot_project/depend/include"/>
+					<Add directory="/home/share/workspace/buildroot_project/cmake-build-debug/project_frame"/>
+					<Add directory="/home/share/workspace/buildroot_project/project_frame"/>
+					<Add directory="/home/share/workspace/buildroot_project/cmake-build-debug/project_mysql"/>
+					<Add directory="/home/share/workspace/buildroot_project/project_mysql"/>
+					<Add directory="/home/share/workspace/buildroot_project/cmake-build-debug/project_i2cbus"/>
+					<Add directory="/home/share/workspace/buildroot_project/project_i2cbus"/>
+					<Add directory="/home/share/workspace/buildroot_project/cmake-build-debug/project_adjust"/>
+					<Add directory="/home/share/workspace/buildroot_project/project_adjust"/>
+					<Add directory="/home/share/workspace/buildroot_project/cmake-build-debug/project_pioneers"/>
+					<Add directory="/home/share/workspace/buildroot_project/project_pioneers"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/share/workspace/buildroot_project/cmake-build-debug/project_i2cbus/Makefile&quot;  VERBOSE=1 yangpi_service_i2cbus"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/share/workspace/buildroot_project/cmake-build-debug/project_i2cbus/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/share/workspace/buildroot_project/cmake-build-debug/project_i2cbus/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/share/workspace/buildroot_project/cmake-build-debug/project_i2cbus/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="yangpi_service_i2cbus/fast">
+				<Option output="/home/share/workspace/buildroot_project/cmake-build-debug/project_i2cbus/yangpi_service_i2cbus" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/share/workspace/buildroot_project/cmake-build-debug/project_i2cbus"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/share/workspace/buildroot_project/depend/mysql/include/mysql"/>
+					<Add directory="/home/share/workspace/buildroot_project/depend/dlt/include"/>
+					<Add directory="/home/share/workspace/buildroot_project/depend/dbus/include/dbus-1.0"/>
+					<Add directory="/home/share/workspace/buildroot_project/depend/dbus/lib/dbus-1.0/include"/>
+					<Add directory="/home/share/workspace/buildroot_project/depend/include"/>
+					<Add directory="/home/share/workspace/buildroot_project/cmake-build-debug/project_frame"/>
+					<Add directory="/home/share/workspace/buildroot_project/project_frame"/>
+					<Add directory="/home/share/workspace/buildroot_project/cmake-build-debug/project_mysql"/>
+					<Add directory="/home/share/workspace/buildroot_project/project_mysql"/>
+					<Add directory="/home/share/workspace/buildroot_project/cmake-build-debug/project_i2cbus"/>
+					<Add directory="/home/share/workspace/buildroot_project/project_i2cbus"/>
+					<Add directory="/home/share/workspace/buildroot_project/cmake-build-debug/project_adjust"/>
+					<Add directory="/home/share/workspace/buildroot_project/project_adjust"/>
+					<Add directory="/home/share/workspace/buildroot_project/cmake-build-debug/project_pioneers"/>
+					<Add directory="/home/share/workspace/buildroot_project/project_pioneers"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/share/workspace/buildroot_project/cmake-build-debug/project_i2cbus/Makefile&quot;  VERBOSE=1 yangpi_service_i2cbus/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/share/workspace/buildroot_project/cmake-build-debug/project_i2cbus/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/share/workspace/buildroot_project/cmake-build-debug/project_i2cbus/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/share/workspace/buildroot_project/cmake-build-debug/project_i2cbus/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="service_i2c_proxy">
+				<Option output="/home/share/workspace/buildroot_project/cmake-build-debug/project_i2cbus/libservice_i2c_proxy.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/share/workspace/buildroot_project/cmake-build-debug/project_i2cbus"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/share/workspace/buildroot_project/depend/mysql/include/mysql"/>
+					<Add directory="/home/share/workspace/buildroot_project/depend/dlt/include"/>
+					<Add directory="/home/share/workspace/buildroot_project/depend/dbus/include/dbus-1.0"/>
+					<Add directory="/home/share/workspace/buildroot_project/depend/dbus/lib/dbus-1.0/include"/>
+					<Add directory="/home/share/workspace/buildroot_project/depend/include"/>
+					<Add directory="/home/share/workspace/buildroot_project/cmake-build-debug/project_frame"/>
+					<Add directory="/home/share/workspace/buildroot_project/project_frame"/>
+					<Add directory="/home/share/workspace/buildroot_project/cmake-build-debug/project_mysql"/>
+					<Add directory="/home/share/workspace/buildroot_project/project_mysql"/>
+					<Add directory="/home/share/workspace/buildroot_project/cmake-build-debug/project_i2cbus"/>
+					<Add directory="/home/share/workspace/buildroot_project/project_i2cbus"/>
+					<Add directory="/home/share/workspace/buildroot_project/cmake-build-debug/project_adjust"/>
+					<Add directory="/home/share/workspace/buildroot_project/project_adjust"/>
+					<Add directory="/home/share/workspace/buildroot_project/cmake-build-debug/project_pioneers"/>
+					<Add directory="/home/share/workspace/buildroot_project/project_pioneers"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/share/workspace/buildroot_project/cmake-build-debug/project_i2cbus/Makefile&quot;  VERBOSE=1 service_i2c_proxy"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/share/workspace/buildroot_project/cmake-build-debug/project_i2cbus/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/share/workspace/buildroot_project/cmake-build-debug/project_i2cbus/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/share/workspace/buildroot_project/cmake-build-debug/project_i2cbus/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="service_i2c_proxy/fast">
+				<Option output="/home/share/workspace/buildroot_project/cmake-build-debug/project_i2cbus/libservice_i2c_proxy.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/share/workspace/buildroot_project/cmake-build-debug/project_i2cbus"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/share/workspace/buildroot_project/depend/mysql/include/mysql"/>
+					<Add directory="/home/share/workspace/buildroot_project/depend/dlt/include"/>
+					<Add directory="/home/share/workspace/buildroot_project/depend/dbus/include/dbus-1.0"/>
+					<Add directory="/home/share/workspace/buildroot_project/depend/dbus/lib/dbus-1.0/include"/>
+					<Add directory="/home/share/workspace/buildroot_project/depend/include"/>
+					<Add directory="/home/share/workspace/buildroot_project/cmake-build-debug/project_frame"/>
+					<Add directory="/home/share/workspace/buildroot_project/project_frame"/>
+					<Add directory="/home/share/workspace/buildroot_project/cmake-build-debug/project_mysql"/>
+					<Add directory="/home/share/workspace/buildroot_project/project_mysql"/>
+					<Add directory="/home/share/workspace/buildroot_project/cmake-build-debug/project_i2cbus"/>
+					<Add directory="/home/share/workspace/buildroot_project/project_i2cbus"/>
+					<Add directory="/home/share/workspace/buildroot_project/cmake-build-debug/project_adjust"/>
+					<Add directory="/home/share/workspace/buildroot_project/project_adjust"/>
+					<Add directory="/home/share/workspace/buildroot_project/cmake-build-debug/project_pioneers"/>
+					<Add directory="/home/share/workspace/buildroot_project/project_pioneers"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/share/workspace/buildroot_project/cmake-build-debug/project_i2cbus/Makefile&quot;  VERBOSE=1 service_i2c_proxy/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/share/workspace/buildroot_project/cmake-build-debug/project_i2cbus/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/share/workspace/buildroot_project/cmake-build-debug/project_i2cbus/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/share/workspace/buildroot_project/cmake-build-debug/project_i2cbus/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="yangpi_service_adjust">
+				<Option output="/home/share/workspace/buildroot_project/cmake-build-debug/project_adjust/yangpi_service_adjust" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/share/workspace/buildroot_project/cmake-build-debug/project_adjust"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/share/workspace/buildroot_project/depend/mysql/include/mysql"/>
+					<Add directory="/home/share/workspace/buildroot_project/depend/dlt/include"/>
+					<Add directory="/home/share/workspace/buildroot_project/depend/dbus/include/dbus-1.0"/>
+					<Add directory="/home/share/workspace/buildroot_project/depend/dbus/lib/dbus-1.0/include"/>
+					<Add directory="/home/share/workspace/buildroot_project/depend/include"/>
+					<Add directory="/home/share/workspace/buildroot_project/cmake-build-debug/project_frame"/>
+					<Add directory="/home/share/workspace/buildroot_project/project_frame"/>
+					<Add directory="/home/share/workspace/buildroot_project/cmake-build-debug/project_mysql"/>
+					<Add directory="/home/share/workspace/buildroot_project/project_mysql"/>
+					<Add directory="/home/share/workspace/buildroot_project/cmake-build-debug/project_i2cbus"/>
+					<Add directory="/home/share/workspace/buildroot_project/project_i2cbus"/>
+					<Add directory="/home/share/workspace/buildroot_project/cmake-build-debug/project_adjust"/>
+					<Add directory="/home/share/workspace/buildroot_project/project_adjust"/>
+					<Add directory="/home/share/workspace/buildroot_project/cmake-build-debug/project_pioneers"/>
+					<Add directory="/home/share/workspace/buildroot_project/project_pioneers"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/share/workspace/buildroot_project/cmake-build-debug/project_adjust/Makefile&quot;  VERBOSE=1 yangpi_service_adjust"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/share/workspace/buildroot_project/cmake-build-debug/project_adjust/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/share/workspace/buildroot_project/cmake-build-debug/project_adjust/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/share/workspace/buildroot_project/cmake-build-debug/project_adjust/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="yangpi_service_adjust/fast">
+				<Option output="/home/share/workspace/buildroot_project/cmake-build-debug/project_adjust/yangpi_service_adjust" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/share/workspace/buildroot_project/cmake-build-debug/project_adjust"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/share/workspace/buildroot_project/depend/mysql/include/mysql"/>
+					<Add directory="/home/share/workspace/buildroot_project/depend/dlt/include"/>
+					<Add directory="/home/share/workspace/buildroot_project/depend/dbus/include/dbus-1.0"/>
+					<Add directory="/home/share/workspace/buildroot_project/depend/dbus/lib/dbus-1.0/include"/>
+					<Add directory="/home/share/workspace/buildroot_project/depend/include"/>
+					<Add directory="/home/share/workspace/buildroot_project/cmake-build-debug/project_frame"/>
+					<Add directory="/home/share/workspace/buildroot_project/project_frame"/>
+					<Add directory="/home/share/workspace/buildroot_project/cmake-build-debug/project_mysql"/>
+					<Add directory="/home/share/workspace/buildroot_project/project_mysql"/>
+					<Add directory="/home/share/workspace/buildroot_project/cmake-build-debug/project_i2cbus"/>
+					<Add directory="/home/share/workspace/buildroot_project/project_i2cbus"/>
+					<Add directory="/home/share/workspace/buildroot_project/cmake-build-debug/project_adjust"/>
+					<Add directory="/home/share/workspace/buildroot_project/project_adjust"/>
+					<Add directory="/home/share/workspace/buildroot_project/cmake-build-debug/project_pioneers"/>
+					<Add directory="/home/share/workspace/buildroot_project/project_pioneers"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/share/workspace/buildroot_project/cmake-build-debug/project_adjust/Makefile&quot;  VERBOSE=1 yangpi_service_adjust/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/share/workspace/buildroot_project/cmake-build-debug/project_adjust/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/share/workspace/buildroot_project/cmake-build-debug/project_adjust/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/share/workspace/buildroot_project/cmake-build-debug/project_adjust/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="service_adjust_proxy">
+				<Option output="/home/share/workspace/buildroot_project/cmake-build-debug/project_adjust/libservice_adjust_proxy.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/share/workspace/buildroot_project/cmake-build-debug/project_adjust"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/share/workspace/buildroot_project/depend/mysql/include/mysql"/>
+					<Add directory="/home/share/workspace/buildroot_project/depend/dlt/include"/>
+					<Add directory="/home/share/workspace/buildroot_project/depend/dbus/include/dbus-1.0"/>
+					<Add directory="/home/share/workspace/buildroot_project/depend/dbus/lib/dbus-1.0/include"/>
+					<Add directory="/home/share/workspace/buildroot_project/depend/include"/>
+					<Add directory="/home/share/workspace/buildroot_project/cmake-build-debug/project_frame"/>
+					<Add directory="/home/share/workspace/buildroot_project/project_frame"/>
+					<Add directory="/home/share/workspace/buildroot_project/cmake-build-debug/project_mysql"/>
+					<Add directory="/home/share/workspace/buildroot_project/project_mysql"/>
+					<Add directory="/home/share/workspace/buildroot_project/cmake-build-debug/project_i2cbus"/>
+					<Add directory="/home/share/workspace/buildroot_project/project_i2cbus"/>
+					<Add directory="/home/share/workspace/buildroot_project/cmake-build-debug/project_adjust"/>
+					<Add directory="/home/share/workspace/buildroot_project/project_adjust"/>
+					<Add directory="/home/share/workspace/buildroot_project/cmake-build-debug/project_pioneers"/>
+					<Add directory="/home/share/workspace/buildroot_project/project_pioneers"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/share/workspace/buildroot_project/cmake-build-debug/project_adjust/Makefile&quot;  VERBOSE=1 service_adjust_proxy"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/share/workspace/buildroot_project/cmake-build-debug/project_adjust/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/share/workspace/buildroot_project/cmake-build-debug/project_adjust/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/share/workspace/buildroot_project/cmake-build-debug/project_adjust/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="service_adjust_proxy/fast">
+				<Option output="/home/share/workspace/buildroot_project/cmake-build-debug/project_adjust/libservice_adjust_proxy.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/share/workspace/buildroot_project/cmake-build-debug/project_adjust"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/share/workspace/buildroot_project/depend/mysql/include/mysql"/>
+					<Add directory="/home/share/workspace/buildroot_project/depend/dlt/include"/>
+					<Add directory="/home/share/workspace/buildroot_project/depend/dbus/include/dbus-1.0"/>
+					<Add directory="/home/share/workspace/buildroot_project/depend/dbus/lib/dbus-1.0/include"/>
+					<Add directory="/home/share/workspace/buildroot_project/depend/include"/>
+					<Add directory="/home/share/workspace/buildroot_project/cmake-build-debug/project_frame"/>
+					<Add directory="/home/share/workspace/buildroot_project/project_frame"/>
+					<Add directory="/home/share/workspace/buildroot_project/cmake-build-debug/project_mysql"/>
+					<Add directory="/home/share/workspace/buildroot_project/project_mysql"/>
+					<Add directory="/home/share/workspace/buildroot_project/cmake-build-debug/project_i2cbus"/>
+					<Add directory="/home/share/workspace/buildroot_project/project_i2cbus"/>
+					<Add directory="/home/share/workspace/buildroot_project/cmake-build-debug/project_adjust"/>
+					<Add directory="/home/share/workspace/buildroot_project/project_adjust"/>
+					<Add directory="/home/share/workspace/buildroot_project/cmake-build-debug/project_pioneers"/>
+					<Add directory="/home/share/workspace/buildroot_project/project_pioneers"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/share/workspace/buildroot_project/cmake-build-debug/project_adjust/Makefile&quot;  VERBOSE=1 service_adjust_proxy/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/share/workspace/buildroot_project/cmake-build-debug/project_adjust/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/share/workspace/buildroot_project/cmake-build-debug/project_adjust/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/share/workspace/buildroot_project/cmake-build-debug/project_adjust/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="yangpi_service_pioneers">
+				<Option output="/home/share/workspace/buildroot_project/cmake-build-debug/project_pioneers/yangpi_service_pioneers" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/share/workspace/buildroot_project/cmake-build-debug/project_pioneers"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/share/workspace/buildroot_project/depend/mysql/include/mysql"/>
+					<Add directory="/home/share/workspace/buildroot_project/depend/dlt/include"/>
+					<Add directory="/home/share/workspace/buildroot_project/depend/dbus/include/dbus-1.0"/>
+					<Add directory="/home/share/workspace/buildroot_project/depend/dbus/lib/dbus-1.0/include"/>
+					<Add directory="/home/share/workspace/buildroot_project/depend/include"/>
+					<Add directory="/home/share/workspace/buildroot_project/cmake-build-debug/project_frame"/>
+					<Add directory="/home/share/workspace/buildroot_project/project_frame"/>
+					<Add directory="/home/share/workspace/buildroot_project/cmake-build-debug/project_mysql"/>
+					<Add directory="/home/share/workspace/buildroot_project/project_mysql"/>
+					<Add directory="/home/share/workspace/buildroot_project/cmake-build-debug/project_i2cbus"/>
+					<Add directory="/home/share/workspace/buildroot_project/project_i2cbus"/>
+					<Add directory="/home/share/workspace/buildroot_project/cmake-build-debug/project_adjust"/>
+					<Add directory="/home/share/workspace/buildroot_project/project_adjust"/>
+					<Add directory="/home/share/workspace/buildroot_project/cmake-build-debug/project_pioneers"/>
+					<Add directory="/home/share/workspace/buildroot_project/project_pioneers"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/share/workspace/buildroot_project/cmake-build-debug/project_pioneers/Makefile&quot;  VERBOSE=1 yangpi_service_pioneers"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/share/workspace/buildroot_project/cmake-build-debug/project_pioneers/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/share/workspace/buildroot_project/cmake-build-debug/project_pioneers/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/share/workspace/buildroot_project/cmake-build-debug/project_pioneers/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="yangpi_service_pioneers/fast">
+				<Option output="/home/share/workspace/buildroot_project/cmake-build-debug/project_pioneers/yangpi_service_pioneers" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/share/workspace/buildroot_project/cmake-build-debug/project_pioneers"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/share/workspace/buildroot_project/depend/mysql/include/mysql"/>
+					<Add directory="/home/share/workspace/buildroot_project/depend/dlt/include"/>
+					<Add directory="/home/share/workspace/buildroot_project/depend/dbus/include/dbus-1.0"/>
+					<Add directory="/home/share/workspace/buildroot_project/depend/dbus/lib/dbus-1.0/include"/>
+					<Add directory="/home/share/workspace/buildroot_project/depend/include"/>
+					<Add directory="/home/share/workspace/buildroot_project/cmake-build-debug/project_frame"/>
+					<Add directory="/home/share/workspace/buildroot_project/project_frame"/>
+					<Add directory="/home/share/workspace/buildroot_project/cmake-build-debug/project_mysql"/>
+					<Add directory="/home/share/workspace/buildroot_project/project_mysql"/>
+					<Add directory="/home/share/workspace/buildroot_project/cmake-build-debug/project_i2cbus"/>
+					<Add directory="/home/share/workspace/buildroot_project/project_i2cbus"/>
+					<Add directory="/home/share/workspace/buildroot_project/cmake-build-debug/project_adjust"/>
+					<Add directory="/home/share/workspace/buildroot_project/project_adjust"/>
+					<Add directory="/home/share/workspace/buildroot_project/cmake-build-debug/project_pioneers"/>
+					<Add directory="/home/share/workspace/buildroot_project/project_pioneers"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/share/workspace/buildroot_project/cmake-build-debug/project_pioneers/Makefile&quot;  VERBOSE=1 yangpi_service_pioneers/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/share/workspace/buildroot_project/cmake-build-debug/project_pioneers/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/share/workspace/buildroot_project/cmake-build-debug/project_pioneers/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/share/workspace/buildroot_project/cmake-build-debug/project_pioneers/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="service_pioneers_proxy">
+				<Option output="/home/share/workspace/buildroot_project/cmake-build-debug/project_pioneers/libservice_pioneers_proxy.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/share/workspace/buildroot_project/cmake-build-debug/project_pioneers"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/share/workspace/buildroot_project/depend/mysql/include/mysql"/>
+					<Add directory="/home/share/workspace/buildroot_project/depend/dlt/include"/>
+					<Add directory="/home/share/workspace/buildroot_project/depend/dbus/include/dbus-1.0"/>
+					<Add directory="/home/share/workspace/buildroot_project/depend/dbus/lib/dbus-1.0/include"/>
+					<Add directory="/home/share/workspace/buildroot_project/depend/include"/>
+					<Add directory="/home/share/workspace/buildroot_project/cmake-build-debug/project_frame"/>
+					<Add directory="/home/share/workspace/buildroot_project/project_frame"/>
+					<Add directory="/home/share/workspace/buildroot_project/cmake-build-debug/project_mysql"/>
+					<Add directory="/home/share/workspace/buildroot_project/project_mysql"/>
+					<Add directory="/home/share/workspace/buildroot_project/cmake-build-debug/project_i2cbus"/>
+					<Add directory="/home/share/workspace/buildroot_project/project_i2cbus"/>
+					<Add directory="/home/share/workspace/buildroot_project/cmake-build-debug/project_adjust"/>
+					<Add directory="/home/share/workspace/buildroot_project/project_adjust"/>
+					<Add directory="/home/share/workspace/buildroot_project/cmake-build-debug/project_pioneers"/>
+					<Add directory="/home/share/workspace/buildroot_project/project_pioneers"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/share/workspace/buildroot_project/cmake-build-debug/project_pioneers/Makefile&quot;  VERBOSE=1 service_pioneers_proxy"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/share/workspace/buildroot_project/cmake-build-debug/project_pioneers/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/share/workspace/buildroot_project/cmake-build-debug/project_pioneers/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/share/workspace/buildroot_project/cmake-build-debug/project_pioneers/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="service_pioneers_proxy/fast">
+				<Option output="/home/share/workspace/buildroot_project/cmake-build-debug/project_pioneers/libservice_pioneers_proxy.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/share/workspace/buildroot_project/cmake-build-debug/project_pioneers"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/share/workspace/buildroot_project/depend/mysql/include/mysql"/>
+					<Add directory="/home/share/workspace/buildroot_project/depend/dlt/include"/>
+					<Add directory="/home/share/workspace/buildroot_project/depend/dbus/include/dbus-1.0"/>
+					<Add directory="/home/share/workspace/buildroot_project/depend/dbus/lib/dbus-1.0/include"/>
+					<Add directory="/home/share/workspace/buildroot_project/depend/include"/>
+					<Add directory="/home/share/workspace/buildroot_project/cmake-build-debug/project_frame"/>
+					<Add directory="/home/share/workspace/buildroot_project/project_frame"/>
+					<Add directory="/home/share/workspace/buildroot_project/cmake-build-debug/project_mysql"/>
+					<Add directory="/home/share/workspace/buildroot_project/project_mysql"/>
+					<Add directory="/home/share/workspace/buildroot_project/cmake-build-debug/project_i2cbus"/>
+					<Add directory="/home/share/workspace/buildroot_project/project_i2cbus"/>
+					<Add directory="/home/share/workspace/buildroot_project/cmake-build-debug/project_adjust"/>
+					<Add directory="/home/share/workspace/buildroot_project/project_adjust"/>
+					<Add directory="/home/share/workspace/buildroot_project/cmake-build-debug/project_pioneers"/>
+					<Add directory="/home/share/workspace/buildroot_project/project_pioneers"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/share/workspace/buildroot_project/cmake-build-debug/project_pioneers/Makefile&quot;  VERBOSE=1 service_pioneers_proxy/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/share/workspace/buildroot_project/cmake-build-debug/project_pioneers/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/share/workspace/buildroot_project/cmake-build-debug/project_pioneers/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/share/workspace/buildroot_project/cmake-build-debug/project_pioneers/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="yangpi_service_rtu">
+				<Option output="/home/share/workspace/buildroot_project/cmake-build-debug/project_freemodbus/yangpi_service_rtu" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/share/workspace/buildroot_project/cmake-build-debug/project_freemodbus"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/share/workspace/buildroot_project/depend/mysql/include/mysql"/>
+					<Add directory="/home/share/workspace/buildroot_project/depend/dlt/include"/>
+					<Add directory="/home/share/workspace/buildroot_project/depend/dbus/include/dbus-1.0"/>
+					<Add directory="/home/share/workspace/buildroot_project/depend/dbus/lib/dbus-1.0/include"/>
+					<Add directory="/home/share/workspace/buildroot_project/depend/include"/>
+					<Add directory="/home/share/workspace/buildroot_project/cmake-build-debug/project_frame"/>
+					<Add directory="/home/share/workspace/buildroot_project/project_frame"/>
+					<Add directory="/home/share/workspace/buildroot_project/cmake-build-debug/project_mysql"/>
+					<Add directory="/home/share/workspace/buildroot_project/project_mysql"/>
+					<Add directory="/home/share/workspace/buildroot_project/cmake-build-debug/project_i2cbus"/>
+					<Add directory="/home/share/workspace/buildroot_project/project_i2cbus"/>
+					<Add directory="/home/share/workspace/buildroot_project/cmake-build-debug/project_adjust"/>
+					<Add directory="/home/share/workspace/buildroot_project/project_adjust"/>
+					<Add directory="/home/share/workspace/buildroot_project/cmake-build-debug/project_pioneers"/>
+					<Add directory="/home/share/workspace/buildroot_project/project_pioneers"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/share/workspace/buildroot_project/cmake-build-debug/project_freemodbus/Makefile&quot;  VERBOSE=1 yangpi_service_rtu"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/share/workspace/buildroot_project/cmake-build-debug/project_freemodbus/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/share/workspace/buildroot_project/cmake-build-debug/project_freemodbus/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/share/workspace/buildroot_project/cmake-build-debug/project_freemodbus/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="yangpi_service_rtu/fast">
+				<Option output="/home/share/workspace/buildroot_project/cmake-build-debug/project_freemodbus/yangpi_service_rtu" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/share/workspace/buildroot_project/cmake-build-debug/project_freemodbus"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/share/workspace/buildroot_project/depend/mysql/include/mysql"/>
+					<Add directory="/home/share/workspace/buildroot_project/depend/dlt/include"/>
+					<Add directory="/home/share/workspace/buildroot_project/depend/dbus/include/dbus-1.0"/>
+					<Add directory="/home/share/workspace/buildroot_project/depend/dbus/lib/dbus-1.0/include"/>
+					<Add directory="/home/share/workspace/buildroot_project/depend/include"/>
+					<Add directory="/home/share/workspace/buildroot_project/cmake-build-debug/project_frame"/>
+					<Add directory="/home/share/workspace/buildroot_project/project_frame"/>
+					<Add directory="/home/share/workspace/buildroot_project/cmake-build-debug/project_mysql"/>
+					<Add directory="/home/share/workspace/buildroot_project/project_mysql"/>
+					<Add directory="/home/share/workspace/buildroot_project/cmake-build-debug/project_i2cbus"/>
+					<Add directory="/home/share/workspace/buildroot_project/project_i2cbus"/>
+					<Add directory="/home/share/workspace/buildroot_project/cmake-build-debug/project_adjust"/>
+					<Add directory="/home/share/workspace/buildroot_project/project_adjust"/>
+					<Add directory="/home/share/workspace/buildroot_project/cmake-build-debug/project_pioneers"/>
+					<Add directory="/home/share/workspace/buildroot_project/project_pioneers"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/share/workspace/buildroot_project/cmake-build-debug/project_freemodbus/Makefile&quot;  VERBOSE=1 yangpi_service_rtu/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/share/workspace/buildroot_project/cmake-build-debug/project_freemodbus/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/share/workspace/buildroot_project/cmake-build-debug/project_freemodbus/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/share/workspace/buildroot_project/cmake-build-debug/project_freemodbus/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="service_rtu_proxy">
+				<Option output="/home/share/workspace/buildroot_project/cmake-build-debug/project_freemodbus/libservice_rtu_proxy.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/share/workspace/buildroot_project/cmake-build-debug/project_freemodbus"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/share/workspace/buildroot_project/depend/mysql/include/mysql"/>
+					<Add directory="/home/share/workspace/buildroot_project/depend/dlt/include"/>
+					<Add directory="/home/share/workspace/buildroot_project/depend/dbus/include/dbus-1.0"/>
+					<Add directory="/home/share/workspace/buildroot_project/depend/dbus/lib/dbus-1.0/include"/>
+					<Add directory="/home/share/workspace/buildroot_project/depend/include"/>
+					<Add directory="/home/share/workspace/buildroot_project/cmake-build-debug/project_frame"/>
+					<Add directory="/home/share/workspace/buildroot_project/project_frame"/>
+					<Add directory="/home/share/workspace/buildroot_project/cmake-build-debug/project_mysql"/>
+					<Add directory="/home/share/workspace/buildroot_project/project_mysql"/>
+					<Add directory="/home/share/workspace/buildroot_project/cmake-build-debug/project_i2cbus"/>
+					<Add directory="/home/share/workspace/buildroot_project/project_i2cbus"/>
+					<Add directory="/home/share/workspace/buildroot_project/cmake-build-debug/project_adjust"/>
+					<Add directory="/home/share/workspace/buildroot_project/project_adjust"/>
+					<Add directory="/home/share/workspace/buildroot_project/cmake-build-debug/project_pioneers"/>
+					<Add directory="/home/share/workspace/buildroot_project/project_pioneers"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/share/workspace/buildroot_project/cmake-build-debug/project_freemodbus/Makefile&quot;  VERBOSE=1 service_rtu_proxy"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/share/workspace/buildroot_project/cmake-build-debug/project_freemodbus/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/share/workspace/buildroot_project/cmake-build-debug/project_freemodbus/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/share/workspace/buildroot_project/cmake-build-debug/project_freemodbus/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="service_rtu_proxy/fast">
+				<Option output="/home/share/workspace/buildroot_project/cmake-build-debug/project_freemodbus/libservice_rtu_proxy.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/share/workspace/buildroot_project/cmake-build-debug/project_freemodbus"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/share/workspace/buildroot_project/depend/mysql/include/mysql"/>
+					<Add directory="/home/share/workspace/buildroot_project/depend/dlt/include"/>
+					<Add directory="/home/share/workspace/buildroot_project/depend/dbus/include/dbus-1.0"/>
+					<Add directory="/home/share/workspace/buildroot_project/depend/dbus/lib/dbus-1.0/include"/>
+					<Add directory="/home/share/workspace/buildroot_project/depend/include"/>
+					<Add directory="/home/share/workspace/buildroot_project/cmake-build-debug/project_frame"/>
+					<Add directory="/home/share/workspace/buildroot_project/project_frame"/>
+					<Add directory="/home/share/workspace/buildroot_project/cmake-build-debug/project_mysql"/>
+					<Add directory="/home/share/workspace/buildroot_project/project_mysql"/>
+					<Add directory="/home/share/workspace/buildroot_project/cmake-build-debug/project_i2cbus"/>
+					<Add directory="/home/share/workspace/buildroot_project/project_i2cbus"/>
+					<Add directory="/home/share/workspace/buildroot_project/cmake-build-debug/project_adjust"/>
+					<Add directory="/home/share/workspace/buildroot_project/project_adjust"/>
+					<Add directory="/home/share/workspace/buildroot_project/cmake-build-debug/project_pioneers"/>
+					<Add directory="/home/share/workspace/buildroot_project/project_pioneers"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/share/workspace/buildroot_project/cmake-build-debug/project_freemodbus/Makefile&quot;  VERBOSE=1 service_rtu_proxy/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/share/workspace/buildroot_project/cmake-build-debug/project_freemodbus/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/share/workspace/buildroot_project/cmake-build-debug/project_freemodbus/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/share/workspace/buildroot_project/cmake-build-debug/project_freemodbus/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="yangpi_service_ota">
+				<Option output="/home/share/workspace/buildroot_project/cmake-build-debug/project_ota/yangpi_service_ota" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/share/workspace/buildroot_project/cmake-build-debug/project_ota"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/share/workspace/buildroot_project/depend/mysql/include/mysql"/>
+					<Add directory="/home/share/workspace/buildroot_project/depend/dlt/include"/>
+					<Add directory="/home/share/workspace/buildroot_project/depend/dbus/include/dbus-1.0"/>
+					<Add directory="/home/share/workspace/buildroot_project/depend/dbus/lib/dbus-1.0/include"/>
+					<Add directory="/home/share/workspace/buildroot_project/depend/include"/>
+					<Add directory="/home/share/workspace/buildroot_project/cmake-build-debug/project_frame"/>
+					<Add directory="/home/share/workspace/buildroot_project/project_frame"/>
+					<Add directory="/home/share/workspace/buildroot_project/cmake-build-debug/project_mysql"/>
+					<Add directory="/home/share/workspace/buildroot_project/project_mysql"/>
+					<Add directory="/home/share/workspace/buildroot_project/cmake-build-debug/project_i2cbus"/>
+					<Add directory="/home/share/workspace/buildroot_project/project_i2cbus"/>
+					<Add directory="/home/share/workspace/buildroot_project/cmake-build-debug/project_adjust"/>
+					<Add directory="/home/share/workspace/buildroot_project/project_adjust"/>
+					<Add directory="/home/share/workspace/buildroot_project/cmake-build-debug/project_pioneers"/>
+					<Add directory="/home/share/workspace/buildroot_project/project_pioneers"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/share/workspace/buildroot_project/cmake-build-debug/project_ota/Makefile&quot;  VERBOSE=1 yangpi_service_ota"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/share/workspace/buildroot_project/cmake-build-debug/project_ota/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/share/workspace/buildroot_project/cmake-build-debug/project_ota/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/share/workspace/buildroot_project/cmake-build-debug/project_ota/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="yangpi_service_ota/fast">
+				<Option output="/home/share/workspace/buildroot_project/cmake-build-debug/project_ota/yangpi_service_ota" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/share/workspace/buildroot_project/cmake-build-debug/project_ota"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/share/workspace/buildroot_project/depend/mysql/include/mysql"/>
+					<Add directory="/home/share/workspace/buildroot_project/depend/dlt/include"/>
+					<Add directory="/home/share/workspace/buildroot_project/depend/dbus/include/dbus-1.0"/>
+					<Add directory="/home/share/workspace/buildroot_project/depend/dbus/lib/dbus-1.0/include"/>
+					<Add directory="/home/share/workspace/buildroot_project/depend/include"/>
+					<Add directory="/home/share/workspace/buildroot_project/cmake-build-debug/project_frame"/>
+					<Add directory="/home/share/workspace/buildroot_project/project_frame"/>
+					<Add directory="/home/share/workspace/buildroot_project/cmake-build-debug/project_mysql"/>
+					<Add directory="/home/share/workspace/buildroot_project/project_mysql"/>
+					<Add directory="/home/share/workspace/buildroot_project/cmake-build-debug/project_i2cbus"/>
+					<Add directory="/home/share/workspace/buildroot_project/project_i2cbus"/>
+					<Add directory="/home/share/workspace/buildroot_project/cmake-build-debug/project_adjust"/>
+					<Add directory="/home/share/workspace/buildroot_project/project_adjust"/>
+					<Add directory="/home/share/workspace/buildroot_project/cmake-build-debug/project_pioneers"/>
+					<Add directory="/home/share/workspace/buildroot_project/project_pioneers"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/share/workspace/buildroot_project/cmake-build-debug/project_ota/Makefile&quot;  VERBOSE=1 yangpi_service_ota/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/share/workspace/buildroot_project/cmake-build-debug/project_ota/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/share/workspace/buildroot_project/cmake-build-debug/project_ota/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/share/workspace/buildroot_project/cmake-build-debug/project_ota/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="service_ota_proxy">
+				<Option output="/home/share/workspace/buildroot_project/cmake-build-debug/project_ota/libservice_ota_proxy.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/share/workspace/buildroot_project/cmake-build-debug/project_ota"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/share/workspace/buildroot_project/depend/mysql/include/mysql"/>
+					<Add directory="/home/share/workspace/buildroot_project/depend/dlt/include"/>
+					<Add directory="/home/share/workspace/buildroot_project/depend/dbus/include/dbus-1.0"/>
+					<Add directory="/home/share/workspace/buildroot_project/depend/dbus/lib/dbus-1.0/include"/>
+					<Add directory="/home/share/workspace/buildroot_project/depend/include"/>
+					<Add directory="/home/share/workspace/buildroot_project/cmake-build-debug/project_frame"/>
+					<Add directory="/home/share/workspace/buildroot_project/project_frame"/>
+					<Add directory="/home/share/workspace/buildroot_project/cmake-build-debug/project_mysql"/>
+					<Add directory="/home/share/workspace/buildroot_project/project_mysql"/>
+					<Add directory="/home/share/workspace/buildroot_project/cmake-build-debug/project_i2cbus"/>
+					<Add directory="/home/share/workspace/buildroot_project/project_i2cbus"/>
+					<Add directory="/home/share/workspace/buildroot_project/cmake-build-debug/project_adjust"/>
+					<Add directory="/home/share/workspace/buildroot_project/project_adjust"/>
+					<Add directory="/home/share/workspace/buildroot_project/cmake-build-debug/project_pioneers"/>
+					<Add directory="/home/share/workspace/buildroot_project/project_pioneers"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/share/workspace/buildroot_project/cmake-build-debug/project_ota/Makefile&quot;  VERBOSE=1 service_ota_proxy"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/share/workspace/buildroot_project/cmake-build-debug/project_ota/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/share/workspace/buildroot_project/cmake-build-debug/project_ota/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/share/workspace/buildroot_project/cmake-build-debug/project_ota/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="service_ota_proxy/fast">
+				<Option output="/home/share/workspace/buildroot_project/cmake-build-debug/project_ota/libservice_ota_proxy.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/share/workspace/buildroot_project/cmake-build-debug/project_ota"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/share/workspace/buildroot_project/depend/mysql/include/mysql"/>
+					<Add directory="/home/share/workspace/buildroot_project/depend/dlt/include"/>
+					<Add directory="/home/share/workspace/buildroot_project/depend/dbus/include/dbus-1.0"/>
+					<Add directory="/home/share/workspace/buildroot_project/depend/dbus/lib/dbus-1.0/include"/>
+					<Add directory="/home/share/workspace/buildroot_project/depend/include"/>
+					<Add directory="/home/share/workspace/buildroot_project/cmake-build-debug/project_frame"/>
+					<Add directory="/home/share/workspace/buildroot_project/project_frame"/>
+					<Add directory="/home/share/workspace/buildroot_project/cmake-build-debug/project_mysql"/>
+					<Add directory="/home/share/workspace/buildroot_project/project_mysql"/>
+					<Add directory="/home/share/workspace/buildroot_project/cmake-build-debug/project_i2cbus"/>
+					<Add directory="/home/share/workspace/buildroot_project/project_i2cbus"/>
+					<Add directory="/home/share/workspace/buildroot_project/cmake-build-debug/project_adjust"/>
+					<Add directory="/home/share/workspace/buildroot_project/project_adjust"/>
+					<Add directory="/home/share/workspace/buildroot_project/cmake-build-debug/project_pioneers"/>
+					<Add directory="/home/share/workspace/buildroot_project/project_pioneers"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/share/workspace/buildroot_project/cmake-build-debug/project_ota/Makefile&quot;  VERBOSE=1 service_ota_proxy/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/share/workspace/buildroot_project/cmake-build-debug/project_ota/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/share/workspace/buildroot_project/cmake-build-debug/project_ota/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/share/workspace/buildroot_project/cmake-build-debug/project_ota/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="i2c_2631hv">
+				<Option output="/home/share/workspace/buildroot_project/cmake-build-debug/project_hv_tools/i2c_2631hv" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/share/workspace/buildroot_project/cmake-build-debug/project_hv_tools"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/share/workspace/buildroot_project/depend/mysql/include/mysql"/>
+					<Add directory="/home/share/workspace/buildroot_project/depend/dlt/include"/>
+					<Add directory="/home/share/workspace/buildroot_project/depend/dbus/include/dbus-1.0"/>
+					<Add directory="/home/share/workspace/buildroot_project/depend/dbus/lib/dbus-1.0/include"/>
+					<Add directory="/home/share/workspace/buildroot_project/depend/include"/>
+					<Add directory="/home/share/workspace/buildroot_project/cmake-build-debug/project_frame"/>
+					<Add directory="/home/share/workspace/buildroot_project/project_frame"/>
+					<Add directory="/home/share/workspace/buildroot_project/cmake-build-debug/project_mysql"/>
+					<Add directory="/home/share/workspace/buildroot_project/project_mysql"/>
+					<Add directory="/home/share/workspace/buildroot_project/cmake-build-debug/project_i2cbus"/>
+					<Add directory="/home/share/workspace/buildroot_project/project_i2cbus"/>
+					<Add directory="/home/share/workspace/buildroot_project/cmake-build-debug/project_adjust"/>
+					<Add directory="/home/share/workspace/buildroot_project/project_adjust"/>
+					<Add directory="/home/share/workspace/buildroot_project/cmake-build-debug/project_pioneers"/>
+					<Add directory="/home/share/workspace/buildroot_project/project_pioneers"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/share/workspace/buildroot_project/cmake-build-debug/project_hv_tools/Makefile&quot;  VERBOSE=1 i2c_2631hv"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/share/workspace/buildroot_project/cmake-build-debug/project_hv_tools/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/share/workspace/buildroot_project/cmake-build-debug/project_hv_tools/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/share/workspace/buildroot_project/cmake-build-debug/project_hv_tools/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="i2c_2631hv/fast">
+				<Option output="/home/share/workspace/buildroot_project/cmake-build-debug/project_hv_tools/i2c_2631hv" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/share/workspace/buildroot_project/cmake-build-debug/project_hv_tools"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/share/workspace/buildroot_project/depend/mysql/include/mysql"/>
+					<Add directory="/home/share/workspace/buildroot_project/depend/dlt/include"/>
+					<Add directory="/home/share/workspace/buildroot_project/depend/dbus/include/dbus-1.0"/>
+					<Add directory="/home/share/workspace/buildroot_project/depend/dbus/lib/dbus-1.0/include"/>
+					<Add directory="/home/share/workspace/buildroot_project/depend/include"/>
+					<Add directory="/home/share/workspace/buildroot_project/cmake-build-debug/project_frame"/>
+					<Add directory="/home/share/workspace/buildroot_project/project_frame"/>
+					<Add directory="/home/share/workspace/buildroot_project/cmake-build-debug/project_mysql"/>
+					<Add directory="/home/share/workspace/buildroot_project/project_mysql"/>
+					<Add directory="/home/share/workspace/buildroot_project/cmake-build-debug/project_i2cbus"/>
+					<Add directory="/home/share/workspace/buildroot_project/project_i2cbus"/>
+					<Add directory="/home/share/workspace/buildroot_project/cmake-build-debug/project_adjust"/>
+					<Add directory="/home/share/workspace/buildroot_project/project_adjust"/>
+					<Add directory="/home/share/workspace/buildroot_project/cmake-build-debug/project_pioneers"/>
+					<Add directory="/home/share/workspace/buildroot_project/project_pioneers"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/share/workspace/buildroot_project/cmake-build-debug/project_hv_tools/Makefile&quot;  VERBOSE=1 i2c_2631hv/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/share/workspace/buildroot_project/cmake-build-debug/project_hv_tools/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/share/workspace/buildroot_project/cmake-build-debug/project_hv_tools/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/share/workspace/buildroot_project/cmake-build-debug/project_hv_tools/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="i2c_2631vbb">
+				<Option output="/home/share/workspace/buildroot_project/cmake-build-debug/project_vbbr_tools/i2c_2631vbb" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/share/workspace/buildroot_project/cmake-build-debug/project_vbbr_tools"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/share/workspace/buildroot_project/depend/mysql/include/mysql"/>
+					<Add directory="/home/share/workspace/buildroot_project/depend/dlt/include"/>
+					<Add directory="/home/share/workspace/buildroot_project/depend/dbus/include/dbus-1.0"/>
+					<Add directory="/home/share/workspace/buildroot_project/depend/dbus/lib/dbus-1.0/include"/>
+					<Add directory="/home/share/workspace/buildroot_project/depend/include"/>
+					<Add directory="/home/share/workspace/buildroot_project/cmake-build-debug/project_frame"/>
+					<Add directory="/home/share/workspace/buildroot_project/project_frame"/>
+					<Add directory="/home/share/workspace/buildroot_project/cmake-build-debug/project_mysql"/>
+					<Add directory="/home/share/workspace/buildroot_project/project_mysql"/>
+					<Add directory="/home/share/workspace/buildroot_project/cmake-build-debug/project_i2cbus"/>
+					<Add directory="/home/share/workspace/buildroot_project/project_i2cbus"/>
+					<Add directory="/home/share/workspace/buildroot_project/cmake-build-debug/project_adjust"/>
+					<Add directory="/home/share/workspace/buildroot_project/project_adjust"/>
+					<Add directory="/home/share/workspace/buildroot_project/cmake-build-debug/project_pioneers"/>
+					<Add directory="/home/share/workspace/buildroot_project/project_pioneers"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/share/workspace/buildroot_project/cmake-build-debug/project_vbbr_tools/Makefile&quot;  VERBOSE=1 i2c_2631vbb"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/share/workspace/buildroot_project/cmake-build-debug/project_vbbr_tools/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/share/workspace/buildroot_project/cmake-build-debug/project_vbbr_tools/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/share/workspace/buildroot_project/cmake-build-debug/project_vbbr_tools/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="i2c_2631vbb/fast">
+				<Option output="/home/share/workspace/buildroot_project/cmake-build-debug/project_vbbr_tools/i2c_2631vbb" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/share/workspace/buildroot_project/cmake-build-debug/project_vbbr_tools"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/share/workspace/buildroot_project/depend/mysql/include/mysql"/>
+					<Add directory="/home/share/workspace/buildroot_project/depend/dlt/include"/>
+					<Add directory="/home/share/workspace/buildroot_project/depend/dbus/include/dbus-1.0"/>
+					<Add directory="/home/share/workspace/buildroot_project/depend/dbus/lib/dbus-1.0/include"/>
+					<Add directory="/home/share/workspace/buildroot_project/depend/include"/>
+					<Add directory="/home/share/workspace/buildroot_project/cmake-build-debug/project_frame"/>
+					<Add directory="/home/share/workspace/buildroot_project/project_frame"/>
+					<Add directory="/home/share/workspace/buildroot_project/cmake-build-debug/project_mysql"/>
+					<Add directory="/home/share/workspace/buildroot_project/project_mysql"/>
+					<Add directory="/home/share/workspace/buildroot_project/cmake-build-debug/project_i2cbus"/>
+					<Add directory="/home/share/workspace/buildroot_project/project_i2cbus"/>
+					<Add directory="/home/share/workspace/buildroot_project/cmake-build-debug/project_adjust"/>
+					<Add directory="/home/share/workspace/buildroot_project/project_adjust"/>
+					<Add directory="/home/share/workspace/buildroot_project/cmake-build-debug/project_pioneers"/>
+					<Add directory="/home/share/workspace/buildroot_project/project_pioneers"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/share/workspace/buildroot_project/cmake-build-debug/project_vbbr_tools/Makefile&quot;  VERBOSE=1 i2c_2631vbb/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/share/workspace/buildroot_project/cmake-build-debug/project_vbbr_tools/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/share/workspace/buildroot_project/cmake-build-debug/project_vbbr_tools/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/share/workspace/buildroot_project/cmake-build-debug/project_vbbr_tools/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/share/workspace/buildroot_project/project_adjust/adjust_service.c">
+			<Option target="yangpi_service_adjust"/>
+		</Unit>
+		<Unit filename="/home/share/workspace/buildroot_project/project_adjust/adjust_service.h">
+			<Option target="yangpi_service_adjust"/>
+		</Unit>
+		<Unit filename="/home/share/workspace/buildroot_project/project_adjust/adjust_service_base.c">
+			<Option target="yangpi_service_adjust"/>
+		</Unit>
+		<Unit filename="/home/share/workspace/buildroot_project/project_adjust/adjust_service_base.h">
+			<Option target="yangpi_service_adjust"/>
+		</Unit>
+		<Unit filename="/home/share/workspace/buildroot_project/project_adjust/log_dlt.c">
+			<Option target="yangpi_service_adjust"/>
+		</Unit>
+		<Unit filename="/home/share/workspace/buildroot_project/project_adjust/log_dlt.h">
+			<Option target="yangpi_service_adjust"/>
+		</Unit>
+		<Unit filename="/home/share/workspace/buildroot_project/project_adjust/yangpi_adjust_main.c">
+			<Option target="yangpi_service_adjust"/>
+		</Unit>
+		<Unit filename="/home/share/workspace/buildroot_project/project_adjust/yangpi_adjust_proxy.c">
+			<Option target="service_adjust_proxy"/>
+		</Unit>
+		<Unit filename="/home/share/workspace/buildroot_project/project_adjust/yangpi_adjust_proxy.h">
+			<Option target="service_adjust_proxy"/>
+		</Unit>
+		<Unit filename="/home/share/workspace/buildroot_project/project_adjust/yangpi_adjust_stub.c">
+			<Option target="yangpi_service_adjust"/>
+		</Unit>
+		<Unit filename="/home/share/workspace/buildroot_project/project_adjust/yangpi_adjust_stub.h">
+			<Option target="yangpi_service_adjust"/>
+		</Unit>
+		<Unit filename="/home/share/workspace/buildroot_project/project_frame/yangpai_service.c">
+			<Option target="yangpai_service"/>
+		</Unit>
+		<Unit filename="/home/share/workspace/buildroot_project/project_frame/yangpai_service.h">
+			<Option target="yangpai_service"/>
+		</Unit>
+		<Unit filename="/home/share/workspace/buildroot_project/project_freemodbus/freemodbus_rtu.c">
+			<Option target="yangpi_service_rtu"/>
+		</Unit>
+		<Unit filename="/home/share/workspace/buildroot_project/project_freemodbus/mb.c">
+			<Option target="yangpi_service_rtu"/>
+		</Unit>
+		<Unit filename="/home/share/workspace/buildroot_project/project_freemodbus/mb.h">
+			<Option target="yangpi_service_rtu"/>
+		</Unit>
+		<Unit filename="/home/share/workspace/buildroot_project/project_freemodbus/mbascii.c">
+			<Option target="yangpi_service_rtu"/>
+		</Unit>
+		<Unit filename="/home/share/workspace/buildroot_project/project_freemodbus/mbascii.h">
+			<Option target="yangpi_service_rtu"/>
+		</Unit>
+		<Unit filename="/home/share/workspace/buildroot_project/project_freemodbus/mbcrc.c">
+			<Option target="yangpi_service_rtu"/>
+		</Unit>
+		<Unit filename="/home/share/workspace/buildroot_project/project_freemodbus/mbcrc.h">
+			<Option target="yangpi_service_rtu"/>
+		</Unit>
+		<Unit filename="/home/share/workspace/buildroot_project/project_freemodbus/mbfunccoils.c">
+			<Option target="yangpi_service_rtu"/>
+		</Unit>
+		<Unit filename="/home/share/workspace/buildroot_project/project_freemodbus/mbfuncdiag.c">
+			<Option target="yangpi_service_rtu"/>
+		</Unit>
+		<Unit filename="/home/share/workspace/buildroot_project/project_freemodbus/mbfuncdisc.c">
+			<Option target="yangpi_service_rtu"/>
+		</Unit>
+		<Unit filename="/home/share/workspace/buildroot_project/project_freemodbus/mbfuncholding.c">
+			<Option target="yangpi_service_rtu"/>
+		</Unit>
+		<Unit filename="/home/share/workspace/buildroot_project/project_freemodbus/mbfuncinput.c">
+			<Option target="yangpi_service_rtu"/>
+		</Unit>
+		<Unit filename="/home/share/workspace/buildroot_project/project_freemodbus/mbfuncother.c">
+			<Option target="yangpi_service_rtu"/>
+		</Unit>
+		<Unit filename="/home/share/workspace/buildroot_project/project_freemodbus/mbrtu.c">
+			<Option target="yangpi_service_rtu"/>
+		</Unit>
+		<Unit filename="/home/share/workspace/buildroot_project/project_freemodbus/mbrtu.h">
+			<Option target="yangpi_service_rtu"/>
+		</Unit>
+		<Unit filename="/home/share/workspace/buildroot_project/project_freemodbus/mbutils.c">
+			<Option target="yangpi_service_rtu"/>
+		</Unit>
+		<Unit filename="/home/share/workspace/buildroot_project/project_freemodbus/mbutils.h">
+			<Option target="yangpi_service_rtu"/>
+		</Unit>
+		<Unit filename="/home/share/workspace/buildroot_project/project_freemodbus/portevent.c">
+			<Option target="yangpi_service_rtu"/>
+		</Unit>
+		<Unit filename="/home/share/workspace/buildroot_project/project_freemodbus/portother.c">
+			<Option target="yangpi_service_rtu"/>
+		</Unit>
+		<Unit filename="/home/share/workspace/buildroot_project/project_freemodbus/portserial.c">
+			<Option target="yangpi_service_rtu"/>
+		</Unit>
+		<Unit filename="/home/share/workspace/buildroot_project/project_freemodbus/porttimer.c">
+			<Option target="yangpi_service_rtu"/>
+		</Unit>
+		<Unit filename="/home/share/workspace/buildroot_project/project_freemodbus/rtu_service.c">
+			<Option target="yangpi_service_rtu"/>
+		</Unit>
+		<Unit filename="/home/share/workspace/buildroot_project/project_freemodbus/rtu_service.h">
+			<Option target="yangpi_service_rtu"/>
+		</Unit>
+		<Unit filename="/home/share/workspace/buildroot_project/project_freemodbus/yangpi_rtu_main.c">
+			<Option target="yangpi_service_rtu"/>
+		</Unit>
+		<Unit filename="/home/share/workspace/buildroot_project/project_freemodbus/yangpi_rtu_proxy.c">
+			<Option target="service_rtu_proxy"/>
+		</Unit>
+		<Unit filename="/home/share/workspace/buildroot_project/project_freemodbus/yangpi_rtu_proxy.h">
+			<Option target="service_rtu_proxy"/>
+		</Unit>
+		<Unit filename="/home/share/workspace/buildroot_project/project_freemodbus/yangpi_rtu_stub.c">
+			<Option target="yangpi_service_rtu"/>
+		</Unit>
+		<Unit filename="/home/share/workspace/buildroot_project/project_freemodbus/yangpi_rtu_stub.h">
+			<Option target="yangpi_service_rtu"/>
+		</Unit>
+		<Unit filename="/home/share/workspace/buildroot_project/project_hv_tools/i2c_2631hv.c">
+			<Option target="i2c_2631hv"/>
+		</Unit>
+		<Unit filename="/home/share/workspace/buildroot_project/project_i2cbus/i2c_ad1115.c">
+			<Option target="yangpi_service_i2cbus"/>
+		</Unit>
+		<Unit filename="/home/share/workspace/buildroot_project/project_i2cbus/i2c_ad1115.h">
+			<Option target="yangpi_service_i2cbus"/>
+		</Unit>
+		<Unit filename="/home/share/workspace/buildroot_project/project_i2cbus/i2c_adjust.c">
+			<Option target="yangpi_service_i2cbus"/>
+		</Unit>
+		<Unit filename="/home/share/workspace/buildroot_project/project_i2cbus/i2c_adjust.h">
+			<Option target="yangpi_service_i2cbus"/>
+		</Unit>
+		<Unit filename="/home/share/workspace/buildroot_project/project_i2cbus/i2c_bus.c">
+			<Option target="yangpi_service_i2cbus"/>
+		</Unit>
+		<Unit filename="/home/share/workspace/buildroot_project/project_i2cbus/i2c_bus.h">
+			<Option target="yangpi_service_i2cbus"/>
+		</Unit>
+		<Unit filename="/home/share/workspace/buildroot_project/project_i2cbus/i2c_oled.c">
+			<Option target="yangpi_service_i2cbus"/>
+		</Unit>
+		<Unit filename="/home/share/workspace/buildroot_project/project_i2cbus/i2c_oled.h">
+			<Option target="yangpi_service_i2cbus"/>
+		</Unit>
+		<Unit filename="/home/share/workspace/buildroot_project/project_i2cbus/i2cbus_base.h">
+			<Option target="yangpi_service_i2cbus"/>
+		</Unit>
+		<Unit filename="/home/share/workspace/buildroot_project/project_i2cbus/i2cbus_module_base.c">
+			<Option target="yangpi_service_i2cbus"/>
+		</Unit>
+		<Unit filename="/home/share/workspace/buildroot_project/project_i2cbus/i2cbus_module_base.h">
+			<Option target="yangpi_service_i2cbus"/>
+		</Unit>
+		<Unit filename="/home/share/workspace/buildroot_project/project_i2cbus/log_dlt.c">
+			<Option target="yangpi_service_i2cbus"/>
+		</Unit>
+		<Unit filename="/home/share/workspace/buildroot_project/project_i2cbus/log_dlt.h">
+			<Option target="yangpi_service_i2cbus"/>
+		</Unit>
+		<Unit filename="/home/share/workspace/buildroot_project/project_i2cbus/yangpi_i2c_main.c">
+			<Option target="yangpi_service_i2cbus"/>
+		</Unit>
+		<Unit filename="/home/share/workspace/buildroot_project/project_i2cbus/yangpi_i2c_proxy.c">
+			<Option target="service_i2c_proxy"/>
+		</Unit>
+		<Unit filename="/home/share/workspace/buildroot_project/project_i2cbus/yangpi_i2c_proxy.h">
+			<Option target="service_i2c_proxy"/>
+		</Unit>
+		<Unit filename="/home/share/workspace/buildroot_project/project_i2cbus/yangpi_i2c_stub.c">
+			<Option target="yangpi_service_i2cbus"/>
+		</Unit>
+		<Unit filename="/home/share/workspace/buildroot_project/project_i2cbus/yangpi_i2c_stub.h">
+			<Option target="yangpi_service_i2cbus"/>
+		</Unit>
+		<Unit filename="/home/share/workspace/buildroot_project/project_mysql/log_dlt.c">
+			<Option target="yangpi_service_mysql"/>
+		</Unit>
+		<Unit filename="/home/share/workspace/buildroot_project/project_mysql/log_dlt.h">
+			<Option target="yangpi_service_mysql"/>
+		</Unit>
+		<Unit filename="/home/share/workspace/buildroot_project/project_mysql/mysql_service.c">
+			<Option target="yangpi_service_mysql"/>
+		</Unit>
+		<Unit filename="/home/share/workspace/buildroot_project/project_mysql/mysql_service.h">
+			<Option target="yangpi_service_mysql"/>
+		</Unit>
+		<Unit filename="/home/share/workspace/buildroot_project/project_mysql/read_mysql.c">
+			<Option target="yangpi_service_mysql"/>
+		</Unit>
+		<Unit filename="/home/share/workspace/buildroot_project/project_mysql/read_mysql.h">
+			<Option target="yangpi_service_mysql"/>
+		</Unit>
+		<Unit filename="/home/share/workspace/buildroot_project/project_mysql/yangpi_mysql_main.c">
+			<Option target="yangpi_service_mysql"/>
+		</Unit>
+		<Unit filename="/home/share/workspace/buildroot_project/project_mysql/yangpi_mysql_proxy.c">
+			<Option target="service_mysql_proxy"/>
+		</Unit>
+		<Unit filename="/home/share/workspace/buildroot_project/project_mysql/yangpi_mysql_proxy.h">
+			<Option target="service_mysql_proxy"/>
+		</Unit>
+		<Unit filename="/home/share/workspace/buildroot_project/project_mysql/yangpi_mysql_stub.c">
+			<Option target="yangpi_service_mysql"/>
+		</Unit>
+		<Unit filename="/home/share/workspace/buildroot_project/project_mysql/yangpi_mysql_stub.h">
+			<Option target="yangpi_service_mysql"/>
+		</Unit>
+		<Unit filename="/home/share/workspace/buildroot_project/project_ota/ota_data_base.c">
+			<Option target="yangpi_service_ota"/>
+		</Unit>
+		<Unit filename="/home/share/workspace/buildroot_project/project_ota/ota_data_base.h">
+			<Option target="yangpi_service_ota"/>
+		</Unit>
+		<Unit filename="/home/share/workspace/buildroot_project/project_ota/ota_service.c">
+			<Option target="yangpi_service_ota"/>
+		</Unit>
+		<Unit filename="/home/share/workspace/buildroot_project/project_ota/yangpi_ota_main.c">
+			<Option target="yangpi_service_ota"/>
+		</Unit>
+		<Unit filename="/home/share/workspace/buildroot_project/project_ota/yangpi_ota_proxy.c">
+			<Option target="service_ota_proxy"/>
+		</Unit>
+		<Unit filename="/home/share/workspace/buildroot_project/project_ota/yangpi_ota_proxy.h">
+			<Option target="service_ota_proxy"/>
+		</Unit>
+		<Unit filename="/home/share/workspace/buildroot_project/project_ota/yangpi_ota_stub.c">
+			<Option target="yangpi_service_ota"/>
+		</Unit>
+		<Unit filename="/home/share/workspace/buildroot_project/project_ota/yangpi_ota_stub.h">
+			<Option target="yangpi_service_ota"/>
+		</Unit>
+		<Unit filename="/home/share/workspace/buildroot_project/project_pioneers/calculate_flow.c">
+			<Option target="yangpi_service_pioneers"/>
+		</Unit>
+		<Unit filename="/home/share/workspace/buildroot_project/project_pioneers/calculate_flow.h">
+			<Option target="yangpi_service_pioneers"/>
+		</Unit>
+		<Unit filename="/home/share/workspace/buildroot_project/project_pioneers/log_dlt.c">
+			<Option target="yangpi_service_pioneers"/>
+		</Unit>
+		<Unit filename="/home/share/workspace/buildroot_project/project_pioneers/log_dlt.h">
+			<Option target="yangpi_service_pioneers"/>
+		</Unit>
+		<Unit filename="/home/share/workspace/buildroot_project/project_pioneers/pioneers.c">
+			<Option target="yangpi_service_pioneers"/>
+		</Unit>
+		<Unit filename="/home/share/workspace/buildroot_project/project_pioneers/pioneers.h">
+			<Option target="yangpi_service_pioneers"/>
+		</Unit>
+		<Unit filename="/home/share/workspace/buildroot_project/project_pioneers/pioneers_service.c">
+			<Option target="yangpi_service_pioneers"/>
+		</Unit>
+		<Unit filename="/home/share/workspace/buildroot_project/project_pioneers/pioneers_service.h">
+			<Option target="yangpi_service_pioneers"/>
+		</Unit>
+		<Unit filename="/home/share/workspace/buildroot_project/project_pioneers/pioneers_spi.c">
+			<Option target="yangpi_service_pioneers"/>
+		</Unit>
+		<Unit filename="/home/share/workspace/buildroot_project/project_pioneers/pioneers_spi.h">
+			<Option target="yangpi_service_pioneers"/>
+		</Unit>
+		<Unit filename="/home/share/workspace/buildroot_project/project_pioneers/yangpi_pioneers_main.c">
+			<Option target="yangpi_service_pioneers"/>
+		</Unit>
+		<Unit filename="/home/share/workspace/buildroot_project/project_pioneers/yangpi_pioneers_proxy.c">
+			<Option target="service_pioneers_proxy"/>
+		</Unit>
+		<Unit filename="/home/share/workspace/buildroot_project/project_pioneers/yangpi_pioneers_proxy.h">
+			<Option target="service_pioneers_proxy"/>
+		</Unit>
+		<Unit filename="/home/share/workspace/buildroot_project/project_pioneers/yangpi_pioneers_stub.c">
+			<Option target="yangpi_service_pioneers"/>
+		</Unit>
+		<Unit filename="/home/share/workspace/buildroot_project/project_pioneers/yangpi_pioneers_stub.h">
+			<Option target="yangpi_service_pioneers"/>
+		</Unit>
+		<Unit filename="/home/share/workspace/buildroot_project/project_vbbr_tools/i2c_2631vbb.c">
+			<Option target="i2c_2631vbb"/>
+		</Unit>
+		<Unit filename="/home/share/workspace/buildroot_project/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/share/workspace/buildroot_project/project_frame/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\project_frame\"/>
+		</Unit>
+		<Unit filename="/home/share/workspace/buildroot_project/project_mysql/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\project_mysql\"/>
+		</Unit>
+		<Unit filename="/home/share/workspace/buildroot_project/project_i2cbus/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\project_i2cbus\"/>
+		</Unit>
+		<Unit filename="/home/share/workspace/buildroot_project/project_adjust/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\project_adjust\"/>
+		</Unit>
+		<Unit filename="/home/share/workspace/buildroot_project/project_pioneers/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\project_pioneers\"/>
+		</Unit>
+		<Unit filename="/home/share/workspace/buildroot_project/project_freemodbus/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\project_freemodbus\"/>
+		</Unit>
+		<Unit filename="/home/share/workspace/buildroot_project/project_ota/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\project_ota\"/>
+		</Unit>
+		<Unit filename="/home/share/workspace/buildroot_project/project_hv_tools/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\project_hv_tools\"/>
+		</Unit>
+		<Unit filename="/home/share/workspace/buildroot_project/project_vbbr_tools/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\project_vbbr_tools\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

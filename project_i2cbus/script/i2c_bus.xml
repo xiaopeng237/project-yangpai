@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<root>  
+    <interface> 
+		<name>"yangpi.i2c"</name>
+		<!--<wait></wait>
+		<main></main>-->
+		
+		<signal>  
+			<name>"i2c_ad1115"</name>
+			<arg>
+				<name>"T_I2cAd1115"</name>
+				<type>"const char *"</type>
+
+			</arg>
+	    </signal>
+
+		
+		<method>
+			<name>"i2c_adjust"</name>
+			<arg>
+				<name>"T_I2cAdjust"</name>
+				<type>"const char *"</type>
+
+			</arg>
+		</method>
+		
+		<method>
+			<name>"i2c_oled"</name>
+			<arg>
+				<name>"T_I2cOled"</name>
+				<type>"const char *"</type>
+			</arg>
+		</method>
+
+    </interface>  
+</root> 
+

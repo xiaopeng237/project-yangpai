@@ -1,0 +1,169 @@
+---- timestamps Matches (35 in 3 files) ----
+dlt_user.h (depend\dlt\include\dlt) line 125 :     DltTimestampType use_timestamp;               /**< whether to use user-supplied timestamps */
+pioneers_service.c (project_pioneers) line 806 : long int timestamps[1440];
+pioneers_service.c (project_pioneers) line 822 :         timestamps[(1440 - 1)-i] = timestamps[(1440 - 2)-i];
+pioneers_service.c (project_pioneers) line 825 :     timestamps[0] = DataTime.timestamp;
+pioneers_service.c (project_pioneers) line 826 :     //printf("%f === %ld\n",flowresult.foil,m_time.timestamps[0]);
+pioneers_service.c (project_pioneers) line 830 :         sprintf(data_time1,"[%.0f,%f]",(double)timestamps[flowc]*1000,foils[flowc]);
+pioneers_service.c (project_pioneers) line 838 :             sprintf(data_time1,"[%.0f,%f],",(double)timestamps[i]*1000,foils[i]);
+pioneers_service.c (project_pioneers) line 841 :         sprintf(data_time1,"[%.0f,%f]",(double)timestamps[flowc]*1000,foils[flowc]);
+pioneers_service.c (project_pioneers) line 849 :             sprintf(data_time1,"[%.0f,%f],",(double)timestamps[i]*1000,foils[i]);
+pioneers_service.c (project_pioneers) line 852 :         sprintf(data_time1,"[%.0f,%f]",(double)timestamps[(1440 - 1)]*1000,foils[(1440 - 1)]);
+pioneers_service.c (project_pioneers) line 899 :         sprintf(data_time1,"[%.0f,%f]",(double)timestamps[flowc1]*1000,fgass[flowc1]);
+pioneers_service.c (project_pioneers) line 907 :             sprintf(data_time1,"[%.0f,%f],",(double)timestamps[i]*1000,fgass[i]);
+pioneers_service.c (project_pioneers) line 910 :         sprintf(data_time1,"[%.0f,%f]",(double)timestamps[flowc1]*1000,fgass[flowc1]);
+pioneers_service.c (project_pioneers) line 918 :             sprintf(data_time1,"[%.0f,%f],",(double)timestamps[i]*1000,fgass[i]);
+pioneers_service.c (project_pioneers) line 921 :         sprintf(data_time1,"[%.0f,%f]",(double)timestamps[(1440 - 1)]*1000,fgass[(1440 - 1)]);
+pioneers_service.c (project_pioneers) line 968 :         sprintf(data_time1,"[%.0f,%f]",(double)timestamps[flowc2]*1000,tem1s[flowc2]);
+pioneers_service.c (project_pioneers) line 976 :             sprintf(data_time1,"[%.0f,%f],",(double)timestamps[i]*1000,tem1s[i]);
+pioneers_service.c (project_pioneers) line 979 :         sprintf(data_time1,"[%.0f,%f]",(double)timestamps[flowc2]*1000,tem1s[flowc2]);
+pioneers_service.c (project_pioneers) line 987 :             sprintf(data_time1,"[%.0f,%f],",(double)timestamps[i]*1000,tem1s[i]);
+pioneers_service.c (project_pioneers) line 990 :         sprintf(data_time1,"[%.0f,%f]",(double)timestamps[(1440 - 1)]*1000,tem1s[(1440 - 1)]);
+pioneers_service.c (project_pioneers) line 1037 :         sprintf(data_time1,"[%.0f,%f]",(double)timestamps[flowc5]*1000,pres[flowc5]);
+pioneers_service.c (project_pioneers) line 1045 :             sprintf(data_time1,"[%.0f,%f],",(double)timestamps[i]*1000,pres[i]);
+pioneers_service.c (project_pioneers) line 1048 :         sprintf(data_time1,"[%.0f,%f]",(double)timestamps[flowc5]*1000,pres[flowc5]);
+pioneers_service.c (project_pioneers) line 1056 :             sprintf(data_time1,"[%.0f,%f],",(double)timestamps[i]*1000,pres[i]);
+pioneers_service.c (project_pioneers) line 1059 :         sprintf(data_time1,"[%.0f,%f]",(double)timestamps[(1440 - 1)]*1000,pres[(1440 - 1)]);
+pioneers_service.c (project_pioneers) line 1102 :             (((timestamps[3]/60)/60)%24),((timestamps[3]/60)%60),fgass[3],foils[3],tem1s[3],pres[3],fwaters[3],
+pioneers_service.c (project_pioneers) line 1103 :             (((timestamps[2]/60)/60)%24),((timestamps[2]/60)%60),fgass[2],foils[2],tem1s[2],pres[2],fwaters[2],
+pioneers_service.c (project_pioneers) line 1104 :             (((timestamps[1]/60)/60)%24),((timestamps[1]/60)%60),fgass[1],foils[1],tem1s[1],pres[1],fwaters[1],
+pioneers_service.c (project_pioneers) line 1105 :             (((timestamps[0]/60)/60)%24),((timestamps[0]/60)%60),fgass[0],foils[0],tem1s[0],pres[0],fwaters[0]);
+pioneers_service.h (project_pioneers) line 19 :     long int timestamps[1440];
+---- foils Matches (13 in 1 files) ----
+pioneers_service.c (project_pioneers) line 807 : static double foils[1440];
+pioneers_service.c (project_pioneers) line 821 :         foils[(1440 - 1)-i] = foils[(1440 - 2)-i];
+pioneers_service.c (project_pioneers) line 824 :     foils[0]=FlowParass.Qvl_CPM;
+pioneers_service.c (project_pioneers) line 830 :         sprintf(data_time1,"[%.0f,%f]",(double)timestamps[flowc]*1000,foils[flowc]);
+pioneers_service.c (project_pioneers) line 838 :             sprintf(data_time1,"[%.0f,%f],",(double)timestamps[i]*1000,foils[i]);
+pioneers_service.c (project_pioneers) line 841 :         sprintf(data_time1,"[%.0f,%f]",(double)timestamps[flowc]*1000,foils[flowc]);
+pioneers_service.c (project_pioneers) line 849 :             sprintf(data_time1,"[%.0f,%f],",(double)timestamps[i]*1000,foils[i]);
+pioneers_service.c (project_pioneers) line 852 :         sprintf(data_time1,"[%.0f,%f]",(double)timestamps[(1440 - 1)]*1000,foils[(1440 - 1)]);
+pioneers_service.c (project_pioneers) line 1102 :             (((timestamps[3]/60)/60)%24),((timestamps[3]/60)%60),fgass[3],foils[3],tem1s[3],pres[3],fwaters[3],
+pioneers_service.c (project_pioneers) line 1103 :             (((timestamps[2]/60)/60)%24),((timestamps[2]/60)%60),fgass[2],foils[2],tem1s[2],pres[2],fwaters[2],
+pioneers_service.c (project_pioneers) line 1104 :             (((timestamps[1]/60)/60)%24),((timestamps[1]/60)%60),fgass[1],foils[1],tem1s[1],pres[1],fwaters[1],
+pioneers_service.c (project_pioneers) line 1105 :             (((timestamps[0]/60)/60)%24),((timestamps[0]/60)%60),fgass[0],foils[0],tem1s[0],pres[0],fwaters[0]);
+---- flow_data_w Matches (4 in 1 files) ----
+pioneers_service.c (project_pioneers) line 793 : * 函数名称: flow_data_w
+pioneers_service.c (project_pioneers) line 808 : int flow_data_w(void)
+pioneers_service.c (project_pioneers) line 866 : int function_web_flow_data_write(char* DataPath,char* DataName, double FlowDataOne)
+pioneers_service.c (project_pioneers) line 1238 :             flow_data_w();
+---- function_web_flow_data_write Matches (5 in 1 files) ----
+pioneers_service.c (project_pioneers) line 866 : int function_web_flow_data_write(char* DataPath,char* DataName, double FlowDataOne, int DataNo)
+pioneers_service.c (project_pioneers) line 1240 :             function_web_flow_data_write("/usr/local/apache/htdocs/yangpai/tables/flow.json",
+pioneers_service.c (project_pioneers) line 1242 :             function_web_flow_data_write("/usr/local/apache/htdocs/yangpai/tables/flow1.json",
+pioneers_service.c (project_pioneers) line 1244 :             function_web_flow_data_write("/usr/local/apache/htdocs/yangpai/tables/flow.json",
+pioneers_service.c (project_pioneers) line 1246 :             function_web_flow_data_write("/usr/local/apache/htdocs/yangpai/tables/flow1.json",
+---- flow_data_w Matches (8 in 1 files) ----
+pioneers_service.c (project_pioneers) line 793 : * 函数名称: flow_data_w
+pioneers_service.c (project_pioneers) line 808 : int flow_data_w(void)
+pioneers_service.c (project_pioneers) line 866 : int function_web_flow_data_write(char* DataPath,char* DataName, double FlowDataOne, int DataNo)
+pioneers_service.c (project_pioneers) line 880 :         PRONEERS_ERROR("function_web_flow_data_write input error\n");
+pioneers_service.c (project_pioneers) line 1245 :             function_web_flow_data_write("/usr/local/apache/htdocs/yangpai/tables/flow.json",
+pioneers_service.c (project_pioneers) line 1247 :             function_web_flow_data_write("/usr/local/apache/htdocs/yangpai/tables/flow1.json",
+pioneers_service.c (project_pioneers) line 1249 :             function_web_flow_data_write("/usr/local/apache/htdocs/yangpai/tables/flow2.json",
+pioneers_service.c (project_pioneers) line 1251 :             function_web_flow_data_write("/usr/local/apache/htdocs/yangpai/tables/flow5.json",
+---- flow1_data_w Matches (2 in 1 files) ----
+pioneers_service.c (project_pioneers) line 853 : * 函数名称: flow1_data_w
+pioneers_service.c (project_pioneers) line 867 : int flow1_data_w(void)
+---- flow_table_ws Matches (3 in 1 files) ----
+pioneers_service.c (project_pioneers) line 906 : * 函数名称: flow_table_ws
+pioneers_service.c (project_pioneers) line 919 : int flow_table_ws(void)
+pioneers_service.c (project_pioneers) line 985 :             flow_table_ws();
+---- flow_table_w Matches (3 in 1 files) ----
+pioneers_service.c (project_pioneers) line 869 : * 函数名称: flow_table_w
+pioneers_service.c (project_pioneers) line 882 : int flow_table_w(void)
+pioneers_service.c (project_pioneers) line 948 :             flow_table_w();
+---- write_msql_apache Matches (4 in 3 files) ----
+pioneers.c (project_pioneers) line 235 :         write_msql_apache();
+pioneers_service.c (project_pioneers) line 925 : * 函数名称:write_msql_apache
+pioneers_service.c (project_pioneers) line 938 : int write_msql_apache()
+pioneers_service.h (project_pioneers) line 42 : int write_msql_apache(void);
+---- calculate_a1 Matches (12 in 2 files) ----
+pioneers.c (project_pioneers) line 88 : double calculate_a1;
+pioneers.c (project_pioneers) line 109 :     calculate_a1 = (tArm_Mysql.t_Arm_Set.Arm_Set_PEAK_C - tArm_Mysql.t_Arm_Set.Arm_Set_PEAK_B) / (81.0 - 31.0);//17.36
+pioneers.c (project_pioneers) line 110 :     calculate_b1 = tArm_Mysql.t_Arm_Set.Arm_Set_PEAK_B - 31 * calculate_a1;//-6.18
+pioneers.c (project_pioneers) line 115 :                  tArm_Mysql.t_Arm_Set.Arm_Set_PEAK_C, tArm_Mysql.t_Arm_Set.Arm_Set_PEAK_B,calculate_a1,calculate_b1);
+pioneers_service.c (project_pioneers) line 714 : extern double calculate_a1;
+pioneers_service.c (project_pioneers) line 725 : //    winB1ed=(int)((((double)tFpga_Set.Fpga_Set_WINB1-calculate_b1)/calculate_a1)*tAdjustOut.AdjustOut_a2+tAdjustOut.AdjustOut_b2);
+pioneers_service.c (project_pioneers) line 726 : //    winB2ed=(int)((((double)tFpga_Set.Fpga_Set_WINB2-calculate_b1)/calculate_a1)*tAdjustOut.AdjustOut_a2+tAdjustOut.AdjustOut_b2);
+pioneers_service.c (project_pioneers) line 728 : //    winC1ed=(int)((((double)tFpga_Set.Fpga_Set_WINC1-calculate_b1)/calculate_a1)*tAdjustOut.AdjustOut_a2+tAdjustOut.AdjustOut_b2);
+pioneers_service.c (project_pioneers) line 729 : //    winC2ed=(int)((((double)tFpga_Set.Fpga_Set_WINC2-calculate_b1)/calculate_a1)*tAdjustOut.AdjustOut_a2+tAdjustOut.AdjustOut_b2);
+pioneers_service.c (project_pioneers) line 731 : //    winE1ed=(int)((((double)tFpga_Set.Fpga_Set_WINE1-calculate_b1)/calculate_a1)*tAdjustOut.AdjustOut_a2+tAdjustOut.AdjustOut_b2);
+pioneers_service.c (project_pioneers) line 732 : //    winE2ed=(int)((((double)tFpga_Set.Fpga_Set_WINE2-calculate_b1)/calculate_a1)*tAdjustOut.AdjustOut_a2+tAdjustOut.AdjustOut_b2);
+pioneers_service.c (project_pioneers) line 783 :     PRONEERS_LOG("调窗--执行完成 %f %f %f %f\n",calculate_a1,calculate_b1,tAdjustOut.AdjustOut_a2,tAdjustOut.AdjustOut_b2);
+---- adjust_win Matches (22 in 6 files) ----
+pioneers_service.c (project_pioneers) line 701 : * 函数名称: adjust_win
+pioneers_service.c (project_pioneers) line 716 : void adjust_win(void)
+pioneers_service.h (project_pioneers) line 38 : void adjust_win(void);
+---- flages_data_ready Matches (9 in 3 files) ----
+pioneers.c (project_pioneers) line 85 : int flages_data_ready = 0;
+pioneers.c (project_pioneers) line 168 :         while (0 == flages_data_ready) {
+pioneers.c (project_pioneers) line 171 :         flages_data_ready = 0;
+pioneers_service.c (project_pioneers) line 631 : extern int flages_data_ready;
+pioneers_service.c (project_pioneers) line 689 :             flages_data_ready = 1;
+---- get_spi_energy Matches (4 in 3 files) ----
+pioneers.c (project_pioneers) line 411 :         get_spi_energy();
+pioneers_service.c (project_pioneers) line 618 : * 函数名称: get_spi_energy
+pioneers_service.c (project_pioneers) line 633 : int get_spi_energy(void)
+pioneers_service.h (project_pioneers) line 40 : int get_spi_energy(void);
+---- get_spi_pull Matches (4 in 3 files) ----
+pioneers.c (project_pioneers) line 409 :         get_spi_pull();
+pioneers_service.c (project_pioneers) line 551 : * 函数名称: get_spi_pull
+pioneers_service.c (project_pioneers) line 564 : int get_spi_pull(void)
+pioneers_service.h (project_pioneers) line 39 : int get_spi_pull(void);
+---- calculate_flow Matches (33 in 8 files) ----
+pioneers.c (project_pioneers) line 289 :         calculate_flow();
+pioneers_service.c (project_pioneers) line 526 : * 函数名称:calculate_flow
+pioneers_service.c (project_pioneers) line 539 : void calculate_flow()
+pioneers_service.h (project_pioneers) line 37 : void calculate_flow(void);
+---- calculate_para_init Matches (4 in 3 files) ----
+calculate_flow.c (project_pioneers) line 21 : * 函数名称:calculate_para_init
+calculate_flow.c (project_pioneers) line 34 : void calculate_para_init()
+calculate_flow.h (project_pioneers) line 7 : void calculate_para_init();
+pioneers_service.c (project_pioneers) line 541 :     calculate_para_init();
+---- calculate_flow_start Matches (4 in 3 files) ----
+calculate_flow.c (project_pioneers) line 116 : * 函数名称:calculate_flow_start
+calculate_flow.c (project_pioneers) line 129 : void calculate_flow_start()
+calculate_flow.h (project_pioneers) line 8 : void calculate_flow_start();
+pioneers_service.c (project_pioneers) line 545 :     calculate_flow_start();
+---- calculate_para_result Matches (4 in 3 files) ----
+calculate_flow.c (project_pioneers) line 1116 : * 函数名称:calculate_para_result
+calculate_flow.c (project_pioneers) line 1129 : void   calculate_para_result()
+calculate_flow.h (project_pioneers) line 9 : void calculate_para_result();
+pioneers_service.c (project_pioneers) line 546 :     calculate_para_result();
+---- \ Matches (#count#) ----
+---- mysql_assignment Matches (3 in 1 files) ----
+pioneers_service.c (project_pioneers) line 423 : * 函数名称:mysql_assignment
+pioneers_service.c (project_pioneers) line 436 : void mysql_assignment()
+pioneers_service.c (project_pioneers) line 547 :     mysql_assignment();
+---- FlowParass.winA_CPS Matches (2 in 2 files) ----
+calculate_flow.c (project_pioneers) line 457 :     winA_CPS	=	FlowParass.winA_CPS;
+pioneers_service.c (project_pioneers) line 400 :         FlowParass.winA_CPS=winA;
+---- get_spi_win Matches (4 in 3 files) ----
+pioneers.c (project_pioneers) line 402 :         get_spi_win();
+pioneers_service.c (project_pioneers) line 183 : * 函数名称: get_spi_win
+pioneers_service.c (project_pioneers) line 196 : void get_spi_win()
+pioneers_service.h (project_pioneers) line 36 : void get_spi_win(void);
+---- readtime Matches (5 in 3 files) ----
+pioneers.c (project_pioneers) line 343 :         readtime();
+pioneers.c (project_pioneers) line 399 :         readtime();
+pioneers_service.c (project_pioneers) line 137 : * 函数名称: readtime
+pioneers_service.c (project_pioneers) line 150 : int function_dd_readtime(void)
+pioneers_service.h (project_pioneers) line 35 : int readtime(void);
+---- function_dd_get_time Matches (5 in 3 files) ----
+pioneers.c (project_pioneers) line 343 :         function_dd_get_time();
+pioneers.c (project_pioneers) line 399 :         function_dd_get_time();
+pioneers_service.c (project_pioneers) line 137 : * 函数名称: function_dd_get_time
+pioneers_service.c (project_pioneers) line 150 : int function_dd_get_time(void)
+pioneers_service.h (project_pioneers) line 35 : int function_dd_get_time(void);
+---- spectral_data_w Matches (5 in 3 files) ----
+pioneers.c (project_pioneers) line 203 :         spectral_data_w();
+pioneers.c (project_pioneers) line 530 :     spectral_data_w();
+pioneers_service.c (project_pioneers) line 71 : * 函数名称:spectral_data_w
+pioneers_service.c (project_pioneers) line 84 : int spectral_data_w(void)
+pioneers_service.h (project_pioneers) line 33 : int spectral_data_w(void);
+---- start_work Matches (4 in 2 files) ----
+pioneers.c (project_pioneers) line 432 : * 函数名称: start_work
+pioneers.c (project_pioneers) line 445 : void start_work() {
+pioneers.c (project_pioneers) line 533 :     start_work();
+pioneers_service.h (project_pioneers) line 34 : void start_work(void);

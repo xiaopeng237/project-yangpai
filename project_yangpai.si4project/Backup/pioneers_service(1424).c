@@ -1,0 +1,1524 @@
+//
+// Created by Administrator on 2020/3/30.
+//
+#include <string.h>
+#include <linux/watchdog.h>
+#include <sys/ioctl.h>
+#include <sys/types.h>
+#include <sys/stat.h>
+#include <fcntl.h>
+#include <unistd.h>
+#include <stdio.h>
+#include <signal.h>
+#include <linux/rtc.h>
+#include <sys/time.h>
+#include <pthread.h>
+#include <math.h>
+#include <i2cbus_base.h>
+#include <mysql_base.h>
+#include "yangpi_ota_proxy.h"
+#include "yangpi_mysql_proxy.h"
+#include "yangpi_i2c_proxy.h"
+#include "yangpi_adjust_proxy.h"
+#include "pioneers_service.h"
+#include "log_dlt.h"
+#include "pioneers_spi.h"
+#include "calculate_flow.h"
+#include "pioneers.h"
+#include "yangpi_rtu_proxy.h"
+
+
+extern T_DateTime tDateTime;
+T_Write_Mysql_Log tWriteMysqlLog;
+T_Write_Flow_Result tWriteFlowResult;
+T_I2cOled tI2COled;
+extern T_Freemodbus tFreemodbus;
+
+extern HStub STUB_yangpi_pioneers;
+extern HProxy PROXY_yangpi_mysql;
+extern HProxy PROXY_yangpi_i2c;
+extern HProxy PROXY_yangpi_adjust;
+extern HProxy PROXY_yangpi_rtu;
+extern HProxy PROXY_yangpi_ota;
+
+extern T_Fpga_Set tFpga_Set;
+extern T_Arm_Mysql tArm_Mysql;
+extern T_Flow_para tFlow_para;
+extern T_AdjustOut tAdjustOut;
+extern T_AdjustIn tAdjustIn;
+extern T_Write_ES tWriteEs;
+
+extern T_I2cAd1115 tI2cAd1115;
+
+extern T_CalculatePara FlowParass;
+extern T_Calculatepara_result FlowParasult;
+extern T_RunFlag tRunFlag;
+
+extern T_FPGA_SpiData tFpgaSpiData;
+extern T_RtuData tRtuData;
+extern unsigned int EnergyS[8192];
+/*******************************************************************************
+* 函数名称:spectral_data_w
+* 函数功能:生成能谱文件 供网页使用
+* 相关文档:
+* 函数参数:
+* 参数名称:         类型      输入/输出     描述
+* 
+* 返回值:
+* 函数类型:
+* 函数说明:
+* 修改日期    版本号   修改人  修改内容（局限在本函数内的缺陷修改需要写在此处）
+* -----------------------------------------------------------------
+* 
+*******************************************************************************/
+int spectral_data_w(void)
+{
+
+    int k = 0;
+    char data_time1[25] = {};
+    char spi_en[204800] = {};
+    char p_log1[205800] = {};//add data
+
+    FILE *fd_en;
+    fd_en = fopen("/usr/local/apache/htdocs/yangpai/data-eu-gdp-growth.json", "w+b");
+    for(k=0; k<8192;k++)
+    {
+        sprintf(data_time1,"[%d,%d],",k,EnergyS[k]);
+        tWriteEs.EnergyS[k] = EnergyS[k];
+        strcat(spi_en,data_time1);
+    }
+
+    sprintf(p_log1,"%s%s%s","{\"label\":\"能谱曲线\",\"data\":[",spi_en,"[8192,0]]}");
+
+    fputs(p_log1,fd_en);
+
+    fclose(fd_en);
+
+    return 0;
+}
+
+/*******************************************************************************
+* 函数名称: readtime
+* 函数功能: 获取系统时间
+* 相关文档:
+* 函数参数:
+* 参数名称:         类型      输入/输出     描述
+* 
+* 返回值:
+* 函数类型:
+* 函数说明:
+* 修改日期    版本号   修改人  修改内容（局限在本函数内的缺陷修改需要写在此处）
+* -----------------------------------------------------------------
+* 
+*******************************************************************************/
+int readtime(void)
+{
+    int fd, retval;
+    struct rtc_time rtc_tm;
+    static time_t timep;
+
+    fd = open("/dev/rtc0", O_RDONLY);
+    if (fd == -1) {
+        printf("/dev/rtc0\n");
+    }
+
+    /* Read the RTC time/date */
+    retval = ioctl(fd, RTC_RD_TIME, &rtc_tm);
+    if (retval == -1) {
+        PRONEERS_ERROR("ioctl error\n");
+    }
+    //
+    tDateTime.timestamp=time(&timep)+8*60*60; /*当前time_t类型UTC时间戳*/
+
+    tDateTime.fd_RTC	=fd;
+    tDateTime.year 	= rtc_tm.tm_year + 1900;
+    tDateTime.month 	= rtc_tm.tm_mon + 1;
+    tDateTime.day		= rtc_tm.tm_mday;
+    tDateTime.hour		= rtc_tm.tm_hour;
+    tDateTime.minute	= rtc_tm.tm_min;
+    tDateTime.second	= rtc_tm.tm_sec;
+
+//    tWriteMysqlLog.write_log_minute = tDateTime.minute;
+//    tWriteMysqlLog.write_log_hour   = tDateTime.hour;
+//    tWriteMysqlLog.write_log_date   = tDateTime.date;
+//    tWriteMysqlLog.write_log_month  = tDateTime.month;
+//    tWriteMysqlLog.write_log_year   = tDateTime.year;
+    close(fd);
+    PRONEERS_LOG("时钟--获取完成");
+    return 0;
+}
+
+/*******************************************************************************
+* 函数名称: get_spi_win
+* 函数功能: 获取FPGA窗口数据
+* 相关文档:
+* 函数参数:
+* 参数名称:         类型      输入/输出     描述
+* 
+* 返回值:
+* 函数类型:
+* 函数说明:
+* 修改日期    版本号   修改人  修改内容（局限在本函数内的缺陷修改需要写在此处）
+* -----------------------------------------------------------------
+* 
+*******************************************************************************/
+int win_C[200][6];            //计算用的二维数组
+void get_spi_win()
+{
+    int i,j;
+    int k=0;
+    int sumA=0;
+    int sumB=0;
+    int sumC=0;
+    int sumD=0;
+    int sumE=0;
+    double aveA=0;
+    double aveB=0;
+    double aveC=0;
+    double aveD=0;
+    double aveE=0;
+    int a=0;
+    int b=0;
+    int c=0;
+    int d=0;
+    int e=0;
+    int win[1200];
+
+    double winA=0.0;
+    double winB=0.0;
+    double winC=0.0;
+    double winD=0.0;
+    double winE=0.0;
+
+    static int cn_c;
+
+    unsigned char RxData[2];
+    if(cn_c==1)
+    {
+        memset(win_C,-1,sizeof(win_C));
+
+        win[0]=0xaa55;
+
+        for(i=0;i<200;i++)
+        {
+            function_dd_fpga_read(0x0e, RxData);
+            tFpgaSpiData.SpiData_k81 = RxData[0] * 256 + RxData[1];
+            if(tFpgaSpiData.SpiData_k81&0x20){
+                break;
+            }
+        }
+
+        for(i=0;i<200;i++){
+            function_dd_fpga_read(0x10, RxData);
+            tFpgaSpiData.SpiData_k31 = RxData[0] * 256 + RxData[1];
+            
+            if(tFpgaSpiData.SpiData_k31==0xaa55){
+                break;
+            }
+        }
+
+//        if(tFpgaSpiData.SpiData_k31!=0xaa55)
+//        {
+//            printf("!!!!!SPI error spidatas.k31!=0xaa55 !!!!!");
+//            run_flag = 1;
+//
+//        } else{
+//            run_flag = 0;
+//        }
+
+        for(i=0;i<1199;i++)
+        {
+            function_dd_fpga_read(0x10, RxData);
+            tFpgaSpiData.SpiData_k31 = RxData[0] * 256 + RxData[1];
+            
+            win[i+1]=tFpgaSpiData.SpiData_k31;
+//            if(i % 6 ==0)
+//                printf("\n");
+//            printf(" %d ",win[i+1]);
+        }
+//        printf("\n");
+
+        for(k=0,i=0;k<200;k++)
+        {
+            if(win[i++]==0xaa55){
+                for(j=0;j<5;j++)
+                {
+                    if(win[i]!=0xaa55)
+                    {
+                        win_C[k][j]=win[i++];
+                    }
+                    else
+                    {
+                        i--;
+                        break;
+                    }
+
+                }
+
+            }
+
+        }
+
+        for(i=0;i<99;i++){
+            if(win_C[i][0]<1000)
+            {
+                sumA=sumA+win_C[i][0];
+                a++;
+            }
+        }
+        aveA=(double)sumA/a;
+        if(aveA==0)
+        {
+            aveA=1;
+        }
+        for(i=0;i<200;i++)
+        {
+            //		if(win_C[i][0]==0)
+            //			win_C[i][0]=1;
+            if(win_C[i][0]>=1000)
+                win_C[i][0]=(int)aveA;
+            if(win_C[i][0]>(int)(aveA*10))//||win_C[i][0]<(aveA*0.1))
+                win_C[i][0]=(int)aveA;
+        }
+
+        for(i=0;i<99;i++){
+            if(win_C[i][1]<1000)
+            {
+                sumB=sumB+win_C[i][1];
+                b++;
+            }
+        }
+        aveB=(double)sumB/b;
+        if(aveB==0)
+        {
+            aveB=1;
+        }
+        for(i=0;i<200;i++)
+        {
+            //		if(win_C[i][1]==0)
+            //		win_C[i][1]=1;
+            if(win_C[i][1]>=1000)
+                win_C[i][1]=(int)aveB;
+            if(win_C[i][1]>(int)(aveB*10))//||win_C[i][1]<(aveB*0.1))
+                win_C[i][1]=(int)aveB;
+        }
+
+        for(i=0;i<99;i++){
+            if(win_C[i][2]<1000)
+            {
+                sumC=sumC+win_C[i][2];
+                c++;
+            }
+        }
+        aveC=(double)sumC/c;
+        if(aveC==0)
+        {
+            aveC=1;
+        }
+        for(i=0;i<200;i++)
+        {
+            //		if(win_C[i][2]==0)
+            //		win_C[i][2]=1;
+            if(win_C[i][2]>=1000)
+                win_C[i][2]=(int)aveC;
+            if(win_C[i][2]>(int)(aveC*10))//||win_C[i][2]<(aveC*0.1))
+                win_C[i][2]=(int)aveC;
+        }
+
+        for(i=0;i<99;i++){
+            if(win_C[i][3]<1000)
+            {
+                sumD=sumD+win_C[i][3];
+                d++;
+            }
+        }
+        aveD=(double)sumD/d;
+        if(aveD==0)
+        {
+            aveD=1;
+        }
+        for(i=0;i<200;i++)
+        {
+            //		if(win_C[i][3]==0)
+            //		win_C[i][3]=1;
+            if(win_C[i][3]>=1000)
+                win_C[i][3]=(int)aveD;
+            if(win_C[i][3]>(int)(aveD*10))//||win_C[i][3]<(aveD*0.1))
+                win_C[i][3]=(int)aveD;
+        }
+
+        for(i=0;i<99;i++){
+            if(win_C[i][4]<1000)
+            {
+                sumE=sumE+win_C[i][4];
+                e++;
+            }
+        }
+        aveE=(double)sumE/e;
+        if(aveE==0)
+        {
+            aveE=1;
+        }
+        for(i=0;i<200;i++)
+        {
+            //		if(win_C[i][4]==0)
+            //		win_C[i][4]=1;
+            if(win_C[i][4]>=1000)
+                win_C[i][4]=(int)aveE;
+            if(win_C[i][4]>(int)(aveE*10))//||win_C[i][4]<(aveE*0.1))
+                win_C[i][4]=(int)aveE;
+        }
+
+
+        for(j=0;j<200;j++)
+        {
+            winA=winA+win_C[j][0];
+            winB=winB+win_C[j][1];
+            winC=winC+win_C[j][2];
+            winD=winD+win_C[j][3];
+            winE=winE+win_C[j][4];
+        }
+
+
+        FlowParass.winA_CPS=winA;
+        FlowParass.winB_CPS=winB;
+        FlowParass.winC_CPS=winC;
+        FlowParass.winD_CPS=winD;
+        FlowParass.winE_CPS=winE;
+
+        PRONEERS_LOG("winA %d winB %d winC %d winD %d winE %d\n",(int)winA,(int)winB,(int)winC,(int)winD,(int)winE);
+//        printf("%.4x,%.4x,%.4x,%.4x\n",win_C[0][5],win_C[198][5],win_C[199][5],win_C[54][5]);
+
+    }
+    if(cn_c==0)//开一个线程去读取数据
+    {
+        //system("/mnt/ad1115_datas &");
+        function_dd_fpga_read(0x1e, RxData);
+        cn_c=1;
+        //system("/mnt/i2c_bus &");
+    }
+
+
+
+    PRONEERS_LOG("spi获取窗口数据完成");
+}
+/*******************************************************************************
+* 函数名称:mysql_assignment
+* 函数功能:数据对外输出显示填充
+* 相关文档:
+* 函数参数:
+* 参数名称:         类型      输入/输出     描述
+* 
+* 返回值:
+* 函数类型:
+* 函数说明:
+* 修改日期    版本号   修改人  修改内容（局限在本函数内的缺陷修改需要写在此处）
+* -----------------------------------------------------------------
+* 
+*******************************************************************************/
+void mysql_assignment()
+{
+    tWriteMysqlLog.write_log_year           = tDateTime.year;
+    tWriteMysqlLog.write_log_month          = tDateTime.month;
+    tWriteMysqlLog.write_log_date           = tDateTime.day;
+    tWriteMysqlLog.write_log_hour           = tDateTime.hour;
+    tWriteMysqlLog.write_log_minute         = tDateTime.minute;
+
+    tWriteMysqlLog.write_log_Qmg        = FlowParass.Qmg_CPM;
+    tWriteMysqlLog.write_log_Qml        = FlowParass.Qml_CPM;
+    tWriteMysqlLog.write_log_Qvg        = FlowParass.Qvg_CPM;
+    tWriteMysqlLog.write_log_Qvl        = FlowParass.Qvl_CPM;
+    tWriteMysqlLog.write_log_GMF        = FlowParass.GMF_CPM_C;
+    tWriteMysqlLog.write_log_LMF        = (1-FlowParass.GMF_CPM_C);
+    tWriteMysqlLog.write_log_Qvg_Cumulative        = FlowParass.Qvg_add_CPS;
+    tWriteMysqlLog.write_log_Qvl_Cumulative        = FlowParass.Qvl_add_CPS;
+    tWriteMysqlLog.write_log_31keV        = FlowParass.winB_CPM;
+    tWriteMysqlLog.write_log_81keV        = FlowParass.winC_CPM;
+    tWriteMysqlLog.write_log_356keV       = FlowParass.winE_CPM;
+    tWriteMysqlLog.write_log_Tem        = FlowParass.T_P_WC_CPS;
+    tWriteMysqlLog.write_log_P          = FlowParass.P_WC_CPM;
+    tWriteMysqlLog.write_log_DP         = FlowParass.DP_CPM;
+
+    tWriteMysqlLog.write_log_31keV_Peak    = tAdjustOut.AdjustOut_F31;
+    tWriteMysqlLog.write_log_81keV_Peak    = tAdjustOut.AdjustOut_F81;
+    tWriteMysqlLog.write_log_356kev_Peak   = tAdjustOut.AdjustOut_F356;
+
+    tWriteMysqlLog.write_log_Tem_in          = tI2cAd1115.i2cAd1115_BoardTem;//todo:待添加
+    tWriteMysqlLog.write_log_Tem_DP          = FlowParass.T_DP_WC_CPS;//
+    tWriteMysqlLog.write_log_HV              = (int)tAdjustOut.AdjustOut_Hight;
+//    tWriteMysqlLog.write_log_BU              = tFpga_Set.Fpga_Set_WINB1;
+//    tWriteMysqlLog.write_log_BD              = tFpga_Set.Fpga_Set_WINB2;
+//    tWriteMysqlLog.write_log_CU              = tFpga_Set.Fpga_Set_WINC1;
+//    tWriteMysqlLog.write_log_CD              = tFpga_Set.Fpga_Set_WINC2;
+//    tWriteMysqlLog.write_log_EU              = tFpga_Set.Fpga_Set_WINE1;
+//    tWriteMysqlLog.write_log_ED              = tFpga_Set.Fpga_Set_WINE2;
+    tWriteMysqlLog.write_log_LVF_CPM         = FlowParass.LVF_CPM;
+    tWriteMysqlLog.write_log_GVF_CPM         = FlowParass.GVF_CPM;
+    tWriteMysqlLog.write_log_Qv_CPM          = FlowParass.Qv_CPM;
+    tWriteMysqlLog.write_log_LMF_CPM         = FlowParass.LMF_CPM;
+    tWriteMysqlLog.write_log_GMF_CPM         = FlowParass.GMF_CPM;
+    tWriteMysqlLog.write_log_Qm_CPM          = FlowParass.Qm_CPM;
+
+    //todo:数据库写入
+    tWriteFlowResult.Write_FR_Qmg_CPM        = FlowParass.Qmg_add_CPS;
+    tWriteFlowResult.Write_FR_Qml_CPM        = FlowParass.Qml_add_CPS;
+    tWriteFlowResult.Write_FR_Add_Sctime     = FlowParass.Add_Sctime;
+
+    tI2COled.hour           = tDateTime.hour;
+    tI2COled.minute         = tDateTime.minute;
+    tI2COled.second         = tDateTime.second;
+    tI2COled.GMF_CPM        = FlowParass.GMF_CPM;
+    tI2COled.OMF_CPM        = FlowParass.LMF_CPM;
+    tI2COled.Qv_SUM         = 0;
+    tI2COled.Qmg_CPM        = FlowParass.Qmg_add_CPS;
+    tI2COled.Qml_CPM        = FlowParass.Qml_add_CPS;
+    tI2COled.DataP          = FlowParass.P_WC_CPS;
+    tI2COled.DataDP         = FlowParass.DP_CPS;
+    tI2COled.Qv_CPM         = FlowParass.Qv_CPM;
+    tI2COled.GVF_CPM        = FlowParass.GVF_CPM;
+    tI2COled.OVF_CPM        = FlowParass.LVF_CPM;
+    tI2COled.Qml_CPS        = FlowParass.Qml_CPS;
+    tI2COled.Qmg_CPS        = FlowParass.Qmg_CPS;
+    tI2COled.Dg_SC          = FlowParass.Dg_SC;
+    tI2COled.Dw_SC          = FlowParass.Dw_SC;
+
+    tRtuData.DP_CPS          = FlowParass.DP_CPS;
+    tRtuData.P_WC_CPS        = FlowParass.P_WC_CPS;
+    tRtuData.T_P_WC_CPS      = FlowParass.T_P_WC_CPS;
+    tRtuData.Qvg_CPS         = FlowParass.Qvg_CPS;
+    tRtuData.Qvl_CPS         = FlowParass.Qvl_CPS;
+    tRtuData.Qvg_add_CPS     = FlowParass.Qvg_add_CPS;
+    tRtuData.Qvl_add_CPS     = FlowParass.Qvl_add_CPS;
+    tRtuData.Add_Sctime     = FlowParass.Add_Sctime;
+
+    yangpi_rtu_call_rtu_setdata(PROXY_yangpi_rtu, &tRtuData);
+
+//    printf("tFreemodbus.P_WC_CPS    %f==\n",tFreemodbus.P_WC_CPS);
+//    printf("tFreemodbus.DP_CPS      %f==\n",tFreemodbus.DP_CPS);
+//    printf("tFreemodbus.T_P_WC_CPS  %f==\n",tFreemodbus.T_P_WC_CPS);
+//    printf("tFreemodbus.Qvg_CPS     %f==\n",tFreemodbus.Qvg_CPS);
+//    printf("tFreemodbus.Qvl_CPS     %f==\n",tFreemodbus.Qvl_CPS);
+
+
+    PRONEERS_LOG("mysql和485数据填充--执行完成 %d %d\n",tFpga_Set.Fpga_Set_WINA1,tFpga_Set.Fpga_Set_WINA2);
+}
+/*******************************************************************************
+* 函数名称:calculate_flow
+* 函数功能:流量计算主函数
+* 相关文档:
+* 函数参数:
+* 参数名称:         类型      输入/输出     描述
+* 
+* 返回值:
+* 函数类型:
+* 函数说明:
+* 修改日期    版本号   修改人  修改内容（局限在本函数内的缺陷修改需要写在此处）
+* -----------------------------------------------------------------
+* 
+*******************************************************************************/
+void calculate_flow()
+{
+    calculate_para_init();
+    if(tArm_Mysql.t_Arm_Set.Arm_Set_board_type)
+    {//todo：预留
+    }
+    calculate_flow_start();
+    calculate_para_result();
+    mysql_assignment();
+}
+
+/*******************************************************************************
+* 函数名称: get_spi_pull
+* 函数功能: 获取脉冲数据
+* 相关文档:
+* 函数参数:
+* 参数名称:         类型      输入/输出     描述
+* 
+* 返回值:
+* 函数类型:
+* 函数说明:
+* 修改日期    版本号   修改人  修改内容（局限在本函数内的缺陷修改需要写在此处）
+* -----------------------------------------------------------------
+* 
+*******************************************************************************/
+int get_spi_pull(void)
+{
+    static int pulse_en;
+    static int pulse_sta;
+    static int pulse_data;
+    static int m;
+    int i;
+    int pulse_flag;
+    unsigned char RxData[2];
+
+    if(pulse_en == 0){
+        function_dd_fpga_read(0x1c, RxData);
+        pulse_en = 1;
+        pulse_sta = 1;
+    }
+    if(pulse_sta == 1){
+        for(i=0;i<60;i++)
+        {
+            function_dd_fpga_read(0x0E, RxData);
+            tFpgaSpiData.SpiData_pulF = RxData[0] * 256 + RxData[1];
+            pulse_flag = tFpgaSpiData.SpiData_pulF;
+            //printf("@@@@%d\n",pulse_flag);
+            if(pulse_flag&0x01){
+                pulse_sta = 0;
+                pulse_data = 1;
+                break;
+            }
+        }
+
+    }
+    if(pulse_data == 1)
+    {
+        for(i=0;i<512;i++){
+            function_dd_fpga_read(0x0F, RxData);
+            tFpgaSpiData.SpiData_pul = RxData[0] * 256 + RxData[1];
+            function_dd_fpga_read(0x0E, RxData);
+            tFpgaSpiData.SpiData_pulF = RxData[0] * 256 + RxData[1];
+
+            pulse_flag = tFpgaSpiData.SpiData_pulF;
+
+            tFpgaSpiData.SpiData_dpul[m]=tFpgaSpiData.SpiData_pul;
+            //printf("%d,%d\n",i,spidatas.pul);
+            m++;
+        }
+
+        pulse_en = 0;
+        pulse_data = 0;
+        m=0;
+
+    }
+    PRONEERS_LOG("脉冲--获取完成");
+    return 0;
+}
+
+/*******************************************************************************
+* 函数名称: get_spi_energy
+* 函数功能: 获取能谱数据
+* 相关文档:
+* 函数参数:
+* 参数名称:         类型      输入/输出     描述
+* 
+* 返回值:
+* 函数类型:
+* 函数说明:
+* 修改日期    版本号   修改人  修改内容（局限在本函数内的缺陷修改需要写在此处）
+* -----------------------------------------------------------------
+* 
+*******************************************************************************/
+extern int flages_data_ready;
+extern pthread_cond_t  esadjust_cond;
+int get_spi_energy(void)
+{
+    int i;
+    static int es_c;
+    static int es_cn;
+    static unsigned int dess[8192];
+    static int spectral_c = 0;
+    unsigned char RxData[2];
+
+    if(spectral_c==1)
+    {
+        function_dd_fpga_read(0x1D, RxData);
+    }
+
+    if(spectral_c >=30 && spectral_c <= 45)
+    {
+        for(i=0;i<512;i++)
+        {
+            function_dd_fpga_read(0x03,RxData);
+            tFpgaSpiData.SpiData_es = RxData[0] * 256 + RxData[1];
+            //printf("%d,%d\n",es_c,spidatas.es);
+            tFpgaSpiData.SpiData_des[es_c++] = tFpgaSpiData.SpiData_es;
+
+        }
+    }
+    if(spectral_c == 45)
+    {
+
+        spectral_c = 0;
+        es_c =0;
+        es_cn++;
+        for(i=0;i<8192;i++)
+        {
+            dess[i]=tFpgaSpiData.SpiData_des[i]+dess[i];
+
+        }
+
+        //	printf("#$##%d,%d\n",dess[1500],spisets.pch);
+
+        if(es_cn==tFpga_Set.Fpga_Set_PCH)
+        {
+            for(i=0;i<8192;i++)
+            {
+                //todo：mysql能谱写入
+                //tMysqlLog.des[i]	=dess[i];
+
+                EnergyS[i]			=dess[i];
+                dess[i]			=0;
+                //tMysqlLog.des[i]=65535;
+            }
+            es_cn=0;
+
+            PRONEERS_LOG("能谱--获取完成 %d %d %d\n",spectral_c,es_cn,tFpga_Set.Fpga_Set_PCH);
+            flages_data_ready = 1;
+            pthread_cond_signal(&esadjust_cond);
+            
+        }
+
+    }
+ //   printf("spectral_c %d %d \n",spectral_c,es_over_flag);
+    spectral_c++;
+    return 0;
+}
+
+/*******************************************************************************
+* 函数名称: adjust_win
+* 函数功能: 调窗主函数
+* 相关文档:
+* 函数参数:
+* 参数名称:         类型      输入/输出     描述
+* 
+* 返回值:
+* 函数类型:
+* 函数说明:
+* 修改日期    版本号   修改人  修改内容（局限在本函数内的缺陷修改需要写在此处）
+* -----------------------------------------------------------------
+* 
+*******************************************************************************/
+extern double calculate_a1;
+extern double calculate_b1;
+void adjust_win(void)
+{
+    int winB1ed;
+    int winB2ed;
+    int winC1ed;
+    int winC2ed;
+    int winE1ed;
+    int winE2ed;
+	/*以下6行为20200924之前调窗算法 */
+//    winB1ed=(int)((((double)tFpga_Set.Fpga_Set_WINB1-calculate_b1)/calculate_a1)*tAdjustOut.AdjustOut_a2+tAdjustOut.AdjustOut_b2);
+//    winB2ed=(int)((((double)tFpga_Set.Fpga_Set_WINB2-calculate_b1)/calculate_a1)*tAdjustOut.AdjustOut_a2+tAdjustOut.AdjustOut_b2);
+//
+//    winC1ed=(int)((((double)tFpga_Set.Fpga_Set_WINC1-calculate_b1)/calculate_a1)*tAdjustOut.AdjustOut_a2+tAdjustOut.AdjustOut_b2);
+//    winC2ed=(int)((((double)tFpga_Set.Fpga_Set_WINC2-calculate_b1)/calculate_a1)*tAdjustOut.AdjustOut_a2+tAdjustOut.AdjustOut_b2);
+//
+//    winE1ed=(int)((((double)tFpga_Set.Fpga_Set_WINE1-calculate_b1)/calculate_a1)*tAdjustOut.AdjustOut_a2+tAdjustOut.AdjustOut_b2);
+//    winE2ed=(int)((((double)tFpga_Set.Fpga_Set_WINE2-calculate_b1)/calculate_a1)*tAdjustOut.AdjustOut_a2+tAdjustOut.AdjustOut_b2);
+ 
+  	/*20200924,ljy 修改调窗算法，仅根据31峰和81峰  */
+  
+  	#define win31_L ((double)tFpga_Set.Fpga_Set_WINB1)
+ 	#define win31_P (tArm_Mysql.t_Arm_Set.Arm_Set_PEAK_B)
+ 	#define win31_R ((double)tFpga_Set.Fpga_Set_WINB2) 
+  
+  	#define win81_L ((double)tFpga_Set.Fpga_Set_WINC1) 
+  	#define win81_P (tArm_Mysql.t_Arm_Set.Arm_Set_PEAK_C) 
+  	#define win81_R ((double)tFpga_Set.Fpga_Set_WINC2) 
+  
+  	#define win356_L ((double)tFpga_Set.Fpga_Set_WINE1) 
+  	#define win356_P (tArm_Mysql.t_Arm_Set.Arm_Set_PEAK_E) 
+    #define win356_R ((double)tFpga_Set.Fpga_Set_WINE2)
+  
+  	#define win31_P_now tAdjustOut.AdjustOut_F31
+  	#define win81_P_now tAdjustOut.AdjustOut_F81
+  	#define win356_P_now tAdjustOut.AdjustOut_F356
+  
+  	winB1ed=(int)((win81_P_now-win31_P_now)*(win31_L-win31_P)/(win81_P-win31_P)+win31_P_now);
+    winB2ed=(int)((win81_P_now-win31_P_now)*(win31_R-win31_P)/(win81_P-win31_P)+win31_P_now);
+
+    winC1ed=(int)((win81_P_now-win31_P_now)*(win81_L-win31_P)/(win81_P-win31_P)+win31_P_now);
+    winC2ed=(int)((win81_P_now-win31_P_now)*(win81_R-win31_P)/(win81_P-win31_P)+win31_P_now);
+
+    winE1ed=(int)((win81_P_now-win31_P_now)*(win356_L-win31_P)/(win81_P-win31_P)+win31_P_now);
+    winE2ed=(int)((win81_P_now-win31_P_now)*(win356_R-win31_P)/(win81_P-win31_P)+win31_P_now);
+
+    tWriteMysqlLog.write_log_BU              = winB1ed;
+    tWriteMysqlLog.write_log_BD              = winB2ed;
+    tWriteMysqlLog.write_log_CU              = winC1ed;
+    tWriteMysqlLog.write_log_CD              = winC2ed;
+    tWriteMysqlLog.write_log_EU              = winE1ed;
+    tWriteMysqlLog.write_log_ED              = winE2ed;
+
+
+//	function_dd_fpga_write(0x01,winA1ed*2);
+//	function_dd_fpga_write(0x02,winA2ed*2);
+
+    function_dd_fpga_write(0x03,winB1ed*2);
+    function_dd_fpga_write(0x04,winB2ed*2);
+
+    function_dd_fpga_write(0x08,winC1ed*2);
+    function_dd_fpga_write(0x0e,winC2ed*2);
+//
+    //function_dd_fpga_writes(0x1f,spisets.winD1*2);
+    //function_dd_fpga_writes(0x21,spisets.winD2*2);
+
+    function_dd_fpga_writes(0x23, winE1ed * 2);
+    function_dd_fpga_writes(0x25, winE2ed * 2);
+    PRONEERS_LOG("调窗--执行完成 %f %f %f %f\n",calculate_a1,calculate_b1,tAdjustOut.AdjustOut_a2,tAdjustOut.AdjustOut_b2);
+    PRONEERS_LOG("调窗--执行完成 %d %d %d %d\n",winB1ed,winB2ed,tFpga_Set.Fpga_Set_WINB1,tFpga_Set.Fpga_Set_WINB2);
+
+}
+//            flowresult.fgas		=	FlowParass.Qvg_CPM;
+//            flowresult.foil		=	FlowParass.Qvl_CPM;
+//            flowresult.tem1		=	FlowParass.T_P_WC_CPS;
+//            flowresult.pre		=	FlowParass.P_WC_CPM; double pres[1440];
+
+/*******************************************************************************
+* 函数名称: flow_data_w
+* 函数功能: 生成流量json文件
+* 相关文档:
+* 函数参数:
+* 参数名称:         类型      输入/输出     描述
+* 
+* 返回值:
+* 函数类型:
+* 函数说明:
+* 修改日期    版本号   修改人  修改内容（局限在本函数内的缺陷修改需要写在此处）
+* -----------------------------------------------------------------
+* 
+*******************************************************************************/
+long int timestamps[1440];
+static double foils[1440];
+int flow_data_w(void)
+{
+    int i = 0;
+    static int flowc =0;
+    char data_time1[400000] = {};
+    char spi_en[400000] = {};
+    char p_log1[400000] = {};//add data
+    FILE *F_fd = fopen("/usr/local/apache/htdocs/yangpai/tables/flow.json", "w+b");//{"label":"脉冲曲线 x:t/ns y:v/mv","data":[[1196463600000,70],[1196463660000,100],[1196463720000,97]]}
+    for(i=0;i<(1440 - 1);i++)
+    {
+        foils[(1440 - 1)-i] = foils[(1440 - 2)-i];
+        timestamps[(1440 - 1)-i] = timestamps[(1440 - 2)-i];
+    }
+    foils[0]=FlowParass.Qvl_CPM;
+    timestamps[0]=tDateTime.timestamp;
+    //printf("%f === %ld\n",flowresult.foil,m_time.timestamps[0]);
+
+    if(flowc == 0)
+    {
+        sprintf(data_time1,"[%.0f,%f]",(double)timestamps[flowc]*1000,foils[flowc]);
+        strcat(spi_en,data_time1);
+        flowc++;
+    }
+    else if (flowc < 1440)
+    {
+        for(i=0;i<flowc;i++)
+        {
+            sprintf(data_time1,"[%.0f,%f],",(double)timestamps[i]*1000,foils[i]);
+            strcat(spi_en,data_time1);
+        }
+        sprintf(data_time1,"[%.0f,%f]",(double)timestamps[flowc]*1000,foils[flowc]);
+        strcat(spi_en,data_time1);
+        flowc++;
+    }
+    else
+    {
+        for(i=0; i<(1440 - 1);i++)
+        {
+            sprintf(data_time1,"[%.0f,%f],",(double)timestamps[i]*1000,foils[i]);
+            strcat(spi_en,data_time1);
+        }
+        sprintf(data_time1,"[%.0f,%f]",(double)timestamps[(1440 - 1)]*1000,foils[(1440 - 1)]);
+        strcat(spi_en,data_time1);
+    }
+
+
+
+    sprintf(p_log1,"%s%s%s","{\"label\":\"Liquid-Flow (m3/h)\",\"data\":[",spi_en,"]}");
+//	fwrite(p_log1,strlen(p_log1),1,fd_en );
+    fputs(p_log1,F_fd);
+
+    fclose(F_fd);
+
+    return 0;
+}
+/*******************************************************************************
+* 函数名称: flow1_data_w
+* 函数功能: 生成流量json文件
+* 相关文档:
+* 函数参数:
+* 参数名称:         类型      输入/输出     描述
+* 
+* 返回值:
+* 函数类型:
+* 函数说明:
+* 修改日期    版本号   修改人  修改内容（局限在本函数内的缺陷修改需要写在此处）
+* -----------------------------------------------------------------
+* 
+*******************************************************************************/
+static double fgass[1440];
+int flow1_data_w(void)
+{
+
+    int i = 0;
+    static int flowc1 =0;
+    char data_time1[400000] = {};
+    char spi_en[400000] = {};
+    char p_log1[400000] = {};//add data
+    FILE *F_fd = fopen("/usr/local/apache/htdocs/yangpai/tables/flow1.json", "w+b");//{"label":"脉冲曲线 x:t/ns y:v/mv","data":[[1196463600000,70],[1196463660000,100],[1196463720000,97]]}
+    for(i=0;i<(1440 - 1);i++)
+    {
+        fgass[(1440 - 1)-i] = fgass[(1440 - 2)-i];
+    }
+    fgass[0]=FlowParass.Qvg_CPM;;
+    //printf("%f === %ld\n",flowresult.fgas,m_time.timestamp);
+
+    if(flowc1 == 0)
+    {
+        sprintf(data_time1,"[%.0f,%f]",(double)timestamps[flowc1]*1000,fgass[flowc1]);
+        strcat(spi_en,data_time1);
+        flowc1++;
+    }
+    else if (flowc1 < 1440)
+    {
+        for(i=0;i<flowc1;i++)
+        {
+            sprintf(data_time1,"[%.0f,%f],",(double)timestamps[i]*1000,fgass[i]);
+            strcat(spi_en,data_time1);
+        }
+        sprintf(data_time1,"[%.0f,%f]",(double)timestamps[flowc1]*1000,fgass[flowc1]);
+        strcat(spi_en,data_time1);
+        flowc1++;
+    }
+    else
+    {
+        for(i=0; i<(1440 - 1);i++)
+        {
+            sprintf(data_time1,"[%.0f,%f],",(double)timestamps[i]*1000,fgass[i]);
+            strcat(spi_en,data_time1);
+        }
+        sprintf(data_time1,"[%.0f,%f]",(double)timestamps[(1440 - 1)]*1000,fgass[(1440 - 1)]);
+        strcat(spi_en,data_time1);
+    }
+
+
+
+    sprintf(p_log1,"%s%s%s","{\"label\":\"Gas-Flow (m3/h)\",\"data\":[",spi_en,"]}");
+//	fwrite(p_log1,strlen(p_log1),1,fd_en );
+    fputs(p_log1,F_fd);
+
+    fclose(F_fd);
+
+    return 0;
+}
+/*******************************************************************************
+* 函数名称: flow2_data_w
+* 函数功能: 生成流量json文件
+* 相关文档:
+* 函数参数:
+* 参数名称:         类型      输入/输出     描述
+* 
+* 返回值:
+* 函数类型:
+* 函数说明:
+* 修改日期    版本号   修改人  修改内容（局限在本函数内的缺陷修改需要写在此处）
+* -----------------------------------------------------------------
+* 
+*******************************************************************************/
+static double tem1s[1440];
+int flow2_data_w(void)
+{
+
+    int i = 0;
+    static int flowc2 =0;
+    char data_time1[400000] = {};
+    char spi_en[400000] = {};
+    char p_log1[400000] = {};//add data
+    FILE *F_fd = fopen("/usr/local/apache/htdocs/yangpai/tables/flow2.json", "w+b");//{"label":"脉冲曲线 x:t/ns y:v/mv","data":[[1196463600000,70],[1196463660000,100],[1196463720000,97]]}
+    for(i=0;i<(1440 - 1);i++)
+    {
+        tem1s[(1440 - 1)-i] = tem1s[(1440 - 2)-i];
+    }
+    tem1s[0]=FlowParass.T_P_WC_CPS;
+    //printf("%f === %ld\n",flowresult.fgas,m_time.timestamp);
+
+    if(flowc2 == 0)
+    {
+        sprintf(data_time1,"[%.0f,%f]",(double)timestamps[flowc2]*1000,tem1s[flowc2]);
+        strcat(spi_en,data_time1);
+        flowc2++;
+    }
+    else if (flowc2 < 1440)
+    {
+        for(i=0;i<flowc2;i++)
+        {
+            sprintf(data_time1,"[%.0f,%f],",(double)timestamps[i]*1000,tem1s[i]);
+            strcat(spi_en,data_time1);
+        }
+        sprintf(data_time1,"[%.0f,%f]",(double)timestamps[flowc2]*1000,tem1s[flowc2]);
+        strcat(spi_en,data_time1);
+        flowc2++;
+    }
+    else
+    {
+        for(i=0; i<(1440 - 1);i++)
+        {
+            sprintf(data_time1,"[%.0f,%f],",(double)timestamps[i]*1000,tem1s[i]);
+            strcat(spi_en,data_time1);
+        }
+        sprintf(data_time1,"[%.0f,%f]",(double)timestamps[(1440 - 1)]*1000,tem1s[(1440 - 1)]);
+        strcat(spi_en,data_time1);
+    }
+
+
+
+    sprintf(p_log1,"%s%s%s","{\"label\":\"Temperature\",\"data\":[",spi_en,"]}");
+//	fwrite(p_log1,strlen(p_log1),1,fd_en );
+    fputs(p_log1,F_fd);
+
+    fclose(F_fd);
+
+    return 0;
+}
+/*******************************************************************************
+* 函数名称: flow5_data_w
+* 函数功能: 生成流量json文件
+* 相关文档:
+* 函数参数:
+* 参数名称:         类型      输入/输出     描述
+* 
+* 返回值:
+* 函数类型:
+* 函数说明:
+* 修改日期    版本号   修改人  修改内容（局限在本函数内的缺陷修改需要写在此处）
+* -----------------------------------------------------------------
+* 
+*******************************************************************************/
+static double pres[1440];
+int flow5_data_w(void)
+{
+
+    int i = 0;
+    static int flowc5 =0;
+    char data_time1[400000] = {};
+    char spi_en[400000] = {};
+    char p_log1[400000] = {};//add data
+    FILE *F_fd = fopen("/usr/local/apache/htdocs/yangpai/tables/flow5.json", "w+b");//{"label":"脉冲曲线 x:t/ns y:v/mv","data":[[1196463600000,70],[1196463660000,100],[1196463720000,97]]}
+    for(i=0;i<(1440 - 1);i++)
+    {
+        pres[(1440 - 1)-i] = pres[(1440 - 2)-i];
+    }
+    pres[0]=FlowParass.P_WC_CPM;
+    //printf("%f === %ld\n",flowresult.fgas,m_time.timestamp);
+
+    if(flowc5 == 0)
+    {
+        sprintf(data_time1,"[%.0f,%f]",(double)timestamps[flowc5]*1000,pres[flowc5]);
+        strcat(spi_en,data_time1);
+        flowc5++;
+    }
+    else if (flowc5 < 1440)
+    {
+        for(i=0;i<flowc5;i++)
+        {
+            sprintf(data_time1,"[%.0f,%f],",(double)timestamps[i]*1000,pres[i]);
+            strcat(spi_en,data_time1);
+        }
+        sprintf(data_time1,"[%.0f,%f]",(double)timestamps[flowc5]*1000,pres[flowc5]);
+        strcat(spi_en,data_time1);
+        flowc5++;
+    }
+    else
+    {
+        for(i=0; i<(1440 - 1);i++)
+        {
+            sprintf(data_time1,"[%.0f,%f],",(double)timestamps[i]*1000,pres[i]);
+            strcat(spi_en,data_time1);
+        }
+        sprintf(data_time1,"[%.0f,%f]",(double)timestamps[(1440 - 1)]*1000,pres[(1440 - 1)]);
+        strcat(spi_en,data_time1);
+    }
+
+
+
+    sprintf(p_log1,"%s%s%s","{\"label\":\"Pressure\",\"data\":[",spi_en,"]}");
+//	fwrite(p_log1,strlen(p_log1),1,fd_en );
+    fputs(p_log1,F_fd);
+
+    fclose(F_fd);
+
+    return 0;
+}
+/*******************************************************************************
+* 函数名称: flow_table_w
+* 函数功能: 生成流量json文件
+* 相关文档:
+* 函数参数:
+* 参数名称:         类型      输入/输出     描述
+* 
+* 返回值:
+* 函数类型:
+* 函数说明:
+* 修改日期    版本号   修改人  修改内容（局限在本函数内的缺陷修改需要写在此处）
+* -----------------------------------------------------------------
+* 
+*******************************************************************************/
+int flow_table_w(void)
+{
+    double fwaters[1440];//未知
+    char ftable[8192];
+    static int flowT =0;
+    if(flowT<4)
+    {
+        flowT++;
+        return 0;
+    }
+    FILE *F_fd = fopen("/usr/local/apache/htdocs/yangpai/tables/flow-data.json", "w+b");
+    sprintf(ftable,"[{\"z1\":\"%.2ld:%.2ld\",\"z2\":\"%.2f\",\"z3\":\"%.2f\",\"z4\":\"%.2f\",\"z5\":\"%.2f\",\"z6\":\"%.2f\","
+                   "\"z7\":\"%.2ld:%.2ld\",\"z8\":\"%.2f\",\"z9\":\"%.2f\",\"z10\":\"%.2f\",\"z11\":\"%.2f\",\"z12\":\"%.2f\","
+                   "\"z13\":\"%.2ld:%.2ld\",\"z14\":\"%.2f\",\"z15\":\"%.2f\",\"z16\":\"%.2f\",\"z17\":\"%.2f\",\"z18\":\"%.2f\","
+                   "\"z19\":\"%.2ld:%.2ld\",\"z20\":\"%.2f\",\"z21\":\"%.2f\",\"z22\":\"%.2f\",\"z23\":\"%.2f\",\"z24\":\"%.2f\"}]",
+            (((timestamps[3]/60)/60)%24),((timestamps[3]/60)%60),fgass[3],foils[3],tem1s[3],pres[3],fwaters[3],
+            (((timestamps[2]/60)/60)%24),((timestamps[2]/60)%60),fgass[2],foils[2],tem1s[2],pres[2],fwaters[2],
+            (((timestamps[1]/60)/60)%24),((timestamps[1]/60)%60),fgass[1],foils[1],tem1s[1],pres[1],fwaters[1],
+            (((timestamps[0]/60)/60)%24),((timestamps[0]/60)%60),fgass[0],foils[0],tem1s[0],pres[0],fwaters[0]);
+    fputs(ftable,F_fd);
+    fclose(F_fd);
+    return 0;
+}
+/*******************************************************************************
+* 函数名称: flow_table_ws
+* 函数功能: 生成流量json文件
+* 相关文档:
+* 函数参数:
+* 参数名称:         类型      输入/输出     描述
+* 
+* 返回值:
+* 函数类型:
+* 函数说明:
+* 修改日期    版本号   修改人  修改内容（局限在本函数内的缺陷修改需要写在此处）
+* -----------------------------------------------------------------
+* 
+*******************************************************************************/
+static	double FlowDataDay = 0;//每天gas
+static	double FlowDataDayO = 0;//每天water
+static	double FlowDataTimes = 0;
+
+static	double FlowDataDayto0 = 0;//每天gas
+static	double FlowDataDayOto0 = 0;//每天water
+static	double FlowDataTimesto0 = 0;
+int flow_table_ws(void)
+{
+    char ftable[8192];
+    static int flowT =0;
+    if(flowT<4)
+    {
+        flowT++;
+        return 0;
+    }
+    FILE *F_fd = fopen("/usr/local/apache/htdocs/yangpai/tables/flow-datass.json", "w+b");
+    sprintf(ftable,"[{\"zs1\":\"%10.4lf\",\"zs2\":\"#\",\"zs3\":\"%10.4lf\",\"zs4\":\" \","
+                   "\"zs5\":\"%10.4lf\",\"zs6\":\"#\",\"zs7\":\" \",\"zs8\":\" \","
+                   "\"zs9\":\"%10.4lf\",\"zs10\":\"#\",\"zs11\":\"%10.4lf\",\"zs12\":\" \","
+                   "\"zs13\":\"%10.4lf\",\"zs14\":\"#\",\"zs15\":\" \",\"zs16\":\" \","
+                   "\"zs17\":\"%10.4lf\",\"zs18\":\"#\",\"zs19\":\"%10.4lf\",\"zs20\":\" \","
+                   "\"zs21\":\" \",\"zs22\":\" \",\"zs23\":\" \",\"zs24\":\" \"}]",
+            FlowDataDay,FlowDataDayO,
+            FlowDataTimes,
+            FlowDataDayto0,FlowDataDayOto0,
+            FlowDataTimesto0,
+            FlowParass.Qvg_CPM,FlowParass.Qvl_CPM);
+    fputs(ftable,F_fd);
+    fclose(F_fd);
+    return 0;
+}
+/*******************************************************************************
+* 函数名称:write_msql_apache
+* 函数功能:流量数据输出到数据库和显示屏中
+* 相关文档:
+* 函数参数:
+* 参数名称:         类型      输入/输出     描述
+* 
+* 返回值:
+* 函数类型:
+* 函数说明:
+* 修改日期    版本号   修改人  修改内容（局限在本函数内的缺陷修改需要写在此处）
+* -----------------------------------------------------------------
+* 
+*******************************************************************************/
+int write_msql_apache()
+{
+    static int math_C=0;
+
+    if(math_C<60)//（）每秒数据(五个窗口计数；温度；压力；差压)计算200次，数据结果累加输出
+    {
+        math_C++;
+        if(math_C==60)//每分钟数据；数据存入mysql；生成流量表格.json；生成曲线文件；
+        {
+            flow_data_w();
+            flow1_data_w();
+            flow2_data_w();
+            flow5_data_w();
+            flow_table_w();
+            flow_table_ws();
+            PRONEERS_LOG("调窗--执行完成\n");
+            PRONEERS_LOG("tRunFlag.flag_log_en %d\n",tRunFlag.flag_log_en);
+            if(tRunFlag.flag_log_en == 2 && tRunFlag.flag_1s_en == 0)
+            {
+                PRONEERS_LOG("****************write mysql************\n");
+                yangpi_mysql_call_writelog(PROXY_yangpi_mysql, &tWriteMysqlLog);
+
+            }
+
+            if(FlowParass.DP_CPS > FlowParass.DP_th)
+            {
+                FlowParass.Add_Sctime = FlowParass.Add_Sctime + 0.000695;
+                PRONEERS_LOG("FlowParass.Add_Sctime  = %f \n",FlowParass.Add_Sctime );
+            }
+
+            tWriteFlowResult.Write_FR_Add_Sctime     = FlowParass.Add_Sctime;
+
+            yangpi_mysql_call_writeflow(PROXY_yangpi_mysql,&tWriteFlowResult);
+            //W_FlowData();
+            yangpi_ota_call_ota_send(PROXY_yangpi_ota, (T_OtaSendLog *) &tWriteMysqlLog);
+            math_C=0;
+        }
+
+        if(tRunFlag.flag_log_en==0 && tRunFlag.flag_1s_en == 0x100)
+        {
+            PRONEERS_LOG("****************write mysql %d\n",tRunFlag.flag_log_en);
+
+            yangpi_mysql_call_writelog(PROXY_yangpi_mysql, &tWriteMysqlLog);
+        }
+
+        yangpi_i2c_call_i2c_oled(PROXY_yangpi_i2c, &tI2COled);
+
+    }
+    else{
+        PRONEERS_ERROR("math_C error \n");
+        math_C=0;
+    }
+
+
+    return 0;
+}
+/*******************************************************************************
+* 函数名称:calculate_apache_armp
+* 函数功能:生成网页使用的数据
+* 相关文档:
+* 函数参数:
+* 参数名称:         类型      输入/输出     描述
+* 
+* 返回值:
+* 函数类型:
+* 函数说明:
+* 修改日期    版本号   修改人  修改内容（局限在本函数内的缺陷修改需要写在此处）
+* -----------------------------------------------------------------
+* 
+*******************************************************************************/
+void calculate_apache_armp()
+{
+    char afP[8192];
+
+    static int arm_P_C=0;
+    double P;
+    double DP;
+
+    if(arm_P_C==59)
+    {
+        //数据准备好了可以存储
+        //数据整理好后存储
+
+        DP =	FlowParass.DP_CPM;
+        P =		FlowParass.P_WC_CPM;
+
+        FILE *F_fd;
+        F_fd = fopen("/usr/local/apache/htdocs/yangpai/tables/ARM-P.json", "w+b");
+        sprintf(afP,"[{\"ac\":\"%.0lf\",\"bc\":\"%.0lf\",\"cc\":\"%10.4lf\",\"dc\":\"%10.4lf\","
+                    "\"ec\":\"%.0lf\",\"hv\":\"%d\",\"vbb\":\"%d\",\"t1\":\"%.2f C\","
+                    "\"t2\":\"%.2f C\",\"a_pre\":\"%.2fKPa\",\"d_pre\":\"%.2fPa\","
+                    "\"t3\":\"%.2f C\",\"PAS\":\"%d\",\"PA\":\"%d\",\"PBS\":\"%d\","
+                    "\"PB\":\"%d\",\"PCS\":\"%d\",\"PC\":\"%d\",\"PDS\":\"%d\",\"PD\":\"%d\","
+                    "\"PES\":\"%d\",\"PE\":\"%d\"}]",
+                (double)FlowParass.winB_CPM,(double)FlowParass.winC_CPM,((double)FlowParass.Qvl_add_CPS/10000)*24,(double)FlowParass.Add_Sctime,(double)FlowParass.winE_CPS,
+                (int)tAdjustOut.AdjustOut_Hight,tArm_Mysql.t_Arm_Set.Arm_Set_vbb,tI2cAd1115.i2cAd1115_BoardTem,FlowParass.T_P_WC_CPS,P,
+                DP,FlowParass.T_DP_WC_CPS,tArm_Mysql.t_Arm_Set.Arm_Set_PEAK_B,tAdjustOut.AdjustOut_F31,
+                tArm_Mysql.t_Arm_Set.Arm_Set_PEAK_C,tAdjustOut.AdjustOut_F81,0,0,0,0,tArm_Mysql.t_Arm_Set.Arm_Set_PEAK_E,tAdjustOut.AdjustOut_F356);
+        fputs(afP,F_fd);
+        fclose(F_fd);
+#if WIN_DATA_CPS
+        flowresult.winA=S_winA;
+		flowresult.winB=S_winB;
+		flowresult.winC=S_winC;
+		flowresult.winD=S_winD;
+		flowresult.winE=S_winE;
+#endif
+        printf("B=%f\n DPT=%f PT=%f\n",tI2cAd1115.ad1115_buf[199][0],FlowParass.T_DP_WC_CPS,FlowParass.T_P_WC_CPS);
+
+        arm_P_C	=	-1;
+    }
+    arm_P_C++;
+    PRONEERS_LOG("网页表格写入--执行完成\n");
+}
+/*******************************************************************************
+* 函数名称:pulse_data_w
+* 函数功能:生成脉冲数据文件供网页使用
+* 相关文档:
+* 函数参数:
+* 参数名称:         类型      输入/输出     描述
+* 
+* 返回值:
+* 函数类型:
+* 函数说明:
+* 修改日期    版本号   修改人  修改内容（局限在本函数内的缺陷修改需要写在此处）
+* -----------------------------------------------------------------
+* 
+*******************************************************************************/
+int pulse_data_w(void)
+{
+    int k = 0;
+    int c = 0;
+    char data_time1[20] = {};
+    char spi_en[8192] = {};
+    char p_log1[40966] = {};//add data
+    FILE *fd_pulse;
+    fd_pulse = fopen("/usr/local/apache/htdocs/yangpai/pulse_data.json", "w+b");
+    for(k=0; k<500;k++)
+    {
+//		c = pt->pulse_data[2*k]*256+pt->pulse_data[2*k+1];
+        c = tFpgaSpiData.SpiData_dpul[k+10];//横坐标用纳秒表示，
+        if(c < 0){
+            c = 0;
+        }
+        sprintf(data_time1,"[%d,%d],",k*10,c);
+        strcat(spi_en,data_time1);
+    }
+
+    sprintf(p_log1,"%s%s%s%d%s","{\"label\":\"脉冲曲线 x:t/ns y:v/mv\",\"data\":[",spi_en,"[5000,",tFpgaSpiData.SpiData_dpul[500+10],"]]}");
+//	fwrite(p_log1,strlen(p_log1),1,fd_en );
+    fputs(p_log1,fd_pulse);
+
+    fclose(fd_pulse);
+
+    PRONEERS_LOG("脉冲存储--执行完成");
+    return 0;
+
+}
+/*******************************************************************************
+* 函数名称:errorCode
+* 函数功能:检查能谱中的异常数据并对齐进行修复
+* 相关文档:
+* 函数参数:
+* 参数名称:         类型      输入/输出     描述
+* 
+* 返回值:
+* 函数类型:
+* 函数说明:
+* 修改日期    版本号   修改人  修改内容（局限在本函数内的缺陷修改需要写在此处）
+* -----------------------------------------------------------------
+* 
+*******************************************************************************/
+void errorCode(void)
+{
+    int i;
+    double sum;
+    double a;
+    double b;
+    for(i=200;i<7500;i++)//100道开始7500道结束
+    {
+        sum = EnergyS[i]+EnergyS[i+1];
+        if(sum<=20.0)
+        {
+            if(EnergyS[i+2]>=30.0)
+                EnergyS[i+2]=(EnergyS[i]+EnergyS[i+1])/2;
+        }
+/*		else if(sum>20 && sum <5000)
+		{
+			a = (double)(data_adj[i]+data_adj[i+1])/(2*(double)data_adj[i+2]);
+			if(a<0.5 || a>1.5)
+				data_adj[i+2]=(data_adj[i]+data_adj[i+1])/2;
+		}*/
+        else
+        {
+            a = EnergyS[i]+5*pow(EnergyS[i],0.5);//*2;
+            b = EnergyS[i]-5*pow(EnergyS[i],0.5);//*0.2;
+            if((EnergyS[i-1]<b||EnergyS[i-1]>a)&&(EnergyS[i+1]<b||EnergyS[i+1]>a))
+            {
+                EnergyS[i]=(EnergyS[i-1]+EnergyS[i+1])/2;
+            }
+            else if((EnergyS[i-1]<b||EnergyS[i-1]>a)&&(EnergyS[i+1]>b&&EnergyS[i+1]<a))
+            {
+                EnergyS[i-1]=(EnergyS[i]+EnergyS[i+1])/2;
+            }
+            else if((EnergyS[i-1]>b&&EnergyS[i-1]<a)&&(EnergyS[i+1]<b||EnergyS[i+1]>a))
+            {
+                EnergyS[i+1]=(EnergyS[i]+EnergyS[i-1])/2;
+            }
+            else
+            {
+
+            }
+
+        }
+    }
+    for(i=0;i<8192;i++)
+    {
+        tAdjustIn.AdjustIn_S_es[i]=EnergyS[i];
+    }
+}
+/*******************************************************************************
+* 函数名称: gpio_export
+* 函数功能: 初始化gpio端口
+* 相关文档:
+* 函数参数:
+* 参数名称:         类型      输入/输出     描述
+* pin              int         in       管脚号
+* 返回值:
+* 函数类型:
+* 函数说明:
+* 修改日期    版本号   修改人  修改内容（局限在本函数内的缺陷修改需要写在此处）
+* -----------------------------------------------------------------
+* 
+*******************************************************************************/
+int gpio_export(int pin)
+{
+    char buffer[64];
+    int len;
+    int fd;
+
+    fd = open("/sys/class/gpio/export", O_WRONLY);
+    if (fd < 0) {
+        PRONEERS_ERROR("Failed to open export for writing!\n");
+        return(-1);
+    }
+
+    len = snprintf(buffer, sizeof(buffer), "%d", pin);
+    if (write(fd, buffer, len) < 0) {
+        PRONEERS_ERROR("Failed to export gpio!");
+//        return -1;
+    }
+
+    close(fd);
+    return 0;
+}
+/*******************************************************************************
+* 函数名称: gpio_direction
+* 函数功能: 设置gpio方向
+* 相关文档:
+* 函数参数:
+* 参数名称:         类型      输入/输出     描述
+*  pin               int        in          管脚号
+*  dir               int        in         0：in  1：out
+* 返回值:
+* 函数类型:
+* 函数说明:
+* 修改日期    版本号   修改人  修改内容（局限在本函数内的缺陷修改需要写在此处）
+* -----------------------------------------------------------------
+* 
+*******************************************************************************/
+int gpio_direction(int pin, int dir)
+{
+    static const char dir_str[] = "in\0out";
+    char path[64];
+    int fd;
+
+    snprintf(path, sizeof(path), "/sys/class/gpio/gpio%d/direction", pin);
+    fd = open(path, O_WRONLY);
+    if (fd < 0) {
+        PRONEERS_ERROR("Failed to open gpio direction for writing!\n");
+        return -1;
+    }
+
+    if (write(fd, &dir_str[dir == 0 ? 0 : 3], dir == 0 ? 2 : 3) < 0) {
+        PRONEERS_ERROR("Failed to set direction!\n");
+//        return -1;
+    }
+
+    close(fd);
+    return 0;
+}
+/*******************************************************************************
+* 函数名称: gpio_write
+* 函数功能: 设置gpio输出电压
+* 相关文档:
+* 函数参数:
+* 参数名称:         类型      输入/输出     描述
+*  pin               int        in          管脚号
+*  value             int        in       0-->LOW, 1-->HIGH
+* 返回值:
+* 函数类型:
+* 函数说明:
+* 修改日期    版本号   修改人  修改内容（局限在本函数内的缺陷修改需要写在此处）
+* -----------------------------------------------------------------
+* 
+*******************************************************************************/
+int gpio_write(int pin, int value)
+{
+    static const char values_str[] = "01";
+    char path[64];
+    int fd;
+
+    snprintf(path, sizeof(path), "/sys/class/gpio/gpio%d/value", pin);
+    fd = open(path, O_WRONLY);
+    if (fd < 0) {
+        PRONEERS_ERROR("Failed to open gpio value for writing!\n");
+        return -1;
+    }
+
+    if (write(fd, &values_str[value == 0 ? 0 : 1], 1) < 0) {
+        PRONEERS_ERROR("Failed to write value!\n");
+//        return -1;
+    }
+
+    close(fd);
+    return 0;
+}
+/*******************************************************************************
+* 函数名称: gpio_edge
+* 函数功能: 设置gpio的触发沿
+* 相关文档:
+* 函数参数:
+* 参数名称:         类型      输入/输出     描述
+*  pin               int        in          管脚号
+*  edge              int        in      设置gpio的触发沿
+* 函数类型:
+* 函数说明:
+* 修改日期    版本号   修改人  修改内容（局限在本函数内的缺陷修改需要写在此处）
+* -----------------------------------------------------------------
+* 
+*******************************************************************************/
+int gpio_edge(int pin, int edge)
+{
+    const char dir_str[] = "none\0rising\0falling\0both";
+    int ptr;
+    char path[64];
+    int fd;
+    switch(edge){
+        case 0:
+            ptr = 0;
+            break;
+        case 1:
+            ptr = 5;
+            break;
+        case 2:
+            ptr = 12;
+            break;
+        case 3:
+            ptr = 20;
+            break;
+        default:
+            ptr = 0;
+            break;
+    }
+
+    snprintf(path, sizeof(path), "/sys/class/gpio/gpio%d/edge", pin);
+    fd = open(path, O_WRONLY);
+    if (fd < 0) {
+        PRONEERS_ERROR("Failed to open gpio edge for writing!\n");
+        return -1;
+    }
+
+    if (write(fd, &dir_str[ptr], strlen(&dir_str[ptr])) < 0) {
+        PRONEERS_ERROR("Failed to set edge!\n");
+//        return -1;
+    }
+
+    close(fd);
+    return 0;
+}

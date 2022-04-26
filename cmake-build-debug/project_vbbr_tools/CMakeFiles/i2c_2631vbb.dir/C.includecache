@@ -1,0 +1,40 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/share/workspace/buildroot_project/project_vbbr_tools/i2c_2631vbb.c
+stdlib.h
+-
+stdio.h
+-
+pthread.h
+-
+string.h
+-
+fcntl.h
+-
+stdio.h
+-
+sys/ioctl.h
+-
+unistd.h
+-
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+pthread.h
+-
+poll.h
+-
+sys/time.h
+-
+signal.h
+-
+
