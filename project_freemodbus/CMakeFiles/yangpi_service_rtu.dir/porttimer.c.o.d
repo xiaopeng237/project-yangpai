@@ -1,5 +1,5 @@
 project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/porttimer.c.o: \
- /home/admin/repo/project-yangpai/project_freemodbus/porttimer.c \
+ /var/lib/jenkins/workspace/project-yangpai/project_freemodbus/porttimer.c \
  /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain/bin/../arm-fsl-linux-gnueabi/multi-libs/usr/include/stdlib.h \
  /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain/bin/../arm-fsl-linux-gnueabi/multi-libs/usr/include/features.h \
  /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain/bin/../arm-fsl-linux-gnueabi/multi-libs/usr/include/sys/cdefs.h \
@@ -23,8 +23,8 @@ project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/porttimer.c.o: \
  /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain/bin/../arm-fsl-linux-gnueabi/multi-libs/usr/include/bits/pthreadtypes.h \
  /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain/bin/../arm-fsl-linux-gnueabi/multi-libs/usr/include/alloca.h \
  /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain/bin/../arm-fsl-linux-gnueabi/multi-libs/usr/include/sys/time.h \
- /home/admin/repo/project-yangpai/project_freemodbus/port.h \
+ /var/lib/jenkins/workspace/project-yangpai/project_freemodbus/port.h \
  /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain/bin/../arm-fsl-linux-gnueabi/multi-libs/usr/include/assert.h \
- /home/admin/repo/project-yangpai/project_freemodbus/mb.h \
- /home/admin/repo/project-yangpai/project_freemodbus/mbport.h \
- /home/admin/repo/project-yangpai/project_freemodbus/mbproto.h
+ /var/lib/jenkins/workspace/project-yangpai/project_freemodbus/mb.h \
+ /var/lib/jenkins/workspace/project-yangpai/project_freemodbus/mbport.h \
+ /var/lib/jenkins/workspace/project-yangpai/project_freemodbus/mbproto.h

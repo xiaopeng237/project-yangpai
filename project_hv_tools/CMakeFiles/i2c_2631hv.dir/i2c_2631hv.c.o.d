@@ -1,5 +1,5 @@
 project_hv_tools/CMakeFiles/i2c_2631hv.dir/i2c_2631hv.c.o: \
- /home/admin/repo/project-yangpai/project_hv_tools/i2c_2631hv.c \
+ /var/lib/jenkins/workspace/project-yangpai/project_hv_tools/i2c_2631hv.c \
  /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain/bin/../arm-fsl-linux-gnueabi/multi-libs/usr/include/stdlib.h \
  /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain/bin/../arm-fsl-linux-gnueabi/multi-libs/usr/include/features.h \
  /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain/bin/../arm-fsl-linux-gnueabi/multi-libs/usr/include/sys/cdefs.h \

@@ -1,5 +1,5 @@
 project_ota/CMakeFiles/yangpi_service_ota.dir/ota_service.c.o: \
- /home/admin/repo/project-yangpai/project_ota/ota_service.c \
+ /var/lib/jenkins/workspace/project-yangpai/project_ota/ota_service.c \
  /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain/bin/../arm-fsl-linux-gnueabi/multi-libs/usr/include/stdio.h \
  /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain/bin/../arm-fsl-linux-gnueabi/multi-libs/usr/include/features.h \
  /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain/bin/../arm-fsl-linux-gnueabi/multi-libs/usr/include/sys/cdefs.h \
@@ -35,30 +35,30 @@ project_ota/CMakeFiles/yangpi_service_ota.dir/ota_service.c.o: \
  /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain/bin/../arm-fsl-linux-gnueabi/multi-libs/usr/include/bits/string.h \
  /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain/bin/../arm-fsl-linux-gnueabi/multi-libs/usr/include/bits/string2.h \
  /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain/bin/../arm-fsl-linux-gnueabi/multi-libs/usr/include/stdlib.h \
- /home/admin/repo/project-yangpai/project_ota/ota_data_base.h \
- /home/admin/repo/project-yangpai/project_ota/yangpi_ota_stub.h \
- /home/admin/repo/project-yangpai/depend/dbus/include/dbus-1.0/dbus/dbus.h \
- /home/admin/repo/project-yangpai/depend/dbus/lib/dbus-1.0/include/dbus/dbus-arch-deps.h \
- /home/admin/repo/project-yangpai/depend/dbus/include/dbus-1.0/dbus/dbus-macros.h \
- /home/admin/repo/project-yangpai/depend/dbus/include/dbus-1.0/dbus/dbus-address.h \
- /home/admin/repo/project-yangpai/depend/dbus/include/dbus-1.0/dbus/dbus-types.h \
- /home/admin/repo/project-yangpai/depend/dbus/include/dbus-1.0/dbus/dbus-errors.h \
- /home/admin/repo/project-yangpai/depend/dbus/include/dbus-1.0/dbus/dbus-protocol.h \
- /home/admin/repo/project-yangpai/depend/dbus/include/dbus-1.0/dbus/dbus-bus.h \
- /home/admin/repo/project-yangpai/depend/dbus/include/dbus-1.0/dbus/dbus-connection.h \
- /home/admin/repo/project-yangpai/depend/dbus/include/dbus-1.0/dbus/dbus-memory.h \
- /home/admin/repo/project-yangpai/depend/dbus/include/dbus-1.0/dbus/dbus-message.h \
- /home/admin/repo/project-yangpai/depend/dbus/include/dbus-1.0/dbus/dbus-shared.h \
- /home/admin/repo/project-yangpai/depend/dbus/include/dbus-1.0/dbus/dbus-misc.h \
- /home/admin/repo/project-yangpai/depend/dbus/include/dbus-1.0/dbus/dbus-pending-call.h \
- /home/admin/repo/project-yangpai/depend/dbus/include/dbus-1.0/dbus/dbus-server.h \
- /home/admin/repo/project-yangpai/depend/dbus/include/dbus-1.0/dbus/dbus-signature.h \
- /home/admin/repo/project-yangpai/depend/dbus/include/dbus-1.0/dbus/dbus-syntax.h \
- /home/admin/repo/project-yangpai/depend/dbus/include/dbus-1.0/dbus/dbus-threads.h \
- /home/admin/repo/project-yangpai/depend/include/yangpai_service.h \
- /home/admin/repo/project-yangpai/depend/include/curl/curl.h \
- /home/admin/repo/project-yangpai/depend/include/curl/curlver.h \
- /home/admin/repo/project-yangpai/depend/include/curl/curlbuild.h \
+ /var/lib/jenkins/workspace/project-yangpai/project_ota/ota_data_base.h \
+ /var/lib/jenkins/workspace/project-yangpai/project_ota/yangpi_ota_stub.h \
+ /var/lib/jenkins/workspace/project-yangpai/depend/dbus/include/dbus-1.0/dbus/dbus.h \
+ /var/lib/jenkins/workspace/project-yangpai/depend/dbus/lib/dbus-1.0/include/dbus/dbus-arch-deps.h \
+ /var/lib/jenkins/workspace/project-yangpai/depend/dbus/include/dbus-1.0/dbus/dbus-macros.h \
+ /var/lib/jenkins/workspace/project-yangpai/depend/dbus/include/dbus-1.0/dbus/dbus-address.h \
+ /var/lib/jenkins/workspace/project-yangpai/depend/dbus/include/dbus-1.0/dbus/dbus-types.h \
+ /var/lib/jenkins/workspace/project-yangpai/depend/dbus/include/dbus-1.0/dbus/dbus-errors.h \
+ /var/lib/jenkins/workspace/project-yangpai/depend/dbus/include/dbus-1.0/dbus/dbus-protocol.h \
+ /var/lib/jenkins/workspace/project-yangpai/depend/dbus/include/dbus-1.0/dbus/dbus-bus.h \
+ /var/lib/jenkins/workspace/project-yangpai/depend/dbus/include/dbus-1.0/dbus/dbus-connection.h \
+ /var/lib/jenkins/workspace/project-yangpai/depend/dbus/include/dbus-1.0/dbus/dbus-memory.h \
+ /var/lib/jenkins/workspace/project-yangpai/depend/dbus/include/dbus-1.0/dbus/dbus-message.h \
+ /var/lib/jenkins/workspace/project-yangpai/depend/dbus/include/dbus-1.0/dbus/dbus-shared.h \
+ /var/lib/jenkins/workspace/project-yangpai/depend/dbus/include/dbus-1.0/dbus/dbus-misc.h \
+ /var/lib/jenkins/workspace/project-yangpai/depend/dbus/include/dbus-1.0/dbus/dbus-pending-call.h \
+ /var/lib/jenkins/workspace/project-yangpai/depend/dbus/include/dbus-1.0/dbus/dbus-server.h \
+ /var/lib/jenkins/workspace/project-yangpai/depend/dbus/include/dbus-1.0/dbus/dbus-signature.h \
+ /var/lib/jenkins/workspace/project-yangpai/depend/dbus/include/dbus-1.0/dbus/dbus-syntax.h \
+ /var/lib/jenkins/workspace/project-yangpai/depend/dbus/include/dbus-1.0/dbus/dbus-threads.h \
+ /var/lib/jenkins/workspace/project-yangpai/depend/include/yangpai_service.h \
+ /var/lib/jenkins/workspace/project-yangpai/depend/include/curl/curl.h \
+ /var/lib/jenkins/workspace/project-yangpai/depend/include/curl/curlver.h \
+ /var/lib/jenkins/workspace/project-yangpai/depend/include/curl/curlbuild.h \
  /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain/bin/../arm-fsl-linux-gnueabi/multi-libs/usr/include/sys/types.h \
  /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain/bin/../arm-fsl-linux-gnueabi/multi-libs/usr/include/sys/select.h \
  /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain/bin/../arm-fsl-linux-gnueabi/multi-libs/usr/include/bits/select.h \
@@ -71,7 +71,7 @@ project_ota/CMakeFiles/yangpi_service_ota.dir/ota_service.c.o: \
  /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain/bin/../arm-fsl-linux-gnueabi/multi-libs/usr/include/bits/sockaddr.h \
  /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain/bin/../arm-fsl-linux-gnueabi/multi-libs/usr/include/asm/socket.h \
  /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain/bin/../arm-fsl-linux-gnueabi/multi-libs/usr/include/asm/sockios.h \
- /home/admin/repo/project-yangpai/depend/include/curl/curlrules.h \
+ /var/lib/jenkins/workspace/project-yangpai/depend/include/curl/curlrules.h \
  /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain/bin/../lib/gcc/arm-fsl-linux-gnueabi/4.6.2/include-fixed/limits.h \
  /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain/bin/../lib/gcc/arm-fsl-linux-gnueabi/4.6.2/include-fixed/syslimits.h \
  /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain/bin/../arm-fsl-linux-gnueabi/multi-libs/usr/include/limits.h \
@@ -80,10 +80,10 @@ project_ota/CMakeFiles/yangpi_service_ota.dir/ota_service.c.o: \
  /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain/bin/../arm-fsl-linux-gnueabi/multi-libs/usr/include/linux/limits.h \
  /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain/bin/../arm-fsl-linux-gnueabi/multi-libs/usr/include/bits/posix2_lim.h \
  /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain/bin/../arm-fsl-linux-gnueabi/multi-libs/usr/include/sys/time.h \
- /home/admin/repo/project-yangpai/depend/include/curl/easy.h \
- /home/admin/repo/project-yangpai/depend/include/curl/multi.h \
- /home/admin/repo/project-yangpai/depend/include/curl/curl.h \
- /home/admin/repo/project-yangpai/depend/include/curl/typecheck-gcc.h \
- /home/admin/repo/project-yangpai/depend/include/yangpi_mysql_proxy.h \
- /home/admin/repo/project-yangpai/depend/include/yangpai_service.h \
- /home/admin/repo/project-yangpai/depend/include/mysql_base.h
+ /var/lib/jenkins/workspace/project-yangpai/depend/include/curl/easy.h \
+ /var/lib/jenkins/workspace/project-yangpai/depend/include/curl/multi.h \
+ /var/lib/jenkins/workspace/project-yangpai/depend/include/curl/curl.h \
+ /var/lib/jenkins/workspace/project-yangpai/depend/include/curl/typecheck-gcc.h \
+ /var/lib/jenkins/workspace/project-yangpai/depend/include/yangpi_mysql_proxy.h \
+ /var/lib/jenkins/workspace/project-yangpai/depend/include/yangpai_service.h \
+ /var/lib/jenkins/workspace/project-yangpai/depend/include/mysql_base.h

@@ -1,5 +1,5 @@
 project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/portserial.c.o: \
- /home/admin/repo/project-yangpai/project_freemodbus/portserial.c \
+ /var/lib/jenkins/workspace/project-yangpai/project_freemodbus/portserial.c \
  /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain/bin/../arm-fsl-linux-gnueabi/multi-libs/usr/include/stdio.h \
  /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain/bin/../arm-fsl-linux-gnueabi/multi-libs/usr/include/features.h \
  /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain/bin/../arm-fsl-linux-gnueabi/multi-libs/usr/include/sys/cdefs.h \
@@ -52,9 +52,9 @@ project_freemodbus/CMakeFiles/yangpi_service_rtu.dir/portserial.c.o: \
  /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain/bin/../arm-fsl-linux-gnueabi/multi-libs/usr/include/bits/environments.h \
  /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain/bin/../arm-fsl-linux-gnueabi/multi-libs/usr/include/bits/confname.h \
  /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain/bin/../arm-fsl-linux-gnueabi/multi-libs/usr/include/getopt.h \
- /home/admin/repo/project-yangpai/project_freemodbus/port.h \
+ /var/lib/jenkins/workspace/project-yangpai/project_freemodbus/port.h \
  /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain/bin/../arm-fsl-linux-gnueabi/multi-libs/usr/include/assert.h \
- /home/admin/repo/project-yangpai/project_freemodbus/mb.h \
- /home/admin/repo/project-yangpai/project_freemodbus/mbport.h \
- /home/admin/repo/project-yangpai/project_freemodbus/mbproto.h \
- /home/admin/repo/project-yangpai/project_freemodbus/mbconfig.h
+ /var/lib/jenkins/workspace/project-yangpai/project_freemodbus/mb.h \
+ /var/lib/jenkins/workspace/project-yangpai/project_freemodbus/mbport.h \
+ /var/lib/jenkins/workspace/project-yangpai/project_freemodbus/mbproto.h \
+ /var/lib/jenkins/workspace/project-yangpai/project_freemodbus/mbconfig.h

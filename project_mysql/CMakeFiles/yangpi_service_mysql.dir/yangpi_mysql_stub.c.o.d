@@ -1,5 +1,5 @@
 project_mysql/CMakeFiles/yangpi_service_mysql.dir/yangpi_mysql_stub.c.o: \
- /home/admin/repo/project-yangpai/project_mysql/yangpi_mysql_stub.c \
+ /var/lib/jenkins/workspace/project-yangpai/project_mysql/yangpi_mysql_stub.c \
  /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain/bin/../arm-fsl-linux-gnueabi/multi-libs/usr/include/unistd.h \
  /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain/bin/../arm-fsl-linux-gnueabi/multi-libs/usr/include/features.h \
  /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain/bin/../arm-fsl-linux-gnueabi/multi-libs/usr/include/sys/cdefs.h \
@@ -39,24 +39,24 @@ project_mysql/CMakeFiles/yangpi_service_mysql.dir/yangpi_mysql_stub.c.o: \
  /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain/bin/../arm-fsl-linux-gnueabi/multi-libs/usr/include/xlocale.h \
  /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain/bin/../arm-fsl-linux-gnueabi/multi-libs/usr/include/bits/string.h \
  /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain/bin/../arm-fsl-linux-gnueabi/multi-libs/usr/include/bits/string2.h \
- /home/admin/repo/project-yangpai/project_mysql/yangpi_mysql_stub.h \
- /home/admin/repo/project-yangpai/depend/dbus/include/dbus-1.0/dbus/dbus.h \
- /home/admin/repo/project-yangpai/depend/dbus/lib/dbus-1.0/include/dbus/dbus-arch-deps.h \
- /home/admin/repo/project-yangpai/depend/dbus/include/dbus-1.0/dbus/dbus-macros.h \
- /home/admin/repo/project-yangpai/depend/dbus/include/dbus-1.0/dbus/dbus-address.h \
- /home/admin/repo/project-yangpai/depend/dbus/include/dbus-1.0/dbus/dbus-types.h \
- /home/admin/repo/project-yangpai/depend/dbus/include/dbus-1.0/dbus/dbus-errors.h \
- /home/admin/repo/project-yangpai/depend/dbus/include/dbus-1.0/dbus/dbus-protocol.h \
- /home/admin/repo/project-yangpai/depend/dbus/include/dbus-1.0/dbus/dbus-bus.h \
- /home/admin/repo/project-yangpai/depend/dbus/include/dbus-1.0/dbus/dbus-connection.h \
- /home/admin/repo/project-yangpai/depend/dbus/include/dbus-1.0/dbus/dbus-memory.h \
- /home/admin/repo/project-yangpai/depend/dbus/include/dbus-1.0/dbus/dbus-message.h \
- /home/admin/repo/project-yangpai/depend/dbus/include/dbus-1.0/dbus/dbus-shared.h \
- /home/admin/repo/project-yangpai/depend/dbus/include/dbus-1.0/dbus/dbus-misc.h \
- /home/admin/repo/project-yangpai/depend/dbus/include/dbus-1.0/dbus/dbus-pending-call.h \
- /home/admin/repo/project-yangpai/depend/dbus/include/dbus-1.0/dbus/dbus-server.h \
- /home/admin/repo/project-yangpai/depend/dbus/include/dbus-1.0/dbus/dbus-signature.h \
- /home/admin/repo/project-yangpai/depend/dbus/include/dbus-1.0/dbus/dbus-syntax.h \
- /home/admin/repo/project-yangpai/depend/dbus/include/dbus-1.0/dbus/dbus-threads.h \
- /home/admin/repo/project-yangpai/depend/include/yangpai_service.h \
- /home/admin/repo/project-yangpai/project_mysql/mysql_base.h
+ /var/lib/jenkins/workspace/project-yangpai/project_mysql/yangpi_mysql_stub.h \
+ /var/lib/jenkins/workspace/project-yangpai/depend/dbus/include/dbus-1.0/dbus/dbus.h \
+ /var/lib/jenkins/workspace/project-yangpai/depend/dbus/lib/dbus-1.0/include/dbus/dbus-arch-deps.h \
+ /var/lib/jenkins/workspace/project-yangpai/depend/dbus/include/dbus-1.0/dbus/dbus-macros.h \
+ /var/lib/jenkins/workspace/project-yangpai/depend/dbus/include/dbus-1.0/dbus/dbus-address.h \
+ /var/lib/jenkins/workspace/project-yangpai/depend/dbus/include/dbus-1.0/dbus/dbus-types.h \
+ /var/lib/jenkins/workspace/project-yangpai/depend/dbus/include/dbus-1.0/dbus/dbus-errors.h \
+ /var/lib/jenkins/workspace/project-yangpai/depend/dbus/include/dbus-1.0/dbus/dbus-protocol.h \
+ /var/lib/jenkins/workspace/project-yangpai/depend/dbus/include/dbus-1.0/dbus/dbus-bus.h \
+ /var/lib/jenkins/workspace/project-yangpai/depend/dbus/include/dbus-1.0/dbus/dbus-connection.h \
+ /var/lib/jenkins/workspace/project-yangpai/depend/dbus/include/dbus-1.0/dbus/dbus-memory.h \
+ /var/lib/jenkins/workspace/project-yangpai/depend/dbus/include/dbus-1.0/dbus/dbus-message.h \
+ /var/lib/jenkins/workspace/project-yangpai/depend/dbus/include/dbus-1.0/dbus/dbus-shared.h \
+ /var/lib/jenkins/workspace/project-yangpai/depend/dbus/include/dbus-1.0/dbus/dbus-misc.h \
+ /var/lib/jenkins/workspace/project-yangpai/depend/dbus/include/dbus-1.0/dbus/dbus-pending-call.h \
+ /var/lib/jenkins/workspace/project-yangpai/depend/dbus/include/dbus-1.0/dbus/dbus-server.h \
+ /var/lib/jenkins/workspace/project-yangpai/depend/dbus/include/dbus-1.0/dbus/dbus-signature.h \
+ /var/lib/jenkins/workspace/project-yangpai/depend/dbus/include/dbus-1.0/dbus/dbus-syntax.h \
+ /var/lib/jenkins/workspace/project-yangpai/depend/dbus/include/dbus-1.0/dbus/dbus-threads.h \
+ /var/lib/jenkins/workspace/project-yangpai/depend/include/yangpai_service.h \
+ /var/lib/jenkins/workspace/project-yangpai/project_mysql/mysql_base.h

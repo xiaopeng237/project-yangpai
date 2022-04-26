@@ -1,5 +1,5 @@
 project_pioneers/CMakeFiles/yangpi_service_pioneers.dir/pioneers.c.o: \
- /home/admin/repo/project-yangpai/project_pioneers/pioneers.c \
+ /var/lib/jenkins/workspace/project-yangpai/project_pioneers/pioneers.c \
  /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain/bin/../arm-fsl-linux-gnueabi/multi-libs/usr/include/string.h \
  /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain/bin/../arm-fsl-linux-gnueabi/multi-libs/usr/include/features.h \
  /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain/bin/../arm-fsl-linux-gnueabi/multi-libs/usr/include/sys/cdefs.h \
@@ -80,11 +80,11 @@ project_pioneers/CMakeFiles/yangpi_service_pioneers.dir/pioneers.c.o: \
  /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain/bin/../arm-fsl-linux-gnueabi/multi-libs/usr/include/poll.h \
  /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain/bin/../arm-fsl-linux-gnueabi/multi-libs/usr/include/sys/poll.h \
  /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain/bin/../arm-fsl-linux-gnueabi/multi-libs/usr/include/bits/poll.h \
- /home/admin/repo/project-yangpai/depend/include/mysql_base.h \
- /home/admin/repo/project-yangpai/project_pioneers/pioneers.h \
- /home/admin/repo/project-yangpai/project_pioneers/log_dlt.h \
- /home/admin/repo/project-yangpai/depend/dlt/include/dlt/dlt.h \
- /home/admin/repo/project-yangpai/depend/dlt/include/dlt/dlt_common.h \
+ /var/lib/jenkins/workspace/project-yangpai/depend/include/mysql_base.h \
+ /var/lib/jenkins/workspace/project-yangpai/project_pioneers/pioneers.h \
+ /var/lib/jenkins/workspace/project-yangpai/project_pioneers/log_dlt.h \
+ /var/lib/jenkins/workspace/project-yangpai/depend/dlt/include/dlt/dlt.h \
+ /var/lib/jenkins/workspace/project-yangpai/depend/dlt/include/dlt/dlt_common.h \
  /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain/bin/../arm-fsl-linux-gnueabi/multi-libs/usr/include/netinet/in.h \
  /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain/bin/../lib/gcc/arm-fsl-linux-gnueabi/4.6.2/include/stdint.h \
  /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain/bin/../arm-fsl-linux-gnueabi/multi-libs/usr/include/stdint.h \
@@ -108,46 +108,46 @@ project_pioneers/CMakeFiles/yangpi_service_pioneers.dir/pioneers.c.o: \
  /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain/bin/../arm-fsl-linux-gnueabi/multi-libs/usr/include/linux/limits.h \
  /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain/bin/../arm-fsl-linux-gnueabi/multi-libs/usr/include/termios.h \
  /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain/bin/../arm-fsl-linux-gnueabi/multi-libs/usr/include/bits/termios.h \
- /home/admin/repo/project-yangpai/depend/dlt/include/dlt/dlt_types.h \
- /home/admin/repo/project-yangpai/depend/dlt/include/dlt/dlt_protocol.h \
- /home/admin/repo/project-yangpai/depend/dlt/include/dlt/dlt_user.h \
+ /var/lib/jenkins/workspace/project-yangpai/depend/dlt/include/dlt/dlt_types.h \
+ /var/lib/jenkins/workspace/project-yangpai/depend/dlt/include/dlt/dlt_protocol.h \
+ /var/lib/jenkins/workspace/project-yangpai/depend/dlt/include/dlt/dlt_user.h \
  /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain/bin/../arm-fsl-linux-gnueabi/multi-libs/usr/include/mqueue.h \
  /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain/bin/../arm-fsl-linux-gnueabi/multi-libs/usr/include/bits/mqueue.h \
  /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain/bin/../arm-fsl-linux-gnueabi/multi-libs/usr/include/semaphore.h \
  /opt/freescale/usr/local/gcc-4.6.2-glibc-2.13-linaro-multilib-2011.12/fsl-linaro-toolchain/bin/../arm-fsl-linux-gnueabi/multi-libs/usr/include/bits/semaphore.h \
- /home/admin/repo/project-yangpai/depend/dlt/include/dlt/dlt_user_macros.h \
- /home/admin/repo/project-yangpai/depend/dlt/include/dlt/dlt_version.h \
- /home/admin/repo/project-yangpai/depend/dlt/include/dlt/dlt_shm.h \
- /home/admin/repo/project-yangpai/project_pioneers/yangpi_pioneers_stub.h \
- /home/admin/repo/project-yangpai/depend/dbus/include/dbus-1.0/dbus/dbus.h \
- /home/admin/repo/project-yangpai/depend/dbus/lib/dbus-1.0/include/dbus/dbus-arch-deps.h \
- /home/admin/repo/project-yangpai/depend/dbus/include/dbus-1.0/dbus/dbus-macros.h \
- /home/admin/repo/project-yangpai/depend/dbus/include/dbus-1.0/dbus/dbus-address.h \
- /home/admin/repo/project-yangpai/depend/dbus/include/dbus-1.0/dbus/dbus-types.h \
- /home/admin/repo/project-yangpai/depend/dbus/include/dbus-1.0/dbus/dbus-errors.h \
- /home/admin/repo/project-yangpai/depend/dbus/include/dbus-1.0/dbus/dbus-protocol.h \
- /home/admin/repo/project-yangpai/depend/dbus/include/dbus-1.0/dbus/dbus-bus.h \
- /home/admin/repo/project-yangpai/depend/dbus/include/dbus-1.0/dbus/dbus-connection.h \
- /home/admin/repo/project-yangpai/depend/dbus/include/dbus-1.0/dbus/dbus-memory.h \
- /home/admin/repo/project-yangpai/depend/dbus/include/dbus-1.0/dbus/dbus-message.h \
- /home/admin/repo/project-yangpai/depend/dbus/include/dbus-1.0/dbus/dbus-shared.h \
- /home/admin/repo/project-yangpai/depend/dbus/include/dbus-1.0/dbus/dbus-misc.h \
- /home/admin/repo/project-yangpai/depend/dbus/include/dbus-1.0/dbus/dbus-pending-call.h \
- /home/admin/repo/project-yangpai/depend/dbus/include/dbus-1.0/dbus/dbus-server.h \
- /home/admin/repo/project-yangpai/depend/dbus/include/dbus-1.0/dbus/dbus-signature.h \
- /home/admin/repo/project-yangpai/depend/dbus/include/dbus-1.0/dbus/dbus-syntax.h \
- /home/admin/repo/project-yangpai/depend/dbus/include/dbus-1.0/dbus/dbus-threads.h \
- /home/admin/repo/project-yangpai/depend/include/yangpai_service.h \
- /home/admin/repo/project-yangpai/depend/include/yangpi_mysql_proxy.h \
- /home/admin/repo/project-yangpai/depend/include/yangpai_service.h \
- /home/admin/repo/project-yangpai/depend/include/mysql_base.h \
- /home/admin/repo/project-yangpai/depend/include/yangpi_i2c_proxy.h \
- /home/admin/repo/project-yangpai/depend/include/i2cbus_base.h \
- /home/admin/repo/project-yangpai/depend/include/yangpi_adjust_proxy.h \
- /home/admin/repo/project-yangpai/depend/include/adjust_service_base.h \
- /home/admin/repo/project-yangpai/project_pioneers/pioneers_spi.h \
- /home/admin/repo/project-yangpai/project_pioneers/pioneers_service.h \
- /home/admin/repo/project-yangpai/depend/include/yangpi_ota_proxy.h \
- /home/admin/repo/project-yangpai/depend/include/ota_data_base.h \
- /home/admin/repo/project-yangpai/depend/include/yangpi_rtu_proxy.h \
- /home/admin/repo/project-yangpai/depend/include/rtu_data_base.h
+ /var/lib/jenkins/workspace/project-yangpai/depend/dlt/include/dlt/dlt_user_macros.h \
+ /var/lib/jenkins/workspace/project-yangpai/depend/dlt/include/dlt/dlt_version.h \
+ /var/lib/jenkins/workspace/project-yangpai/depend/dlt/include/dlt/dlt_shm.h \
+ /var/lib/jenkins/workspace/project-yangpai/project_pioneers/yangpi_pioneers_stub.h \
+ /var/lib/jenkins/workspace/project-yangpai/depend/dbus/include/dbus-1.0/dbus/dbus.h \
+ /var/lib/jenkins/workspace/project-yangpai/depend/dbus/lib/dbus-1.0/include/dbus/dbus-arch-deps.h \
+ /var/lib/jenkins/workspace/project-yangpai/depend/dbus/include/dbus-1.0/dbus/dbus-macros.h \
+ /var/lib/jenkins/workspace/project-yangpai/depend/dbus/include/dbus-1.0/dbus/dbus-address.h \
+ /var/lib/jenkins/workspace/project-yangpai/depend/dbus/include/dbus-1.0/dbus/dbus-types.h \
+ /var/lib/jenkins/workspace/project-yangpai/depend/dbus/include/dbus-1.0/dbus/dbus-errors.h \
+ /var/lib/jenkins/workspace/project-yangpai/depend/dbus/include/dbus-1.0/dbus/dbus-protocol.h \
+ /var/lib/jenkins/workspace/project-yangpai/depend/dbus/include/dbus-1.0/dbus/dbus-bus.h \
+ /var/lib/jenkins/workspace/project-yangpai/depend/dbus/include/dbus-1.0/dbus/dbus-connection.h \
+ /var/lib/jenkins/workspace/project-yangpai/depend/dbus/include/dbus-1.0/dbus/dbus-memory.h \
+ /var/lib/jenkins/workspace/project-yangpai/depend/dbus/include/dbus-1.0/dbus/dbus-message.h \
+ /var/lib/jenkins/workspace/project-yangpai/depend/dbus/include/dbus-1.0/dbus/dbus-shared.h \
+ /var/lib/jenkins/workspace/project-yangpai/depend/dbus/include/dbus-1.0/dbus/dbus-misc.h \
+ /var/lib/jenkins/workspace/project-yangpai/depend/dbus/include/dbus-1.0/dbus/dbus-pending-call.h \
+ /var/lib/jenkins/workspace/project-yangpai/depend/dbus/include/dbus-1.0/dbus/dbus-server.h \
+ /var/lib/jenkins/workspace/project-yangpai/depend/dbus/include/dbus-1.0/dbus/dbus-signature.h \
+ /var/lib/jenkins/workspace/project-yangpai/depend/dbus/include/dbus-1.0/dbus/dbus-syntax.h \
+ /var/lib/jenkins/workspace/project-yangpai/depend/dbus/include/dbus-1.0/dbus/dbus-threads.h \
+ /var/lib/jenkins/workspace/project-yangpai/depend/include/yangpai_service.h \
+ /var/lib/jenkins/workspace/project-yangpai/depend/include/yangpi_mysql_proxy.h \
+ /var/lib/jenkins/workspace/project-yangpai/depend/include/yangpai_service.h \
+ /var/lib/jenkins/workspace/project-yangpai/depend/include/mysql_base.h \
+ /var/lib/jenkins/workspace/project-yangpai/depend/include/yangpi_i2c_proxy.h \
+ /var/lib/jenkins/workspace/project-yangpai/depend/include/i2cbus_base.h \
+ /var/lib/jenkins/workspace/project-yangpai/depend/include/yangpi_adjust_proxy.h \
+ /var/lib/jenkins/workspace/project-yangpai/depend/include/adjust_service_base.h \
+ /var/lib/jenkins/workspace/project-yangpai/project_pioneers/pioneers_spi.h \
+ /var/lib/jenkins/workspace/project-yangpai/project_pioneers/pioneers_service.h \
+ /var/lib/jenkins/workspace/project-yangpai/depend/include/yangpi_ota_proxy.h \
+ /var/lib/jenkins/workspace/project-yangpai/depend/include/ota_data_base.h \
+ /var/lib/jenkins/workspace/project-yangpai/depend/include/yangpi_rtu_proxy.h \
+ /var/lib/jenkins/workspace/project-yangpai/depend/include/rtu_data_base.h
